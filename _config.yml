@@ -40,7 +40,9 @@ kramdown:
       start_line: 1
 
 exclude:
-  - deploy.sh
+  - make.sh
+  - Gemfile
+  - Gemfile.lock
 
 # Languages
 languages:
