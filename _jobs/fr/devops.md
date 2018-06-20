@@ -31,7 +31,7 @@ Vous maitrisez ces technologies:
  * Configuration Linux, Windows
  * Notions de sécurité des systèmes et applications
  * Langages d'automatisation (Bash, Puppet, Ansible, ...)
- * Technologies de containers (Docker, Kubernetes, Swarm ...)
+ * Technologies de containers (Docker, Kubernetes ...)
  * Intégration continue, déploiement continue
  * Technologie Cloud et clustering (Amazon, Google App Engine, Apache Mesos, ...)
  * Au moins un langage de programmation suivant : Java/Groovy, Go, Ruby, Python
@@ -39,6 +39,5 @@ Vous maitrisez ces technologies:
 ## Modalités
 
 * Lieu de travail: Toulouse
-* Date de disponibilité: Asap
 * Rémunération : Attractive
 * Type de contrat: CDI

@@ -30,7 +30,7 @@ Au sein de notre équipe vous serez amené également à participer régulièrem
 Vous maîtrisez une ou plusieurs technologies Back End et prêtez attention à la performance et la fiabilité de vos développement. Vous avez l'habitude de travailler dans un environnement agile.
 Vous pratiquez ces technologies :
 
- * Au moins un des Langages : Java, Scala, Go, Ruby, Rust
+ * Au moins un des Langages : Java, Kotlin, Scala, Go, Ruby, Rust
  * Messaging AMQP, Kafka, JMS
  * Web services principalement REST
  * Bases de données NoSQL, SQL
@@ -43,6 +43,5 @@ La connaissance en Front end est un plus.
 ## Modalités
 
 * Lieu de travail: Toulouse
-* Date de disponibilité: Asap
 * Rémunération : Attractive
 * Type de contrat: CDI

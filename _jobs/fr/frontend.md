@@ -31,7 +31,7 @@ Nous recherchons des développeurs passionnés qui aiment développer des applic
 
  * JavaScript, EmacScript 6+, TypeScript
  * HTML5 / CSS 3
- * Au moins un framework js récent (AngularJS, React, Aurelia, ...)
+ * Au moins un framework js récent (Angular, React, Vue.js, ...)
  * Les outils NodeJS
 
 ## Plus
@@ -41,6 +41,5 @@ La maîtrise des web-services REST et d’un environnement back-end est un plus.
 ## Modalités
 
 * Lieu de travail: Toulouse
-* Date de disponibilité: Asap
 * Rémunération : Attractive
 * Type de contrat: CDI

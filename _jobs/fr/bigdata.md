@@ -31,7 +31,7 @@ Au sein de notre équipe vous serez amené également à participer régulièrem
 Vous êtes à l'aise quand il s'agit d'aider les équipes de développement pour qu'elles soient plus performantes, et si besoin, vous êtes capable de les aider à développer.
 Vous connaissez une ou plusieurs de ces technologies :
 
- * Hadoop, Spark
+ * Hadoop, Spark, Tensflow
  * Algorithmes du BigData (MapReduce, k-means, ML, ...),
  * Cassandra, MongoDB, ElasticSearch, SolR
  * Au moins un langage de programmation suivant : Python, Scala, Go, Java
@@ -39,6 +39,5 @@ Vous connaissez une ou plusieurs de ces technologies :
 ## Modalités
 
 * Lieu de travail: Toulouse
-* Date de disponibilité: Asap
 * Rémunération : Attractive
 * Type de contrat: CDI

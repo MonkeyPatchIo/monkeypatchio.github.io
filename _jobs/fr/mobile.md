@@ -31,8 +31,8 @@ Vous maîtrisez parfaitement une des technologies mobile récentes et vous prêt
 
 Vous pratiquez ces technologies:
 
- * Au moins une des technologies : Android, iOS, Cross Platform (Cordova, Ionic)
- * Au moins un des Langages : Java, Swift, Kotlin, Objective-C
+ * Au moins une des technologies : Android, iOS, Cross Platform (Cordova, Ionic, ...)
+ * Au moins un des Langages : Kotlin, Swift, Java, Objective-C
  * Web services REST
  * L'ecosystème de votre plateforme préférée (Gradle, Swift, ...)
  * Tests Unitaires, Tests d'intégrations...
@@ -40,6 +40,5 @@ Vous pratiquez ces technologies:
 ## Modalités
 
 * Lieu de travail: Toulouse
-* Date de disponibilité: Asap
 * Rémunération : Attractive
 * Type de contrat: CDI
