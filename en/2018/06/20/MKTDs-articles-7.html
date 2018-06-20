@@ -4,7 +4,7 @@
 <head>
   
   
-  <title>On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE</title>
+  <title>MKTD#6, le Stream processing avec &#35;Flink et &#35;Kafka</title>
   
   <!-- Meta -->
   <meta charset="utf-8">
@@ -21,23 +21,17 @@
   <link rel="alternate" type="application/rss+xml" title=" RSS Feed" href="http://www.monkeypatch.io/blog/feed.xml" />
 
   <!-- SEO -->
-  <meta property="og:title" content="On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE" />
+  <meta property="og:title" content="MKTD#6, le Stream processing avec &#35;Flink et &#35;Kafka" />
 
   
-  <meta property="og:description" content="MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE
+  <meta property="og:description" content="MKTD#6, le Stream processing avec #Flink et #Kafka
 
-A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
-venir), nous prenons connaissance des retours faits par les participants
-sur l’organisation de l’événement, les technos, les exercices proposés et les
-niveaux des coachs.
+Vendredi 16 Mars 2018, nous nous sommes retrouvés une fois de plus (pour notre plus grand plaisir) chez Harrycow Coworking, pour expérimenter 2 technos de Stream processing : Apache Flink et Kafka Streams.
 
 " />
-  <meta name="description" content="MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE
+  <meta name="description" content="MKTD#6, le Stream processing avec #Flink et #Kafka
 
-A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
-venir), nous prenons connaissance des retours faits par les participants
-sur l’organisation de l’événement, les technos, les exercices proposés et les
-niveaux des coachs.
+Vendredi 16 Mars 2018, nous nous sommes retrouvés une fois de plus (pour notre plus grand plaisir) chez Harrycow Coworking, pour expérimenter 2 technos de Stream processing : Apache Flink et Kafka Streams.
 
 " />
   
@@ -88,7 +82,7 @@ niveaux des coachs.
 
   
     <meta property="og:type" content="article"/>
-    <meta property="og:article:published_time" content="2018-04-01T00:00:00+02:00">
+    <meta property="og:article:published_time" content="2018-06-20T00:00:00+02:00">
     
       <meta property="og:article:author:username" content="Emmanuel Vinas">
     
@@ -107,33 +101,34 @@ niveaux des coachs.
     
     <meta property="og:article:tag" content="MonkeyTechDay">
     
+    <meta property="og:article:tag" content="Tech days">
+    
     <meta property="og:article:tag" content="MKTD">
+    
+    <meta property="og:article:tag" content="Tech Addicts">
     
     <meta property="og:article:tag" content="Techno">
     
-    <meta property="og:article:tag" content="Brainfuck">
+    <meta property="og:article:tag" content="flink">
     
-    <meta property="og:article:tag" content="LOLCODE">
+    <meta property="og:article:tag" content="kafka">
     
   
   
   
   <meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-head-blue-x126.png"/>
 
-  <meta property="og:url" content="http://www.monkeypatch.io/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html"/>
+  <meta property="og:url" content="http://www.monkeypatch.io/2018/06/20/MKTDs-articles-7.html"/>
   <meta property="og:site_name" content="MonkeyPatch"/>
   
   <!-- Twitter tags -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@MonkeyPatch_io" />
-  <meta name="twitter:url" content="http://www.monkeypatch.io/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html">
-  <meta name="twitter:title" content="On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE">
-  <meta name="twitter:description" content="MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE
+  <meta name="twitter:url" content="http://www.monkeypatch.io/2018/06/20/MKTDs-articles-7.html">
+  <meta name="twitter:title" content="MKTD#6, le Stream processing avec &#35;Flink et &#35;Kafka">
+  <meta name="twitter:description" content="MKTD#6, le Stream processing avec #Flink et #Kafka
 
-A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
-venir), nous prenons connaissance des retours faits par les participants
-sur l’organisation de l’événement, les technos, les exercices proposés et les
-niveaux des coachs.
+Vendredi 16 Mars 2018, nous nous sommes retrouvés une fois de plus (pour notre plus grand plaisir) chez Harrycow Coworking, pour expérimenter 2 technos de Stream processing : Apache Flink et Kafka Streams.
 
 ">
   <meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-head-blue-x126.png">
@@ -161,7 +156,7 @@ niveaux des coachs.
     "@context": "http://schema.org",
     
       "@type": "BlogPosting", // 
-      "mainEntityOfPage": "http://www.monkeypatch.io/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html", 
+      "mainEntityOfPage": "http://www.monkeypatch.io/2018/06/20/MKTDs-articles-7.html", 
     
     "author": [
       
@@ -181,12 +176,12 @@ niveaux des coachs.
       
     ],
     "name": "MonkeyPatch",
-    "headline": "On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE",
+    "headline": "MKTD#6, le Stream processing avec &#35;Flink et &#35;Kafka",
     "image": "http://www.monkeypatch.io/public/images/logos/logo-mkp-head-blue-x126.png",
     
-      "datePublished": "2018-04-01T00:00:00+02:00",
-      "dateModified": "2018-04-01T00:00:00+02:00",
-      "datePublished": "2018-04-01T00:00:00+02:00",
+      "datePublished": "2018-06-20T00:00:00+02:00",
+      "dateModified": "2018-06-20T00:00:00+02:00",
+      "datePublished": "2018-06-20T00:00:00+02:00",
     
     "publisher": {
       "@type": "Organization",
@@ -197,7 +192,7 @@ niveaux des coachs.
       ]
     },
     "description": "Société de conseil et d'expertise en informatique spécialisée dans les nouvelles technologies.",
-    "url": "http://www.monkeypatch.io/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html"
+    "url": "http://www.monkeypatch.io/2018/06/20/MKTDs-articles-7.html"
   }
 </script>
 </head>
@@ -214,11 +209,11 @@ niveaux des coachs.
     <nav class="lang">
       <ul>
         <li class="active">
-          <a href="en/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html" >EN</a>
+          <a href="en/2018/06/20/MKTDs-articles-7.html" >EN</a>
         </li>
         <li class="sep">|</li>
         <li class="">
-          <a href="/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html" >FR</a>
+          <a href="/2018/06/20/MKTDs-articles-7.html" >FR</a>
         </li>
       </ul>
     </nav>
@@ -350,10 +345,10 @@ niveaux des coachs.
       </ul>
       <ul class="lang">
         <li class="active">
-          <a href="en/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html" >EN</a>
+          <a href="en/2018/06/20/MKTDs-articles-7.html" >EN</a>
         </li>
         <li class="">
-          <a href="/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html" >FR</a>
+          <a href="/2018/06/20/MKTDs-articles-7.html" >FR</a>
         </li>
       </ul>
   </nav>
@@ -363,14 +358,14 @@ niveaux des coachs.
     <nav class="index"><!-- fill with JS --></nav>
     <section class="post">
       <h1 id="top">
-        <span>On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE</span>
+        <span>MKTD#6, le Stream processing avec &#35;Flink et &#35;Kafka</span>
         <div class="share">
           <a class="twitter-share-button"
             href="https://twitter.com/share"
             data-size="large"
             data-via="monkeypatch_io"
-            data-text="On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE"
-            data-hashtags="MonkeyTechDay,MKTD,Techno,Brainfuck,LOLCODE"
+            data-text="MKTD#6, le Stream processing avec &#35;Flink et &#35;Kafka"
+            data-hashtags="MonkeyTechDay,Tech days,MKTD,Tech Addicts,Techno,flink,kafka"
             >Tweet</a>
         </div>
       </h1>
@@ -378,7 +373,7 @@ niveaux des coachs.
       <span class="date">
 
 
-  April 01, 2018
+  June 20, 2018
 
 </span>
 
@@ -386,243 +381,137 @@ niveaux des coachs.
         
           <span>MonkeyTechDay</span>
         
+          <span>Tech days</span>
+        
           <span>MKTD</span>
+        
+          <span>Tech Addicts</span>
         
           <span>Techno</span>
         
-          <span>Brainfuck</span>
+          <span>flink</span>
         
-          <span>LOLCODE</span>
+          <span>kafka</span>
         
       </div>
 
-      <article><h1 id="mktd7--on-a-validé-le-sujet-du-prochain-monkeytechday--brainfuck-lolcode">MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE</h1>
+      <article><h1 id="mktd6-le-stream-processing-avec-flink-et-kafka">MKTD#6, le Stream processing avec #Flink et #Kafka</h1>
 
-<p>A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
-venir), nous prenons connaissance des retours faits par les participants
-sur l’organisation de l’événement, les technos, les exercices proposés et les
-niveaux des coachs.<!--more--></p>
+<p>Vendredi 16 Mars 2018, nous nous sommes retrouvés une fois de plus (pour notre plus grand plaisir) chez <a href="https://www.harrycow.com/">Harrycow Coworking</a>, pour expérimenter 2 technos de Stream processing : Apache Flink et Kafka Streams.</p>
 
-<p>Et malheureusement, les compliments ne sont pas au rendez-vous…</p>
+<!--more-->
 
-<p>Face à la pluie de critiques et insultes diverses et variées, nous avons décidé
-de proposer à nos participants une session de rattrapage digne de ce nom pour
-nous racheter.</p>
+<p><img src="/public/images/mktd6/1.jpg" alt="PHOTO 1" /></p>
 
-<p>Et afin de satisfaire notre auditoire, nous avons dû élever le niveau.</p>
+<blockquote>
+  <p>Nous n’avons plus besoin de vous présenter les MKTD ! Si ? À priori pas pour tout le monde, alors on fait un bref rappel :
+Chaque MonkeyTechDays (MKTD) réunit entre 30 et 45 Tech Addicts, passionnés de dév. En équipe, nous expérimentons, évaluons les technos innovantes sous forme de défis techniques. Une journée au plus près du code, fun et décontractée, où des coachs passionnés aident les participants à réaliser des exos de niveau soutenu.
+Pour plus de détails sur l’organisation de la journée, on vous invite à regarder <a href="https://www.meetup.com/fr-FR/MonkeyTechDays/">le planning de la journée</a> ou de parcourir <a href="http://www.monkeypatch.io/2018/02/05/MKTDs-articles-1.html">nos premiers articles.</a></p>
+</blockquote>
 
-<p>Nous venons de prendre acte du prochain sujet du MKTD#7 qui aura
-lieu pendant les vacances d’été, pour faire venir le plus de monde possible
-en profitant des congés.</p>
+<p>Pour le MKTD#6, nous avons choisi le sujet du traitement de flux (“Stream processing”) car c’est désormais un concept incontournable du Big Data. Les technos de Stream processing évoluent très vite, on a décidé d’en expérimenter les deux “frères” de la grande famille d’Apache.
+Flink et Kafka excellent de plus en plus dans ce domaine. <a href="https://twitter.com/arnaud_bos">Arnaud</a> et <a href="https://twitter.com/glmxndr">Guillaume</a>, 2 Monkeys confirmés, ont respectivement imaginé et confectionné une série de tp/exos/défis à relever tout au long de ce MKTD.</p>
 
-<h2 id="brainfuck">Brainfuck</h2>
+<h2 id="les-technos-expérimentées-">les technos expérimentées :</h2>
 
-<p>Brainfuck est un langage de programmation minimaliste créé par Urban Müller en 1993.</p>
+<h3 id="flink">Flink</h3>
+<p><a href="https://flink.apache.org/">Flink</a> est un framework “Big Data” sortant de l’incubateur Apache qui gagne en popularité, basé sur l’unification du batch et du streaming, et dont la signature est une gestion du temps (event time vs processing time) qui lui confère toute sa puissance. Son API riche permet de découper les étapes de processing en unités de calcul modélisant un dataflow.</p>
 
-<p>Comme toutes les bonnes choses, Brainfuck est longtemps resté ignoré par
-l’industrie du logiciel car considéré trop “académique”.</p>
+<p>Comme les autres frameworks “Big Data”, Flink se déploie sous forme d’un cluster comprenant un master et de workers, le premier distribuant le travail décrit par le dataflow aux seconds. Les couches d’abstraction de l’API masquent alors le travail de Flink consistant à gérer le parallélisme et la gestion de l’état.</p>
 
-<p>Malgré son apparente simplicité, Brainfuck est un language Turing-complete et nous
-permet donc d’exprimer et de résoudre de nombreux problèmes. De plus, sa
-concision évidente est un atout certain pour la productivité des équipes
-de dévs.</p>
-
-<p>Fort heureusement, Brainfuck gagne en popularité depuis plusieurs mois comme on
-peut le constater en le comparant à un langage récent:</p>
-
-<p><img src="/public/images/fool/Brainfuck.png" alt="Brainfuck vs Kotlin" /></p>
-
-<p>Kotlin a connu un pic de popularité après l’annonce faite par Google du
-support de Kotlin pour le développement Android.</p>
-
-<p>Fort heureusement, et comme on peut le constater sur ce graphique et sur le
-sondage d’opinion présenté ci-dessous: <strong>la communauté est rapidement revenue à la
-raison et commence enfin à reconnaître Brainfuck à sa juste valeur</strong>.</p>
-
-<p>Les développeurs Android le plébiscitent notamment pour sa brièveté et ses capacités
-multi-plateformes.</p>
-
-<p><img src="/public/images/fool/Brainfuck2.png" alt="Brainfuck vs Kotlin" /></p>
-
-<p>Afin de vous mettre l’eau à la bouche, voici un petit exemple de code Brainfuck
-qui, je l’espère, motivera un bon nombre d’entre vous pour nous rejoindre au
-prochain MKTD !</p>
-
-<div class="highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre>++++++++++[&gt;+++++++&gt;++++++++++&gt;+++++++++++&gt;++++++++++++&gt;+++&gt;+++++++&lt;&lt;&lt;&lt;&lt;&lt;-]
-&gt;++.&gt;---.&gt;++..&gt;+.&gt;++.&gt;-.&lt;&lt;&lt;&lt;.&gt;+++.+.&lt;++++.&gt;--.&gt;&gt;.&lt;&lt;&lt;+.&gt;.---.--.&gt;&gt;.
-&lt;&lt;&lt;&lt;+++++.&gt;&gt;++.-.&lt;+++++.------.&gt;&gt;.&lt;&lt;&lt;+++.&gt;----.&gt;&gt;-----.&lt;&lt;++.&gt;------.&gt;&gt;+.
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<h2 id="lolcode">LOLCODE</h2>
-
-<p>Autre outsider, classé la plupart du temps (de façon injuste) dans la catégorie des
-langages dits “ésotériques”, LOLCODE, a été créé par Adam Lindsay en 2007.</p>
-
-<p>Issu de la culture populaire du “lolcat” et inspiré du “lolspeak”,
-LOLCODE est un langage de programmation dont l’expressivité est indéniable.</p>
-
-<p>Lui aussi ignoré à ses débuts, LOLCODE fait un retour fracassant dans le monde
-des micro-services et systèmes distribués. Il commence même à supplanter Scala
-comme langage standard pour l’implémentation d’applications orientées “Big Data”.</p>
-
-<p><img src="/public/images/fool/LOLCODE.png" alt="LOLCODE vs Scala" /></p>
-
-<p>Avec de tels arguments, difficile pour nous de faire un choix différent, et pour
-vous faire vibrer et vous donner l’envie de choisir l’équipe LOLCODE,
-voici un petit programme qui vous permettra de réaliser que LOLCODE est un
-outil de choix, notamment si vous travaillez avec Kafka.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52</pre></td><td class="code"><pre>HAI 1.2
-BTW This LOLCODE supports distributed parallelism execution
-
-CAN HAS KAFKA?
-
-I HAS A p ITZ SRSLY A PURRDUCER
-I HAS A c ITZ SRSLY A CHEEZSUMER
-I HAS A topic ITZ A YARN
-I HAS A iterashunz ITZ A NUMBAR
-I HAS A meh ITZ A YARN
-I HAS A recordz ITZ SRSLY LOTZ A YARN AN THAR IZ 32
-I HAS A indxz ITZ A NUMBAR
-I HAS A max ITZ 100
-
-VISIBLE "HAI ITZ " ME " I CAN HAS TOPIC?"
-GIMMEH topic
-
-VISIBLE "HAI ITZ " ME " I CAN HAS ITERASHUNZ?"
-GIMMEH iterashunz
-
-DIFFRINT iterashunz AN 42, O RLY?
-  YA RLY
-    VISIBLE "PURRFECT"
-  NO WAI
-    VISIBLE "HAI ITZ " ME " ITERASHUNZ DIFFRINT THAN 42"
-    KTHXBYE
-OIC
-
-indexz R 0
-
-HUGZ
-
-IM IN YR loop UPPIN YR i TIL BOTH SAEM i AN iterashunz
-  PURRDUCER YR i AN YR topic MKAY
-IM OUTTA YR loop
-
-IM IN YR loop UPPIN YR time TIL BOTH SAEM time AN max
-  meh R CHEEZSUMER YR topic MKAY
-  DIFFRINT meh AN NOOB, O RLY?
-    YA RLY
-      recordz'Z indxz R meh
-      indxz R SUM OF indxz AN 1
-  OIC
-IM OUTTA YR loop
-
-VISIBLE "O HAI ITZ " ME ", MAH MESSAGZ IZ:"
-
-IM IN YR loop UPPIN YR i TIL BOTH SAEM i AN indxz
- VISIBLE recordz'Z i
-IM OUTTA YR loop
-
-KTHXBYE
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<h2 id="challenge-et-inscriptions">Challenge et inscriptions</h2>
-
-<p>Vous l’aurez compris, pour cette édition l’équipe a décidé de relever le niveau
-et d’expérimenter des langages vraiment pensés pour la productivité et le
-confort des développeurs.</p>
-
-<p>Et pour fêter cet évènement, nous vous proposons un petit challenge: Essayez de
-résoudre ce petit programme Brainfuck de tête (ou sur papier) afin de découvrir
-le lien vers la page d’inscription du MTDK#7!</p>
-
-<div class="highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre>++++++++[&gt;+++++++++++++&gt;+++++++++++++++&gt;++++++++++++++&gt;+++++++&gt;++++++&gt;++++++++++++&gt;+++++++++++&lt;&lt;&lt;&lt;&lt;&lt;&lt;-]
-&gt;.&gt;----..&gt;.&gt;++.&gt;-..&gt;++.&lt;&lt;&lt;&lt;&lt;+.&gt;.&gt;&gt;&gt;-.&lt;&lt;&lt;&lt;+++.&gt;+++++.&gt;&gt;&gt;+.&gt;&gt;---------------.&lt;&lt;&lt;&lt;+.&gt;&gt;&gt;&gt;+++++++++++.
-&lt;&lt;&lt;----.&lt;&lt;+.------.
-</pre></td></tr></tbody></table>
-</div>
-</div>
-
-<p>Les impatients peuvent <a href="https://bit.ly/IqT6zt">retrouver la page directement ici!</a></p>
-
-<p>N.B. Pour les plus affamés, voici un <a href="https://gist.github.com/listochkin/94e2e9af7292a9877fff">interpréteur Brainfuck en LOLCODE</a>.</p>
-
-<h2 id="références">Références</h2>
-
+<p>Enfin, Flink dispose de nombreux “connecteurs” permettant de collecter ou d’émettre des données de ou vers des systèmes tiers, et de librairies de plus haut niveau permettant :</p>
 <ul>
-  <li><a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/LOLCODE">LOLCODE</a></li>
-  <li><a href="https://arxiv.org/pdf/1703.10242.pdf">Programmation distribuée en LOLCODE</a></li>
-  <li><a href="https://copy.sh/brainfuck/">Brainfuck online editor</a></li>
-  <li><a href="https://ascii.cl/">ASCII Table</a></li>
+  <li>d’exécuter des requêtes directement sur un job en cours d’exécution,</li>
+  <li>de construire et requêter des données sous forme de tables (à la SQL) ou de graphes,</li>
+  <li>ou encore de Machine Learning.</li>
 </ul>
+
+<p><img src="/public/images/mktd6/2.jpg" alt="PHOTO 2" /></p>
+
+<h3 id="kafka-streams">Kafka Streams</h3>
+<p><a href="https://kafka.apache.org/documentation/streams/">Kafka Streams</a> permet de développer des applications distribuées sans avoir recours à un cluster autre que Kafka, ce qui simplifie leur déploiement. La librairie permet de coder des services de stream processing, et met à disposition une API de type FRP, s’appuyant sur le messaging et la persistance de Kafka.</p>
+
+<p>Kafka Streams introduit le concept de KTables, qui donne accès à la dernière valeur pour une clé donnée, émulant des updates de BDD relationnelles. L’API permet d’effectuer des opérations de transformation, de branchage et de jointures ainsi que de garder de l’état. Tout ceci s’appuie sur des topics Kafka gérés directement par la librairie.</p>
+
+<p>Enfin, Kafka Streams bénéficie également des autres outils de la suite Confluent, tels que le Schema Registry ou Kafka Connect, qui met à disposition de nombreux connecteurs pour traiter des données depuis ou vers des systèmes tiers.</p>
+
+<p><img src="/public/images/mktd6/3.jpg" alt="PHOTO 3" /></p>
+
+<p><a href="https://docs.google.com/presentation/d/1eeK-15lABBD5DixMUHiKXYWYoJER0_hmDBIx359MNtY/edit?usp=sharing">Voir les slides d’introduction</a></p>
+
+<h3 id="les-exercices">Les exercices</h3>
+<p>Pour expérimenter ces deux technos, nous avons donné un thème aux exercices pour toute la journée.</p>
+
+<blockquote>
+  <p>Tous les problèmes posés s’inscrivent dans un contexte de simulation de marché : le marché de la banane ! Les participants prennent le rôle de singes-traders jouant en bourse sur l’action de la banane.</p>
+</blockquote>
+
+<h4 id="le-matin">Le matin</h4>
+<p>Les exercices des deux équipes sont identiques, mais chacun doit les résoudre avec sa techno préférée. Les participants découvrent les opérateurs de base permettant de transformer un flux de données, d’effectuer des branchements avant de réunifier les résultats au sein d’un seul flux de sortie, d’effectuer des traitements d’agrégation sur des fenêtres de temps glissantes ou encore de gérer de l’état. Chaque exercice présente un détail d’implémentation d’un trader, afin de familiariser les participants avec le marché de la banane.</p>
+
+<p><a href="https://github.com/monkeytechdays/mktd6-flink">Voir les exercices Flink</a> 
+<a href="https://github.com/monkeytechdays/mktd6">Voir les exercices Kafka</a></p>
+
+<h4 id="laprès-midi">L’après-midi</h4>
+<p>Déjà familiarisés avec les règles du jeu par les exos du matin, le défi de l’après-midi est lancé : les participants doivent coder leur propre algo de trading ! 
+Le prix d’une action “banane” fluctue aléatoirement, mais les participants peuvent l’influencer via twitter avec le hashtag #MKTD. Les joueurs s’abonnent au flux du prix des actions et leur algo doit choisir entre plusieurs stratégies : acheter/vendre des actions, investir dans une plantation, ou bien… nourrir des singes avec les bananes ! Le serveur calcule alors les résultats des transactions et re-publie l’état des traders avec un score affiché en temps réel.</p>
+
+<blockquote>
+  <p>Mais attention, le score n’est pas l’argent ou les actions accumulées, mais le nombre de singes nourris !</p>
+</blockquote>
+
+<h2 id="moments-forts-et-bilan-de-la-journée">Moments forts et bilan de la journée</h2>
+
+<p>Encore merci au sponsor pour sa présence et son soutien lors de cette édition ! <a href="https://twitter.com/mattrouget">Matthieu Rouget</a>, responsable technique chez <a href="https://twitter.com/AirbusSpace">Airbus Defence &amp; Space</a>, nous a présenté plusieurs de leurs projets sur le traitement des données massives issues de satellites d’observation de la terre. (franchement sympa la stack)</p>
+
+<p>On remercie également <a href="https://twitter.com/confluentinc">Confluent</a> et <a href="https://twitter.com/dataArtisans">dataArtisans</a> pour les t-shirts et les stickers qu’ils nous ont envoyés. On a profité de ces cadeaux pour lancer un défi commun pour faire gagner à tout le monde un t-Shirt. Défi relevé !</p>
+
+<p><img src="/public/images/mktd6/4.jpg" alt="PHOTO 4" /></p>
+
+<p>On remercie de même l’ensemble des participants. Un spécial grand merci à ceux qui nous ont fait des retours. Ça fait plaisir de voir que l’ambiance était une fois de plus au rendez-vous et que vous voulez tous en refaire :)
+Et ceci bien que les exercices étaient parfois un peu compliqués.</p>
+
+<p><img src="/public/images/mktd6/5.jpg" alt="PHOTO 5" /></p>
+
+<p>On se retrouve au prochain MKTD ?</p>
+
+<p>Les géants du Web tels que Google, poussent de plus en plus la démocratisation de ces standards du Web à grande échelle. Vendredi 21 septembre 2018, on tentera au MKTD#7 d’expérimenter les Web Components nativement ou avec Stencil.</p>
+
+<p><a href="https://www.meetup.com/fr-FR/MonkeyTechDays/events/251431123/">Rdv sur Meetup</a> pour en savoir plus sur l’événement</p>
+
+<p>N’hésitez pas à vous aussi proposer des sujets pour les prochains MKTD, en détaillant vos idées sur le <a href="https://github.com/monkeytechdays/cfp">Cfp</a>.</p>
+
+<p>← Article précédant <a href="http://www.monkeypatch.io/2018/02/05/MKTDs-articles-6.html">MKTD#5</a></p>
+
 </article>
 
       <div class="authors">
         
           <div class="author">
+            <a href="https://twitter.com/alteannefr" rel="author">
+              <img src="https://ca.slack-edge.com/T1H5KD6N6-U51C423V4-785b1a19f083-48" alt="Alteanne Fernandez">
+              <span>Alteanne Fernandez</span>
+            </a>
+          </div>
+        
+          <div class="author">
+            <a href="https://twitter.com/MCaylet" rel="author">
+              <img src="https://ca.slack-edge.com/T1H5KD6N6-U1HQKRWHW-6087296b8953-512" alt="Matthieu Caylet">
+              <span>Matthieu Caylet</span>
+            </a>
+          </div>
+        
+          <div class="author">
             <a href="https://twitter.com/arnaud_bos" rel="author">
               <img src="https://ca.slack-edge.com/T1H5KD6N6-U30C1P23G-a63601ba6c7d-512" alt="Arnaud bos">
               <span>Arnaud bos</span>
+            </a>
+          </div>
+        
+          <div class="author">
+            <a href="https://twitter.com/glmxndr" rel="author">
+              <img src="https://ca.slack-edge.com/T1H5KD6N6-U6C1TJBL7-c93270152bdd-512" alt="Guillaume Andrieu">
+              <span>Guillaume Andrieu</span>
             </a>
           </div>
         
@@ -634,8 +523,8 @@ le lien vers la page d’inscription du MTDK#7!</p>
       <div id="disqus_thread"></div>
       <script>
       var disqus_config = function () {
-          this.page.url = "http://www.monkeypatch.io/en/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html";  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = "/2018/04/01/MKTD-7-brainfuck-vs-lolcode.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          this.page.url = "http://www.monkeypatch.io/en/2018/06/20/MKTDs-articles-7.html";  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "/2018/06/20/MKTDs-articles-7.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
       (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
