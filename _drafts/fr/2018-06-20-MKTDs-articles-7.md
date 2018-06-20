@@ -25,7 +25,7 @@ Pour plus de détails sur l’organisation de la journée, on vous invite à reg
 Pour le MKTD#6, nous avons choisi le sujet du traitement de flux ("Stream processing") car c’est désormais un concept incontournable du Big Data. Les technos de Stream processing évoluent très vite, on a décidé d’en expérimenter les deux “frères” de la grande famille d’Apache.
 Flink et Kafka excellent de plus en plus dans ce domaine. [Arnaud](https://twitter.com/arnaud_bos) et [Guillaume](https://twitter.com/glmxndr), 2 Monkeys confirmés, ont respectivement imaginé et confectionné une série de tp/exos/défis à relever tout au long de ce MKTD.
 
-## les technos expérimentées :
+## Les technos expérimentées
 
 ### Flink
 [Flink](https://flink.apache.org/) est un framework “Big Data” sortant de l’incubateur Apache qui gagne en popularité, basé sur l’unification du batch et du streaming, et dont la signature est une gestion du temps (event time vs processing time) qui lui confère toute sa puissance. Son API riche permet de découper les étapes de processing en unités de calcul modélisant un dataflow.
@@ -82,7 +82,7 @@ On remercie également [Confluent](https://twitter.com/confluentinc) et [dataArt
 On remercie de même l’ensemble des participants. Un spécial grand merci à ceux qui nous ont fait des retours. Ça fait plaisir de voir que l'ambiance était une fois de plus au rendez-vous et que vous voulez tous en refaire :)
 Et ceci bien que les exercices étaient parfois un peu compliqués.
 
-![PHOTO 5](/public/images/mktd6/5.jpg)
+![PHOTO 5](/public/images/mktd6/5.png)
 
 On se retrouve au prochain MKTD ?
 
