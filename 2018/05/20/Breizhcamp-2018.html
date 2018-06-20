@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  lastBuildDate : Tue, 22 May 2018 10:41:06 +0200 -->
+<!--  lastBuildDate : Wed, 20 Jun 2018 09:20:59 +0200 -->
 <html>
 <head>
   
@@ -394,7 +394,7 @@ Après un sondage rapide dans la salle, 90% des gens étaient venu pour faire la
 
 <h2 id="repas">Repas</h2>
 
-<p>À ce niveau, certaines autres conférences feraient bien de s’inspirer de BreizhCamp. Le repas était top, copieux et bon, avec des plats chauds et des couverts en bois :+1:</p>
+<p>À ce niveau, certaines autres conférences feraient bien de s’inspirer de BreizhCamp. Le repas était top, copieux et bon, avec des plats chaud et des couvert en bois :+1:</p>
 
 <p><img src="https://lh3.googleusercontent.com/8DDzOI7b6HmYHlGU02RBT1UEgt5ZYncGefpzVi9QAEyZGZgT3wM090ZD6COwD7ZutOI7gvJ61oFBqiULosk9nV7kQRqMl3zvr9vZN5e00VFKw9AxN-KHdoXSfodSSKk5VN_FGvMtSmzhGh4FkVCQL_0yyJ9bw_200VoEhaUpUpUGtYDIEFtwISbztqbPuk_g3VXMOqg1DoOUm0WeBE4Lb-Hm9RhONk7VN5T1Swkqn66vsmLgGrke_cFhRxlEMz3CW985BgmGA_oQmNa1oGhi1j6-dBplxAE5qSp06v8vpzDuq1fZy6__E6Qg1aGf7Ly3Kpr_qTKdHwVdDPtI9B9Jnmiyfa8jaozAKI_u2Ed1-xwVtqT3P5dG1zgSicJtUY9hl7KBWIGhQjJV1Gw_9Ke3CPiALM1iDXj7kkdYyrvP_7qeT10SgLbxpl_ZDu2cVL1ygUHQkO4Ws_DcIfanre0BmeOWTx5JbC5RgtT190uoyLSI193bd9Owdl6m0H5JKVYXd_Vdt6TpbYxHW3PRM2-2m6eM3vh_13TUphKDGVyb2dJCcZ4iKBZjkOdFgAtvBq1HJrTAyG6OIRisBcUhPNiHDWeZp0v0pcHzoRs5PXF_UtqU7mBDFex4R7HwEZ7Nb6wIuXCWc8b28JcQobH-4lQgJ7slHMFU-jX6TQ=w965-h724-no" alt="" /></p>
 
@@ -406,7 +406,7 @@ Après un sondage rapide dans la salle, 90% des gens étaient venu pour faire la
 
 <p><img src="https://cdn-images-1.medium.com/max/873/1*4ZVE4qOEAcVu1EEV1SrKQw.gif" alt="Exoplanet" /></p>
 
-<p>Avis perso : super workshop, ca donne envie de tester un peu plus Warp10, mais warpscript est assez rebutant (langage à pile). Vivement qu’il y ait des DSL au dessus ou des drivers qui permettent d’utiliser le scripting via des langages de plus haut niveau.</p>
+<p>Avis perso: super workshop, ca donne envie de tester un peu plus Warp10, mais warpscript est assez rebutant (langage à pile). Vivement qu’il y ait des DSL au dessus ou des drivers qui permettent d’utiliser le scripting via des langages de plus haut niveau.</p>
 
 <h2 id="jour-2">Jour 2</h2>
 
@@ -521,15 +521,16 @@ L’idée est de forcer le processeur à faire une mauvaise prédiction de branc
 
 <p>Voici une façon de faire ceci :</p>
 
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+<div class="language-c highlighter-rouge"><div class="highlight"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
 2
 3
-4
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">lenArray</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
+4</pre></td><td class="code"><pre><span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">lenArray</span><span class="o">&gt;</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">varSecret</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="n">junk</span> <span class="o">=</span> <span class="n">array2</span><span class="p">[</span><span class="n">varSecret</span><span class="p">]</span>
 <span class="p">}</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
+</pre></td></tr></tbody></table>
+</div>
+</div>
 
 <p>Si on passe systématiquement des valeurs <code class="highlighter-rouge">i</code> inférieures à <code class="highlighter-rouge">lenArray</code>, le processeur va prédire qu’il faut rentrer dans le <code class="highlighter-rouge">if</code>. Si, après ce temps de chauffe, on met une valeur supérieure à cette taille, on va lire une valeur dans le cache qui n’appartient pas à ce tableau.</p>
 
