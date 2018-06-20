@@ -19,34 +19,7 @@ permalink: job
   <h1>{% t jobs.offers.title %}</h1>
 
   <form class="list">
-    {% assign sorted_job = site.jobs | sort:"order" | where: "lang", site.lang  %}
-    {% for job in sorted_job %}
-      <div class="job" id="{{ job.id }}">
-        <a href="#{{ job.id }}">
-          <span>
-            <img alt="{{ job.title }}" src="{{ job.image }}">
-          </span>
-          <div class="title">
-            <div>{% t job.title %}</div>
-          </div>
-          <div class="techno">
-            {% for techno in job.techno %}
-            <span>{{ techno }}</span>
-            {% endfor %}
-          </div>
-          <div class="open">
-            <i class="fa fa-chevron-right"></i>
-          </div>
-          <div class="close">
-            <i class="fa fa-chevron-down"></i>
-          </div>
-        </a>
-        <div class="content">
-          {{ job.excerpt | remove: '<p>' | remove: '</p>' }}
-          <a href="{{job.url}}">{% t jobs.offers.readmore %}</a>
-        </div>
-      </div>
-    {% endfor %}
+    <!-- feed with firebase -->
   </form>
 
   <div class="nojob">

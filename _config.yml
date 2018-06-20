@@ -100,8 +100,6 @@ collections:
     output: false
   teams:
     output: false
-  jobs:
-    output: true
   profiles:
     output: false
 
