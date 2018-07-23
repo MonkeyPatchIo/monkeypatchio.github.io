@@ -176,7 +176,11 @@ $navWidth: 15rem;
       display: none;
     }
     section.post {
-      margin-left: $globalMargin;
-    }
+      margin-left: 0;
+      padding: 0 1rem;
+      article {
+        width: auto;
+      }
+    } 
   }
 }
