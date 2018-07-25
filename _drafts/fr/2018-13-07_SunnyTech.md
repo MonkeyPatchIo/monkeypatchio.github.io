@@ -26,8 +26,8 @@ Les [slides](https://noti.st/lostinbrittany/xyJkQe/the-web-components-interopera
 
 ![Horacio Gonzalez](https://lh3.googleusercontent.com/l5vtYsb6Rxz8Phmz-HCdXJA1SiQSE97XEwsQvIBgiBXtfMyW7vxhC3eS-8VxoVP12mknxY62Q6pN-gipwexls7xzx2rpD0hxd3eu3-DHZxlCZy2i95_3IHLWt-Yr6_DuTGK4Ov6e4ZELVGlZPYN_87o3lt09UbB8UAJw7EopVI21VkT_Col1cXXj8PJlZUwdTMVhZa9ah5jVO2RmhXMlBN2kSuRJiTF4WWr0tvly4j_IovWKtu2NNkKHkOwCeVdV9QWnDHelJI2kknS5TWmfBTRFEWmj2bl-1Y_EjgFnmIVTVE5ojzk3xuZyOvzATZVZDARWvopLfvVkqmQ_ElMvipIjV2uqAyB67mvV0rYKYTOxpRelsWdzbrx-8g_W3mFZ1XO-bS8siI2DZI-boeLcLNvljdo0ycRPnn-OCp17t7Gn7dMPgGYoEezFDiOLC9GIC7tBoKz2DHO95mKuVmJaTGvRL_oEGBix4fZDVpwtHvC2tRJCRIYYc1zTRlEXTyMsjnpVVhPXGyPmRIfYYSD3Eud7rv5qp14DHv4XeZ-P-fLWc5H-o95bYHXt6x2nfAdsX3SJv2ZVZLIr4ho7qdD1KZLjYh_MybKvjsHTEyGctO8l-sKB8HFyQtaCiS-6Vw6aeROVIVzbJErBtOviYZ9ibEDXHtbbDrLI=w736-h1104-no)
 
-[Horacio Gonzalez](https://twitter.com/LostInBrittany) nous fait un rappel sur des _Web Components_, en parcourant les spécifications de _Custom Elements_, du _Shadow DOM_, et des _HTML Templates_.
-En montant comment on écrit des composants web natif (vanillia), Horcacio nous explique le principe de fonctionnement, mais aussi tout le _boilerplate_ nécessaire.
+[Horacio Gonzalez](https://twitter.com/LostInBrittany) nous fait un rappel sur les _Web Components_, en parcourant les spécifications de _Custom Elements_, du _Shadow DOM_, et des _HTML Templates_.
+En montrant comment on écrit des composants web natif (vanillia), Horcacio nous explique le principe de fonctionnement, mais aussi tout le _boilerplate_ nécessaire.
 
 Ensuite il nous parle rapidement de [Polymer](https://www.polymer-project.org/), mais nous présente surtout les autres façons de faire des _Web Component_ avec [Slim.js](http://slimjs.com/), [Bram](https://bramjs.org/), [SkateJS](http://skatejs.netlify.com/), [Stencil](https://stenciljs.com/).
 
