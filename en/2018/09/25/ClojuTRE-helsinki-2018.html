@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<!--  lastBuildDate : Tue, 25 Sep 2018 23:29:41 +0200 -->
+<html>
+<head>
+  
+  
+  <title>ClojuTRE & SmallFP 2018 — Review</title>
+  
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en" />
+  <meta name="language" content="en" />
+  <!-- Google site verification -->
+  <meta name="google-site-verification" content="Gq_ytzUtfYn95WsiH66e4Lfb8zANT-LUwD8JgH9xXdw" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="keywords" content="Expertise informatique, Dévelopement informatique" />
+
+  <!-- RSS feed -->
+  <link rel="alternate" type="application/rss+xml" title=" RSS Feed" href="http://www.monkeypatch.io/blog/feed.xml" />
+
+  <!-- SEO -->
+  <meta property="og:title" content="ClojuTRE & SmallFP 2018 — Review" />
+
+  
+  <meta property="og:description" content="ClojuTRE is a Clojure conference happening in Finland
+since 2012.
+
+I was super eager to attend a Clojure conference this year, so the addition of
+SmallFP just before ClojuTRE finally amortized the travel cost.
+
+" />
+  <meta name="description" content="ClojuTRE is a Clojure conference happening in Finland
+since 2012.
+
+I was super eager to attend a Clojure conference this year, so the addition of
+SmallFP just before ClojuTRE finally amortized the travel cost.
+
+" />
+  
+  
+  
+    <meta name="author" content="Emmanuel Vinas">
+    <link rel="author" href="https://plus.google.com/+vinasemmanuel"/>
+    
+      <link rel="publisher" href="https://plus.google.com/+vinasemmanuel"/>
+    
+  
+    <meta name="author" content="Igor Laborie">
+    <link rel="author" href="https://plus.google.com/+IgorLaborie"/>
+    
+      <link rel="publisher" href="https://plus.google.com/+IgorLaborie"/>
+    
+  
+    <meta name="author" content="Bruno Chauvet">
+    <link rel="author" href="https://plus.google.com/"/>
+    
+      <link rel="publisher" href="https://plus.google.com/"/>
+    
+  
+    <meta name="author" content="Arnaud bos">
+    <link rel="author" href="https://plus.google.com/"/>
+    
+      <link rel="publisher" href="https://plus.google.com/"/>
+    
+  
+    <meta name="author" content="Matthieu Caylet">
+    <link rel="author" href="https://plus.google.com/"/>
+    
+      <link rel="publisher" href="https://plus.google.com/"/>
+    
+  
+    <meta name="author" content="Alteanne Fernandez">
+    <link rel="author" href="https://plus.google.com/"/>
+    
+      <link rel="publisher" href="https://plus.google.com/"/>
+    
+  
+    <meta name="author" content="Guillaume Andrieu">
+    <link rel="author" href="https://plus.google.com/"/>
+    
+      <link rel="publisher" href="https://plus.google.com/"/>
+    
+  
+
+  
+    <meta property="og:type" content="article"/>
+    <meta property="og:article:published_time" content="2018-09-25T00:00:00+02:00">
+    
+      <meta property="og:article:author:username" content="Emmanuel Vinas">
+    
+      <meta property="og:article:author:username" content="Igor Laborie">
+    
+      <meta property="og:article:author:username" content="Bruno Chauvet">
+    
+      <meta property="og:article:author:username" content="Arnaud bos">
+    
+      <meta property="og:article:author:username" content="Matthieu Caylet">
+    
+      <meta property="og:article:author:username" content="Alteanne Fernandez">
+    
+      <meta property="og:article:author:username" content="Guillaume Andrieu">
+    
+    
+    <meta property="og:article:tag" content="ClojuTRE">
+    
+    <meta property="og:article:tag" content="Clojure">
+    
+    <meta property="og:article:tag" content="conf">
+    
+    <meta property="og:article:tag" content="FunctionalProgramming">
+    
+  
+  
+  
+  <meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-head-blue-x126.png"/>
+
+  <meta property="og:url" content="http://www.monkeypatch.io/2018/09/25/ClojuTRE-helsinki-2018.html"/>
+  <meta property="og:site_name" content="MonkeyPatch"/>
+  
+  <!-- Twitter tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MonkeyPatch_io" />
+  <meta name="twitter:url" content="http://www.monkeypatch.io/2018/09/25/ClojuTRE-helsinki-2018.html">
+  <meta name="twitter:title" content="ClojuTRE & SmallFP 2018 — Review">
+  <meta name="twitter:description" content="ClojuTRE is a Clojure conference happening in Finland
+since 2012.
+
+I was super eager to attend a Clojure conference this year, so the addition of
+SmallFP just before ClojuTRE finally amortized the travel cost.
+
+">
+  <meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-head-blue-x126.png">
+
+  <!-- Lang --> 
+  <link rel="alternate" hreflang="en" href="http://www.monkeypatch.io/en/index" />
+  <link rel="alternate" hreflang="fr" href="http://www.monkeypatch.io/index" />
+  
+  <meta property="og:locale:alternate" content="fr_FR"/>
+  <meta property="og:locale" content="en_US"/>
+  
+
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link id="theme-style" rel="stylesheet" href="/css/main.css">
+
+ <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    
+      "@type": "BlogPosting", // 
+      "mainEntityOfPage": "http://www.monkeypatch.io/2018/09/25/ClojuTRE-helsinki-2018.html", 
+    
+    "author": [
+      
+      { "@type": "Person", "name": "Emmanuel Vinas" },
+      
+      { "@type": "Person", "name": "Igor Laborie" },
+      
+      { "@type": "Person", "name": "Bruno Chauvet" },
+      
+      { "@type": "Person", "name": "Arnaud bos" },
+      
+      { "@type": "Person", "name": "Matthieu Caylet" },
+      
+      { "@type": "Person", "name": "Alteanne Fernandez" },
+      
+      { "@type": "Person", "name": "Guillaume Andrieu" }
+      
+    ],
+    "name": "MonkeyPatch",
+    "headline": "ClojuTRE & SmallFP 2018 — Review",
+    "image": "http://www.monkeypatch.io/public/images/logos/logo-mkp-head-blue-x126.png",
+    
+      "datePublished": "2018-09-25T00:00:00+02:00",
+      "dateModified": "2018-09-25T00:00:00+02:00",
+      "datePublished": "2018-09-25T00:00:00+02:00",
+    
+    "publisher": {
+      "@type": "Organization",
+      "name": "MonkeyPatch",
+      "logo": "http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png",
+      "sameAs": [
+        "https://twitter.com/monkeypatch_io","https://www.linkedin.com/company/monkeypatch-io"
+      ]
+    },
+    "description": "Société de conseil et d'expertise en informatique spécialisée dans les nouvelles technologies.",
+    "url": "http://www.monkeypatch.io/2018/09/25/ClojuTRE-helsinki-2018.html"
+  }
+</script>
+</head>
+
+<body class="post">
+  <header>
+  <div class="menu">
+    <div class="logo">
+      <a href="/en/index">
+        <img alt="Monkey Patch" src="/public/images/logos/logo-monkey.svg">
+      </a>
+    </div>
+    
+    <nav class="lang">
+      <ul>
+        <li class="active">
+          <a href="en/2018/09/25/ClojuTRE-helsinki-2018.html" >EN</a>
+        </li>
+        <li class="sep">|</li>
+        <li class="">
+          <a href="/2018/09/25/ClojuTRE-helsinki-2018.html" >FR</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <nav class="menu">
+      <ul>
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li class="">
+              <a href="/en/expert">Our expertise</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/about">Our thoughts</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/careers">Be a Monkey</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/job">Our Jobs</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/contact">Contact</a>
+            </li>
+          
+        
+        <li class="">
+          <a href="/en/blog">Blog</a>
+        </li>
+      </ul>
+    </nav>
+      
+    <nav class="hamburger">
+      <label for="menu-hamburger">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+    </nav>
+    
+  </div>
+  <input type="checkbox" id="menu-hamburger"/>
+  <nav class="menu-hamburger">
+     <ul>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li class="">
+              <a href="/en/expert">Our expertise</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/about">Our thoughts</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/careers">Be a Monkey</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/job">Our Jobs</a>
+            </li>
+          
+        
+          
+            <li class="">
+              <a href="/en/contact">Contact</a>
+            </li>
+          
+        
+        <li class="">
+          <a href="/en/blog">Blog</a>
+        </li>
+      </ul>
+      <ul class="lang">
+        <li class="active">
+          <a href="en/2018/09/25/ClojuTRE-helsinki-2018.html" >EN</a>
+        </li>
+        <li class="">
+          <a href="/2018/09/25/ClojuTRE-helsinki-2018.html" >FR</a>
+        </li>
+      </ul>
+  </nav>
+</header>
+
+  <main>
+    <nav class="index"><!-- fill with JS --></nav>
+    <section class="post">
+      <h1 id="top">
+        <span>ClojuTRE & SmallFP 2018 — Review</span>
+        <div class="share">
+          <a class="twitter-share-button"
+            href="https://twitter.com/share"
+            data-size="large"
+            data-via="monkeypatch_io"
+            data-text="ClojuTRE & SmallFP 2018 — Review"
+            data-hashtags="ClojuTRE,Clojure,conf,FunctionalProgramming"
+            >Tweet</a>
+        </div>
+      </h1>
+
+      <span class="date">
+
+
+  September 25, 2018
+
+</span>
+
+      <div class="tags">
+        
+          <span>ClojuTRE</span>
+        
+          <span>Clojure</span>
+        
+          <span>conf</span>
+        
+          <span>FunctionalProgramming</span>
+        
+      </div>
+
+      <article><p><a href="https://clojutre.com">ClojuTRE</a> is a Clojure conference happening in Finland
+since 2012.</p>
+
+<p>I was super eager to attend a Clojure conference this year, so the addition of
+SmallFP just before ClojuTRE finally amortized the travel cost.
+<!--more--></p>
+
+<p><img src="http://i-rant.arnaudbos.com/img/clojutre-finland-2018-review/boats.jpg" alt="Helsinki" /></p>
+
+<hr />
+
+<h1 id="tldr">tl;dr</h1>
+
+<ul>
+  <li>
+    <p>SmallFP did deliver a great experience by allowing an audience of
+Clojure developers to hear about other functional programming languages and
+concepts.</p>
+  </li>
+  <li>
+    <p>The topics were a nice mixture of industry practices, libraries and research.</p>
+  </li>
+  <li>
+    <p>The venue was <strong>a Tram museum</strong>(!)</p>
+  </li>
+  <li>
+    <p>I bought bear salami in Helsinki’s Old Market Hall… <strong>BEAR SALAMI!</strong></p>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="preamble">Preamble</h1>
+
+<p>This year I was super eager to attend a Clojure conference and was
+looking forward to EuroClojure. But after the realization that it would not
+hapen, I switched my focus to ClojuTRE as it was one of the most
+popular one in Europe.</p>
+
+<p>For the second time, ClojuTRE has been colocated with SmallFP, also a one day
+conference, focusing on other functional programming languages.</p>
+
+<p>The addition of SmallFP is a very good initiative, it amortizes the cost of
+travelling and it also encourages cross-polinization and open-minded/honest
+discussions in the functional programming community.</p>
+
+<p><img src="http://i-rant.arnaudbos.com/img/clojutre-finland-2018-review/cathedral.jpg" alt="Helsinki Cathedral" /></p>
+
+<h1 id="smallfp">SmallFP</h1>
+
+<h2 id="ocaml-reborn-fullstack-applications-with-reasonml-antónio-monteiro">OCaml, REborn: fullstack applications with ReasonML (António Monteiro)</h2>
+
+<p><a href="@anmonteiro90">António Monteiro</a> has been a ClojureScript developer, speaker
+and contributor for a few years, and although doing Clojure all day for work,
+he recently switched focus onto ReasonML on his spare time, and he explains why
+in this talk.</p>
+
+<p>Coming from ClojureScript, it’s not a surprise that António values data-driven
+applications, and ReasonML seems to suits well this kind of applications too.<br />
+ReasonML is a modern new dialect of OCaml aimed at JavaScript developers and
+provides a toolchain for fullstack applications.</p>
+
+<p>It provides a statically checked type system which enables developers to share
+objects between backend and frontend and catch errors at compile time.<br />
+Unlike some statically typed programming languages, like Haskell for instance,
+ReasonML is not a pure language, as the type system will not check and prevent
+the developer to do side effects, among other things.<br />
+As António puts it, the type system is still 100% sound, but more “practical”.</p>
+
+<p>Its type system seems to align well with GraphQL types and schemas, and
+provides type-checked queries ensuring consistency between the client and server
+implementation, when their code is co-located. I’m wondering what the story is
+when they are not though…</p>
+
+<p>At MonkeyPatch, we’ve recently interviewed a candidate who implemented his
+coding test at home in ReasonML (&amp; Reason React).</p>
+
+<p>Having a candidate handing us this nice piece of frontend code brightened
+up my day. I look forward to see the future of ReasonML.</p>
+
+<p><a href="https://clojutre.org/2018/#anmonteiro">Abstract, slides and video available here</a>.</p>
+
+<h2 id="interactive-functional-gpu-accelerated-programming-in-clojure-dragan-djuric">Interactive, Functional, GPU Accelerated Programming in Clojure (Dragan Djuric)</h2>
+
+<p>The recent surge of machine learning, deep learning, AI and whatnot has made the
+ecosystem of libraries and tools to “do data science” to grow quickly.</p>
+
+<p>In the quest of performance, data scientists value every processing unit
+cycle and typically use low-level programming languages such as C or C++ rather
+than high-level ones. But even then, the performances are dramatically better
+when leveraging the power of GPU grids with special versions of these languages.</p>
+
+<p>On the other hand, programmers typically counterbalance the rigidity,
+low-level aspects and scaling issues of these languages by using high-level
+programming languages such as R, Python or Java as wrappers.</p>
+
+<p><a href="https://twitter.com/draganrocks">Dragan Djuric</a> is know in the Clojure
+community for his work on libraries allowing developers to leverage the power
+of GPU kernels, from the comfort of the Clojure REPL.</p>
+
+<p>The numbers showed in his slides comparing runtime speed for basic “number
+crunching” tasks are telling, and he presents a style of programming which
+is functional and interactive as another approach to notebook based programming,
+which seems to be problematic:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">slides for my &quot;I Don&#39;t Like Notebooks&quot; <a href="https://twitter.com/hashtag/JupyterCon?src=hash&amp;ref_src=twsrc%5Etfw">#JupyterCon</a> talk:<a href="https://t.co/30peBFwTbv">https://t.co/30peBFwTbv</a></p>&mdash; Joel Grus (@joelgrus) <a href="https://twitter.com/joelgrus/status/1033035196428378113?ref_src=twsrc%5Etfw">August 24, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>I have to admit I’m far (oh so far) from being an expert in this field (I’ve
+just tried some basic introductory exercises a few times), but this presentation
+really resonated with me, and a lot of the pain points outlined in this talk by
+Joel Grus could, perhaps disappear with the use of a proper REPL.</p>
+
+<p>I think Clojure’s style for interactive development can provide a good story
+for agile and iterative data science projects.</p>
+
+<p><a href="https://clojutre.org/2018/#dragandjuric">Abstract and video available here</a>.</p>
+
+<h2 id="i-used-elm-in-production-and-it-cost-me-my-job-annaia-berry">I used Elm in production and it cost me my job (Annaia Berry)</h2>
+
+<p><a href="https://twitter.com/ann_arcana">Annaia Berry</a> delivered an accurate, yet oh so
+funny talk on how Elm has provided her and her team with a really productive
+and stable environment. New feature development was so quick, and maintenance
+tasks so infrequent, that it wasn’t necessary for the company hiring her as
+a consultant to keep her.</p>
+
+<p>This is a story about how functional programming is a comptetitive advantage
+but also a double edged sword for programmers, who need to live and pay the bills
+in this world where productivity is not necessarily accurately measured nor
+valued.</p>
+
+<p>And then the talks takes an unexpected turn <a href="https://www.youtube.com/watch?v=LEZv-kQUSi4">to narcissistic design</a>.
+Describing all the things we can still do to keep our jobs by complecting some
+aspects of our work so much as to be the only ones able to maintain it.</p>
+
+<p>It was a very entertaining talk, I encourage you to <a href="https://clojutre.org/2018/#jarcane">watch it here</a>.</p>
+
+<h2 id="meetings-with-remarkable-trees-bodil-stokke">Meetings With Remarkable Trees (Bodil Stokke)</h2>
+
+<p>As a good clojurist, I’m pretty familiar with Bagwell Tries (aka “Hash array
+mapped tries”) and Hickey Tries (aka “Persistent Bit-partitioned Vector Tries”
+or “Bitmapped Vector Tries”) but I’m less familiar with Finger Trees.</p>
+
+<p>If you don’t know what those data structures are or what they provide then good
+news, <a href="https://twitter.com/bodil">Bodil Stokke</a> just gave a quick reminder of
+their Big O properties and quickly presented the one data structure to rule them
+all: RRB-Trees (aka Relaxed Radix Balanced Trees).</p>
+
+<p>In this presentation, Hickey Tries are explored at length and reimplemented in
+JavaScript. Sadly, Finger Trees are not studied as much and are just presented
+for Big O comparison. Finally, RRB-Trees are introduced in the end to outline
+their awesome properties.</p>
+
+<p>In summary: review your Big O, study awesome data structures and worship Phil Bagwell.</p>
+
+<p><a href="https://clojutre.org/2018/#bodil">Abstract, slides and video available here</a>.</p>
+
+<h1 id="clojutre">ClojuTRE</h1>
+
+<h2 id="documenting-the-clojurescript-ecosystem-martin-klepsch">Documenting the Clojure/Script Ecosystem (Martin Klepsch)</h2>
+
+<p>If it wasn’t clear already I’m a huge fan of Clojure, and as a user for more
+than five years, I’m pretty familiar with the language and its ecosystem.<br />
+But regularly, through polls or random blog posts on the Web, we hear about
+beginners having a hard time getting started setting up their environment,
+choose libraries, understand how to use libraries or simply grok the docstring
+of some core functions.</p>
+
+<p>To be honest it was my first impression too, although I remember being amazed by
+reading the core functions docstrings. They <strong>seem</strong> difficult to grasp sometimes,
+yes, but they are concise and accurate.</p>
+
+<p>After this barrier to entry, the Clojure programmers tend to quickly skim through
+the documentation of a library, and if the documentation is not clear enough,
+jump straight into the code, see what data goes in and what goes out,
+fire a REPL to start experimenting.</p>
+
+<p>However from a beginner’s point of view it is a bit rude, and we could all
+benefit from better documentation.</p>
+
+<p>Rust has <a href="docs.rs">docs.rs</a>, and now, Clojure has <a href="https://cljdoc.xyz/">cljdoc!</a></p>
+
+<p>Cljdoc is an initiative by <a href="https://twitter.com/martinklepsch">Martin Klepsch</a> to
+encourage library authors to write better documentation without the hassle
+of building it.</p>
+
+<p>The project is young but very promising, and the roadmap includes
+interesting features such as attaching code examples to vars or integrating
+<code class="highlighter-rouge">clojure.spec</code> to navigate from function to function inside or accross library
+boundaries.</p>
+
+<p>There is no video available for this talk as Martin has asked the conference
+organizers to defer its release for after he’s back from a sailing trip, so he
+can answer questions.</p>
+
+<p>You can still <a href="https://clojutre.org/2018/#martinklepsch">read the abstract here</a>.</p>
+
+<h2 id="carp-a-language-for-the-21st-century-veit-heller">Carp: A Language for the 21st Century (Veit Heller)</h2>
+
+<p>In a tweet:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Carp, a type-inferred (like Haskell), borrow-checked (like Rust) Lisp-1 (like Clojure): <a href="https://t.co/LkekbtvXa3">https://t.co/LkekbtvXa3</a></p>&mdash; (λ. borkdude) (@borkdude) <a href="https://twitter.com/borkdude/status/1043582174014902274?ref_src=twsrc%5Etfw">September 22, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Pretty exciting right?</p>
+
+<p>Veit Heller gave us a gentle introduction to the language he is a core
+contributor to. Carp is designed for realtime applications: games and graphical
+libraries.</p>
+
+<p>It is not ready for production yet, but it will be interesting to see how it
+evolves and how fast brave people will adopt it.</p>
+
+<p>You can find <a href="https://clojutre.org/2018/#hellerve">the abstract here</a> and the
+video by following the link in the tweet above.</p>
+
+<h2 id="native-clojure-with-graalvm-jan-stępień">Native Clojure with GraalVM (Jan Stępień)</h2>
+
+<p>It is impossible to not hear about GraalVM these days, and the Clojure
+community seems to also be interested in it.</p>
+
+<p>In this presentation <a href="https://twitter.com/janstepien">Jan Stępień</a> shows interesting
+numbers comparing the binary sizes, startup times and memory usages of different
+packaging/runtime/targets.</p>
+
+<p>He shows that thanks to GraalVM, Clojure can actually become a good candidate to
+command line utilities too, giving us the power of Clojure for data manipulation
+to transform incoming data and chain small utilities following the Unix
+philosophy.</p>
+
+<p>He goes on demonstrating a simple key/value store implementation and its
+packaging as a native binary inside a Docker image resulting in a <strong>13MB</strong> (!)
+image size.</p>
+
+<p><a href="https://clojutre.org/2018/#janstepien">Abstract, slides and video available here</a>.</p>
+
+<p>On a side note, if you haven’t read this paper (below) by Oracle Labs people about
+Truffle, I encourage you to do so now!</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Practical Partial Evaluation<br />for High-Performance Dynamic Language Runtimes.<br />&quot;This separation of concerns reuses a language-agnostic optimizing compiler and only requires an implementation of language semantics as an interpreter in a managed host language&quot;<a href="https://t.co/owgOD5K0Gl">https://t.co/owgOD5K0Gl</a></p>&mdash; Arnaud Bos (@arnaud_bos) <a href="https://twitter.com/arnaud_bos/status/994190039155388416?ref_src=twsrc%5Etfw">May 9, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>Obviously I haven’t covered all of the talks in this review, I’ve tried to stick
+with the ones that I knew I could summarize properly, but they are not necessarily
+the only ones I’ve found interesting.<br />
+If you are eager for more I encourage you to watch the other talks on youtube.
+The organizers have done an amazing work at publishing all the videos in under
+a week, and the 25 minutes long format is ideal for “later watching”.</p>
+
+<p>Finally, I’d like to address a giant thank you to <a href="http://www.monkeypatch.io/">MonkeyPatch</a>
+(my employer) for allowing the budget to attend <strong>yet another conference</strong>!</p>
+</article>
+
+      <div class="authors">
+        
+          <div class="author">
+            <a href="https://twitter.com/arnaud_bos" rel="author">
+              <img src="https://ca.slack-edge.com/T1H5KD6N6-U30C1P23G-a63601ba6c7d-512" alt="Arnaud bos">
+              <span>Arnaud bos</span>
+            </a>
+          </div>
+        
+      </div>
+    </section>
+
+    
+    <section class="comment">
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_config = function () {
+          this.page.url = "http://www.monkeypatch.io/en/2018/09/25/ClojuTRE-helsinki-2018.html";  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = "/2018/09/25/ClojuTRE-helsinki-2018.html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//monkeypatchblog.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+    
+    <footer class="top">
+    <div>
+      <h3>Get In Touch</h3>
+      <p>
+        <a class="contact" href="/encontact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/public/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Social Networks</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2016 MonkeyPatch -<a href="/en/terms">Terms and Conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+  </main>
+  <!-- Google Tag Manager -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KGGFWH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KGGFWH');
+  </script>
+  <!-- End Google Tag Manager -->
+  <script src="/public/scripts/modernizr-custom.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var i;
+  var nav = document.querySelector('nav.index');
+  var headers = document.querySelectorAll('article h1, article h2, article h3, article h4, article h5, article h6');
+
+  var createNavHeader = function(id, type, text) {
+    var link = document.createElement('a');
+    link.textContent = text;
+    link.setAttribute('href', '#' + id);
+
+    var text = document.createElement(type);
+    text.appendChild(link);
+    return text;
+  };
+  var createHeaderLink = function(id, text) {
+    var link = document.createElement('a');
+    link.classList.add('anchor');
+    link.textContent = text;
+    link.setAttribute('href', '#' + id);
+    return link;
+  };
+
+  var processHeader = function(header) {
+    var id = header.id;
+    var tag = header.tagName;
+    var text = header.textContent;
+
+    var navHeader = createNavHeader(id, tag, text);
+    nav.appendChild(navHeader);
+
+    var headerLink = createHeaderLink(id, text);
+    header.removeChild(header.firstChild);
+    header.appendChild(headerLink);
+  }
+
+  for (i = 0; i < headers.length; i++) {
+    processHeader(headers[i]);
+  }
+});
+  </script>
+  <!-- Share with Twitter -->
+  <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+</body>
+</html>
