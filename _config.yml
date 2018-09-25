@@ -10,6 +10,7 @@ gems:
   - jekyll-multiple-languages-plugin
   - octopress-autoprefixer
   - jekyll-press
+  - jekyll-redirect-from
 
 # Blog pagination
 paginate: 5

@@ -1,4 +1,5 @@
 ---
+redirect_from: "/2018/07/25/2018-13-07_SunnyTech.html"
 title: Retour SunnyTech 2018
 authors:
   - ilaborie
@@ -40,11 +41,11 @@ La démo est convaincante : l'intérêt majeur des Web Components c'est leur int
 
 Les [slides](https://github.com/d-plaindoux/parsec.kotlin), le dépôt [github](https://github.com/d-plaindoux/parsec.kotlin)
 
-![Dider Plaindoux](https://lh3.googleusercontent.com/8PvvAEV64YI4AOPDNWOAKexZXDr0ezF0iM0UTwhoPNXho1f0I_8APwDCy-6N3dvSOV86nVYcXZ1shGFCvyeekkcj8DQWCG1nWz4q4ATnh85slu3KdkA4VP5YuMtCcn3Me0Wrudq2res5XFySSmBFIXUl5yFevMC0PrRyf1duInDIofm8fMfhc3n9WheMqX2MzSVd0eANWGxx7MfCF5iNvecvlrjW3QgNAMPf2nH8YWN7qjjSxaIcGvcDG_MPygtqw_BB2vi8q9najR-5MwLjewD13igBR8nzukhcWBARt5Fh7uSoW8vY1gWZ4WPgreEyHyjwnAtUdd6roHAHskXFqicZcGTPASjGnuQaEc0vErmUs5Pb92roI8xfveAONXs7NfQcR1IQlHldvYnZOaNTjuOW1QhL1dxBmVzG24NtPN87FJx-rx40CQDI-kUr1Gd-kzZQcmsrIznAGebiDfYMa8u-BNfArO4v09URRfTrtHG9QFJnskv6P46MWKevObe_HlQfv25xLltARf8MXWc5fvWe1FRG1HtMY3XgnhRMirhw2a0HL4f0hQ3VEhLJt_8UqxMtFl8f8VhXKW0Bk4LgAjjFnfWjZxbACX0Jn0IqlXg2gZltm_2pTB2FP7YLHZ7td0FsBlKvdyd3kdooULzBeJuePqiCSBWs=w477-h318-no) 
+![Dider Plaindoux](https://lh3.googleusercontent.com/8PvvAEV64YI4AOPDNWOAKexZXDr0ezF0iM0UTwhoPNXho1f0I_8APwDCy-6N3dvSOV86nVYcXZ1shGFCvyeekkcj8DQWCG1nWz4q4ATnh85slu3KdkA4VP5YuMtCcn3Me0Wrudq2res5XFySSmBFIXUl5yFevMC0PrRyf1duInDIofm8fMfhc3n9WheMqX2MzSVd0eANWGxx7MfCF5iNvecvlrjW3QgNAMPf2nH8YWN7qjjSxaIcGvcDG_MPygtqw_BB2vi8q9najR-5MwLjewD13igBR8nzukhcWBARt5Fh7uSoW8vY1gWZ4WPgreEyHyjwnAtUdd6roHAHskXFqicZcGTPASjGnuQaEc0vErmUs5Pb92roI8xfveAONXs7NfQcR1IQlHldvYnZOaNTjuOW1QhL1dxBmVzG24NtPN87FJx-rx40CQDI-kUr1Gd-kzZQcmsrIznAGebiDfYMa8u-BNfArO4v09URRfTrtHG9QFJnskv6P46MWKevObe_HlQfv25xLltARf8MXWc5fvWe1FRG1HtMY3XgnhRMirhw2a0HL4f0hQ3VEhLJt_8UqxMtFl8f8VhXKW0Bk4LgAjjFnfWjZxbACX0Jn0IqlXg2gZltm_2pTB2FP7YLHZ7td0FsBlKvdyd3kdooULzBeJuePqiCSBWs=w477-h318-no)
 
 Pour ceux qui ne connaissent pas encore [Dider Plaindoux](https://twitter.com/dplaindoux), c'est un speaker singulier. Pour faire simple, à toutes ses présentations on apprend des tonnes de trucs, mais on sort aussi avec un petit mal au crâne.
 
-A partir du papier [Parsec: Direct Style Monadic Parser Combinators For The Real World - Daan Leijen & Erik Meijer - 2001](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/parsec-paper-letter.pdf) et au travers d'un live-coding dirigé par les tests, il nous montre comment une grammaire écrite sous la forme   [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) peut se traduire _simplement_ en Kotlin. Voici un exemple 
+A partir du papier [Parsec: Direct Style Monadic Parser Combinators For The Real World - Daan Leijen & Erik Meijer - 2001](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/parsec-paper-letter.pdf) et au travers d'un live-coding dirigé par les tests, il nous montre comment une grammaire écrite sous la forme   [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) peut se traduire _simplement_ en Kotlin. Voici un exemple
 
 ```ebnf
 Expr  ::= SExp [('+' | '*') Expr]
