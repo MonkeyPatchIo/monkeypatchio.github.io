@@ -43,6 +43,7 @@ exclude:
   - make.sh
   - Gemfile
   - Gemfile.lock
+  - README.md
 
 # Languages
 languages:
