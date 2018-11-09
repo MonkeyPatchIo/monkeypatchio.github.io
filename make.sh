@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+
 function __with_docker() {
-  docker run -ti --rm -v "$(pwd):/data" -u "$(id -u):$(id -g)" -p 4000:4000 loganmzz/jekyll:1.0.0 "$@"
+  docker run -ti --rm -v "${basedir}:/data" -u "$(id -u):$(id -g)" -p 4000:4000 loganmzz/jekyll:1.0.0 "$@"
 }
 
 function __with_jekyll() {
@@ -20,42 +24,45 @@ function __cmd_serve() {
 }
 
 function __cmd_deploy() {
-  DEST="../_master"
+  DEST="${basedir}_master"
 
   # Clean
-  if [ -d "$DEST" ]
-  then
-    pushd $DEST
-      echo "update master"
-      git pull origin master
-    popd
-  else
-    echo "Clone master"
-    git clone --depth 1 --branch master https://github.com/MonkeyPatchIo/monkeypatchio.github.io $DEST
-  fi
+  pushd "${basedir}"
+    [[ ! -d "$DEST" ]] || {
+      rm -rf "${DEST}"
+      git worktree prune
+    }
 
-  __cmd_build --drafts
+    git worktree add "${DEST}" 'master'
 
-  pushd $DEST
+    __cmd_build --drafts
+  popd
+
+  pushd "${DEST}"
+    git pull
     echo "Clean old files"
     find . -maxdepth 1 ! -name '.' ! -name '..' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
   popd
 
   echo "Copy new files"
-  mv ./_site/* $DEST
+  mv "${basedir}/_site"/* "${DEST}"
 
-  pushd $DEST
+  pushd "${DEST}"
     echo "Commit"
     git add -fA
     git commit -m "Update site at $(date)"
-    git push origin master
+    git push
+  popd
+
+  pushd "${basedir}"
+    git worktree remove "${DEST}"
   popd
 
   echo "Deployed Successfully!"
 }
 
 
-command=$1
+command="${1:-}"
 shift
 
 case "${command}" in
