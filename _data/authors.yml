@@ -32,12 +32,18 @@ mcaylet:
 
 afernandez:
   name: Alteanne Fernandez
-  twitter: alteannefr 
+  twitter: alteannefr
   email: alteanne@monkeypatch.io
   photo: https://ca.slack-edge.com/T1H5KD6N6-U51C423V4-785b1a19f083-48
 
 gandrieu:
   name: Guillaume Andrieu
-  twitter: glmxndr 
+  twitter: glmxndr
   email: guillaume@monkeypatch.io
   photo: https://ca.slack-edge.com/T1H5KD6N6-U6C1TJBL7-c93270152bdd-512
+
+lmauzaize:
+  name: Logan Mauzaize
+  twitter: loganmzz
+  email: logan@monkeypatch.io
+  photo: https://pbs.twimg.com/profile_images/915218711266684930/6lfxdqLu_400x400.jpg
