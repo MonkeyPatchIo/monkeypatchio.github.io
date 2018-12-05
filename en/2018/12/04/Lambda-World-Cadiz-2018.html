@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--  lastBuildDate : Tue, 04 Dec 2018 20:39:22 +0000 -->
+<!--  lastBuildDate : Wed, 05 Dec 2018 19:41:46 +0000 -->
 <html>
 <head>
   
@@ -458,13 +458,13 @@
 
 <p>[<a href="https://www.youtube.com/watch?v=sgmpVedCsNM">video</a>]</p>
 
-<p><a href="http://www.cs.bham.ac.uk/~kxm538/">Koko Muroya</a> and <a href="http://www.cs.bham.ac.uk/~wtc488/">Steven Cheung</a>, working under the direction of <a href="https://twitter.com/danghica">Dan Ghica</a>, gave a fantastic overview of their work on diagrammatic execution model. This keynote was somewhat on the theoric side, and applied to standard untyped $\lambda$-calculus (but hey, that’s where it all began).</p>
+<p><a href="http://www.cs.bham.ac.uk/~kxm538/">Koko Muroya</a> and <a href="http://www.cs.bham.ac.uk/~wtc488/">Steven Cheung</a>, working under the direction of <a href="https://twitter.com/danghica">Dan Ghica</a>, gave a fantastic overview of their work on diagrammatic execution model. This keynote was somewhat on the theoric side, and applied to standard untyped λ-calculus (but hey, that’s where it all began).</p>
 
 <p>There is a nice demo of their work <a href="https://koko-m.github.io/GoI-Visualiser/">hosted on github</a>, which was used during the presentation.</p>
 
-<p>In $\lambda$-calculus, just like in any programming context, you need an <a href="https://en.wikipedia.org/wiki/Evaluation_strategy">evaluation strategy</a> of a program. There are several such strategies (for instance Haskell is lazy, and uses “call by need” strategy, whereas OCaml is strict and uses “call by value” strategy). Muroya and Cheung’s presentation was on representing programs as diagrams, and then transform these diagrams using specific rewriting rules, depending on the strategy. This allows to visualize (and compare visually) how different strategies perform for a given problem in several dimensions (space, time, depths, etc.).</p>
+<p>In λ-calculus, just like in any programming context, you need an <a href="https://en.wikipedia.org/wiki/Evaluation_strategy">evaluation strategy</a> of a program. There are several such strategies (for instance Haskell is lazy, and uses “call by need” strategy, whereas OCaml is strict and uses “call by value” strategy). Muroya and Cheung’s presentation was on representing programs as diagrams, and then transform these diagrams using specific rewriting rules, depending on the strategy. This allows to visualize (and compare visually) how different strategies perform for a given problem in several dimensions (space, time, depths, etc.).</p>
 
-<p>In order to determine how to rewrite the program diagram, one must enrich it with a focus on one of the wires of the diagram (the focus is located at the red wire in the demo). Choosing where to put the focus first, and then how to reposition it after rewrites is a whole part of the strategy. When asked, Koko Muroya confirmed that the language described could be extended to simply typed $\lambda$-calculus by attaching types to the diagram wires.</p>
+<p>In order to determine how to rewrite the program diagram, one must enrich it with a focus on one of the wires of the diagram (the focus is located at the red wire in the demo). Choosing where to put the focus first, and then how to reposition it after rewrites is a whole part of the strategy. When asked, Koko Muroya confirmed that the language described could be extended to simply typed λ-calculus by attaching types to the diagram wires.</p>
 
 <p>Applied category theory is <a href="http://www.compositionality-journal.org/">booming</a> right now, and this work led me to wonder if they were considering describing their work in a categoretic way (yes, it seems). Some of the demos they showed were reminiscent of <a href="https://github.com/chorasimilarity/chemlambda-gui/blob/gh-pages/dynamic/README.md">chemlambda</a>: a graph evolving given rewriting rules (which incidently provided the illustration for <a href="https://johncarlosbaez.wordpress.com/2018/10/02/applied-category-theory-2019/">the ACT 2019 announcement</a>).</p>
 
