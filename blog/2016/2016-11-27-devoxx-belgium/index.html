@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Devoxx Belgium 2016">
+<meta property="og:description" content="Welcome to Antwerp (Anvers)
+
+A peine remis du DevFest Toulouse, je pars une semaine en Belgique pour aller à Devoxx.
+Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépendante : elle n’est organisée ni par Google ni par Oracle. Cela dit, ils étaient présents en temps que sponsors et speakers. C’est la plus grosse conférence auquelle j’ai assisté (3500 développeurs), ce n’est pas tous les jours qu’on a l’occasion de croiser des Brian Goetz, Venkat Subramaniam, &hellip; en Europe.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-11-27-devoxx-belgium/">
+
+<meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2016-11-27T00:00:00&#43;00:00">
+<meta property="article:modified_time" content="2016-11-27T00:00:00&#43;00:00"><meta property="og:site_name" content="MonkeyPatch">
+
+<meta itemprop="name" content="Devoxx Belgium 2016">
+<meta itemprop="description" content="Welcome to Antwerp (Anvers)
+
+A peine remis du DevFest Toulouse, je pars une semaine en Belgique pour aller à Devoxx.
+Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépendante : elle n’est organisée ni par Google ni par Oracle. Cela dit, ils étaient présents en temps que sponsors et speakers. C’est la plus grosse conférence auquelle j’ai assisté (3500 développeurs), ce n’est pas tous les jours qu’on a l’occasion de croiser des Brian Goetz, Venkat Subramaniam, &hellip; en Europe.">
+
+
+<meta itemprop="datePublished" content="2016-11-27T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2016-11-27T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="1805">
+
+
+
+<meta itemprop="keywords" content="Devoxx,Java,Reactive,functional,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Devoxx Belgium 2016">
+<meta name="twitter:description" content="Welcome to Antwerp (Anvers)
+
+A peine remis du DevFest Toulouse, je pars une semaine en Belgique pour aller à Devoxx.
+Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépendante : elle n’est organisée ni par Google ni par Oracle. Cela dit, ils étaient présents en temps que sponsors et speakers. C’est la plus grosse conférence auquelle j’ai assisté (3500 développeurs), ce n’est pas tous les jours qu’on a l’occasion de croiser des Brian Goetz, Venkat Subramaniam, &hellip; en Europe.">
+<meta name="generator" content="Hugo 0.55.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Devoxx Belgium 2016</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://monkeypatch.gitlab.io/palm-tree/styles/main.83776122339fa27920f36dc641ea3239b83e110bb9eeff2e046218f8885d042e.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog palm-tree-blog-2016-2016-11-27-devoxx-belgium">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="http://monkeypatch.gitlab.io/palm-tree/">
+                <img alt="Monkey Patch" src="/palm-tree/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#welcome-to-antwerp-anvers">Welcome to Antwerp (Anvers)</a></li>
+<li><a href="#java-maintenant">Java maintenant</a></li>
+<li><a href="#java-demain">Java demain</a></li>
+<li><a href="#programmation-réactive">Programmation réactive</a></li>
+<li><a href="#autres-sujets">Autres sujets</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#pour-finir-quelques-photos">Pour finir quelques photos</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Devoxx Belgium 2016</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="Devoxx Belgium 2016" data-hashtags="Devoxx,Java,Reactive,functional">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    27
+    novembre
+    2016
+</span>
+
+    <div class="tags">
+        
+        <span>Devoxx</span>
+        
+        <span>Java</span>
+        
+        <span>Reactive</span>
+        
+        <span>functional</span>
+        
+    </div>
+
+    <article><h2 id="welcome-to-antwerp-anvers">Welcome to Antwerp (Anvers)</h2>
+
+<p>A peine remis du <a href="https://devfesttoulouse.fr/">DevFest Toulouse</a>, je pars une semaine en Belgique pour aller à <a href="https://devoxx.be/">Devoxx</a>.
+Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépendante : elle n’est organisée ni par Google ni par Oracle. Cela dit, ils étaient présents en temps que sponsors et speakers. C’est la plus grosse conférence auquelle j’ai assisté (3500 développeurs), ce n’est pas tous les jours qu’on a l’occasion de croiser des <a href="http://cfp.devoxx.be/2016/speaker/brian_goetz">Brian Goetz</a>, <a href="http://cfp.devoxx.be/2016/speaker/venkat_subramaniam">Venkat Subramaniam</a>, &hellip; en Europe.</p>
+
+<p>Devoxx Belgique c’est aussi un peu la mère de toutes les conférences Devoxx et Voxxed qui se sont créées ces dernières années (France, Maroc, US, Pologne, &hellip;).
+C’est aussi la bataille des buzzwords, à votre avis qui est le perdant parmi : Docker, MicroServices, JEE, Programation Reactive?</p>
+
+<p>La conférence a lieu dans un complexe cinéma, on a donc de grandes salles, les écrans qui vont avec, et des fauteuils super confortables. Coté boissons les sodas, jus d’orange&hellip; sont open-bar ; du coup, il y a la queue aux toilettes. Les repas ne sont pas terribles (sandwich bof), c’est sur qu’en France les conférences sont particulièrement attentives aux repas ; à noter tout de même la soirée bières-frites, un moment parfait pour échanger sur des thèmes divers (Merci Pivotal pour les bières). On aura aussi le droit à une séance de ciné pour aller voir &ldquo;Snowden&rdquo;, séance que j’ai esquivée pour aller manger en ville avec quelques Toulousaing.</p>
+
+<p>Chose géniale, les vidéos sont uploadés sur Youtube dès le lendemain, vous pouvez donc les trouvées sur <a href="https://www.youtube.com/playlist?list=PLRsbF2sD7JVq_TvmCyJC3-oT9nBGdwq6s">Youtube</a>. Par exemple, vous avez une playlist avec les <a href="https://www.youtube.com/playlist?list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB">présentations les mieux notées</a>.</p>
+
+<p>Ici, c’est impossible de vous faire un compte rendu détaillé de toutes les conférences auxquelles j’ai assisté, donc je vais juste détailler quelques thématiques que j’ai particulièrement suivies.</p>
+
+<h2 id="java-maintenant">Java maintenant</h2>
+
+<p>Lors de plusieurs conférences, il y a eu des sondages à main levé pour savoir quelle version du JDK était utilisée, presque tout le monde est sur Java 8, ceux qui sont en dessous sont souvent liés à Android, cela dit on peut combler une partie du déficit avec <a href="https://github.com/orfjackal/retrolambda">RetroLambda</a>.</p>
+
+<p>La version 8 du langage apporte une touche de programmation fonctionnelle dans Java, ce qui ouvre de nouvelles portes. J’encourage fortement les équipes de développeurs à se poser la question : &lsquo;Comment ferait-on ça proprement à la mode Java 8 ?&rsquo; pendant leurs phases de conceptions, refactoring et dans les revues de codes.</p>
+
+<p>Aujourd’hui les designs patterns classiques (GoF par ex.) sont généralement obsolètes avec l’arrivé de cette nouvelle façon de développer, on y gagne tellement en termes de lisibilité, compacité, maintenabilité, testabilité. Attention toutefois à faire au maximum des fonctions pures (sans effet de bords).</p>
+
+<p>Cela dit, il y a encore une lourdeur ou certains manques dans les API (p. ex. il manque les tuples, <code>flatMap</code> et <code>Optional</code>), et l’on peut espérer que ces points soient améliorés dans le futur (voir plus bas).</p>
+
+<p>Voici quelques présentations intéressantes :</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Rmer37g9AZM">g∘f patterns (Mario Fusco)</a>: une revisite des patterns du GoF à l’aune des lambdas et des <code>@FunctionalInterface</code>.</li>
+<li><a href="https://www.youtube.com/watch?v=Ej0sss6cq14">Optional - The Mother of All Bikesheds (Stuart Marks)</a>: un point sur cette classe controversé du JDK. La bonne nouvelle on va pouvoir faire du <code>flatMap</code> plus facilement avec les <code>Optional</code> dans le JDK 9.</li>
+<li><a href="https://www.youtube.com/watch?v=b8YX45ymAeE">Java Collections : The Force Awakens (Raoul-Gabriel Urma and Richard Warburton)</a>: un point sur les collections en Java. C’est une excellente révision sur cette API indispensable à maîtriser.</li>
+<li><a href="https://www.youtube.com/watch?v=NcetKbGayZY&amp;index=7&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB">Refactoring to Java 8 (Trisha Gee)</a>: beaucoup d’exemple de refactoring, avec les impacts sur les performances.</li>
+</ul>
+
+<p>Vous trouverez bien sûr d’autres présentations sur le sujet, par exemple il y a eu deux talks parlant de <a href="http://www.javaslang.io/">JavaSlang</a> qui porte beaucoup d’éléments de <a href="http://www.scala-lang.org/">Scala</a> dans Java par exemple le PatternMatching.</p>
+
+<p>D’autres présentations sont plus dans l’esprit &lsquo;BrainFucking&rsquo;, je trouve ça amusant quand ça reste à petite dose :</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=bhSBpNXwa60">It’s Java Jim, But Not As We Know It (Simon Ritter)</a></li>
+<li><a href="https://www.youtube.com/watch?v=tSbK3A9QMmI">Lambda Puzzlers by Peter Lawrey</a></li>
+</ul>
+
+<h2 id="java-demain">Java demain</h2>
+
+<p>Je me suis aussi beaucoup tourné vers les présentations qui parlaient de Java 9, et des éventuelles nouveautés que l’on verra (peut-être) dans les versions postérieures du langage. Les architectes du langage qui avaient fait le déplacement cette année, c’est toujours marrant de les voir se serrer sur une petite table au resto, alors qu’on avait profité de la grande (premier arrivé, premier servi).</p>
+
+<p>On a d’abords eu le droit d’une présentation de Java 9, ainsi que du projet <a href="http://openjdk.java.net/projects/valhalla/">Valhalla</a> et du projet <a href="http://openjdk.java.net/projects/panama/">Panama</a> lors de la Keynote d’Oracle, c’est un excellent résumé concernant le futur de Java : <a href="https://www.youtube.com/watch?v=e9eSPtpiGkA">Keynote Session (Mark Reinhold and Brian Goetz)</a>.</p>
+
+<p>En gros il y a beaucoup de &lsquo;petites&rsquo; modifications internes dans Java 9, mais il y a surtout <a href="http://openjdk.java.net/projects/jigsaw/">Jigsaw</a> qui apporte la modularité. J’ai évité ce sujet que j’avais déjà pas mal suivi auparavant. Je pense que la modularité va apporter quelque chose d’indispensable en Java pour ne pas être trop vite distancé par les nouveaux langages système comme <a href="http://swift.org/">Swift</a> ou <a href="https://www.rust-lang.org/fr/">Rust</a>.</p>
+
+<p>J’ai quand même un peu peur que ce JDK prenne plus de temps que Java 8 à être adopté ; l’avenir nous le dira. Maven est plutôt bon dans la compatibilité avec Java 9, c’est plutôt rassurant.</p>
+
+<p>Autre nouveauté dans Java 9, l’arrivée d’un REPL : JShell. C’est assez intéressant, mais j’ai tellement pris l’habitude de m’en passer, qu’il va me falloir du temps pour trouver les usages au quotidien.</p>
+
+<p>Je suis aussi allé voir la présentation sur le nouveau client HTTP/2 (JEP 110), là j’ai été un peu déçu, car il est possible que ce soit considéré en &lsquo;incubation&rsquo; pour Java 9. J’espère que nous aurons une bonne surprise. L’usage du <code>CompletableFuture</code> est bienvenu pour les aspects asynchrones.</p>
+
+<p>Et après Java 9, que va-t-il se passer ? Les speakers d’Oracle sont très prudents sur les nouveautés qui sont présentées, il est tout à fait possible qu’elles soient différentes voir abandonnées par la suite. Voici une liste de ceux qui pourraient arriver (on parle pour Java &gt; 9) :</p>
+
+<ul>
+<li>Meilleure inférence de type, on pourrait voir des choses comme ça : <code>var url = new URL(&quot;...&quot;);</code></li>
+<li>Data Classes pour faire des trucs comme <code>class Point(int x, int y){}</code></li>
+<li>Un meilleur switch qui se rapprochera a du Pattern Matching, on pourrait voir les choses arrivées progressivement, d’autant plus avec les Data Classes.</li>
+<li><a href="http://openjdk.java.net/projects/valhalla/">Valhalla</a> étudie la possibilité d’une nouvelle organisation de la mémoire pour des données. Disons plus simplement ça correspondrait à la notion de  Value Class. Ces objets seraient passés par valeur (pas par référence) ce qui donnerait &ldquo;Codes like a class, works like an int&rdquo;. En gros ça permettrait aussi de faire des <code>List&lt;int&gt;</code>. Ce serait une énorme évolution dans le langage, j’ai beaucoup d’espoir sur cette évolution. Maintenant il ne faudrait pas que ça arrive trop tard par rapport aux nouveaux langages.</li>
+<li><a href="http://openjdk.java.net/projects/panama/">Panama</a> est un reboot pour faire des appels à du code natif. L’idée c’est de faire plus simple, plus sure, et plus rapide, la démo est fun.</li>
+</ul>
+
+<p>On retrouve beaucoup de choses qui sont déjà présentes dans des langages, j’y vois personnellement une excuse pour étudier ces langages, et pouvoir être à l’aise lorsqu’on aura ces features dans Java.</p>
+
+<p>Voici une sélection de présentations, pour celles qui concernent Jigsaw et la modularité je vous laisse chercher.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=e9eSPtpiGkA">Keynote Session (Mark Reinhold and Brian Goetz)</a></li>
+<li><a href="https://www.youtube.com/watch?v=8XmYT89fBKg&amp;list=PLRsbF2sD7JVq_TvmCyJC3-oT9nBGdwq6s&amp;index=43">Exploring Java 9 (Venkat Subramaniam)</a></li>
+<li><a href="https://www.youtube.com/watch?v=oGll155-vuQ&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=9">Java Language and Platform Futures: A Sneak Peek (Brian Goetz)</a></li>
+<li><a href="https://www.youtube.com/watch?v=53RcDiKb6Ls">Java9 and the impact on Maven Projects (Robert Scholte)</a></li>
+<li><a href="https://www.youtube.com/watch?v=96vce1qd0QY&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=38">Anticipating Java 9 - Functionality and Tooling (Trisha Gee)</a></li>
+</ul>
+
+<h2 id="programmation-réactive">Programmation réactive</h2>
+
+<p>Dernière grande thématique que j’ai suivie : la programmation réactive. C’est un sujet chaud, il y avait pas mal de présentations concernant de près ou de loin ce sujet. Tout d’abort il faut noter qu’ avec Java 8, les API sont beaucoup plus agréables à utiliser, ensuite les <a href="http://www.reactive-streams.org/">Reactive Streams</a> arrivent dans Java 9 avec la classe <a href="http://download.java.net/java/jdk9/docs/api/java/util/concurrent/Flow.html"><code>Flow</code></a>.</p>
+
+<p>Aujourd’hui, <a href="http://akka.io/">Akka Stream 2</a>, <a href="https://projectreactor.io/">Reactor Core 3</a> et <a href="https://github.com/ReactiveX/RxJava">RxJava 2</a> implémentent les Reactives Streams sur la JVM.</p>
+
+<p>Pour une excellente introduction sur le sujet je vous recommande l’université <a href="https://www.youtube.com/watch?v=weWSYIUdX6c&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=4">Reactive Programming (Venkat Subramaniam)</a> qui prend le temps pour présenter le concept de la programmation réactive, puis montre beaucoup de code avec RxJava pour montrer : les observables, l’asynchronisme, la gestion des erreurs, les opérateurs sur les Observables, la notion d’observable chaud ou froid, le principe de backpressure. Le backpressure c’est quand votre émetteur va plus vite que le consommateur, c’est quelque chose qui a mis du temps à être simple et proprement implémenté dans les API.</p>
+
+<p>J’ai aussi beaucoup apprécié l’université <a href="https://www.youtube.com/watch?v=Cj4foJzPF80&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=37&amp;t=3s">Developing Reactive applications with Reactive Streams and Java 8 (Brian Clozel, Sébastien Deleuze)</a> qui présente <a href="https://github.com/reactor/reactor-core">Reactore Core 3</a> dans la première partie au travers de tests unitaires. Je suis très agréablement surpris par la testabilité qu’apporte le <code>StepVerifier</code>. Dans la seconde partie, une démonstration de Spring Boot 2, avec Spring Framework 5 montre comment on peut passer en réactif côté backend. Très intéressant, j’attends avec impatience la version &lsquo;production-ready&rsquo; de ces projets.</p>
+
+<p>Je n’ai pas encore eu le temps de regarder <a href="https://www.youtube.com/watch?v=rdgJ8fOxJhc&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=29">Reactive Web Applications with Spring 5 (Rossen Stoyanchev)</a>, mais j’ai eu de bons retours.</p>
+
+<p>Sinon il y avait aussi des présentations concernant <a href="http://vertx.io/">Vert.x</a>, Akka Streams, &hellip;</p>
+
+<p>Ceux qui me connaissent savent que je suis très intéressé par ce sujet, on prévoit un <a href="https://www.meetup.com/fr-FR/Monkey-Tech-Days/events/232103376/">MonkeyTechDay</a> en début d’année sur le sujet.</p>
+
+<h2 id="autres-sujets">Autres sujets</h2>
+
+<p>Bien sûr le Machine Learning, et les sujets Devops étaient très bien représentés dans les conférences. Je rattraperais ça avec les vidéos. Je suis aussi allé voir d’autres sujets, je vous fais une petite liste de ce que j’ai trouvé sympa.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3eOFCn5COvc&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=16">Zen &amp; The Art of Angular 2 (Igor Minar)</a>: j’aime bien Angular2, je n’ai pas beaucoup appris, mais c’est sympa d’avoir un des créateurs sur scène.</li>
+<li><a href="https://www.youtube.com/watch?v=1oKlYgsnyfw&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB&amp;index=3">Make CSS Fun Again with Flexbox! (Hubert Sablonnière)</a>: un des meilleurs speaker français.</li>
+<li><a href="https://www.youtube.com/watch?v=UHN_HcjZa7o&amp;index=21&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB">Deep Dive into JUnit 5 (Sam Brannen)</a></li>
+<li><a href="https://www.youtube.com/watch?v=jSY3n_h7JV0">Swift : the mobile language that&rsquo;s coming to the cloud (Ian Partridge)</a>: la présentation n’est pas exceptionnelle, mais je suis assez intéressé par le langage coté Backend.</li>
+<li><a href="https://www.youtube.com/watch?v=03GsLxVdVzU&amp;index=33&amp;list=PLRsbF2sD7JVrP_MJaOWvaK9-OTNX2oFwB">Designing for Performance by Martin Thompson</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Encore une super semaine, j’ai encore appris plein de choses, eu de super échanges, pleins d’envies. Il faut toutefois un peu de temps pour digérer et laisser décanter tout cela (et faire mon compte rendu). Donc merci encore à tous les organisateurs, bénévoles, speaker, et tous les gens sympas avec qui j’ai eu l’occasion d’échanger ou de partager une bière.</p>
+
+<h2 id="pour-finir-quelques-photos">Pour finir quelques photos</h2>
+
+<p>Fier d’être speaker :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/Speaker.jpg" alt="Speaker"></p>
+
+<p>Igor Minar nous parle d’Angular2 :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/ng2.jpg" alt="Angular2"></p>
+
+<p>Venkat et ces citations :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/VenkatQuote.jpg" alt="Venkat"></p>
+
+<p>Brian Goetz nous parle de Java &gt; 9 avec un slide de JavaOne 2005</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/BrianGoetz.jpg" alt="BrianGoetz"></p>
+
+<p>CSS is Awesome ! :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/css.jpg" alt="CSS"></p>
+
+<p>Bonne ambiance lors du Speaker Diner :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/speakerDiner.jpg" alt="Speaker Diner"></p>
+
+<p>Interview très sérieuse avec Ray Tsang :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/RayTsang.jpg" alt="RayTsang"></p>
+
+<p>Une pythie pour un mauvais Oracle :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/Antonio.jpg" alt="Antonio"></p>
+
+<p>Swift coté backend :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/SwiftBackend.jpg" alt="Swift"></p>
+
+<p>Enfin lorsqu’il qu’il fait froid, et qu’il pleut, il y a toujours une solution en Belgique pour se réconforter :</p>
+
+<p><img src="/palm-tree/images/DevoxxBE16/be.jpg" alt="Reconford"></p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/ilaborie" rel="author">
+                <img src="http://www.gravatar.com/avatar/5870075cc4934bb7c32f2a6c56cc4f8d?s=48" alt="Igor Laborie">
+                <span>Igor Laborie</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/palm-tree/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-KGGFWH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script src="/palm-tree/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

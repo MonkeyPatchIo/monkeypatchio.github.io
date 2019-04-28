@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS">
+<meta property="og:description" content="On remet le couvert autour d’#Angular2 #React #AureliaJS
+Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-3/">
+
+<meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2018-02-05T14:47:57&#43;01:00">
+<meta property="article:modified_time" content="2018-02-05T14:47:57&#43;01:00"><meta property="og:site_name" content="MonkeyPatch">
+
+<meta itemprop="name" content="MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS">
+<meta itemprop="description" content="On remet le couvert autour d’#Angular2 #React #AureliaJS
+Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.">
+
+
+<meta itemprop="datePublished" content="2018-02-05T14:47:57&#43;01:00">
+<meta itemprop="dateModified" content="2018-02-05T14:47:57&#43;01:00">
+<meta itemprop="wordCount" content="629">
+
+
+
+<meta itemprop="keywords" content="MonkeyTechDay,Tech days,MKTD,Tech Addicts,Techno,angular2,react,aureliaJS,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS">
+<meta name="twitter:description" content="On remet le couvert autour d’#Angular2 #React #AureliaJS
+Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.">
+<meta name="generator" content="Hugo 0.55.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://monkeypatch.gitlab.io/palm-tree/styles/main.83776122339fa27920f36dc641ea3239b83e110bb9eeff2e046218f8885d042e.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog palm-tree-blog-2018-2018-02-05-mktds-articles-3">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="http://monkeypatch.gitlab.io/palm-tree/">
+                <img alt="Monkey Patch" src="/palm-tree/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#en-quelques-jours-plus-de-40-inscrits">En quelques jours, plus de 40 inscrits</a></li>
+<li><a href="#nouveau-concept-la-table-ronde-pour-échanger-avec-les-coachs">Nouveau concept : la table ronde pour échanger avec les coachs</a></li>
+<li><a href="#une-fois-de-plus-de-supers-retours-pour-ce-mktd">Une fois de plus, de supers retours pour ce MKTD !</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>MKTD#2 On remet le couvert autour d’&#35;Angular2 &#35;React &#35;AureliaJS</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS" data-hashtags="MonkeyTechDay,Tech days,MKTD,Tech Addicts,Techno,angular2,react,aureliaJS">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    5
+    février
+    2018
+</span>
+
+    <div class="tags">
+        
+        <span>MonkeyTechDay</span>
+        
+        <span>Tech days</span>
+        
+        <span>MKTD</span>
+        
+        <span>Tech Addicts</span>
+        
+        <span>Techno</span>
+        
+        <span>angular2</span>
+        
+        <span>react</span>
+        
+        <span>aureliaJS</span>
+        
+    </div>
+
+    <article><p>On remet le couvert autour d’#Angular2 #React #AureliaJS
+Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.</p>
+
+<p>Sur les 6 derniers mois, nous avions expérimenté les bêta d’Angular2. Les annonces de la sortie de la RC se rapprochant, nous avons programmé le deuxième MKTD en Octobre 2016. Angular 2 était le framework à la mode pour 2016, mais il était en concurrence féroce avec la bibliothèque React qui ne cessait de s&rsquo;améliorer, et le petit nouveau qu&rsquo;était Aurelia.</p>
+
+<blockquote>
+<p>“Le face à face à face était tout trouvé !”</p>
+</blockquote>
+
+<p>En revanche, à ce moment, nous avions une faible connaissance en React et nous ne connaissions Aurelia que de nom. Si nous voulions assurer un coaching de qualité il nous fallait du renfort. Nous avons alors décidé de faire appel aux copains pour coacher des MKTD. (D’ailleurs toi aussi, comme <a href="https://twitter.com/ilaborie">Igor</a>, <a href="https://twitter.com/JulienPradet">Julien</a> et <a href="https://twitter.com/HadrienToma">Hadrien</a>, tu peux coacher un MKTD ;) <a href="https://twitter.com/MonkeyPatch_io/status/941341015474081792/photo/1">ici</a></p>
+
+<h2 id="en-quelques-jours-plus-de-40-inscrits">En quelques jours, plus de 40 inscrits</h2>
+
+<p>Cool mais&hellip; il nous fallait un plus gros budget ! On avait bien sûr le soutien financier de MonkeyPatch, mais qui était encore une toute jeune pousse (à peine 7,5 mois). Il nous fallait donc un sponsor. En discutant de ces problématiques avec <a href="https://twitter.com/MrZoule?lang=fr">Etienne</a>, d’Occitech, il nous a proposé de participer aux frais. Ça c’est fair-play !</p>
+
+<p><img src="https://lh3.googleusercontent.com/vVQa-y-4JlV01WRfVzeCqp3RrW9ZkAcSTe9QM-zPsOH4Si_TrDNMvWbZC9JqN_EElFTQRrvGDb-shfZH3e7V3PYvFOr5NNRdHPiv5L5bc9N1DeZx5yK7yvaa16NCSE7p6xlELtq8zFTxgtNDlUr1GsHERpZj2u4h8ZAnr9ZUva1_tGk7xK6ARPq60AcEyqKS1J6JhNte7mZ4b9o2_Zkm_0TnfCh-4JDlbbqfHc_VaVa25q5gxf6v92pOWkxTNRjqxHQGPZb5ageVZv5i3YKKw9RYCNAWWXiUHv4B-vmr0RQ8AVGAM9fHt_WlrJvUzmziIoybF8q4YUU1vUH0pD3k-56UqeExt2ypYwOYJPVgaxx5hIMHIs0hQplh-SyqB9E8T3ndxEwcaQJ88MPY0iJk_NeqFbQeWVsOdu0CEox_aqE5H5Nd672PfXzYQHeUDT2ggGQAHtOYpHnME--ovC5Vn_DwOzNDe8XB3OQQUKrI-2MRLC3w9bBgevI3GUH2X_PB9Iho7D4ZsRzeQtNMrzdOX0QL7nmMT4WSgfmNHsTaPf6oLww1P-OGmabVA4f3vcEbNiV25WgGI5sbnD7mDb_bMjXhxfBVeOiNjuyFLuUXgHAZoopDuvrX6ZnZvT1C-ahJsBUf2yaNUECEhjGl-q5Yi_jk6V23EGSG=w1499-h903-no" alt="MKTD3 Reviews"></p>
+
+<p>On a décidé de façon collégiale qu’il n’y aurait qu’un seul sponsor mis en avant par événement, car nous laissons un temps de parole au sponsor et le mettons en valeur toute la journée, mais nous ne voulons pas que ce temps empiète sur le temps de codage des participants.
+&gt; “1 sponsor par MKTD est un bon deal.”</p>
+
+<h2 id="nouveau-concept-la-table-ronde-pour-échanger-avec-les-coachs">Nouveau concept : la table ronde pour échanger avec les coachs</h2>
+
+<p>Lors de ce MKTD#2, en fin de journée, nous avons testé pour la première fois la table ronde avec les coachs.
+Comme le niveau d’un MKTD est soutenu, on demande aux participants de ne pas monopoliser le coach avec ses problématiques projets. Mais c’est frustrant non ? On a le coach à côté et on ne peut pas lui poser de questions approfondies, pourtant les réponses pourraient être intéressantes pour d’autres participants. Pour remédier à ça, en fin de journée, on consacre une demie heure pour les questions projets en mode “table ronde”.
+Ça a beaucoup plu ! On l&rsquo;intègre dans le format des MKTD.</p>
+
+<h2 id="une-fois-de-plus-de-supers-retours-pour-ce-mktd">Une fois de plus, de supers retours pour ce MKTD !</h2>
+
+<p>C’est vraiment lors de cet évènement, que l’on a pu tester le concept. On a eu de très bons retours sur l’organisation et beaucoup sont prêts à les recommander.</p>
+
+<p><img src="https://lh3.googleusercontent.com/osRW-7g2HQEGYKa-IfszsSbDsYlt-hyJo-1ZlDd2C1H6EcUKWqXqSyNv2z2GBm-cSxoavTRk9NiR3UXNYfmKYqJFsf5jCp5PlTlx3fQHHSK-D5PXXpbB0dYPWkLI_jzJmP2HTlyJEOfmp5lBc8qr0u1GJ641Q7T4Fe1A4I80Be3EB3eC2qftDsPgA3C2lCCl3sg-G3hus1pf6KL4qrLoCXmyzmI0fwuNDXDlWnmkyRHwMtBOaclL1QbBVS6guU4eGHr6TDKQvKEDk9YzR6TyUyHuDS9iNseNkXsdfTbSLvITYVOA1_zUFu1V0GsFF2jR6PvRzX990uostDBOCEN2CZnt6fui1apk_brXrWYg15dunXHw3DBrST9jvAzlpYU2JNhYZArFVwxT7mVan49pTxxI6NCFRrfbHdHZJhQALsO1n7SOnPVE95i9VRp0C3R9zwLNX2SUHScKboXoPt_v787bXYIGbbZvgU3BPjD7ePHM_D3rcSTbNJP59_qlY8WzkUFONqtGuB-rwkqJzZcsMX1vM6EgYK2Rg7O4ahPqqiRXVoUNMVca34sFC-DVTiLNwHvX-7IWk5bQP3G_h2OTJtj2ZtBD_q8qdxnO7Mhufy5mR5IEjNRkFRV3JLXc5ZQNEwIIFIjEKBKTmftgFvOscRxlArReLu8L=w1867-h720-no" alt="MKTD3 Reviews"></p>
+
+<p>Côté déjeuner, certains nous ont fait remarquer qu’ils n’ont pas eu assez à manger, à surveiller de plus près pour les prochaines éditions.</p>
+
+<p>Sur les 31 participants personne n’est arrivé à finir tous les exos mais une grande partie est presque arrivée à la fin.
+En revanche, expérimenter 3 technos sur la même journée complique vraiment le déroulement du MKTD. Ça fait trop, trop de présentations de techno, trop de comparaisons, trop de questions…
+On privilégiera donc des MKTD à 2 technos et pourquoi pas essayer avec une seule ?</p>
+
+<p>Organiser un MKTD prend beaucoup de temps, et la rédaction d’articles techniques de qualité en prend tout autant. ll faut se faire à l’idée, avec nos projets, on ne peut pas consacrer plus de temps à la rédaction d’articles. Dommage car on aimait bien l’idée de partager ces retours d’expériences.</p>
+
+<p>À lire aussi, l’article de <a href="https://twitter.com/Maxime_Pawlak">Maxime</a>, participant de l’équipe Angular2 sur <a href="https://medium.com/@Maxime_/retour-sur-les-monkey-tech-days-02-76c39b3b94c7">Medium</a></p>
+
+<blockquote>
+<p>“Et si on tentait avec une seule techno ?”</p>
+</blockquote>
+
+<p>← revenir à <a href="/palm-tree/blog/2018/2018-02-05-mktds-articles-2/">MKTD#1</a> → Article suivant <a href="/palm-tree/blog/2018/2018-02-05-mktds-articles-4/">MKTD#3</a></p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/MCaylet" rel="author">
+                <img src="/palm-tree/images/team/matthieu.jpg" alt="Matthieu Caylet">
+                <span>Matthieu Caylet</span>
+            </a>
+        </div>
+        
+        <div class="author">
+            <a href="https://twitter.com/alteannefr" rel="author">
+                <img src="https://ca.slack-edge.com/T1H5KD6N6-U51C423V4-785b1a19f083-48" alt="Alteanne Fernandez">
+                <span>Alteanne Fernandez</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/palm-tree/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-KGGFWH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script src="/palm-tree/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

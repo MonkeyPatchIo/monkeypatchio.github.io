@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Making Of &#39;CSS is Awesome !&#39;">
+<meta property="og:description" content="Introduction
+
+Depuis quelque temps, j&rsquo;avais l&rsquo;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&rsquo;ai profité du CFP de DevoxxFR pour me jeter à l&rsquo;eau.
+En plus de mon appétance pour la transmission, j&rsquo;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-05-02-makingof_css_is_awesome/">
+
+<meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2017-05-02T00:00:00&#43;00:00">
+<meta property="article:modified_time" content="2017-05-02T00:00:00&#43;00:00"><meta property="og:site_name" content="MonkeyPatch">
+
+<meta itemprop="name" content="Making Of &#39;CSS is Awesome !&#39;">
+<meta itemprop="description" content="Introduction
+
+Depuis quelque temps, j&rsquo;avais l&rsquo;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&rsquo;ai profité du CFP de DevoxxFR pour me jeter à l&rsquo;eau.
+En plus de mon appétance pour la transmission, j&rsquo;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.">
+
+
+<meta itemprop="datePublished" content="2017-05-02T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2017-05-02T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="2296">
+
+
+
+<meta itemprop="keywords" content="CSS,Devoxx,MiXiT,NodeJS,TypeScript,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Making Of &#39;CSS is Awesome !&#39;">
+<meta name="twitter:description" content="Introduction
+
+Depuis quelque temps, j&rsquo;avais l&rsquo;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&rsquo;ai profité du CFP de DevoxxFR pour me jeter à l&rsquo;eau.
+En plus de mon appétance pour la transmission, j&rsquo;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.">
+<meta name="generator" content="Hugo 0.55.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Making Of &#39;CSS is Awesome !&#39;</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://monkeypatch.gitlab.io/palm-tree/styles/main.83776122339fa27920f36dc641ea3239b83e110bb9eeff2e046218f8885d042e.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog palm-tree-blog-2017-2017-05-02-makingof-css-is-awesome">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="http://monkeypatch.gitlab.io/palm-tree/">
+                <img alt="Monkey Patch" src="/palm-tree/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#comment-afficher-et-animer-les-slides">Comment afficher et animer les slides ?</a>
+<ul>
+<li><a href="#structure-de-base">Structure de base</a></li>
+<li><a href="#comment-animer-les-slides">Comment animer les slides ?</a></li>
+<li><a href="#comment-changer-de-slides">Comment changer de slides ?</a></li>
+<li><a href="#bonus-numéro-du-slide">Bonus : Numéro du slide</a></li>
+<li><a href="#bonus-navigation-rapide">Bonus : navigation rapide</a></li>
+</ul></li>
+<li><a href="#comment-faire-du-live-edit-de-css">Comment faire du live edit de CSS ?</a></li>
+<li><a href="#produire-du-pdf">Produire du PDF</a></li>
+<li><a href="#build-system">Build system</a>
+<ul>
+<li><a href="#nodejs-et-tooling">NodeJS et Tooling</a></li>
+<li><a href="#les-slides">Les Slides</a>
+<ul>
+<li><a href="#extraction">Extraction</a></li>
+<li><a href="#contenu-d-un-slide">Contenu d&rsquo;un slide</a></li>
+</ul></li>
+<li><a href="#styles">Styles</a></li>
+<li><a href="#serveur-et-serveur-de-développement">Serveur et serveur de développement</a></li>
+<li><a href="#comment-publier-dans-les-github-pages">Comment publier dans les Github Pages ?</a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Making Of 'CSS is Awesome !'</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="Making Of &#39;CSS is Awesome !&#39;" data-hashtags="CSS,Devoxx,MiXiT,NodeJS,TypeScript">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    2
+    mai
+    2017
+</span>
+
+    <div class="tags">
+        
+        <span>CSS</span>
+        
+        <span>Devoxx</span>
+        
+        <span>MiXiT</span>
+        
+        <span>NodeJS</span>
+        
+        <span>TypeScript</span>
+        
+    </div>
+
+    <article><h2 id="introduction">Introduction</h2>
+
+<p>Depuis quelque temps, j&rsquo;avais l&rsquo;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&rsquo;ai profité du CFP de DevoxxFR pour me jeter à l&rsquo;eau.
+En plus de mon appétance pour la transmission, j&rsquo;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.</p>
+
+<p>J&rsquo;ai fait cette présentation à DevoxxFR, une version plus longue à MiXiT, puis enfin au DevFest Toulouse.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/fPObs60585w" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Bien sûr, faire des présentations en HTML/CSS/JS n&rsquo;est pas nouveau, certains sont trés bien faits comme :</p>
+
+<ul>
+<li><a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></li>
+<li><a href="http://markdalgleish.com/projects/bespoke.js/">bespoke.js</a></li>
+<li><a href="https://shwr.me/">Showr</a></li>
+<li><a href="https://leaverou.github.io/csss/#intro">CSSS</a></li>
+</ul>
+
+<p>J&rsquo;avais déjà, dans le cadre d&rsquo;une autre présentation, écrit mon propre framework en utilisant du CoffeeScript: <a href="https://github.com/ilaborie/prez">Prez</a>.</p>
+
+<p>Pourquoi en écrire un nouveau, qui sera moins bien que ceux qui sont portés depuis plusieurs années ? La raison principale est que cela me permet de sortir de ma &lsquo;zone de confort&rsquo;, ce qui est toujours très enrichissant. En plus de cet aspect, cela me permet de creuser des sujets que je n&rsquo;ai pas encore eu l&rsquo;occasion d&rsquo;étudier comme les &lsquo;Custom Properties de CSS 4&rsquo; (aka les variables), et puis c&rsquo;est fun.</p>
+
+<blockquote>
+<p>Attention lors d&rsquo;une présentation on peut (du moins on espère) contrôler l&rsquo;environnement: navigateur, résolution, &hellip; Quand j&rsquo;ai réalisé cette application je suis parti sur <a href="https://www.google.fr/chrome/browser/canary.html">Chrome Canary</a>, et j&rsquo;ai constaté qu&rsquo;il y avait des ralentissements sur les autres navigateurs quand j&rsquo;utilisais les <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">Custom Properties</a> :&lsquo;(
+A suivre&hellip;</p>
+</blockquote>
+
+<p><em>Le code que je décris ici est disponible dans <a href="https://github.com/ilaborie/css-awesome">Github</a>. À ce jour, il n&rsquo;est pas destiné à devenir un nouveau framework. Il faudrait faire pas mal de ménage avant de pouvoir en faire quelque chose d&rsquo;intéressant.</em></p>
+
+<h2 id="comment-afficher-et-animer-les-slides">Comment afficher et animer les slides ?</h2>
+
+<h3 id="structure-de-base">Structure de base</h3>
+
+<p>En gros voici la base de code HTML pour les slides :</p>
+
+<pre><code class="language-html">&lt;html&gt;
+  &lt;head&gt;&lt;!-- ... --&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;section id=&quot;cover&quot;&gt;&lt;!-- ... --&gt;&lt;/section&gt;
+      &lt;section id=&quot;slide1&quot;&gt;&lt;!-- ... --&gt;&lt;/section&gt;
+      &lt;section id=&quot;slide2&quot;&gt;&lt;!-- ... --&gt;&lt;/section&gt;
+      &lt;section id=&quot;slide3&quot;&gt;&lt;!-- ... --&gt;&lt;/section&gt;
+      &lt;section id=&quot;end&quot;&gt;&lt;!-- ... --&gt;&lt;/section&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Chaque slide correspond à une <code>&lt;section&gt;</code>, pour faire simple on va donner la taille voulu pour chaque slide :</p>
+
+<pre><code class="language-css">section {
+  width: 100vw;  /* largeur maximun sans scroll */
+  height: 100vh; /* hauteur maximun sans scroll */
+}
+</code></pre>
+
+<blockquote>
+<p>on peut utiliser l&rsquo;unité <code>vmin</code> pour forcer un slide en <sup>4</sup>&frasl;<sub>3</sub> ou en <sup>16</sup>&frasl;<sub>10</sub> en mettant la largeur à <code>100vmin</code>, et la hauteur à <code>75vmin</code> pour le <sup>4</sup>&frasl;<sub>3</sub> ou <code>62.5vmin</code> pour le <sup>16</sup>&frasl;<sub>10</sub>. On utilisera bien sur <code>flexbox</code> pour le centrage dans cette situation.</p>
+</blockquote>
+
+<h3 id="comment-animer-les-slides">Comment animer les slides ?</h3>
+
+<p>Le principe de navigation est le suivant :</p>
+
+<ul>
+<li>les slides sont décalés sur la gauche avec <code>transform: translateX(-100vmax);</code> par défaut,</li>
+<li>le slide courant est remis dans l&rsquo;axe avec <code>transform: translateX(0);</code>,</li>
+<li>les slides suivants sont décalés à droites dans l&rsquo;axe avec <code>transform: translateX(100vmax);</code></li>
+</ul>
+
+<p>Une solution très simple pour identifier le slide courant c&rsquo;est d&rsquo;utiliser la pseudo classe <code>:target</code>. Le slide avec l&rsquo;id <code>XXX</code> sera ciblé lorsque l&rsquo;URL de notre navigateur sera du type <code>http://&lt;maprez&gt;/&lt;mapage&gt;.html#XXX</code>.</p>
+
+<p>Ce qui ce traduit par le CSS suivant :</p>
+
+<pre><code class="language-css">section {
+ transform: translateX(-100vmax);
+}
+section:target { // pseudo classe :target 
+ transform: translateX(0);
+}
+section ~ section { // selecteur ~ 
+  transform: translateX(-100vmax);
+}
+</code></pre>
+
+<p>Et bien sûr, on ajoute une petite transition comme <code>transition: transform .8s ease-in-out;</code>.</p>
+
+<p>Pour ceux qui on encore du mal avec les selecteurs CSS, le <code>~</code> c&rsquo;est le selecteur des <em>siblings</em>. Voir <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Simple_selectors#Combinators">Simple selectors - Combinators</a></p>
+
+<h3 id="comment-changer-de-slides">Comment changer de slides ?</h3>
+
+<p>Pour cela il suffit d&rsquo;un lien qui va sur le slide avec l&rsquo;id qui correspond au slide souhaité.</p>
+
+<pre><code class="language-html">&lt;main&gt;
+  &lt;section id=&quot;cover&quot;&gt;
+    &lt;!-- ... --&gt;
+    &lt;a class=&quot;next&quot; href=&quot;#slide1&quot;&gt;&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;slide1&quot;&gt;
+    &lt;a class=&quot;previous&quot; href=&quot;#cover&quot;&gt;&lt;/a&gt;
+    &lt;!-- ... --&gt;
+    &lt;a class=&quot;next&quot; href=&quot;#slide2&quot;&gt;&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;slide2&quot;&gt;
+    &lt;a class=&quot;previous&quot; href=&quot;#slide1&quot;&gt;&lt;/a&gt;
+    &lt;!-- ... --&gt;
+    &lt;a class=&quot;next&quot; href=&quot;#slide3&quot;&gt;&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;slide3&quot;&gt;
+    &lt;a class=&quot;previous&quot; href=&quot;#slide2&quot;&gt;&lt;/a&gt;
+    &lt;!-- ... --&gt;
+    &lt;a class=&quot;next&quot; href=&quot;#end&quot;&gt;&lt;/a&gt;
+  &lt;/section&gt;
+  &lt;section id=&quot;end&quot;&gt;
+    &lt;a class=&quot;previous&quot; href=&quot;#slide3&quot;&gt;&lt;/a&gt;
+    &lt;!-- ... --&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+</code></pre>
+
+<p>Ensuite on peut passer au CSS pour rendre ça sympa :</p>
+
+<pre><code class="language-css">section a.previous, section a.next {
+  position: fixed;
+  top: 0;
+  width: 5vw;
+  height: 100vh;
+  font-size: 25vh;
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+section a.previous {
+  left: 0;
+}
+section a.previous::before {
+  content: '&lt;';
+}
+section a.next {
+  left: 95vw;
+}
+section a.next::before {
+  content: '&gt;';
+}
+</code></pre>
+
+
+
+
+ 
+
+<script data-slug-hash="wJbogy" data-user="ilaborie" data-height="500" data-default-tab="result" data-theme-id="8862" class="codepen" async src="//codepen.io/assets/embed/ei.js"></script>
+
+<blockquote>
+<p>Il y a d&rsquo;autres solutions alternatives pour faire un système de slides, comme un mécanisme avec des &ldquo;radio boutons&rdquo; et le <code>:checked</code> pour remplacer le <code>:target</code>, ou bien laisser le scroll horizontal, et ne pas faire de translation.</p>
+</blockquote>
+
+<h3 id="bonus-numéro-du-slide">Bonus : Numéro du slide</h3>
+
+<p>Pour ajouter une numéroration sur chaque slide, on peut utiliser un pseudo-élément sur les <code>&lt;section&gt;</code>, avec un positionnement relatif. C&rsquo;est l&rsquo;occasion d&rsquo;utiliser les <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Compteurs_CSS">compteurs CSS</a> :</p>
+
+<pre><code class="language-css">section::after {
+  counter-increment: section;
+  content: '# ' counter(section);
+}
+</code></pre>
+
+<p>Il nous reste ensuite le <code>::before</code> pour afficher une barre avec les logos, les hashtags, &hellip;</p>
+
+<h3 id="bonus-navigation-rapide">Bonus : navigation rapide</h3>
+
+<p>Pour naviguer rapidement entre les slides, on peut simplement créer une barre de navigation que l&rsquo;on peut fixer en bas ou en haut.</p>
+
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href=&quot;#cover&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#slide1&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#slide2&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#slide3&quot;&gt;&lt;/a&gt;
+  &lt;a href=&quot;#end&quot;&gt;&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre>
+
+
+
+
+ 
+
+<script data-slug-hash="ZeNKWw" data-user="ilaborie" data-height="500" data-default-tab="result" data-theme-id="8862" class="codepen" async src="//codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="comment-faire-du-live-edit-de-css">Comment faire du live edit de CSS ?</h2>
+
+<p>C&rsquo;est la partie la plus &lsquo;Hack&rsquo; du système, surtout ne pas utiliser ce principe dans du code qui peut aller en production.</p>
+
+<p>Pour cela, on utilise la balise <code>&lt;style&gt;</code> avec l&rsquo;attribut <code>contenteditable</code>, et ensuite il faut bricoler le style pour rendre ça visible.</p>
+
+
+
+
+ 
+
+<script data-slug-hash="BWgBeV" data-user="ilaborie" data-height="500" data-default-tab="result" data-theme-id="8862" class="codepen" async src="//codepen.io/assets/embed/ei.js"></script>
+
+<blockquote>
+<p>Notez qu&rsquo;il est préférable de faire du <a href="https://developer.mozilla.org/fr/docs/Web/API/Document/designMode">designMode</a> plutôt que du <code>contenteditable</code>. Mais cela nécessitait d&rsquo;avoir du JavaScript, et mon objectif était de ne pas en faire.</p>
+</blockquote>
+
+<h2 id="produire-du-pdf">Produire du PDF</h2>
+
+<p>Les slides en HTML c&rsquo;est bien, mais on est parfois obliger de produire un PDF correspondant. Pour cela, j&rsquo;ai créé une présentation spécialisée avec un CSS pour le <code>media print</code>. Ensuite on peut passer par la boite de l&rsquo;impression pour générer un PDF correspondant.
+Attention si vous ne prévoyez pas cette fonctionnalité assez tôt vous risquez de passer beaucoup de temps pour mettre au point un look raisonnable. Chrome. La prochaine fois je ferai plus attention&hellip;</p>
+
+<p>Enfin le souci qu&rsquo;il reste c&rsquo;est que le live-edit ça rends pas terrible sur du PDF&hellip;</p>
+
+<h2 id="build-system">Build system</h2>
+
+<p>Ce mécanisme de slide a un gros défaut, il faut systématiquement ajouter les liens before/next sur chaque slide, et penser à maintenir les identifiants. Cela peut devenir vraiement lourd lorsqu&rsquo;on ajoute/supprime/déplace un slide.</p>
+
+<p>Et puis il faut quand même trouver un endroit pour faire du TypeScript et du NodeJS&hellip;
+Donc, l&rsquo;idée est de construire automatiquement le fichier HTML en aggrégeant des fichiers qui correspondent à chaque slide.</p>
+
+<h3 id="nodejs-et-tooling">NodeJS et Tooling</h3>
+
+<p>Pour le mécanisme de construction, on va devoir faire des opérations sur les fichiers et répertoires, pour cela j&rsquo;utilise <code>mkdirp</code> pour faire l&rsquo;équivalent du <code>mkdir -p</code> et <code>rimraf</code> pour <code>rm -rf</code> tout en étant compatible avec les plateformes qui ne supportent pas (encore) ces commandes.</p>
+
+<p>Pour le reste des opérations, on va utiliser les modules <code>fs</code> et <code>path</code> de NodeJS pour les autres opérations sur le file system. J&rsquo;ai choisi de &lsquo;promisifier&rsquo; ces API, mais on aurait aussi pu utiliser <a href="http://bluebirdjs.com/docs/getting-started.html">bluebird</a>.</p>
+
+<p>Voici un exemple avec <code>readFile</code></p>
+
+<pre><code class="language-typescript">export const readFile = (file, encoding = 'utf8'): Promise&lt;string&gt; =&gt;
+  new Promise((resolve, reject) =&gt;
+      fs.readFile(file, encoding, (err, data) =&gt; err ? reject(err) : resolve(data)));
+</code></pre>
+
+<p>Pour le templating, il existe déjà plein de solutions en JavaScript, dans ce cas j&rsquo;ai utilisé la solution basique : le templating de ES6. Par exemple, pour construire ma page, j&rsquo;utilise le code suivant :</p>
+
+<pre><code class="language-typescript">export const html = ({body, slides, title = 'A Title', key = 'index'}): string =&gt; {
+    const nav = slides.map((slide, index) =&gt; `&lt;a href=&quot;#${slide.id}&quot; title=&quot;${slide.id}&quot;&gt;${index + 1}&lt;/a&gt;`);
+    return `&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot;
+          content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;${title}&lt;/title&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;${key}&quot;&gt;
+    &lt;div class=&quot;slides-nav&quot;&gt;&lt;nav&gt;${nav.join('\n')}&lt;/nav&gt;&lt;/div&gt;
+    &lt;main&gt;
+        ${body}
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;`
+};
+</code></pre>
+
+<p>Enfin, on peut tout brancher pour obtenir un code comme celui ci :</p>
+
+<pre><code class="language-typescript">const buildHtml = (slidesDir, title, key, output) =&gt;
+    Promise.resolve(log('- Building HTML ...'))
+        .then(() =&gt; slides(slidesDir, key)) // récuère la liste des slides
+        .then((slides: Slide[]) =&gt; ({slides, contents: slides.map(slide)})) // construction du contenu
+        .then(({slides, contents}) =&gt; ({slides, body: contents.join(sep)})) // aggreation
+        .then(({slides, body}) =&gt; html({body, slides, title, key})) // construction du HTML
+        .then(data =&gt; writeFile(output, data)) // on écrit
+        .then(() =&gt; log(`✅ Write HTML ${output}`)) // Emoji rocks
+        .catch(err =&gt; error(`️FAIL building HTML: ${err}`)); // Oops
+</code></pre>
+
+<p>À noter que depuis ES6 (ES2015), on peut utiliser la déconstruction, ce qui permet de faire des trucs sympas comme :</p>
+
+<pre><code class="language-javascript">({slides, contents}) =&gt; ({slides, body: contents.join(sep)})
+</code></pre>
+
+<p>qui est équivalent au code suivant :</p>
+
+<pre><code class="language-javascript">(object) =&gt; {
+  const slides = object.slides;
+  const contents = object.contents;
+
+  return {
+    slides: slides,
+    body: contents.join(sep)
+  };
+}
+</code></pre>
+
+<h3 id="les-slides">Les Slides</h3>
+
+<h4 id="extraction">Extraction</h4>
+
+<p>On peut utiliser simplement les API du module <code>fs</code> de NodeJS pour lire le contenu d&rsquo;un répertoire, le trier, &hellip;</p>
+
+<pre><code class="language-typescript">export const slides = (dir, key): Promise&lt;Slide[]&gt; =&gt;
+    readDir(dir) // tous les fichiers du répertoire
+    .then(files =&gt; files.sort()) // on trie (les slides sont préfixés par un numéro)
+    .then(files =&gt; files.map(onlySlide)) // on passe une regex pour extraire l'id
+    .then(matchesList =&gt; matchesList.filter(matches =&gt; matches !== null)) // on retire ce qui n'est pas un slide
+    .then(matchesList =&gt; matchesList.map(matches =&gt; buildSlide(dir, matches))) // construction du contenu
+    .then(slidePromises =&gt; Promise.all(slidePromises)) // Promise&lt;[]&gt; =&gt; Promise[]
+    .then(slides =&gt; slides.filter(slide =&gt; filterSlide(slide, key))) // on filtre ceux qui correspondent à ma clef
+    .then(slides =&gt; slides.map(buildSlideNav)) // on calcule les previous/next
+    .catch(err =&gt; error(`️FAIL to read dir ${dir}: ${err}`)); // Oops
+</code></pre>
+
+<p>Comme je génère plusieurs présentations, et que certaines contiennent des slides différents, j&rsquo;utilise des métadonnées pour faire un filtre avant de construire les références sur les slides précédents et suivants.</p>
+
+<h4 id="contenu-d-un-slide">Contenu d&rsquo;un slide</h4>
+
+<p>Après lecture du contenu du fichier, on extrait les éventuelles meta-données, ici rien de très important.
+Le point intéressant dans cette partie, c&rsquo;est que je veux pouvoir utiliser soit du markdown pour les slides simples, soit directement du HTML.
+Il n&rsquo;y a pas de besoins particuliers pour du HTML, par contre pour le markdown on va utiliser la bibliothèque <a href="https://github.com/chjj/marked">marked</a>. L&rsquo;utilisation est très simple, et on peut facilement ajouter de quoi styliser les blocs de codes avec la colorisation syntaxique avec <a href="https://github.com/isagalaev/highlight.js">highlight.js</a></p>
+
+<pre><code class="language-typescript">import * as marked from 'marked';
+import {highlightAuto} from 'highlight.js';
+
+const highlight = code =&gt; highlightAuto(code).value;
+const htmlContent = marked(markdownContent, {highlight});
+</code></pre>
+
+<p>Il suffira ensuite d&rsquo;ajouter le style souhaité, par exemple j&rsquo;ai utilisé <code>@import 'node_modules/highlight.js/styles/darcula';</code></p>
+
+<h3 id="styles">Styles</h3>
+
+<p>Pour générer le style j&rsquo;ai fait du SCSS avec <a href="https://www.npmjs.com/package/node-sass">node-sass</a>, l&rsquo;intégration est très facile aujourd&rsquo;hui puisque on peut utiliser cette lib plutôt que du ruby.
+J&rsquo;utilise donc le nesting et les mixins, et il reste encore quelques variables. Mais j&rsquo;ai privilégié les nouveautés de CSS comme les <a href="https://developer.mozilla.org/fr/docs/Web/CSS/--*">Custom properties</a>.</p>
+
+<p>Pour assurer la portabilité du style, j&rsquo;utilise le postprocesseur <a href="https://github.com/postcss/postcss">PostCSS</a> avec les plugins <a href="https://github.com/postcss/autoprefixer">autoprefixer</a>, <a href="https://github.com/postcss/postcss-custom-properties">postcss-custom-properties</a>  pour transpiler les customs properties, <a href="http://cssnano.co/">cssnano</a> pour minifier le code, et enfin <a href="https://github.com/borodean/postcss-assets">postcss-assets</a> qui nous permet d&rsquo;automatiquement inliner les images en <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs">data-uri</a>.</p>
+
+<p>Le code resemble donc à ça :</p>
+
+<pre><code class="language-typescript">const scss = (file): Promise&lt;sass.Result&gt; =&gt; new Promise((resolve, reject) =&gt; {
+    sass.render({file}, (err, data) =&gt; err ? reject(err) : resolve(data))
+});
+
+export const css = (dir, minify = false): Promise&lt;string&gt; =&gt; {
+    const file = join(dir, 'index.scss');
+    const plugins = [
+        customProperties({preserve: true}),
+        autoprefixer(),
+        assets({basePath: dir})
+    ];
+    if (minify) {
+        plugins.push(cssnano());
+    }
+    return scss(file)
+        .then(result =&gt; postcss(plugins).process(result.css))
+        .then(result =&gt; result['content'])
+        .catch(err =&gt; error(`️FAIL to create CSS ${dir}: ${err}`));
+};
+</code></pre>
+
+<h3 id="serveur-et-serveur-de-développement">Serveur et serveur de développement</h3>
+
+<p>Techniquement, on peut ouvrir la présentation avec le protocle <code>file://</code>, mais comme j&rsquo;ai quelques liens externes, il faut utiliser le protocole <code>http://</code>. La solution la plus simple qui existe est d&rsquo;utiliser python avec <code>python -m SimpleHTTPServer</code>. Cependant, cette solution n&rsquo;est pas très pratique pour du développement, une fois qu&rsquo;on a pris goût au LiveReload c&rsquo;est difficile de s&rsquo;en passer. Je préfère utiliser <a href="https://github.com/johnpapa/lite-server">lite-server</a>, c&rsquo;est super simple d&rsquo;usage, et ça utilise <a href="https://www.browsersync.io/">BrowserSync</a> pour le LiveReload.</p>
+
+<p>Les fichiers TypeScript peuvent être compilé en mode &lsquo;watch&rsquo;  avec  la commande <code>tsc -w</code>.
+Pour reconstruire automatiquement les slides lors d&rsquo;une modification, j&rsquo;utilise <a href="https://nodemon.io/">nodemon</a>.</p>
+
+<pre><code class="language-json">&quot;scripts&quot;: {
+    &quot;clean&quot;: &quot;rimraf js/ dist/&quot;,
+    &quot;start&quot;: &quot;lite-server&quot;,
+    &quot;build:dev&quot;: &quot;tsc &amp;&amp; node js/index.js&quot;,
+    &quot;build&quot;: &quot;npm run clean &amp;&amp; tsc &amp;&amp; node js/index.js --minify&quot;,
+    &quot;serve&quot;: &quot;npm run start &amp; tsc -w &amp; nodemon js/index.js&quot;
+  }
+</code></pre>
+
+<p>Je préfère utiliser les fichiers de configuration pour nodemon :</p>
+
+<pre><code class="language-json">{
+  &quot;verbose&quot;: true,
+  &quot;delay&quot;: 2,
+  &quot;watch&quot;: [
+    &quot;src/&quot;,
+    &quot;js/&quot;
+  ],
+  &quot;ext&quot;: &quot;scss png js svg html md&quot;
+}
+</code></pre>
+
+<p>et pour BrowserSync :</p>
+
+<pre><code class="language-json">{
+  &quot;server&quot;: {
+    &quot;baseDir&quot;: &quot;dist&quot;,
+    &quot;directory&quot;: true
+  },
+  &quot;notify&quot;: false,
+  &quot;open&quot;: false
+}
+</code></pre>
+
+<h3 id="comment-publier-dans-les-github-pages">Comment publier dans les Github Pages ?</h3>
+
+<p>Dans ce dernier point concernant les outils, je voulais utiliser les <a href="https://pages.github.com/">pages github</a> pour publier les slides.
+Rien de plus simple avec <a href="https://github.com/tschaub/gh-pages">gh-pages</a> il suffit de lancer la commande <code>gh-pages --dist dist/</code>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Si vous voulez voir jusqu&rsquo;où on peut aller en HTML/CSS, y compris dans les emails, je vous recommande la présentation suivante: <a href="https://vimeo.com/181481382">Modern and interactive email</a>. Pour améliorer vos connaissances en CSS, je vous recommande chaudement le livre (et les présentations) <a href="https://www.amazon.fr/CSS-Secrets-Lea-Verou/dp/1449372635">CSS Secret</a> de <a href="http://lea.verou.me/">Lea Verou</a>.</p>
+
+<p>Au delà du CSS qui est si vaste que l&rsquo;on peut y passer des années pour approfondir, je me suis beaucoup amusé à construire ces slides. L&rsquo;écosystème NodeJS est immense, parfois inégal mais on y trouve à peu près tout ce que l&rsquo;on veut. L&rsquo;ES2015 (et plus) et TypeScript sont véritablement sympas, c&rsquo;est aussi plus accessible maintenant pour les développeurs Java, attention toutefois le JavaScript peut être piégeux quand il est mal maîtrisé.</p>
+
+<p>Pour apprendre, il faut sortir de sa zone de confort, les sides-projects sont idéaux pour cela. J&rsquo;ai eu l&rsquo;occasion d&rsquo;échanger avec <a href="https://twitter.com/pixelastic">Tim Carry</a> à MiXiT, il est l&rsquo;auteur de <a href="https://pixelastic.github.io/css-flags/">CSS Flags</a> dont le principe est de faire les drapeaux avec un seul <code>&lt;div&gt;</code> et du CSS, on retrouve le même principe dans ce (périlleux) exercice (Voir <a href="http://talks.pixelastic.com/slides/css-flags-mixit/#/">http://talks.pixelastic.com/slides/css-flags-mixit/#/</a>).</p>
+
+<p>Have fun &amp; Hack !</p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/ilaborie" rel="author">
+                <img src="http://www.gravatar.com/avatar/5870075cc4934bb7c32f2a6c56cc4f8d?s=48" alt="Igor Laborie">
+                <span>Igor Laborie</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/palm-tree/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-KGGFWH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script src="/palm-tree/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Dev &amp; retro-gaming avec TIC-80">
+<meta property="og:description" content="Cette année, MonkeyPatch a souhaité soutenir le DevFest Toulouse. À cette occasion, nous nous sommes réunis pour savoir ce qu&rsquo;on allait préparer pour notre stand.
+
+On s&rsquo;est très vite entendu pour faire des kakés de l&rsquo;équipe et mettre en avant notre passion du dév.
+
+Nous avons également décidé de mettre en place un petit quiz et un jeu rétro (le thème du DevFest de cette année). C&rsquo;était décidé, on allait mettre une borne arcade rétro !">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-12-16-tic80/">
+
+<meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2018-12-16T00:00:00&#43;00:00">
+<meta property="article:modified_time" content="2018-12-16T00:00:00&#43;00:00"><meta property="og:site_name" content="MonkeyPatch">
+
+<meta itemprop="name" content="Dev &amp; retro-gaming avec TIC-80">
+<meta itemprop="description" content="Cette année, MonkeyPatch a souhaité soutenir le DevFest Toulouse. À cette occasion, nous nous sommes réunis pour savoir ce qu&rsquo;on allait préparer pour notre stand.
+
+On s&rsquo;est très vite entendu pour faire des kakés de l&rsquo;équipe et mettre en avant notre passion du dév.
+
+Nous avons également décidé de mettre en place un petit quiz et un jeu rétro (le thème du DevFest de cette année). C&rsquo;était décidé, on allait mettre une borne arcade rétro !">
+
+
+<meta itemprop="datePublished" content="2018-12-16T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2018-12-16T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="724">
+
+
+
+<meta itemprop="keywords" content="devfest,retro,gaming,dev,code,tic80,console,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Dev &amp; retro-gaming avec TIC-80">
+<meta name="twitter:description" content="Cette année, MonkeyPatch a souhaité soutenir le DevFest Toulouse. À cette occasion, nous nous sommes réunis pour savoir ce qu&rsquo;on allait préparer pour notre stand.
+
+On s&rsquo;est très vite entendu pour faire des kakés de l&rsquo;équipe et mettre en avant notre passion du dév.
+
+Nous avons également décidé de mettre en place un petit quiz et un jeu rétro (le thème du DevFest de cette année). C&rsquo;était décidé, on allait mettre une borne arcade rétro !">
+<meta name="generator" content="Hugo 0.55.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Dev &amp; retro-gaming avec TIC-80</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://monkeypatch.gitlab.io/palm-tree/styles/main.83776122339fa27920f36dc641ea3239b83e110bb9eeff2e046218f8885d042e.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog palm-tree-blog-2018-2018-12-16-tic80">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="http://monkeypatch.gitlab.io/palm-tree/">
+                <img alt="Monkey Patch" src="/palm-tree/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Dev & retro-gaming avec TIC-80</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="Dev &amp; retro-gaming avec TIC-80" data-hashtags="devfest,retro,gaming,dev,code,tic80,console">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    16
+    décembre
+    2018
+</span>
+
+    <div class="tags">
+        
+        <span>devfest</span>
+        
+        <span>retro</span>
+        
+        <span>gaming</span>
+        
+        <span>dev</span>
+        
+        <span>code</span>
+        
+        <span>tic80</span>
+        
+        <span>console</span>
+        
+    </div>
+
+    <article><p>Cette année, MonkeyPatch a souhaité soutenir le <a href="https://devfesttoulouse.fr/">DevFest Toulouse</a>. À cette occasion, nous nous sommes réunis pour savoir ce qu&rsquo;on allait préparer pour notre stand.</p>
+
+<p>On s&rsquo;est très vite entendu pour faire des kakés de l&rsquo;équipe et mettre en avant notre passion du dév.</p>
+
+<p>Nous avons également décidé de mettre en place un petit <a href="http://game.monkeypatch.io/">quiz</a> et un jeu rétro (le thème du DevFest de cette année). C&rsquo;était décidé, on allait mettre une borne arcade rétro !</p>
+
+<p>Mais avoir une borne rétro du commerce ne nous emballait pas vraiment. On a donc préféré s&rsquo;en faire un do-it-yourself.</p>
+
+<p>Passionné depuis ma jeunesse par les jeux vidéo, et ayant quelques petits projets de jeux à mon actif, c&rsquo;etait l&rsquo;occasion rêvée de créer une expérience fun de retro-gaming, et de s&rsquo;éclater en codant !</p>
+
+<p>Aidé par le reste de l’équipe pour faire la structure et brancher les commandes, j&rsquo;ai pu essentiellement me concentrer sur le code.</p>
+
+<p>Après un bon jus de neurones et quelques jus de coco on a imaginé Super Monkey Ball, un jeu mêlant casse-brique et pong, dans un univers déjanté de monkeys 8-bits.</p>
+
+<p>Reste alors le choix d&rsquo;une techno pour mettre cela en place rapidement &hellip; Il existe de très bons choix, tels que <a href="http://libgdx.badlogicgames.com/">LibGDX</a> qui est une excellent framework pour développer des jeux multi-plateformes avec les langages de la JVM.</p>
+
+<p>Mais c&rsquo;est en tombant sur le <a href="https://tic.computer">TIC-80</a>, une machine virtuelle dédiée à la création de jeux rétro, que l&rsquo;on a eu un vrai coup de coeur !</p>
+
+<p>Le TIC-80 fait partie de la famille des consoles &ldquo;imaginaires&rdquo;, en anglais &ldquo;fantasy console&rdquo; et va nous permettre de créer, jouer et partager des jeux rétro 8-bit.</p>
+
+<p>Les spécifications de la machine font rêver (ou pas) :</p>
+
+<ul>
+<li>DISPLAY 240x136 pixels, 16 colors palette</li>
+<li>INPUT 2 gamepads with 8 buttons / mouse</li>
+<li>SPRITES 256 8x8 foreground sprites and 256 8x8 background tiles</li>
+<li>MAP 240x136 cells, 1920x1088 pixels</li>
+<li>SOUND 4 channels with configureable waveforms</li>
+<li>CODE 64KB of Lua or Moonscript or JavaScript or Wren or Fennel</li>
+</ul>
+
+<p>Alors pourquoi s&rsquo;embêter avec les limitations d&rsquo;une autre époque ?</p>
+
+<p>Tout d&rsquo;abord, TIC-80 va nous fournir tous les outils de développements intégrés dans la machine elle même : éditeur de code, de sprites, de map, d&rsquo;effets sonores et de musique.</p>
+
+<p><img src="https://i.ytimg.com/vi/w8tAcsB3Nhs/maxresdefault.jpg" alt="">
+<em>L&rsquo;éditeur de sprite du TIC-80, pour l&rsquo;artiste 8-bit qui est en vous.</em></p>
+
+<p>Pour ceux qui, comme moi, ont commencé l&rsquo;informatique avec un Amstrad, Commodore, VIC ou BBC Micro, &hellip; On retrouve, avec nostalgie, ce côté magique de rentrer quelques lignes de BASIC et de voir apparaître une animation, un texte interactif ou un petit jeu.</p>
+
+<p>Ici point de BASIC et de GOTO, mais du <a href="https://www.lua.org/">Lua</a> qui va nous permettre d&rsquo;écrire rapidement notre jeu. Car la grande force de TIC-80 est de pouvoir très rapidement prototyper son jeu 8-bit grâce aux fonctions intégrées qui permettent très facilement de dessiner des sprites, des formes simples, tracer la map, jouer des sons, etc &hellip;</p>
+
+<p>La référence complète des fonctions est disponible <a href="https://github.com/nesbox/TIC-80/wiki/Home#special-functions">ici</a> et on dispose d&rsquo;une grande partie de la librairie standard Lua.</p>
+
+<p>Il n&rsquo;y a donc pas à se soucier d&rsquo;interopérabilité entre les plateformes, ou à comprendre une API avancée, on va directement à l&rsquo;essentiel en se concentrant sur le gameplay de notre jeu.</p>
+
+<p><img src="https://i.imgur.com/SV1bpfy.png" alt="">
+<em>L&rsquo;éditeur de code du TIC-80 va développer votre créativité (ou votre myopie)</em></p>
+
+<p>Pour faire un jeu simple, on implémente la fonction TIC qui est appelée toutes les 16ms avec notre logique de jeu et code de dessin.</p>
+
+<p>D&rsquo;autre part, ces limitations vont nous pousser à utiliser les ressources de la machine de manière créative et nous inciter à garder notre gameplay simple. TIC-80 est notamment inspiré de <a href="https://www.lexaloffle.com/pico-8.php">Pico-8</a>, son précurseur, qui impose des limites encore plus drastiques !</p>
+
+<p>Ainsi après quelques heures de codage et du dessin en pixel-art un peu douteux fut née la première mouture de <a href="https://tic.computer/play?cart=685">Super Monkey Ball</a> !</p>
+
+<p>Après une phase de <del>jeux</del> tests acharnés par les monkeys, nous étions enfin prêts!</p>
+
+<p><img src="https://i.imgur.com/cwAyiUR.jpg" alt="">
+<em>En matière de jeu, tester n&rsquo;est pas douter !</em></p>
+
+<p>J&rsquo;espère que cet article vous aura donné envie d&rsquo;essayer le TIC-80. Il y a de nombreux jeux sympa à essayer sur leur site, ou en utilisant la fonction <code>surf</code> intégrée, n&rsquo;hésitez pas à partager vos créations &hellip;</p>
+
+<p>Pour ceux qui ont envie d&rsquo;y jouer en ligne, vous retrouverez la &ldquo;cassette&rdquo; de Super Monkey Ball sur le <a href="https://tic.computer/play?cart=685">site officiel</a></p>
+
+<p>Code 💻, Love ❤️ &amp; Bananas 🍌 !</p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/alexandre_del31" rel="author">
+                <img src="https://pbs.twimg.com/profile_images/999280736967442436/3NEvyMoU_400x400.jpg" alt="Alexandre Delattre">
+                <span>Alexandre Delattre</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/palm-tree/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-KGGFWH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script src="/palm-tree/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

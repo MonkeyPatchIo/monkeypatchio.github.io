@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE">
+<meta property="og:description" content="MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE
+
+A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
+venir), nous prenons connaissance des retours faits par les participants
+sur l&rsquo;organisation de l&rsquo;événement, les technos, les exercices proposés et les
+niveaux des coachs.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/">
+
+<meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2018-04-01T00:00:00&#43;00:00">
+<meta property="article:modified_time" content="2018-04-01T00:00:00&#43;00:00"><meta property="og:site_name" content="MonkeyPatch">
+
+<meta itemprop="name" content="On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE">
+<meta itemprop="description" content="MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE
+
+A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
+venir), nous prenons connaissance des retours faits par les participants
+sur l&rsquo;organisation de l&rsquo;événement, les technos, les exercices proposés et les
+niveaux des coachs.">
+
+
+<meta itemprop="datePublished" content="2018-04-01T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2018-04-01T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="773">
+
+
+
+<meta itemprop="keywords" content="MonkeyTechDay,MKTD,Techno,Brainfuck,LOLCODE,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE">
+<meta name="twitter:description" content="MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE
+
+A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
+venir), nous prenons connaissance des retours faits par les participants
+sur l&rsquo;organisation de l&rsquo;événement, les technos, les exercices proposés et les
+niveaux des coachs.">
+<meta name="generator" content="Hugo 0.55.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://monkeypatch.gitlab.io/palm-tree/styles/main.83776122339fa27920f36dc641ea3239b83e110bb9eeff2e046218f8885d042e.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog palm-tree-blog-2018-2018-04-01-mktd7-brainfuck-vs-lolcode">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="http://monkeypatch.gitlab.io/palm-tree/">
+                <img alt="Monkey Patch" src="/palm-tree/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<nav id="TableOfContents">
+<ul>
+<li><a href="#mktd-7-on-a-validé-le-sujet-du-prochain-monkeytechday-brainfuck-lolcode">MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE</a>
+<ul>
+<li><a href="#brainfuck">Brainfuck</a></li>
+<li><a href="#lolcode">LOLCODE</a></li>
+<li><a href="#challenge-et-inscriptions">Challenge et inscriptions</a></li>
+<li><a href="#références">Références</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>On a validé le sujet du prochain MonkeyTechDay ! &#35;Brainfuck &#35;LOLCODE</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE" data-hashtags="MonkeyTechDay,MKTD,Techno,Brainfuck,LOLCODE">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    1
+    avril
+    2018
+</span>
+
+    <div class="tags">
+        
+        <span>MonkeyTechDay</span>
+        
+        <span>MKTD</span>
+        
+        <span>Techno</span>
+        
+        <span>Brainfuck</span>
+        
+        <span>LOLCODE</span>
+        
+    </div>
+
+    <article><h1 id="mktd-7-on-a-validé-le-sujet-du-prochain-monkeytechday-brainfuck-lolcode">MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE</h1>
+
+<p>A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
+venir), nous prenons connaissance des retours faits par les participants
+sur l&rsquo;organisation de l&rsquo;événement, les technos, les exercices proposés et les
+niveaux des coachs.</p>
+
+<p>Et malheureusement, les compliments ne sont pas au rendez-vous&hellip;</p>
+
+<p>Face à la pluie de critiques et insultes diverses et variées, nous avons décidé
+de proposer à nos participants une session de rattrapage digne de ce nom pour
+nous racheter.</p>
+
+<p>Et afin de satisfaire notre auditoire, nous avons dû élever le niveau.</p>
+
+<p>Nous venons de prendre acte du prochain sujet du MKTD#7 qui aura
+lieu pendant les vacances d&rsquo;été, pour faire venir le plus de monde possible
+en profitant des congés.</p>
+
+<h2 id="brainfuck">Brainfuck</h2>
+
+<p>Brainfuck est un langage de programmation minimaliste créé par Urban Müller en 1993.</p>
+
+<p>Comme toutes les bonnes choses, Brainfuck est longtemps resté ignoré par
+l&rsquo;industrie du logiciel car considéré trop &ldquo;académique&rdquo;.</p>
+
+<p>Malgré son apparente simplicité, Brainfuck est un language Turing-complete et nous
+permet donc d&rsquo;exprimer et de résoudre de nombreux problèmes. De plus, sa
+concision évidente est un atout certain pour la productivité des équipes
+de dévs.</p>
+
+<p>Fort heureusement, Brainfuck gagne en popularité depuis plusieurs mois comme on
+peut le constater en le comparant à un langage récent:</p>
+
+<p><img src="/palm-tree/images/fool/Brainfuck.png" alt="Brainfuck vs Kotlin"></p>
+
+<p>Kotlin a connu un pic de popularité après l&rsquo;annonce faite par Google du
+support de Kotlin pour le développement Android.</p>
+
+<p>Fort heureusement, et comme on peut le constater sur ce graphique et sur le
+sondage d&rsquo;opinion présenté ci-dessous: <strong>la communauté est rapidement revenue à la
+raison et commence enfin à reconnaître Brainfuck à sa juste valeur</strong>.</p>
+
+<p>Les développeurs Android le plébiscitent notamment pour sa brièveté et ses capacités
+multi-plateformes.</p>
+
+<p><img src="/palm-tree/images/fool/Brainfuck2.png" alt="Brainfuck vs Kotlin"></p>
+
+<p>Afin de vous mettre l&rsquo;eau à la bouche, voici un petit exemple de code Brainfuck
+qui, je l&rsquo;espère, motivera un bon nombre d&rsquo;entre vous pour nous rejoindre au
+prochain MKTD !</p>
+
+<pre><code class="language-brainfuck">++++++++++[&gt;+++++++&gt;++++++++++&gt;+++++++++++&gt;++++++++++++&gt;+++&gt;+++++++&lt;&lt;&lt;&lt;&lt;&lt;-]
+&gt;++.&gt;---.&gt;++..&gt;+.&gt;++.&gt;-.&lt;&lt;&lt;&lt;.&gt;+++.+.&lt;++++.&gt;--.&gt;&gt;.&lt;&lt;&lt;+.&gt;.---.--.&gt;&gt;.
+&lt;&lt;&lt;&lt;+++++.&gt;&gt;++.-.&lt;+++++.------.&gt;&gt;.&lt;&lt;&lt;+++.&gt;----.&gt;&gt;-----.&lt;&lt;++.&gt;------.&gt;&gt;+.
+</code></pre>
+
+<h2 id="lolcode">LOLCODE</h2>
+
+<p>Autre outsider, classé la plupart du temps (de façon injuste) dans la catégorie des
+langages dits &ldquo;ésotériques&rdquo;, LOLCODE, a été créé par Adam Lindsay en 2007.</p>
+
+<p>Issu de la culture populaire du &ldquo;lolcat&rdquo; et inspiré du &ldquo;lolspeak&rdquo;,
+LOLCODE est un langage de programmation dont l&rsquo;expressivité est indéniable.</p>
+
+<p>Lui aussi ignoré à ses débuts, LOLCODE fait un retour fracassant dans le monde
+des micro-services et systèmes distribués. Il commence même à supplanter Scala
+comme langage standard pour l&rsquo;implémentation d&rsquo;applications orientées &ldquo;Big Data&rdquo;.</p>
+
+<p><img src="/palm-tree/images/fool/LOLCODE.png" alt="LOLCODE vs Scala"></p>
+
+<p>Avec de tels arguments, difficile pour nous de faire un choix différent, et pour
+vous faire vibrer et vous donner l&rsquo;envie de choisir l&rsquo;équipe LOLCODE,
+voici un petit programme qui vous permettra de réaliser que LOLCODE est un
+outil de choix, notamment si vous travaillez avec Kafka.</p>
+
+<pre><code class="language-lolcode">HAI 1.2
+BTW This LOLCODE supports distributed parallelism execution
+
+CAN HAS KAFKA?
+
+I HAS A p ITZ SRSLY A PURRDUCER
+I HAS A c ITZ SRSLY A CHEEZSUMER
+I HAS A topic ITZ A YARN
+I HAS A iterashunz ITZ A NUMBAR
+I HAS A meh ITZ A YARN
+I HAS A recordz ITZ SRSLY LOTZ A YARN AN THAR IZ 32
+I HAS A indxz ITZ A NUMBAR
+I HAS A max ITZ 100
+
+VISIBLE &quot;HAI ITZ &quot; ME &quot; I CAN HAS TOPIC?&quot;
+GIMMEH topic
+
+VISIBLE &quot;HAI ITZ &quot; ME &quot; I CAN HAS ITERASHUNZ?&quot;
+GIMMEH iterashunz
+
+DIFFRINT iterashunz AN 42, O RLY?
+  YA RLY
+    VISIBLE &quot;PURRFECT&quot;
+  NO WAI
+    VISIBLE &quot;HAI ITZ &quot; ME &quot; ITERASHUNZ DIFFRINT THAN 42&quot;
+    KTHXBYE
+OIC
+
+indexz R 0
+
+HUGZ
+
+IM IN YR loop UPPIN YR i TIL BOTH SAEM i AN iterashunz
+  PURRDUCER YR i AN YR topic MKAY
+IM OUTTA YR loop
+
+IM IN YR loop UPPIN YR time TIL BOTH SAEM time AN max
+  meh R CHEEZSUMER YR topic MKAY
+  DIFFRINT meh AN NOOB, O RLY?
+    YA RLY
+      recordz'Z indxz R meh
+      indxz R SUM OF indxz AN 1
+  OIC
+IM OUTTA YR loop
+
+VISIBLE &quot;O HAI ITZ &quot; ME &quot;, MAH MESSAGZ IZ:&quot;
+
+IM IN YR loop UPPIN YR i TIL BOTH SAEM i AN indxz
+ VISIBLE recordz'Z i
+IM OUTTA YR loop
+
+KTHXBYE
+</code></pre>
+
+<h2 id="challenge-et-inscriptions">Challenge et inscriptions</h2>
+
+<p>Vous l&rsquo;aurez compris, pour cette édition l&rsquo;équipe a décidé de relever le niveau
+et d&rsquo;expérimenter des langages vraiment pensés pour la productivité et le
+confort des développeurs.</p>
+
+<p>Et pour fêter cet évènement, nous vous proposons un petit challenge: Essayez de
+résoudre ce petit programme Brainfuck de tête (ou sur papier) afin de découvrir
+le lien vers la page d&rsquo;inscription du MTDK#7!</p>
+
+<pre><code class="language-brainfuck">++++++++[&gt;+++++++++++++&gt;+++++++++++++++&gt;++++++++++++++&gt;+++++++&gt;++++++&gt;++++++++++++&gt;+++++++++++&lt;&lt;&lt;&lt;&lt;&lt;&lt;-]
+&gt;.&gt;----..&gt;.&gt;++.&gt;-..&gt;++.&lt;&lt;&lt;&lt;&lt;+.&gt;.&gt;&gt;&gt;-.&lt;&lt;&lt;&lt;+++.&gt;+++++.&gt;&gt;&gt;+.&gt;&gt;---------------.&lt;&lt;&lt;&lt;+.&gt;&gt;&gt;&gt;+++++++++++.
+&lt;&lt;&lt;----.&lt;&lt;+.------.
+</code></pre>
+
+<p>Les impatients peuvent <a href="https://bit.ly/IqT6zt">retrouver la page directement ici!</a></p>
+
+<p>N.B. Pour les plus affamés, voici un <a href="https://gist.github.com/listochkin/94e2e9af7292a9877fff">interpréteur Brainfuck en LOLCODE</a>.</p>
+
+<h2 id="références">Références</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Brainfuck">Brainfuck</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LOLCODE">LOLCODE</a></li>
+<li><a href="https://arxiv.org/pdf/1703.10242.pdf">Programmation distribuée en LOLCODE</a></li>
+<li><a href="https://copy.sh/brainfuck/">Brainfuck online editor</a></li>
+<li><a href="https://ascii.cl/">ASCII Table</a></li>
+</ul></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/arnaud_bos" rel="author">
+                <img src="https://ca.slack-edge.com/T1H5KD6N6-U30C1P23G-a63601ba6c7d-512" alt="Arnaud bos">
+                <span>Arnaud bos</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/palm-tree/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-KGGFWH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script src="/palm-tree/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

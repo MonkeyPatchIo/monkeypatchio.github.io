@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Feign on MonkeyPatch</title>
+    <link>http://monkeypatch.gitlab.io/palm-tree/tags/feign/</link>
+    <description>Recent content in Feign on MonkeyPatch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 05 Feb 2018 13:47:57 +0100</lastBuildDate>
+    
+	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/feign/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MKTD#1 Expérimentation du format &amp;#35;Feign &amp;#35;Retrofit</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-2/</link>
+      <pubDate>Mon, 05 Feb 2018 13:47:57 +0100</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-2/</guid>
+      <description>&lt;p&gt;En juin 2016, au gré de quelques recherches sur le net, on a découvert un petit espace de coworking nommé &lt;a href=&#34;https://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt;,&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>DevFest Toulouse 2016</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-11-06-devfest-toulouse/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-11-06-devfest-toulouse/</guid>
+      <description>&lt;h1 id=&#34;retours-sur-le-devfest-toulouse&#34;&gt;Retours sur le DevFest Toulouse&lt;/h1&gt;
+
+&lt;p&gt;Jeudi 03 novembre 2016 a eu lieu le premier DevFest Toulouse (techniquement, c’était à l’IUT Blagnac), une journée de conférence à prix très abordable (30 € seulement), le panel de speakers était assez varié: des Toulousaing, des Français, et quelques internationaux. Toutes les personnes avec qui j’ai eu l’occasion de discuter ont trouvé le niveau des conférences très bon. C’est aussi mon point de vue.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mktd#1 Feign Vs Retrofit : 2 Aller Plus Loin</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</guid>
+      <description>&lt;p&gt;Cet article est le deuxième d&amp;rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.&lt;/p&gt;
+
+&lt;p&gt;Article précédent :
+&lt;a href=&#34;http://monkeypatch.gitlab.io/palm-tree/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/&#34;&gt;MKTD#1 : Prise en main&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;défi-2-aller-plus-loin&#34;&gt;Défi 2: Aller plus loin&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;Le deuxième défi permet d’adresser des problèmes plus avancés comme :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;L&amp;rsquo;authentification&lt;/li&gt;
+&lt;li&gt;La gestion des erreurs via des &lt;code&gt;Exception&lt;/code&gt; Java&lt;/li&gt;
+&lt;li&gt;L’&lt;em&gt;upload&lt;/em&gt; et le &lt;em&gt;download&lt;/em&gt; de fichiers&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mktd#1 Feign Vs Retrofit : 2 Going Further</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</link>
+      <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</guid>
+      <description>&lt;p&gt;This article is the second of the serie REST clients in Java.&lt;/p&gt;
+
+&lt;p&gt;Previous article:
+&lt;a href=&#34;http://monkeypatch.gitlab.io/palm-tree/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/&#34;&gt;MKTD#1 : Getting started&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;challenge-2-going-further&#34;&gt;Challenge #2: Going further&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;The second challenge aims at solving advanced problems such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Authentication and session management&lt;/li&gt;
+&lt;li&gt;Errors management via Java &lt;code&gt;Exception&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Files &lt;em&gt;upload&lt;/em&gt; and &lt;em&gt;download&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mktd#1 Feign Vs Retrofit : 1 Getting Started</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</link>
+      <pubDate>Tue, 09 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Early July we organised in Toulouse our first &lt;a href=&#34;http://www.monkeytechdays.com/&#34;&gt;MonkeyTechDays&lt;/a&gt; hosted by &lt;a href=&#34;http://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt; comparing the technologies: &lt;a href=&#34;http://www.monkeytechdays.com/events/mktd-1&#34;&gt;Feign vs Retrofit&lt;/a&gt;. The goal of a MKTD is to compare and learn new technologies running challenges throughout the day.&lt;/p&gt;
+
+&lt;p&gt;We decided to improve our knowledge of REST clients in Java during this first event. We started with &lt;a href=&#34;https://github.com/OpenFeign/feign&#34;&gt;Feign&lt;/a&gt; which is designed by &lt;a href=&#34;https://netflix.github.io/&#34;&gt;Netflix&lt;/a&gt; and &lt;a href=&#34;http://square.github.io/retrofit/&#34;&gt;Retrofit&lt;/a&gt; written by &lt;a href=&#34;https://github.com/square&#34;&gt;Square&lt;/a&gt;. These two libraries provide an elegant way to speed up the development of REST clients in Java compare to traditional solutions such as JAX-RS clients, Spring Rest Template, etc…&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mktd#1 Feign Vs Retrofit : 1 Prise En Main</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</link>
+      <pubDate>Tue, 09 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Nous avons organisé à Toulouse début juillet, le premier &lt;a href=&#34;http://www.monkeytechdays.com/&#34;&gt;MonkeyTechDays&lt;/a&gt; chez &lt;a href=&#34;http://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt; sur la thématique &lt;a href=&#34;http://www.monkeytechdays.com/events/mktd-1&#34;&gt;Feign vs Retrofit&lt;/a&gt;.
+Un MKTD consiste à comparer, apprendre, sous forme de défis, une ou plusieurs technologies sur une journée.&lt;/p&gt;
+
+&lt;p&gt;Ce premier événement était l’occasion d’approfondir les technologies de clients REST en Java. Nous avons donc étudié &lt;a href=&#34;https://github.com/OpenFeign/feign&#34;&gt;Feign&lt;/a&gt;, une librairie initiée par &lt;a href=&#34;https://netflix.github.io/&#34;&gt;Netflix&lt;/a&gt; et &lt;a href=&#34;http://square.github.io/retrofit/&#34;&gt;Retrofit&lt;/a&gt; qui est écrite par &lt;a href=&#34;https://github.com/square&#34;&gt;Square&lt;/a&gt;. Ces deux API permettent d’écrire des clients REST en Java de façon plus élégante qu’avec les solutions plus classiques comme JAX-RS client, Spring Rest Template, …&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

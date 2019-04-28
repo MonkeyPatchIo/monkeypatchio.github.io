@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-12-16-tic80/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/devfest/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/code/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/console/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/dev/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/gaming/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/retro/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/tic80/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/functionalprogramming/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-12-04-lambda-world-cadiz-2018/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/lambdaworld/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/conf/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-11-12-devfest-nantes/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/nantes/</loc>
+    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/clojutre/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-09-25-clojutre-helsinki-2018/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/clojure/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/dod/</loc>
+    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-07-13-sunnytech/</loc>
+    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/sunnytech/</loc>
+    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/kotlin/</loc>
+    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/databases/</loc>
+    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/distributed-systems/</loc>
+    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-07-05-jotb-malaga-2018/</loc>
+    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/jotb/</loc>
+    <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/mktd/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-06-20-mktds-articles-7/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/monkeytechday/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/tech-addicts/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/tech-days/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/techno/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/flink/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/kafka/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/breizhcamp/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-05-20-breizhcamp-2018/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/conference/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/brainfuck/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/lolcode/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-6/</loc>
+    <lastmod>2018-02-05T17:47:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/go/</loc>
+    <lastmod>2018-02-05T17:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/rust/</loc>
+    <lastmod>2018-02-05T17:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-5/</loc>
+    <lastmod>2018-02-05T16:47:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/swift/</loc>
+    <lastmod>2018-02-05T16:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-4/</loc>
+    <lastmod>2018-02-05T15:47:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/reactive/</loc>
+    <lastmod>2018-02-05T15:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/angular2/</loc>
+    <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-3/</loc>
+    <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/aureliajs/</loc>
+    <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/react/</loc>
+    <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/feign/</loc>
+    <lastmod>2018-02-05T13:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-2/</loc>
+    <lastmod>2018-02-05T13:47:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/retrofit/</loc>
+    <lastmod>2018-02-05T13:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-1/</loc>
+    <lastmod>2018-02-05T12:47:57+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-08-03-jotb-jepsen-workshop/</loc>
+    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-08-03-jotb-malaga-2017/</loc>
+    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/jepsen/</loc>
+    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/testing/</loc>
+    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/css/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/devoxx/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-05-02-makingof_css_is_awesome/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/mixit/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/nodejs/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/typescript/</loc>
+    <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/android/</loc>
+    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/androidmakers/</loc>
+    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-04-12-androidmakers/</loc>
+    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/angular/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/rxjs/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/websecurity/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/ngvikings/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-03-07-ngvikings/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-11-27-devoxx-belgium/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/java/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/functional/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/acteur/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-11-06-devfest-toulouse/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/nativescript/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/rx/</loc>
+    <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/cookie/</loc>
+    <lastmod>2016-08-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</loc>
+    <lastmod>2016-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</loc>
+    <lastmod>2016-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/tags/rest/</loc>
+    <lastmod>2016-08-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</loc>
+    <lastmod>2016-08-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</loc>
+    <lastmod>2016-08-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/team/emmanuel/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/team/emmanuel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/team/emmanuel/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/team/matthieu/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/team/matthieu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/team/matthieu/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/terms/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/terms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/terms/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/interventions/accompagnement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/interventions/accompagnement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/interventions/accompagnement/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/offers/architecture/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/offers/architecture/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/offers/architecture/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/offers/audit/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/offers/audit/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/offers/audit/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/profiles/backend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/profiles/backend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/profiles/backend/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/handup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/handup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/handup/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/team/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/team/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/team/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/profiles/bigdata/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/profiles/bigdata/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/profiles/bigdata/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/profiles/devops/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/profiles/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/profiles/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/profiles/mobie/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/profiles/mobie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/profiles/mobie/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/profiles/web/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/profiles/web/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/profiles/web/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/profiles/devops/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/profiles/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/profiles/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/offers/developpement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/offers/developpement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/offers/developpement/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/rocket/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/rocket/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/rocket/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/jobs/backend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/jobs/backend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/jobs/backend/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/profiles/big-data/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/profiles/big-data/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/profiles/big-data/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/jobs/bigdata/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/jobs/bigdata/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/jobs/bigdata/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/jobs/devops/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/jobs/devops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/jobs/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/jobs/frontend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/jobs/frontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/jobs/frontend/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/jobs/mobile/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/jobs/mobile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/jobs/mobile/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/profiles/frontend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/profiles/frontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/profiles/frontend/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/pack/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/pack/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/pack/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/offers/lead/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/offers/lead/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/offers/lead/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/profiles/mobile/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/profiles/mobile/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/profiles/mobile/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/jobs/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/jobs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/jobs/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/interventions/project/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/interventions/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/interventions/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/expert/interventions/prototype/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/expert/interventions/prototype/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/expert/interventions/prototype/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/team/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/team/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/team/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/hands/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/hands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/hands/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/profiles/ui-ux/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/profiles/ui-ux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/profiles/ui-ux/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/building/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/building/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/building/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/heart/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/heart/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/heart/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/assets/light/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/assets/light/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/assets/light/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://monkeypatch.gitlab.io/palm-tree/careers/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://monkeypatch.gitlab.io/palm-tree/en/careers/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://monkeypatch.gitlab.io/palm-tree/careers/"
+                />
+  </url>
+  
+</urlset>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular on MonkeyPatch</title>
+    <link>http://monkeypatch.gitlab.io/palm-tree/tags/angular/</link>
+    <description>Recent content in Angular on MonkeyPatch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ngVikings 2017</title>
+      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-03-07-ngvikings/</link>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-03-07-ngvikings/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;À peine remis du &lt;a href=&#34;https://www.meetup.com/fr-FR/Monkey-Tech-Days/events/232103376/&#34;&gt;MonkeyTechDay #3: Reactive Streams&lt;/a&gt; coaché par &lt;a href=&#34;https://twitter.com/sdeleuze&#34;&gt;@sdeleuze&lt;/a&gt;, je prends l&amp;rsquo;avion direction Copenhague pour assister à la première édition de &lt;a href=&#34;https://ngvikings.org/&#34;&gt;ngVikings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pour un retour sur le MKTD, voir le retour de &lt;a href=&#34;https://medium.com/@Maxime_/monkey-tech-days-3-reactive-streams-c94f74e710d#.xzvbilpsi&#34;&gt;Maxime&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;#Stereotype, Au Danemark il fait plus froid qu&amp;rsquo;à Toulouse, il y a des Lego, des Carlseberg, et une sirène.&lt;/p&gt;
+
+&lt;p&gt;J&amp;rsquo;ai plutôt l&amp;rsquo;habitude de participer à des conférences assez généralistes, mais là, je vais faire deux jours intégralement sur du Angular (comprendre Angular 2+ pour ceux qui ne font pas encore la différence entre AngularJs et &amp;lsquo;Just Angular&amp;rsquo;).&lt;/p&gt;
+
+&lt;p&gt;C&amp;rsquo;est pour moi l&amp;rsquo;occasion d&amp;rsquo;approfondir le sujet, de voir l&amp;rsquo;écosystème, et de rencontrer des développeurs passionnés par ce sujet.&lt;/p&gt;
+
+&lt;p&gt;Je constate que certains &amp;lsquo;grands comptes&amp;rsquo; Toulousains font un premier pas vers Angular sur leurs nouveaux projets, c&amp;rsquo;est donc le moment idéal pour moi d&amp;rsquo;aller plus loin sur le sujet.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

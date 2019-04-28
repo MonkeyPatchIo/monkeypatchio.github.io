@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Mktd#1 Feign Vs Retrofit : 2 Going Further">
+<meta property="og:description" content="This article is the second of the serie REST clients in Java.
+
+Previous article:
+MKTD#1 : Getting started
+
+
+
+Challenge #2: Going further&hellip;
+
+The second challenge aims at solving advanced problems such as:
+
+
+Authentication and session management
+Errors management via Java Exception
+Files upload and download
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://monkeypatch.gitlab.io/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/">
+
+<meta property="og:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="http://monkeypatch.gitlab.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2016-08-10T00:00:00&#43;00:00">
+<meta property="article:modified_time" content="2016-08-10T00:00:00&#43;00:00"><meta property="og:site_name" content="MonkeyPatch">
+
+<meta itemprop="name" content="Mktd#1 Feign Vs Retrofit : 2 Going Further">
+<meta itemprop="description" content="This article is the second of the serie REST clients in Java.
+
+Previous article:
+MKTD#1 : Getting started
+
+
+
+Challenge #2: Going further&hellip;
+
+The second challenge aims at solving advanced problems such as:
+
+
+Authentication and session management
+Errors management via Java Exception
+Files upload and download
+">
+
+
+<meta itemprop="datePublished" content="2016-08-10T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2016-08-10T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="1880">
+
+
+
+<meta itemprop="keywords" content="MKTD,Java,REST,Feign,Retrofit,Cookie,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Mktd#1 Feign Vs Retrofit : 2 Going Further">
+<meta name="twitter:description" content="This article is the second of the serie REST clients in Java.
+
+Previous article:
+MKTD#1 : Getting started
+
+
+
+Challenge #2: Going further&hellip;
+
+The second challenge aims at solving advanced problems such as:
+
+
+Authentication and session management
+Errors management via Java Exception
+Files upload and download
+">
+<meta name="generator" content="Hugo 0.55.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Mktd#1 Feign Vs Retrofit : 2 Going Further</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="http://monkeypatch.gitlab.io/palm-tree/styles/main.83776122339fa27920f36dc641ea3239b83e110bb9eeff2e046218f8885d042e.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog palm-tree-blog-2016-2016-08-12-mktd1-feign-vs-retrofit-2-en">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="http://monkeypatch.gitlab.io/palm-tree/">
+                <img alt="Monkey Patch" src="/palm-tree/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="http://monkeypatch.gitlab.io/palm-tree/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#challenge-2-going-further">Challenge #2: Going further&hellip;</a>
+<ul>
+<li><a href="#session-management-using-cookies">Session management using Cookies</a></li>
+<li><a href="#errors-management">Errors management</a></li>
+</ul></li>
+<li><a href="#feign">Feign</a>
+<ul>
+<li><a href="#pro-tip-http-requests-logging">Pro tip: HTTP requests logging</a>
+<ul>
+<li><a href="#quick-dirty-way">Quick &amp; Dirty way</a></li>
+<li><a href="#using-feign-logger">Using Feign logger</a></li>
+</ul></li>
+<li><a href="#cookie-based-authentication">Cookie based Authentication</a></li>
+<li><a href="#errors-management-1">Errors management</a></li>
+<li><a href="#upload">Upload</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+<li><a href="#retrofit">Retrofit</a>
+<ul>
+<li><a href="#cookie-based-authentication-1">Cookie based Authentication</a></li>
+<li><a href="#errors-management-2">Errors management</a></li>
+<li><a href="#upload-1">Upload</a></li>
+<li><a href="#download-1">Download</a></li>
+<li><a href="#summary-1">Summary</a></li>
+</ul></li>
+<li><a href="#overall-summary">Overall Summary</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Mktd#1 Feign Vs Retrofit : 2 Going Further</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="Mktd#1 Feign Vs Retrofit : 2 Going Further" data-hashtags="MKTD,Java,REST,Feign,Retrofit,Cookie">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    August 
+    10th,
+    2016
+</span>
+
+    <div class="tags">
+        
+        <span>MKTD</span>
+        
+        <span>Java</span>
+        
+        <span>REST</span>
+        
+        <span>Feign</span>
+        
+        <span>Retrofit</span>
+        
+        <span>Cookie</span>
+        
+    </div>
+
+    <article><p>This article is the second of the serie REST clients in Java.</p>
+
+<p>Previous article:
+<a href="/palm-tree/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/">MKTD#1 : Getting started</a></p>
+
+<hr>
+
+<h2 id="challenge-2-going-further">Challenge #2: Going further&hellip;</h2>
+
+<p>The second challenge aims at solving advanced problems such as:</p>
+
+<ul>
+<li>Authentication and session management</li>
+<li>Errors management via Java <code>Exception</code></li>
+<li>Files <em>upload</em> and <em>download</em></li>
+</ul>
+
+<h3 id="session-management-using-cookies">Session management using Cookies</h3>
+
+<p>Out of the box, the server provides authentication and session management mechanisms using <a href="https://jwt.io/">JWT</a> and <a href="https://tools.ietf.org/html/rfc6265">Cookies</a>. A new Java interface describes this operation:</p>
+
+<pre><code class="language-java">public interface AuthenticationApi {
+
+    String login(LoginPassword loginPassword) throws SecurityException;
+}
+</code></pre>
+
+<p>The response HTTP may return a <code>Set-Cookie</code> header to be decoded. This <em>cookie</em> value will then be added to subsequent requests headers sent to other services.</p>
+
+<blockquote>
+<p><em>Token</em> based solutions are simpler to put in place using Feign and Retrofit, but in our scenario we are not trying to follow the simplest approach. You can find more information on this topic on <a href="https://auth0.com/blog/angularjs-authentication-with-cookies-vs-token/">this blog</a>.</p>
+</blockquote>
+
+<h3 id="errors-management">Errors management</h3>
+
+<p>Regarding errors management, we need to return specific errors based on the HTTP code returned by the server.
+The following piece of code handles the HTTP error to Java exception mapping:</p>
+
+<pre><code class="language-java">public static RuntimeException decodeError(int status, String message, Supplier&lt;RuntimeException&gt; defaultCase) {
+    switch (status) {
+        case 404: // Not Found
+            return new NoSuchElementException(message);
+        case 400: // Bad Request
+            return new IllegalArgumentException(message);
+        case 401: // Unauthorized
+        case 403: // Forbidden
+            return new SecurityException(message);
+        default:
+            return defaultCase.get();
+    }
+}
+</code></pre>
+
+<h2 id="feign">Feign</h2>
+
+<h3 id="pro-tip-http-requests-logging">Pro tip: HTTP requests logging</h3>
+
+<p>To ease this challenge implementation, it appears to be very handy to log the HTTP requests and responses.</p>
+
+<h4 id="quick-dirty-way">Quick &amp; Dirty way</h4>
+
+<p>The quickest way to achieve this is to use a <code>RequestInterceptor</code> called by Feign before an HTTP request gets built and log it via <code>System.out</code>.</p>
+
+<pre><code class="language-java">Feign.builder()
+        .interceptor(System.out::println) // Quick &amp; Dirty debug
+        .decoder(new GsonDecoder())
+        .encoder(new GsonEncoder())
+        .target(MonkeyRaceApi.class, url);
+</code></pre>
+
+<p>This obviously works only for HTTP requests, to achieve the same for the responses, similar thing has to be added to the decoder.</p>
+
+<h4 id="using-feign-logger">Using Feign logger</h4>
+
+<p>To avoid third-parties libraries dependencies, Feign defines its own <code>Logger</code>. It consists of an abstract class with a single method to implement.
+The log level needs to be defined to allow log filtering later on (<code>NONE</code>, <code>BASIC</code>, <code>HEADERS</code>, <code>FULL</code>).
+Here is an example:</p>
+
+<pre><code class="language-java">Feign.builder()
+        .logLevel(Logger.Level.FULL)
+        .logger(new Logger() {
+            @Override
+            protected void log(String configKey, String format, Object... args) {
+                System.out.printf(&quot;[%s] &quot;, configKey);
+                System.out.printf(format, args);
+                System.out.println();
+            }
+        })
+        .decoder(new GsonDecoder())
+        .encoder(new GsonEncoder())
+        .target(MonkeyRaceApi.class, url);
+</code></pre>
+
+<p>By default, Feign logger class <code>feign.Logger.JavaLogger</code> relies on the JDK logger <code>java.util.logging.Logger</code> but an extension exists to use other loggers such as <a href="https://github.com/OpenFeign/feign/tree/master/slf4j">SLF4J</a>.</p>
+
+<h3 id="cookie-based-authentication">Cookie based Authentication</h3>
+
+<p>The first step consists in retrieving the <em>cookie</em> generated by the authentication request. To do so, a specific decoder to handle the response headers and store them as <em>cookes</em> is used.</p>
+
+<pre><code class="language-java">private static String getAuthToken(String url, String login, String password) {
+   AuthenticationApi authenticationApi = builder
+           .encoder(new GsonEncoder())
+           .decoder((response, type) -&gt; handleCookies(response.headers())) // decode cookies
+           .target(AuthenticationApi.class, url);
+   return authenticationApi.login(new LoginPassword(login, password));
+}
+</code></pre>
+
+<p>The <em>cookie</em> storage is managed by the <a href="https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html">CookieManager</a> available since Java6.</p>
+
+<pre><code class="language-java">private static final CookieManager COOKIE_MANAGER = new CookieManager();
+</code></pre>
+
+<p>The usage of this <code>CookieManager</code> is handled from the method <code>handleCookies</code> as follows:</p>
+
+<pre><code class="language-java">private static String handleCookies(Map&lt;String, Collection&lt;String&gt;&gt; headers) {
+   // From Map&lt;String, Collection&lt;String&gt;&gt; to Map&lt;String, List&lt;String&gt;&gt;
+   Map&lt;String, List&lt;String&gt;&gt; h = headers.entrySet().stream()
+           .collect(
+             toMap(
+               Map.Entry::getKey,
+               entry -&gt; entry.getValue().stream().collect(toList()))
+            );
+   try {
+       URI uri = URI.create(BASE_URL);image
+       COOKIE_MANAGER.put(uri, h);
+       return COOKIE_MANAGER.getCookieStore().get(uri).stream() // Stream&lt;HttpCookie&gt;
+               .filter(cookie -&gt; &quot;token&quot;.equals(cookie.getName()))
+               .findFirst() // Optional&lt;HttpCookie&gt;
+               .map(HttpCookie::getValue)
+               .orElseThrow(() -&gt; new IllegalStateException(&quot;Authentication cookie not found&quot;));
+   } catch (IOException e) {
+       throw new RuntimeException(e);
+   }
+}
+</code></pre>
+
+<p>After being stored, this <em>cookie</em> is automatically sent back in subsequent requests.
+This is achieved by using the <code>RequestInterceptor</code> mechanism that modifies the <code>RequestTemplate</code>. Feign uses this object to construct the HTTP request.</p>
+
+<pre><code class="language-java">static MonkeyRaceApi buildRaceApi(String url, String login, String password) {
+   getAuthToken(url, login, password);
+   return builder
+           .requestInterceptor(ApiFactory::addCookies) // Inject Cookies
+           .decoder(new GsonDecoder())
+           .encoder(new GsonEncoder())
+           .target(MonkeyRaceApi.class, url);
+}
+</code></pre>
+
+<p>The interceptor behaves as a <code>RequestTemplate</code> consumer:</p>
+
+<pre><code class="language-java">private static void addCookies(RequestTemplate template) {
+   URI uri = URI.create(BASE_URL);
+   COOKIE_MANAGER.getCookieStore().get(uri).stream()
+           .map(HttpCookie::toString)
+           .forEach(cookie -&gt; template.header(&quot;Cookie&quot;, cookie));
+}
+</code></pre>
+
+<p>With Feign, the <em>cookie</em> based authentication is closed to the <code>Authorization</code> header mechanism often associated to JWT. As it is based on HTTP headers, the same implementation approach using a <code>RequestInterceptor</code> can be used to handle authentication via <em>token</em>. On the other hand, using <em>cookies</em> makes the code more complex and impacts its readability.</p>
+
+<blockquote>
+<p>We cam also use <code>feign.Target</code> to manage the authentication, see <a href="https://github.com/OpenFeign/feign#setting-headers-per-target">Feign documentation</a>.</p>
+</blockquote>
+
+<h3 id="errors-management-1">Errors management</h3>
+
+<p>Feign proposes a specific errors management mechanism out of the box - if an HTTP reposnse code &gt;= 400. This is done using the <code>ErrorDecoder</code>:</p>
+
+<pre><code class="language-java">static MonkeyRaceApi buildRaceApi(String url, String login, String password) {
+   getAuthToken(url, login, password);
+   return builder
+           .errorDecoder(ApiFactory::decodeError) // Decode errors
+           .requestInterceptor(ApiFactory::addCookies) // Inject Cookies
+           .decoder(new GsonDecoder())
+           .encoder(new GsonEncoder())
+           .target(MonkeyRaceApi.class, url);
+}
+</code></pre>
+
+<pre><code class="language-java">private static Exception decodeError(String methodKey, Response response) {
+    return decodeError(response.status(), methodKey,
+            () -&gt; FeignException.errorStatus(methodKey, response));
+}
+</code></pre>
+
+<blockquote>
+<p>Sometimes it can be useful to have a custom management of 404 errors. The <code>Decoder</code> method <code>feign.Feign.Builder#decode404</code> can be used to define the default baheviour.</p>
+</blockquote>
+
+<h3 id="upload">Upload</h3>
+
+<p>File <em>upload</em> can be achieved in two different ways on the REST server:</p>
+
+<ul>
+<li>Upload using a <a href="https://www.ietf.org/rfc/rfc2388.txt">formulaire multipart</a> and a request header <code>Content-type</code> set to <code>multipart/form-data</code>.</li>
+<li>Direct upload with the file content inside the request body and the request header <code>Content-type</code> set to <code>application/octet-stream</code>.</li>
+</ul>
+
+<p>The two approaches can be implemented using the same principle: a specific <code>Decoder</code>.
+The second option is easier to set up as managing the <em>multipart</em> request body requires the usage of an external API such as <a href="https://commons.apache.org/proper/commons-fileupload/">Apache Commons FileUpload</a>
+Other options are also available <a href="https://github.com/xxlabaza/feign-form">https://github.com/xxlabaza/feign-form</a> or <a href="https://github.com/pcan/feign-client-test">https://github.com/pcan/feign-client-test</a> to find implementation examples of the <em>multipart</em> approach.</p>
+
+<p>So the second solution is much simpler, the main idea is to handle the specific case of objects of type <code>java.io.InputStream</code> and to delegate other cases to a traditional JSON encoder. To define the HTTP request body, the method <code>feign.RequestTemplate#body(byte[], java.nio.charset.Charset)</code> needs to be called.
+It is possible to write the encoder body inside a <em>lambda</em> with Java 8, but it would be preferable to extract this implementation in a new class:</p>
+
+<pre><code class="language-java">public class UploadEncoder implements Encoder {
+    private final Encoder delegate;
+
+    public UploadEncoder(Encoder encoder) {
+        super();
+        delegate = encoder;
+    }
+
+    @Override
+    public void encode(Object object, Type bodyType, RequestTemplate template) throws EncodeException {
+        if (InputStream.class.equals(bodyType)) {
+            template.header(&quot;Content-type&quot;, &quot;application/octet-stream&quot;);
+            InputStream inputStream = InputStream.class.cast(object);
+            // InputStream to byte[]
+            try (BufferedInputStream bin = new BufferedInputStream(inputStream);
+                 ByteArrayOutputStream bos = new ByteArrayOutputStream()) {
+                byte[] buffer = new byte[1024];
+                int bytesRead;
+                while ((bytesRead = bin.read(buffer)) &gt; 0) {
+                    bos.write(buffer, 0, bytesRead);
+                }
+                bos.flush();
+                template.body(bos.toByteArray(), StandardCharsets.UTF_8);
+            } catch (IOException e) {
+                throw new EncodeException(&quot;Cannot upload file&quot;, e);
+            }
+        } else {
+            delegate.encode(object, bodyType, template);
+        }
+    }
+}
+</code></pre>
+
+<blockquote>
+<p>It is obviously possible to simplify this code by using a library to handle to conversion of <code>InputStream</code> into <code>byte[]</code>, but it does not hurt to write <code>try with resources</code> from time to time.</p>
+
+<p>It would be fair to say that this code may cause issues when working with large files. But in this scenario, we also need to ask the question: is a REST API the right solution to <em>upload</em> large files?</p>
+</blockquote>
+
+<h3 id="download">Download</h3>
+
+<p>We use <code>feign.Decoder</code> to <em>download</em> files the same way we did for the <em>upload</em>:</p>
+
+<pre><code class="language-java">public class DownloadDecoder implements Decoder {
+    private final Decoder delegate;
+
+    DownloadDecoder(Decoder decoder) {
+        super();
+        delegate = decoder;
+    }
+
+    @Override
+    public Object decode(Response response, Type type) throws IOException, DecodeException, FeignException {
+        if (InputStream.class.equals(type)) {
+            return response.body().asInputStream();
+        }
+        return delegate.decode(response, type);
+    }
+}
+</code></pre>
+
+<p>Once again, Feign makes this operation quite simple as soon as the encoders/decoders are correctly used.</p>
+
+<h3 id="summary">Summary</h3>
+
+<p>Feign makes the handle of HTTP headers really simple, thus simplifying the authentication mechanisms using <em>cookies</em> or <em>tokens</em>.</p>
+
+<p>Errors management with Feign is also trivial which is one of the key benefits over the usage of Retrofit.</p>
+
+<p>Encoding mechanism provides an easy way to handle file <em>upload</em> and more generally to manage all the scenarios of requests serialising.
+The decoding mechanism allows retrieving the content of a file that is <em>downloaded</em> and more generally deserialising HTTP responses.</p>
+
+<p>Feign comes with a lot of flexibility using the <code>Encoder</code>, <code>Decoder</code>, <code>RequestInterceptor</code>, &hellip; and we can easily solve common issues we face with REST APIs.</p>
+
+<h2 id="retrofit">Retrofit</h2>
+
+<h3 id="cookie-based-authentication-1">Cookie based Authentication</h3>
+
+<p>The easiest way to manage authentication with Retrofit is to use the internal of the HTTP client (<code>okHttp3</code>). Similarly to Feign we send an initial request to fetch the <em>cookie</em> and then reuse the same client for all subsequent requests.
+Another option consists in using different clients for each requests but reusing the same <code>cookieJar</code>.</p>
+
+<p>Here is a first basic implementation to understand the principle of a <code>cookieJar</code>:</p>
+
+<pre><code class="language-java">client = new OkHttpClient.Builder()
+        .cookieJar(
+                new CookieJar() {
+                    private final HashMap&lt;String, List&lt;Cookie&gt;&gt; cookieStore = new HashMap&lt;&gt;();
+
+                        @Override
+                        public void saveFromResponse(HttpUrl url, List&lt;Cookie&gt; cookies) {
+                            cookieStore.put(url.uri().getAuthority(), cookies);
+                        }
+
+                        @Override
+                        public List&lt;Cookie&gt; loadForRequest(HttpUrl url) {
+                            List&lt;Cookie&gt; cookies = cookieStore.get(url.uri().getAuthority());
+                            return cookies != null ? cookies : new ArrayList&lt;Cookie&gt;();
+                    }
+                });
+</code></pre>
+
+<p>A more elegant implementation consists in adding the dependency <code>okhttp-urlconnection</code> from <code>OkHttp</code>.</p>
+
+<pre><code class="language-java">CookieHandler cookieHandler = new CookieManager(
+            new PersistentCookieStore(ctx), CookiePolicy.ACCEPT_ALL);
+
+OkHttpClient httpClient = new OkHttpClient.Builder()
+            .cookieJar(new JavaNetCookieJar(cookieHandler));
+</code></pre>
+
+<h3 id="errors-management-2">Errors management</h3>
+
+<p>There is no, from my point of view, any ideal solution with Retrofit to manage errors the way it is done with Feign.
+In this example, we use the functionality of the <code>OkHttp</code> interceptor. There is still a limitation, the exceptions returned must be of type <code>RuntimeException</code>.</p>
+
+<pre><code class="language-java">OkHttpClient client = new OkHttpClient.Builder()
+        .addInterceptor(this::authInterceptor);
+</code></pre>
+
+<pre><code class="language-java">private Response authInterceptor(Interceptor.Chain chain) throws IOException {
+    Request request = chain.request();
+    Response response = chain.proceed(request);
+
+    if (!response.isSuccessful()) {
+        RuntimeException ex = ApiFactory.decodeError(response.code(), response.message(), () -&gt; null);
+        if (ex != null) {
+            throw ex;
+        }
+    }
+    return response;
+}
+</code></pre>
+
+<h3 id="upload-1">Upload</h3>
+
+<p>To implement the <em>upload</em>, we have decided to use the method <a href="https://www.ietf.org/rfc/rfc2388.txt">multipart form</a> with the header <code>Content-type</code> set to <code>multipart/form-data</code>
+Here is the implementation detail:</p>
+
+<p>The method is added to the service</p>
+
+<pre><code class="language-java">public interface MonkeyService {
+
+    @Multipart
+    @POST(&quot;monkeys/{id}/photo&quot;)
+    Call&lt;Photo&gt; sendPhoto(@Path(&quot;id&quot;) String id, @Part MultipartBody.Part file);
+}
+</code></pre>
+
+<p>We create a temporary file containing the picture content, then we call the method <code>sendPhoto</code> giving it a <code>RequestBody</code> containing the temporary file to then create the <code>MultipartBody</code> passed down to the service.</p>
+
+<pre><code class="language-java">@Override
+public Photo savePhoto(String id, InputStream stream) throws SecurityException, IllegalArgumentException {
+    return executeCall(() -&gt; {
+        try {
+            Path tmp = Files.createTempFile(&quot;exo2&quot;, &quot;upload&quot;);
+            Files.copy(stream, tmp, REPLACE_EXISTING);
+
+            RequestBody requestFile = RequestBody.create(MediaType.parse(&quot;multipart/form-data&quot;), tmp.toFile());
+            MultipartBody.Part body = MultipartBody.Part.createFormData(&quot;photo&quot;, tmp.toFile().getName(), requestFile);
+            return monkeyService.sendPhoto(id, body);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    });
+}
+</code></pre>
+
+<h3 id="download-1">Download</h3>
+
+<p>Regarding the <em>download</em>, we only need to call our service by retrieving the reponse body. To do so, Retrofit proposes a <em>generic</em> type <code>ResponseBody</code> to access the raw response.</p>
+
+<p>We start by adding this method to our service:</p>
+
+<pre><code class="language-java">public interface MonkeyService {
+    @GET(&quot;monkeys/{id}/photo&quot;)
+    Call&lt;ResponseBody&gt; downloadPhoto(@Path(&quot;id&quot;) String id) throws SecurityException, IllegalArgumentException;
+  }
+</code></pre>
+
+<p>then here is the code to fetch the picture:</p>
+
+<pre><code class="language-java">@Override
+public InputStream downloadPhoto(String id) throws SecurityException, IllegalArgumentException {
+    try {
+        Response&lt;ResponseBody&gt; response = monkeyService.downloadPhoto(id).execute();
+        return response.body().byteStream();
+    } catch (IOException e) {
+        return null;
+    }
+}
+</code></pre>
+
+<h3 id="summary-1">Summary</h3>
+
+<p>It is really simple with Retrofit to manage authentication via <em>cookies</em> and <em>tokens</em> as well as the files <em>upload</em> and <em>download</em>.</p>
+
+<p>On the other side, errors management is far less intuitive. Maybe a better approach exists but we haven&rsquo;t found it yet.</p>
+
+<h2 id="overall-summary">Overall Summary</h2>
+
+<p>Whether we used Feign or Retrofit, the management of <em>cookies</em> and files <em>upload</em>/<em>download</em> is easily implemented.</p>
+
+<p>We also found that synchronous errors management is better managed with Feign than Retrofit.</p>
+
+<p>Implementations using <a href="http://square.github.io/okhttp/">OkHttp</a> are common to Retrofit and Feign when the client <a href="https://github.com/OpenFeign/feign/tree/master/okhttp">okhttp-client</a> is used in Feign.</p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/EmmanuelVinas" rel="author">
+                <img src="https://lh3.googleusercontent.com/-PPNaC_SZen8/AAAAAAAAAAI/AAAAAAAARt8/lRnd47vDjyM/s46-c-k-no/photo.jpg" alt="Emmanuel Vinas">
+                <span>Emmanuel Vinas</span>
+            </a>
+        </div>
+        
+        <div class="author">
+            <a href="https://twitter.com/ilaborie" rel="author">
+                <img src="http://www.gravatar.com/avatar/5870075cc4934bb7c32f2a6c56cc4f8d?s=48" alt="Igor Laborie">
+                <span>Igor Laborie</span>
+            </a>
+        </div>
+        
+        <div class="author">
+            <a href="https://twitter.com/brunochauvet" rel="author">
+                <img src="https://pbs.twimg.com/profile_images/504967695154954240/UlbmZ2uh_400x400.jpeg" alt="Bruno Chauvet">
+                <span>Bruno Chauvet</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/palm-tree/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'GTM-KGGFWH', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+    <script src="/palm-tree/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>
