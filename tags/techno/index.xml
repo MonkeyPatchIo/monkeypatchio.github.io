@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Techno on MonkeyPatch</title>
-    <link>http://monkeypatch.gitlab.io/palm-tree/tags/techno/</link>
+    <link>http://www.monkeypatch.io/tags/techno/</link>
     <description>Recent content in Techno on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Wed, 20 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/techno/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/techno/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MKTD#6, le Stream processing avec &amp;#35;Flink et &amp;#35;Kafka</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-06-20-mktds-articles-7/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-06-20-mktds-articles-7/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-06-20-mktds-articles-7/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-06-20-mktds-articles-7/</guid>
       <description>&lt;p&gt;Vendredi 16 Mars 2018, nous nous sommes retrouvés une fois de plus (pour notre plus grand plaisir) chez &lt;a href=&#34;https://www.harrycow.com/&#34;&gt;Harrycow Coworking&lt;/a&gt;, pour expérimenter 2 technos de Stream processing : Apache Flink et Kafka Streams.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
       <description>&lt;h1 id=&#34;mktd-7-on-a-validé-le-sujet-du-prochain-monkeytechday-brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
 
 &lt;p&gt;A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
@@ -36,58 +36,58 @@ niveaux des coachs.&lt;/p&gt;</description>
     
     <item>
       <title>Mktd#5 Seulement 17 mois après la 1ère édition ! &amp;#35;Go &amp;#35;Rust</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-6/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</link>
       <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-6/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</guid>
       <description>&lt;p&gt;Déjà (et seulement&amp;hellip;) 17 mois se sont écoulés depuis la première expérimentation des MKTD.
 Pour cette 5ème édition, on se retrouve une fois de plus chez HarryCow pour expérimenter et tester les 2 technologies de plus en plus utilisées Golang et Rustlang.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#4 Du challenge et du partage autour de &amp;#35;Kotlin &amp;#35;Swift</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-5/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</link>
       <pubDate>Mon, 05 Feb 2018 16:47:57 +0100</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-5/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</guid>
       <description>&lt;p&gt;Pour la quatrième édition, on repart sur le format 2 technos / 2 coachs qui nous semble très pertinent pour comparer 2 technos utilisées aussi bien coté Mobile que côté Back-End.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#3 La programmation réactive ça vous tente ? &amp;#35;Reactive</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-4/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-4/</link>
       <pubDate>Mon, 05 Feb 2018 15:47:57 +0100</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-4/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-4/</guid>
       <description>&lt;p&gt;Début 2017, la Programmation Réactive était en train de devenir la grosse tendance. Intéressant pour plusieurs Monkeys, on a décidé de faire venir une “guest star” pour animer ce MKTD : &lt;a href=&#34;https://twitter.com/sdeleuze?lang=fr&#34;&gt;Sébastien Deleuze&lt;/a&gt;.
 Il a vite adhéré à notre concept et s’est prêté au jeu.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-3/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-3/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
       <description>&lt;p&gt;On remet le couvert autour d’#Angular2 #React #AureliaJS
 Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#1 Expérimentation du format &amp;#35;Feign &amp;#35;Retrofit</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-2/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-2/</link>
       <pubDate>Mon, 05 Feb 2018 13:47:57 +0100</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-2/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-2/</guid>
       <description>&lt;p&gt;En juin 2016, au gré de quelques recherches sur le net, on a découvert un petit espace de coworking nommé &lt;a href=&#34;https://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt;,&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Pourquoi avons-nous créé les MonkeyTechDays ?</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-1/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-1/</link>
       <pubDate>Mon, 05 Feb 2018 12:47:57 +0100</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-02-05-mktds-articles-1/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-1/</guid>
       <description>&lt;p&gt;Nous voulons vous faire découvrir d’un peu plus près notre univers. Chaque MonkeyTechDays (MKTD) réunit une 30aine de Tech Addicts. Comme chaque Monkey, ces passionnés du dév. cherchent à suivre les évolutions rapides des technos. En équipe nous expérimentons, évaluons les technos innovantes sous forme de défis techniques. Une journée au plus près du code, fun et décontractée, où des coachs passionnés aident les participants à réaliser des exos de niveau soutenu.&lt;/p&gt;</description>
     </item>
     

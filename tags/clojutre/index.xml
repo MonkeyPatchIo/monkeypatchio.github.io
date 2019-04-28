@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ClojuTRE on MonkeyPatch</title>
-    <link>http://monkeypatch.gitlab.io/palm-tree/tags/clojutre/</link>
+    <link>http://www.monkeypatch.io/tags/clojutre/</link>
     <description>Recent content in ClojuTRE on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/clojutre/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/clojutre/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ClojuTRE &amp; SmallFP 2018 — Review</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://clojutre.com&#34;&gt;ClojuTRE&lt;/a&gt; is a Clojure conference happening in Finland
 since 2012.&lt;/p&gt;
 

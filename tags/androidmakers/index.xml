@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AndroidMakers on MonkeyPatch</title>
-    <link>http://monkeypatch.gitlab.io/palm-tree/tags/androidmakers/</link>
+    <link>http://www.monkeypatch.io/tags/androidmakers/</link>
     <description>Recent content in AndroidMakers on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Wed, 12 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/androidmakers/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/androidmakers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AndroidMakers 2017</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-04-12-androidmakers/</link>
+      <link>http://www.monkeypatch.io/blog/2017/2017-04-12-androidmakers/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2017/2017-04-12-androidmakers/</guid>
+      <guid>http://www.monkeypatch.io/blog/2017/2017-04-12-androidmakers/</guid>
       <description>&lt;h1 id=&#34;retour-sur-l-android-makers-2017&#34;&gt;Retour sur l&amp;rsquo;Android Makers 2017&lt;/h1&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;

@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>conf on MonkeyPatch</title>
-    <link>http://monkeypatch.gitlab.io/palm-tree/tags/conf/</link>
+    <link>http://www.monkeypatch.io/tags/conf/</link>
     <description>Recent content in conf on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Tue, 04 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/conf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/conf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lambda World Cadiz 2018 - A Review</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-12-04-lambda-world-cadiz-2018/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-12-04-lambda-world-cadiz-2018/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</guid>
       <description>&lt;p&gt;The Spanish city of &lt;a href=&#34;https://en.wikipedia.org/wiki/C%C3%A1diz&#34;&gt;Cádiz&lt;/a&gt; is an amazing place, with a great history (from Roman ruins, to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Spanish_Constitution_of_1812&#34;&gt;first Spanish constitution&lt;/a&gt; which was written there back in 1812). It is a great location choice for the &lt;a href=&#34;http://www.lambda.world/&#34;&gt;Lambda World conference&lt;/a&gt;, although a quite remote one. Due to train troubles following the recent Aude flooding back here in France, I missed the first morning unconference and the first workshop (which I sorely regretted since I highly awaited to attend the &lt;a href=&#34;https://eta-lang.org/&#34;&gt;eta-lang&lt;/a&gt; workshop).&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevFest Nantes 2018 : Mission spatiale réussie !</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-11-12-devfest-nantes/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-11-12-devfest-nantes/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
       <description>&lt;p&gt;En matière de conférence, je n&amp;rsquo;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&amp;rsquo;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ClojuTRE &amp; SmallFP 2018 — Review</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://clojutre.com&#34;&gt;ClojuTRE&lt;/a&gt; is a Clojure conference happening in Finland
 since 2012.&lt;/p&gt;
 
@@ -44,10 +44,10 @@ SmallFP just before ClojuTRE finally amortized the travel cost.&lt;/p&gt;</descr
     
     <item>
       <title>Retour SunnyTech 2018</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-07-13-sunnytech/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-07-13-sunnytech/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</guid>
       <description>&lt;p&gt;Les grosses chaleures, le chant des cigales, la philo du Bac., les grèves de la SNCF, et &lt;a href=&#34;https://sunny-tech.io/&#34;&gt;&lt;strong&gt;SunnyTech&lt;/strong&gt;&lt;/a&gt; : voilà l&amp;rsquo;été !
 Cette année, les communautés Montpelliéraines organisent la première édition de SunnyTech. Pour les toulousains c&amp;rsquo;est génial d&amp;rsquo;avoir une conférence aussi proche.&lt;/p&gt;
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DoD on MonkeyPatch</title>
-    <link>http://monkeypatch.gitlab.io/palm-tree/tags/dod/</link>
+    <link>http://www.monkeypatch.io/tags/dod/</link>
     <description>Recent content in DoD on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://monkeypatch.gitlab.io/palm-tree/tags/dod/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/dod/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Retour SunnyTech 2018</title>
-      <link>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-07-13-sunnytech/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://monkeypatch.gitlab.io/palm-tree/blog/2018/2018-07-13-sunnytech/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</guid>
       <description>&lt;p&gt;Les grosses chaleures, le chant des cigales, la philo du Bac., les grèves de la SNCF, et &lt;a href=&#34;https://sunny-tech.io/&#34;&gt;&lt;strong&gt;SunnyTech&lt;/strong&gt;&lt;/a&gt; : voilà l&amp;rsquo;été !
 Cette année, les communautés Montpelliéraines organisent la première édition de SunnyTech. Pour les toulousains c&amp;rsquo;est génial d&amp;rsquo;avoir une conférence aussi proche.&lt;/p&gt;
 
