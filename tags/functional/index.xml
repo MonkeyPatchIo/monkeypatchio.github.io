@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>functional on MonkeyPatch</title>
-    <link>https://monkeypatch.io/tags/functional/</link>
+    <link>https://www.monkeypatch.io/tags/functional/</link>
     <description>Recent content in functional on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://monkeypatch.io/tags/functional/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/functional/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devoxx Belgium 2016</title>
-      <link>https://monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</link>
+      <link>https://www.monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</guid>
+      <guid>https://www.monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</guid>
       <description>&lt;h2 id=&#34;welcome-to-antwerp-anvers&#34;&gt;Welcome to Antwerp (Anvers)&lt;/h2&gt;
 &lt;p&gt;A peine remis du &lt;a href=&#34;https://devfesttoulouse.fr/&#34;&gt;DevFest Toulouse&lt;/a&gt;, je pars une semaine en Belgique pour aller à &lt;a href=&#34;https://devoxx.be/&#34;&gt;Devoxx&lt;/a&gt;.
 Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépendante : elle n’est organisée ni par Google ni par Oracle. Cela dit, ils étaient présents en temps que sponsors et speakers. C’est la plus grosse conférence auquelle j’ai assisté (3500 développeurs), ce n’est pas tous les jours qu’on a l’occasion de croiser des &lt;a href=&#34;http://cfp.devoxx.be/2016/speaker/brian_goetz&#34;&gt;Brian Goetz&lt;/a&gt;, &lt;a href=&#34;http://cfp.devoxx.be/2016/speaker/venkat_subramaniam&#34;&gt;Venkat Subramaniam&lt;/a&gt;, &amp;hellip; en Europe.&lt;/p&gt;</description>

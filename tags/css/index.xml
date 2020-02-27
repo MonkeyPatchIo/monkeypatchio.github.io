@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on MonkeyPatch</title>
-    <link>https://monkeypatch.io/tags/css/</link>
+    <link>https://www.monkeypatch.io/tags/css/</link>
     <description>Recent content in CSS on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Tue, 02 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://monkeypatch.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Making Of &#39;CSS is Awesome !&#39;</title>
-      <link>https://monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</link>
+      <link>https://www.monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</guid>
+      <guid>https://www.monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Depuis quelque temps, j&#39;avais l&#39;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&#39;ai profité du CFP de DevoxxFR pour me jeter à l&#39;eau.
 En plus de mon appétance pour la transmission, j&#39;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.&lt;/p&gt;</description>

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teams on MonkeyPatch</title>
-    <link>https://monkeypatch.io/en/team/</link>
+    <link>https://www.monkeypatch.io/en/team/</link>
     <description>Recent content in Teams on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     
-	<atom:link href="https://monkeypatch.io/en/team/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/en/team/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://monkeypatch.io/en/team/emmanuel/</link>
+      <link>https://www.monkeypatch.io/en/team/emmanuel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/en/team/emmanuel/</guid>
+      <guid>https://www.monkeypatch.io/en/team/emmanuel/</guid>
       <description>Passionate about technology, new technologies, Technical Leader, Web and mobile architecture</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://monkeypatch.io/en/team/matthieu/</link>
+      <link>https://www.monkeypatch.io/en/team/matthieu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/en/team/matthieu/</guid>
+      <guid>https://www.monkeypatch.io/en/team/matthieu/</guid>
       <description>Business, Innovation, Strategy and Business Management, Recruitment, Team Management, IU / UX</description>
     </item>
     

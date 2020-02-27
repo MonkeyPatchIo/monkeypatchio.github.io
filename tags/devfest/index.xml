@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DevFest on MonkeyPatch</title>
-    <link>https://monkeypatch.io/tags/devfest/</link>
+    <link>https://www.monkeypatch.io/tags/devfest/</link>
     <description>Recent content in DevFest on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://monkeypatch.io/tags/devfest/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/devfest/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dev &amp; retro-gaming avec TIC-80</title>
-      <link>https://monkeypatch.io/blog/2018/2018-12-16-tic80/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/blog/2018/2018-12-16-tic80/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</guid>
       <description>&lt;p&gt;Cette année, MonkeyPatch a souhaité soutenir le &lt;a href=&#34;https://devfesttoulouse.fr/&#34;&gt;DevFest Toulouse&lt;/a&gt;. À cette occasion, nous nous sommes réunis pour savoir ce qu&#39;on allait préparer pour notre stand.&lt;/p&gt;
 &lt;p&gt;On s&#39;est très vite entendu pour faire des kakés de l&#39;équipe et mettre en avant notre passion du dév.&lt;/p&gt;
 &lt;p&gt;Nous avons également décidé de mettre en place un petit &lt;a href=&#34;http://game.monkeypatch.io/&#34;&gt;quiz&lt;/a&gt; et un jeu rétro (le thème du DevFest de cette année). C&#39;était décidé, on allait mettre une borne arcade rétro !&lt;/p&gt;</description>
@@ -24,19 +24,19 @@
     
     <item>
       <title>DevFest Nantes 2018 : Mission spatiale réussie !</title>
-      <link>https://monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
       <description>&lt;p&gt;En matière de conférence, je n&#39;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&#39;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevFest Toulouse 2016</title>
-      <link>https://monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
+      <link>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
+      <guid>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
       <description>&lt;h1 id=&#34;retours-sur-le-devfest-toulouse&#34;&gt;Retours sur le DevFest Toulouse&lt;/h1&gt;
 &lt;p&gt;Jeudi 03 novembre 2016 a eu lieu le premier DevFest Toulouse (techniquement, c’était à l’IUT Blagnac), une journée de conférence à prix très abordable (30 € seulement), le panel de speakers était assez varié: des Toulousaing, des Français, et quelques internationaux. Toutes les personnes avec qui j’ai eu l’occasion de discuter ont trouvé le niveau des conférences très bon. C’est aussi mon point de vue.&lt;/p&gt;</description>
     </item>

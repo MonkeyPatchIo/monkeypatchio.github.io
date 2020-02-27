@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clojure on MonkeyPatch</title>
-    <link>https://monkeypatch.io/tags/clojure/</link>
+    <link>https://www.monkeypatch.io/tags/clojure/</link>
     <description>Recent content in Clojure on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Tue, 25 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://monkeypatch.io/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/clojure/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ClojuTRE &amp; SmallFP 2018 — Review</title>
-      <link>https://monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://clojutre.com&#34;&gt;ClojuTRE&lt;/a&gt; is a Clojure conference happening in Finland
 since 2012.&lt;/p&gt;
 &lt;p&gt;I was super eager to attend a Clojure conference this year, so the addition of
