@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LOLCODE on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/lolcode/</link>
+    <link>http://www.monkeypatch.io/tags/lolcode/</link>
     <description>Recent content in LOLCODE on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/lolcode/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/lolcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
       <description>&lt;h1 id=&#34;mktd7--on-a-validé-le-sujet-du-prochain-monkeytechday--brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
 &lt;p&gt;A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
 venir), nous prenons connaissance des retours faits par les participants

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jepsen on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/jepsen/</link>
+    <link>http://www.monkeypatch.io/tags/jepsen/</link>
     <description>Recent content in Jepsen on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Thu, 03 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/jepsen/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/jepsen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>J On The Beach 2017 — Jepsen Workshop</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</link>
+      <link>http://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
+      <guid>http://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
       <description>&lt;p&gt;The first book I&#39;ve read about distributed systems was
 &lt;a href=&#34;https://www.amazon.fr/Distributed-Systems-Principles-Andrew-Tanenbaum/dp/0132392275&#34;&gt;Distributed Systems: Principles and Paradigms&lt;/a&gt;
 by Andrew S. Tanenbaum and Maarten van Steen.&lt;br&gt;

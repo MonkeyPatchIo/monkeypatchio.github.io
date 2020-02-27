@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>entretiens on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/entretiens/</link>
+    <link>http://www.monkeypatch.io/tags/entretiens/</link>
     <description>Recent content in entretiens on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 28 Apr 2019 21:29:39 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/entretiens/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/entretiens/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devenir Monkey — Partie 2 : Les entretiens</title>
-      <link>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</link>
+      <link>http://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</link>
       <pubDate>Sun, 28 Apr 2019 21:29:39 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</guid>
+      <guid>http://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</guid>
       <description>&lt;p&gt;Dans le précédent article de cette série
-&amp;ldquo;&lt;a href=&#34;https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/&#34;&gt;Devenir Monkey — Partie 1 : Notre processus de recrutement&lt;/a&gt;&amp;rdquo;
+&amp;ldquo;&lt;a href=&#34;http://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/&#34;&gt;Devenir Monkey — Partie 1 : Notre processus de recrutement&lt;/a&gt;&amp;rdquo;
 j&#39;ai effleuré la surface des choses en exposant les raisons qui nous ont poussé à élaborer notre propre processus de
 recrutement. J&#39;ai aussi présenté la phase préliminaire de recherche de candidats et dressé un court bilan de notre
 expérience jusqu&#39;ici.&lt;/p&gt;</description>
@@ -26,10 +26,10 @@ expérience jusqu&#39;ici.&lt;/p&gt;</description>
     
     <item>
       <title>Devenir Monkey — Partie 1 : Notre processus de recrutement</title>
-      <link>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</link>
+      <link>http://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</link>
       <pubDate>Sun, 28 Apr 2019 21:26:40 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</guid>
+      <guid>http://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</guid>
       <description>&lt;p&gt;2018 a été une année chargée pour MonkeyPatch, et sans avoir formellement dressé le bilan de nos réussites et échecs,
 le recrutement reste un sujet majeur pour 2019 et un axe important de notre croissance.&lt;/p&gt;
 &lt;p&gt;Alors parlons recrutement :&lt;/p&gt;</description>

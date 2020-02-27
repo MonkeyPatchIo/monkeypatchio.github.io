@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notre Expertise on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/expert/</link>
+    <link>http://www.monkeypatch.io/expert/</link>
     <description>Recent content in Notre Expertise on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     
-	<atom:link href="https://www.monkeypatch.io/expert/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/expert/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Accompagnement</title>
-      <link>https://www.monkeypatch.io/expert/interventions/accompagnement/</link>
+      <link>http://www.monkeypatch.io/expert/interventions/accompagnement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/interventions/accompagnement/</guid>
+      <guid>http://www.monkeypatch.io/expert/interventions/accompagnement/</guid>
       <description>Un accompagnement personnalisé Nous garantissons sur toutes nos missions la mise en commun des techniques et méthodes de développement pour que vous puissiez avoir la maîtrise de vos projets. Vos équipes montent ainsi en compétence et pourront réutiliser les connaissances acquises lors de la réalisation de futurs développements.
  Conseiller lors des mises en place de nouvelles fonctionnalités Résoudre des sujets complexes Accompagner les montées en compétences de l’équipe Former sur les technologies et méthodes  </description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>https://www.monkeypatch.io/expert/offers/architecture/</link>
+      <link>http://www.monkeypatch.io/expert/offers/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/architecture/</guid>
+      <guid>http://www.monkeypatch.io/expert/offers/architecture/</guid>
       <description>Conception d’architectures Nous participons à l’élaboration d’architectures flexibles capables de s’adapter à l’évolution des composants et répondre aux futurs enjeux projets.
  Définir des architectures évolutives orientées microservices Respecter les standards de sécurité Prendre en compte les exigences de qualité et de performances Refondre l’existant pour offrir flexibilité et scalabilité  </description>
     </item>
     
     <item>
       <title>Audit et conseil</title>
-      <link>https://www.monkeypatch.io/expert/offers/audit/</link>
+      <link>http://www.monkeypatch.io/expert/offers/audit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/audit/</guid>
+      <guid>http://www.monkeypatch.io/expert/offers/audit/</guid>
       <description>Audit et conseil Nous vous accompagnons sur l’élaboration de la stratégie informatique aussi bien au niveau projet qu’au niveau entreprise.
 Nous réalisons également des audits de sécurité, de performance ou de revue générale de code afin de préconiser des axes d’amélioration et de vous permettre de prendre les meilleures décisions.
  Évaluer la faisabilité technique Chiffrer et planifier les projets Auditer et améliorer l’existant Proposer des solutions pour renforcer la sécurité Préconiser des axes d’amélioration pour rendre les systèmes plus fiables Aider à transiter vers les nouvelles méthodes de travail  </description>
@@ -43,80 +43,80 @@ Nous réalisons également des audits de sécurité, de performance ou de revue 
     
     <item>
       <title>Consultant Big Data</title>
-      <link>https://www.monkeypatch.io/expert/profiles/bigdata/</link>
+      <link>http://www.monkeypatch.io/expert/profiles/bigdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/bigdata/</guid>
+      <guid>http://www.monkeypatch.io/expert/profiles/bigdata/</guid>
       <description>Consultant Big Data L’exploitation des données est le terrain de jeu de nos consultants BigData qui savent analyser et visualiser les quantités d’information disponible pour en tirer profit.
  Définir les stratégies de collection, stockage, analyse et visualisation des données Produire une analyse précise de jeux de données grâce aux dernières technologies Recommander des techniques de recherche et de modélisation  </description>
     </item>
     
     <item>
       <title>Consultant DevOps</title>
-      <link>https://www.monkeypatch.io/expert/profiles/devops/</link>
+      <link>http://www.monkeypatch.io/expert/profiles/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/devops/</guid>
+      <guid>http://www.monkeypatch.io/expert/profiles/devops/</guid>
       <description>Consultant DevOps Nos consultants DevOps sont spécialistes dans l’automatisation des processus de développements comprenant l’optimisation des tests, la mise en place d’intégration continue, les déploiements automatisés.
  Mettre en place les outils pour optimiser le développement Limiter les erreurs manuelles Faire le lien entre le développement et les opérations Gérer la sécurité des environnements  </description>
     </item>
     
     <item>
       <title>Consultant Mobile</title>
-      <link>https://www.monkeypatch.io/expert/profiles/mobie/</link>
+      <link>http://www.monkeypatch.io/expert/profiles/mobie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/mobie/</guid>
+      <guid>http://www.monkeypatch.io/expert/profiles/mobie/</guid>
       <description>Consultant Mobile Nos consultants Mobile réalisent des applications natives tout comme des versions Mobile de site Web sur les principales plateformes Android / iOS.
  Suivre l’évolution rapide des technologies Mobile Respecter les contraintes matérielles S’intégrer avec les systèmes distants  </description>
     </item>
     
     <item>
       <title>Consultant Web</title>
-      <link>https://www.monkeypatch.io/expert/profiles/web/</link>
+      <link>http://www.monkeypatch.io/expert/profiles/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/web/</guid>
+      <guid>http://www.monkeypatch.io/expert/profiles/web/</guid>
       <description>Consultant Web (Front-End / Back-End) Nos consultants Web sont experts en développement Front-End et/ou Back-End. Ils sont capables de réaliser une application Web à fort trafic en respectant les standards imposés.
  Fournir un design en respect avec les chartes graphiques Assurer des performances optimales pour une application réactive S’adapter à vos systèmes d’information  </description>
     </item>
     
     <item>
       <title>Développement</title>
-      <link>https://www.monkeypatch.io/expert/offers/developpement/</link>
+      <link>http://www.monkeypatch.io/expert/offers/developpement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/developpement/</guid>
+      <guid>http://www.monkeypatch.io/expert/offers/developpement/</guid>
       <description>Développement de projets Nous mettons à disposition de vos équipes notre expertise en développement pour accroître votre capacité à innover et industrialiser des produits compétitifs.
  Développer avec des outils et langages de programmation adaptés Renforcer la qualité par l’application de bonnes pratiques Produire du code performant Réduire le temps dédié à la correction de problèmes  </description>
     </item>
     
     <item>
       <title>Lead technique</title>
-      <link>https://www.monkeypatch.io/expert/offers/lead/</link>
+      <link>http://www.monkeypatch.io/expert/offers/lead/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/lead/</guid>
+      <guid>http://www.monkeypatch.io/expert/offers/lead/</guid>
       <description>Lead technique Nous définissons avec vos équipes les bonnes pratiques à respecter. Nous leur permettons de résoudre des problèmes techniques tout en respectant l’architecture définie.
  Maintenir un environnement de travail productif Renforcer la collaboration des équipes Trouver l&#39;équilibre entre standardisation et innovation Fédérer les équipes pour pérenniser les démarches Réaliser le suivi technique du projet Identifier les problèmes et proposer des solutions  </description>
     </item>
     
     <item>
       <title>Projet</title>
-      <link>https://www.monkeypatch.io/expert/interventions/project/</link>
+      <link>http://www.monkeypatch.io/expert/interventions/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/interventions/project/</guid>
+      <guid>http://www.monkeypatch.io/expert/interventions/project/</guid>
       <description>Une réalisation efficace de vos projets Nous assurons une qualité de produit optimale durant toutes les phases projet, en mettant en place les principes d&#39;intégration continue, ce qui facilite les déploiements sur différents environnements et ainsi optimise les cycles de développement.
  Concevoir et développer des produits sur mesure Réaliser un suivi projet efficace par une approche Lean et Agile Accélérer les cycles de développement grâce à l’intégration continue Intégrer la notion d’UI / UX pour une ergonomie optimale  </description>
     </item>
     
     <item>
       <title>Prototype</title>
-      <link>https://www.monkeypatch.io/expert/interventions/prototype/</link>
+      <link>http://www.monkeypatch.io/expert/interventions/prototype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/interventions/prototype/</guid>
+      <guid>http://www.monkeypatch.io/expert/interventions/prototype/</guid>
       <description>De l’idée au Prototype Notre équipe dispose des compétences nécessaires pour vous aider durant les phases d&#39;idéation et de conceptualisation de vos projets jusqu&#39;à la mise en place de prototypes pour évaluer les besoins du marché.
  Aider à la définition de vos produits et services Préconiser des solutions techniques Réaliser des Proofs of Concept Développer des maquettes et prototypes  </description>
     </item>

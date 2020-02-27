@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rx on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/rx/</link>
+    <link>http://www.monkeypatch.io/tags/rx/</link>
     <description>Recent content in Rx on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 06 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/rx/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/rx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DevFest Toulouse 2016</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
+      <link>http://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
+      <guid>http://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
       <description>&lt;h1 id=&#34;retours-sur-le-devfest-toulouse&#34;&gt;Retours sur le DevFest Toulouse&lt;/h1&gt;
 &lt;p&gt;Jeudi 03 novembre 2016 a eu lieu le premier DevFest Toulouse (techniquement, c’était à l’IUT Blagnac), une journée de conférence à prix très abordable (30 € seulement), le panel de speakers était assez varié: des Toulousaing, des Français, et quelques internationaux. Toutes les personnes avec qui j’ai eu l’occasion de discuter ont trouvé le niveau des conférences très bon. C’est aussi mon point de vue.&lt;/p&gt;</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LambdaWorld on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/lambdaworld/</link>
+    <link>http://www.monkeypatch.io/tags/lambdaworld/</link>
     <description>Recent content in LambdaWorld on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Tue, 04 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/lambdaworld/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.monkeypatch.io/tags/lambdaworld/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lambda World Cadiz 2018 - A Review</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</link>
+      <link>http://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</guid>
+      <guid>http://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</guid>
       <description>&lt;p&gt;The Spanish city of &lt;a href=&#34;https://en.wikipedia.org/wiki/C%C3%A1diz&#34;&gt;Cádiz&lt;/a&gt; is an amazing place, with a great history (from Roman ruins, to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Spanish_Constitution_of_1812&#34;&gt;first Spanish constitution&lt;/a&gt; which was written there back in 1812). It is a great location choice for the &lt;a href=&#34;http://www.lambda.world/&#34;&gt;Lambda World conference&lt;/a&gt;, although a quite remote one. Due to train troubles following the recent Aude flooding back here in France, I missed the first morning unconference and the first workshop (which I sorely regretted since I highly awaited to attend the &lt;a href=&#34;https://eta-lang.org/&#34;&gt;eta-lang&lt;/a&gt; workshop).&lt;/p&gt;</description>
     </item>
     
