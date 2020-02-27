@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Expertise on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/en/expert/</link>
+    <link>https://www.monkeypatch.io/en/expert/</link>
     <description>Recent content in Our Expertise on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     
-	<atom:link href="http://www.monkeypatch.io/en/expert/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/en/expert/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Architecture</title>
-      <link>http://www.monkeypatch.io/en/expert/offers/architecture/</link>
+      <link>https://www.monkeypatch.io/en/expert/offers/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/offers/architecture/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/offers/architecture/</guid>
       <description>Architectural design We participate in the development of flexible architectures capable of adapting to the evolution of components and meeting future project challenges.
  Define scalable architectures oriented micro services Comply with safety standards Take into account quality and performance requirements Redesign the existing system to offer flexibility and scalability  </description>
     </item>
     
     <item>
       <title>Audit and consulting</title>
-      <link>http://www.monkeypatch.io/en/expert/offers/audit/</link>
+      <link>https://www.monkeypatch.io/en/expert/offers/audit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/offers/audit/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/offers/audit/</guid>
       <description>Audit and consulting We support you in the development of the IT strategy at both project and company level.
 We also carry out safety, performance or general code review audits in order to recommend areas for improvement and enable you to make the best decisions.
  Assess technical feasibility Cost and plan projects Audit and improve the existing system Propose solutions to strengthen security Recommend areas for improvement to make systems more reliable Help to move towards new working methods  </description>
@@ -33,90 +33,90 @@ We also carry out safety, performance or general code review audits in order to 
     
     <item>
       <title>Big Data Consultant</title>
-      <link>http://www.monkeypatch.io/en/expert/profiles/bigdata/</link>
+      <link>https://www.monkeypatch.io/en/expert/profiles/bigdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/profiles/bigdata/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/profiles/bigdata/</guid>
       <description>Big Data Consultant Data exploitation is the playground of our BigData consultants who know how to analyze and visualize the quantities of information available to take advantage of it.
  Define strategies for data collection, storage, analysis and visualization Produce accurate data set analysis using the latest technologies Recommend research and modelling techniques  </description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>http://www.monkeypatch.io/en/expert/offers/developpement/</link>
+      <link>https://www.monkeypatch.io/en/expert/offers/developpement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/offers/developpement/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/offers/developpement/</guid>
       <description>Project development We provide your teams with our development expertise to increase your ability to innovate and industrialize competitive products.
  Develop with adapted programming tools and languages Enhance quality through the application of good practices Produce high-performance code Reduce the time spent correcting problems  </description>
     </item>
     
     <item>
       <title>DevOps Consultant</title>
-      <link>http://www.monkeypatch.io/en/expert/profiles/devops/</link>
+      <link>https://www.monkeypatch.io/en/expert/profiles/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/profiles/devops/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/profiles/devops/</guid>
       <description>DevOps Consultant Our DevOps consultants are specialists in automating development processes including test optimization, continuous integration implementation, automated deployments.
  Implement tools to optimize development Limit manual errors Linking development and operations Manage the security of environments  </description>
     </item>
     
     <item>
       <title>Mobile Consultant</title>
-      <link>http://www.monkeypatch.io/en/expert/profiles/mobie/</link>
+      <link>https://www.monkeypatch.io/en/expert/profiles/mobie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/profiles/mobie/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/profiles/mobie/</guid>
       <description>Mobile Consultant Our Mobile consultants create native applications as well as Mobile versions of websites on the main Android / iOS platforms.
  Keep up with the rapid evolution of mobile technologies Respect material constraints Integrate with remote systems  </description>
     </item>
     
     <item>
       <title>Project</title>
-      <link>http://www.monkeypatch.io/en/expert/interventions/project/</link>
+      <link>https://www.monkeypatch.io/en/expert/interventions/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/interventions/project/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/interventions/project/</guid>
       <description>Efficient implementation of your projects We ensure optimal product quality during all project phases, by implementing continuous integration principles, which facilitates deployments to different environments and thus optimizes development cycles.
  Design and develop custom products Carry out effective project monitoring using a Lean and Agile approach Accelerate development cycles through continuous integration Integrate the notion of IU / UX for optimal ergonomics  </description>
     </item>
     
     <item>
       <title>Prototype</title>
-      <link>http://www.monkeypatch.io/en/expert/interventions/prototype/</link>
+      <link>https://www.monkeypatch.io/en/expert/interventions/prototype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/interventions/prototype/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/interventions/prototype/</guid>
       <description>From idea to Prototype Our team has the necessary skills to help you during the ideation and conceptualization phases of your projects up to the implementation of prototypes to assess market needs.
  Help define your products and services Recommend technical solutions Produce Proofs of Concept Develop models and prototypes  </description>
     </item>
     
     <item>
       <title>Support</title>
-      <link>http://www.monkeypatch.io/en/expert/interventions/accompagnement/</link>
+      <link>https://www.monkeypatch.io/en/expert/interventions/accompagnement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/interventions/accompagnement/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/interventions/accompagnement/</guid>
       <description>Personalized support We guarantee on all our missions the pooling of development techniques and methods so that you can have control over your projects. Your teams thus increase their skills and will be able to reuse the knowledge acquired during the realization of future developments.
  Advise when implementing new features Solving complex issues Support the team&#39;s skills development Train on technologies and methods  </description>
     </item>
     
     <item>
       <title>Technical leader</title>
-      <link>http://www.monkeypatch.io/en/expert/offers/lead/</link>
+      <link>https://www.monkeypatch.io/en/expert/offers/lead/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/offers/lead/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/offers/lead/</guid>
       <description>Technical leader We define with your teams the best practices to be respected. We enable them to solve technical problems while respecting the defined architecture.
  Maintain a productive work environment Strengthen team collaboration Finding the balance between standardization and innovation Federating teams to ensure the sustainability of the process Carry out the technical follow-up of the project Identify problems and propose solutions  </description>
     </item>
     
     <item>
       <title>Web Consultant</title>
-      <link>http://www.monkeypatch.io/en/expert/profiles/web/</link>
+      <link>https://www.monkeypatch.io/en/expert/profiles/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/expert/profiles/web/</guid>
+      <guid>https://www.monkeypatch.io/en/expert/profiles/web/</guid>
       <description>Web Consultant (Front-End / Back-End) Our Web consultants are experts in Front-End and/or Back-End development. They are able to create a Web application with high traffic while respecting the imposed standards.
  Provide a design in accordance with the graphic guidelines Ensure optimal performance for reactive application Adapt to your information systems  </description>
     </item>

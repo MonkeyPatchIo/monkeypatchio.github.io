@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nantes on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/tags/nantes/</link>
+    <link>https://www.monkeypatch.io/tags/nantes/</link>
     <description>Recent content in nantes on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.monkeypatch.io/tags/nantes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/nantes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DevFest Nantes 2018 : Mission spatiale réussie !</title>
-      <link>http://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
       <description>&lt;p&gt;En matière de conférence, je n&#39;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&#39;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
     </item>
     

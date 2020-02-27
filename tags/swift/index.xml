@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swift on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/tags/swift/</link>
+    <link>https://www.monkeypatch.io/tags/swift/</link>
     <description>Recent content in Swift on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Mon, 05 Feb 2018 16:47:57 +0100</lastBuildDate>
     
-	<atom:link href="http://www.monkeypatch.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/swift/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MKTD#4 Du challenge et du partage autour de &amp;#35;Kotlin &amp;#35;Swift</title>
-      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</link>
       <pubDate>Mon, 05 Feb 2018 16:47:57 +0100</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</guid>
       <description>&lt;p&gt;Pour la quatrième édition, on repart sur le format 2 technos / 2 coachs qui nous semble très pertinent pour comparer 2 technos utilisées aussi bien coté Mobile que côté Back-End.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevFest Toulouse 2016</title>
-      <link>http://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
+      <link>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
+      <guid>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
       <description>&lt;h1 id=&#34;retours-sur-le-devfest-toulouse&#34;&gt;Retours sur le DevFest Toulouse&lt;/h1&gt;
 &lt;p&gt;Jeudi 03 novembre 2016 a eu lieu le premier DevFest Toulouse (techniquement, c’était à l’IUT Blagnac), une journée de conférence à prix très abordable (30 € seulement), le panel de speakers était assez varié: des Toulousaing, des Français, et quelques internationaux. Toutes les personnes avec qui j’ai eu l’occasion de discuter ont trouvé le niveau des conférences très bon. C’est aussi mon point de vue.&lt;/p&gt;</description>
     </item>
