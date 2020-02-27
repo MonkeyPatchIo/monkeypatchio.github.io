@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/conference/</link>
+    <link>https://monkeypatch.io/tags/conference/</link>
     <description>Recent content in Conference on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/tags/conference/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Breizhcamp 2018</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</guid>
       <description>&lt;p&gt;On a été pas mal occupés ces dernier temps avec les différentes conférences, voici enfin une petite sélection de ce qu&#39;on a vu à &lt;img src=&#34;http://www.breizhcamp.org/img/logo.png&#34; alt=&#34;BreizhCamp 2018&#34;&gt; 2018.&lt;/p&gt;</description>
     </item>
     

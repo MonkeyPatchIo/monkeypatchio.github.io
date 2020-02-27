@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Angular2 on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/angular2/</link>
+    <link>https://monkeypatch.io/tags/angular2/</link>
     <description>Recent content in Angular2 on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Mon, 05 Feb 2018 14:47:57 +0100</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/angular2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/tags/angular2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
       <description>&lt;p&gt;On remet le couvert autour d’#Angular2 #React #AureliaJS
 Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevFest Toulouse 2016</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
       <description>&lt;h1 id=&#34;retours-sur-le-devfest-toulouse&#34;&gt;Retours sur le DevFest Toulouse&lt;/h1&gt;
 &lt;p&gt;Jeudi 03 novembre 2016 a eu lieu le premier DevFest Toulouse (techniquement, c’était à l’IUT Blagnac), une journée de conférence à prix très abordable (30 € seulement), le panel de speakers était assez varié: des Toulousaing, des Français, et quelques internationaux. Toutes les personnes avec qui j’ai eu l’occasion de discuter ont trouvé le niveau des conférences très bon. C’est aussi mon point de vue.&lt;/p&gt;</description>
     </item>

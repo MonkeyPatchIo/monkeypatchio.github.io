@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accueil on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/</link>
+    <link>https://monkeypatch.io/</link>
     <description>Recent content in Accueil on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 28 Apr 2019 21:29:39 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Devenir Monkey — Partie 2 : Les entretiens</title>
-      <link>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</link>
+      <link>https://monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</link>
       <pubDate>Sun, 28 Apr 2019 21:29:39 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</guid>
+      <guid>https://monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</guid>
       <description>&lt;p&gt;Dans le précédent article de cette série
-&amp;ldquo;&lt;a href=&#34;https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/&#34;&gt;Devenir Monkey — Partie 1 : Notre processus de recrutement&lt;/a&gt;&amp;rdquo;
+&amp;ldquo;&lt;a href=&#34;https://monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/&#34;&gt;Devenir Monkey — Partie 1 : Notre processus de recrutement&lt;/a&gt;&amp;rdquo;
 j&#39;ai effleuré la surface des choses en exposant les raisons qui nous ont poussé à élaborer notre propre processus de
 recrutement. J&#39;ai aussi présenté la phase préliminaire de recherche de candidats et dressé un court bilan de notre
 expérience jusqu&#39;ici.&lt;/p&gt;</description>
@@ -26,10 +26,10 @@ expérience jusqu&#39;ici.&lt;/p&gt;</description>
     
     <item>
       <title>Devenir Monkey — Partie 1 : Notre processus de recrutement</title>
-      <link>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</link>
+      <link>https://monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</link>
       <pubDate>Sun, 28 Apr 2019 21:26:40 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</guid>
+      <guid>https://monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</guid>
       <description>&lt;p&gt;2018 a été une année chargée pour MonkeyPatch, et sans avoir formellement dressé le bilan de nos réussites et échecs,
 le recrutement reste un sujet majeur pour 2019 et un axe important de notre croissance.&lt;/p&gt;
 &lt;p&gt;Alors parlons recrutement :&lt;/p&gt;</description>
@@ -37,10 +37,10 @@ le recrutement reste un sujet majeur pour 2019 et un axe important de notre croi
     
     <item>
       <title>Dev &amp; retro-gaming avec TIC-80</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-12-16-tic80/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-12-16-tic80/</guid>
       <description>&lt;p&gt;Cette année, MonkeyPatch a souhaité soutenir le &lt;a href=&#34;https://devfesttoulouse.fr/&#34;&gt;DevFest Toulouse&lt;/a&gt;. À cette occasion, nous nous sommes réunis pour savoir ce qu&#39;on allait préparer pour notre stand.&lt;/p&gt;
 &lt;p&gt;On s&#39;est très vite entendu pour faire des kakés de l&#39;équipe et mettre en avant notre passion du dév.&lt;/p&gt;
 &lt;p&gt;Nous avons également décidé de mettre en place un petit &lt;a href=&#34;http://game.monkeypatch.io/&#34;&gt;quiz&lt;/a&gt; et un jeu rétro (le thème du DevFest de cette année). C&#39;était décidé, on allait mettre une borne arcade rétro !&lt;/p&gt;</description>
@@ -48,28 +48,28 @@ le recrutement reste un sujet majeur pour 2019 et un axe important de notre croi
     
     <item>
       <title>Lambda World Cadiz 2018 - A Review</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-12-04-lambda-world-cadiz-2018/</guid>
       <description>&lt;p&gt;The Spanish city of &lt;a href=&#34;https://en.wikipedia.org/wiki/C%C3%A1diz&#34;&gt;Cádiz&lt;/a&gt; is an amazing place, with a great history (from Roman ruins, to the &lt;a href=&#34;https://en.wikipedia.org/wiki/Spanish_Constitution_of_1812&#34;&gt;first Spanish constitution&lt;/a&gt; which was written there back in 1812). It is a great location choice for the &lt;a href=&#34;http://www.lambda.world/&#34;&gt;Lambda World conference&lt;/a&gt;, although a quite remote one. Due to train troubles following the recent Aude flooding back here in France, I missed the first morning unconference and the first workshop (which I sorely regretted since I highly awaited to attend the &lt;a href=&#34;https://eta-lang.org/&#34;&gt;eta-lang&lt;/a&gt; workshop).&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DevFest Nantes 2018 : Mission spatiale réussie !</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
       <description>&lt;p&gt;En matière de conférence, je n&#39;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&#39;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ClojuTRE &amp; SmallFP 2018 — Review</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://clojutre.com&#34;&gt;ClojuTRE&lt;/a&gt; is a Clojure conference happening in Finland
 since 2012.&lt;/p&gt;
 &lt;p&gt;I was super eager to attend a Clojure conference this year, so the addition of
@@ -78,10 +78,10 @@ SmallFP just before ClojuTRE finally amortized the travel cost.&lt;/p&gt;</descr
     
     <item>
       <title>Retour SunnyTech 2018</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-07-13-sunnytech/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-07-13-sunnytech/</guid>
       <description>&lt;p&gt;Les grosses chaleures, le chant des cigales, la philo du Bac., les grèves de la SNCF, et &lt;a href=&#34;https://sunny-tech.io/&#34;&gt;&lt;strong&gt;SunnyTech&lt;/strong&gt;&lt;/a&gt; : voilà l&#39;été !
 Cette année, les communautés Montpelliéraines organisent la première édition de SunnyTech. Pour les toulousains c&#39;est génial d&#39;avoir une conférence aussi proche.&lt;/p&gt;
 &lt;p&gt;Voici une petite sélection de ce j&#39;ai trouvé super dans la conférence, mais forcément avec quatres salles en parallèles, ce n&#39;est qu&#39;un petit aperçu.&lt;/p&gt;</description>
@@ -89,10 +89,10 @@ Cette année, les communautés Montpelliéraines organisent la première éditio
     
     <item>
       <title>J On The Beach 2018 — Review</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jonthebeach.com&#34;&gt;J On The Beach&lt;/a&gt; (JOTB) is &lt;em&gt;&amp;ldquo;A Big Data
 Conference On The Beach&amp;rdquo;&lt;/em&gt; happening in Malaga (Spain) and this year (2018)
 was its third edition.&lt;/p&gt;</description>
@@ -100,28 +100,28 @@ was its third edition.&lt;/p&gt;</description>
     
     <item>
       <title>MKTD#6, le Stream processing avec &amp;#35;Flink et &amp;#35;Kafka</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-06-20-mktds-articles-7/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-06-20-mktds-articles-7/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-06-20-mktds-articles-7/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-06-20-mktds-articles-7/</guid>
       <description>&lt;p&gt;Vendredi 16 Mars 2018, nous nous sommes retrouvés une fois de plus (pour notre plus grand plaisir) chez &lt;a href=&#34;https://www.harrycow.com/&#34;&gt;Harrycow Coworking&lt;/a&gt;, pour expérimenter 2 technos de Stream processing : Apache Flink et Kafka Streams.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Breizhcamp 2018</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</guid>
       <description>&lt;p&gt;On a été pas mal occupés ces dernier temps avec les différentes conférences, voici enfin une petite sélection de ce qu&#39;on a vu à &lt;img src=&#34;http://www.breizhcamp.org/img/logo.png&#34; alt=&#34;BreizhCamp 2018&#34;&gt; 2018.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
       <description>&lt;h1 id=&#34;mktd7--on-a-validé-le-sujet-du-prochain-monkeytechday--brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
 &lt;p&gt;A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
 venir), nous prenons connaissance des retours faits par les participants
@@ -131,67 +131,67 @@ niveaux des coachs.&lt;/p&gt;</description>
     
     <item>
       <title>Mktd#5 Seulement 17 mois après la 1ère édition ! &amp;#35;Go &amp;#35;Rust</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</link>
       <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</guid>
       <description>&lt;p&gt;Déjà (et seulement&amp;hellip;) 17 mois se sont écoulés depuis la première expérimentation des MKTD.
 Pour cette 5ème édition, on se retrouve une fois de plus chez HarryCow pour expérimenter et tester les 2 technologies de plus en plus utilisées Golang et Rustlang.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#4 Du challenge et du partage autour de &amp;#35;Kotlin &amp;#35;Swift</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</link>
       <pubDate>Mon, 05 Feb 2018 16:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-5/</guid>
       <description>&lt;p&gt;Pour la quatrième édition, on repart sur le format 2 technos / 2 coachs qui nous semble très pertinent pour comparer 2 technos utilisées aussi bien coté Mobile que côté Back-End.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#3 La programmation réactive ça vous tente ? &amp;#35;Reactive</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-4/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-4/</link>
       <pubDate>Mon, 05 Feb 2018 15:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-4/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-4/</guid>
       <description>&lt;p&gt;Début 2017, la Programmation Réactive était en train de devenir la grosse tendance. Intéressant pour plusieurs Monkeys, on a décidé de faire venir une “guest star” pour animer ce MKTD : &lt;a href=&#34;https://twitter.com/sdeleuze?lang=fr&#34;&gt;Sébastien Deleuze&lt;/a&gt;.
 Il a vite adhéré à notre concept et s’est prêté au jeu.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
       <description>&lt;p&gt;On remet le couvert autour d’#Angular2 #React #AureliaJS
 Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MKTD#1 Expérimentation du format &amp;#35;Feign &amp;#35;Retrofit</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-2/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-2/</link>
       <pubDate>Mon, 05 Feb 2018 13:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-2/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-2/</guid>
       <description>&lt;p&gt;En juin 2016, au gré de quelques recherches sur le net, on a découvert un petit espace de coworking nommé &lt;a href=&#34;https://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt;,&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Pourquoi avons-nous créé les MonkeyTechDays ?</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-1/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-1/</link>
       <pubDate>Mon, 05 Feb 2018 12:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-1/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-02-05-mktds-articles-1/</guid>
       <description>&lt;p&gt;Nous voulons vous faire découvrir d’un peu plus près notre univers. Chaque MonkeyTechDays (MKTD) réunit une 30aine de Tech Addicts. Comme chaque Monkey, ces passionnés du dév. cherchent à suivre les évolutions rapides des technos. En équipe nous expérimentons, évaluons les technos innovantes sous forme de défis techniques. Une journée au plus près du code, fun et décontractée, où des coachs passionnés aident les participants à réaliser des exos de niveau soutenu.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>J On The Beach 2017 — Jepsen Workshop</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
       <description>&lt;p&gt;The first book I&#39;ve read about distributed systems was
 &lt;a href=&#34;https://www.amazon.fr/Distributed-Systems-Principles-Andrew-Tanenbaum/dp/0132392275&#34;&gt;Distributed Systems: Principles and Paradigms&lt;/a&gt;
 by Andrew S. Tanenbaum and Maarten van Steen.&lt;br&gt;
@@ -201,10 +201,10 @@ confused very often, and to be honest I didn&#39;t even finish it&amp;hellip;&lt
     
     <item>
       <title>J On The Beach 2017 — Review</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jonthebeach.com/&#34;&gt;J On The Beach&lt;/a&gt; (JOTB) is &lt;em&gt;&amp;ldquo;A Big Data
 Conference On The Beach&amp;rdquo;&lt;/em&gt; happening in Malaga (Spain) and this year (2017)
 was its second edition.&lt;/p&gt;</description>
@@ -212,10 +212,10 @@ was its second edition.&lt;/p&gt;</description>
     
     <item>
       <title>Making Of &#39;CSS is Awesome !&#39;</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Depuis quelque temps, j&#39;avais l&#39;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&#39;ai profité du CFP de DevoxxFR pour me jeter à l&#39;eau.
 En plus de mon appétance pour la transmission, j&#39;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.&lt;/p&gt;</description>
@@ -223,10 +223,10 @@ En plus de mon appétance pour la transmission, j&#39;aime bien faire des talks 
     
     <item>
       <title>AndroidMakers 2017</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-04-12-androidmakers/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-04-12-androidmakers/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-04-12-androidmakers/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-04-12-androidmakers/</guid>
       <description>&lt;h1 id=&#34;retour-sur-landroid-makers-2017&#34;&gt;Retour sur l&#39;Android Makers 2017&lt;/h1&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Un peu comme après le 1er de l&#39;an, quand je reviens d&#39;une conférence, j&#39;ai généralement plein de bonnes résolutions en tête, j&#39;ai envie d&#39;appliquer toutes les bonnes méthodes, de tester les différentes techniques et libs qui ont été présentées. Mais cette fois, je vais commencer par faire mon retour sur ce blog pour ne rien oublier des deux jours que j&#39;ai passé à l&amp;rsquo;&lt;a href=&#34;http://androidmakers.fr/&#34;&gt;Android Makers&lt;/a&gt;.&lt;/p&gt;</description>
@@ -234,10 +234,10 @@ En plus de mon appétance pour la transmission, j&#39;aime bien faire des talks 
     
     <item>
       <title>ngVikings 2017</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-03-07-ngvikings/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-03-07-ngvikings/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-03-07-ngvikings/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-03-07-ngvikings/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;À peine remis du &lt;a href=&#34;https://www.meetup.com/fr-FR/Monkey-Tech-Days/events/232103376/&#34;&gt;MonkeyTechDay #3: Reactive Streams&lt;/a&gt; coaché par &lt;a href=&#34;https://twitter.com/sdeleuze&#34;&gt;@sdeleuze&lt;/a&gt;, je prends l&#39;avion direction Copenhague pour assister à la première édition de &lt;a href=&#34;https://ngvikings.org/&#34;&gt;ngVikings&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -251,10 +251,10 @@ En plus de mon appétance pour la transmission, j&#39;aime bien faire des talks 
     
     <item>
       <title>Devoxx Belgium 2016</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</guid>
       <description>&lt;h2 id=&#34;welcome-to-antwerp-anvers&#34;&gt;Welcome to Antwerp (Anvers)&lt;/h2&gt;
 &lt;p&gt;A peine remis du &lt;a href=&#34;https://devfesttoulouse.fr/&#34;&gt;DevFest Toulouse&lt;/a&gt;, je pars une semaine en Belgique pour aller à &lt;a href=&#34;https://devoxx.be/&#34;&gt;Devoxx&lt;/a&gt;.
 Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépendante : elle n’est organisée ni par Google ni par Oracle. Cela dit, ils étaient présents en temps que sponsors et speakers. C’est la plus grosse conférence auquelle j’ai assisté (3500 développeurs), ce n’est pas tous les jours qu’on a l’occasion de croiser des &lt;a href=&#34;http://cfp.devoxx.be/2016/speaker/brian_goetz&#34;&gt;Brian Goetz&lt;/a&gt;, &lt;a href=&#34;http://cfp.devoxx.be/2016/speaker/venkat_subramaniam&#34;&gt;Venkat Subramaniam&lt;/a&gt;, &amp;hellip; en Europe.&lt;/p&gt;</description>
@@ -262,23 +262,23 @@ Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépen
     
     <item>
       <title>DevFest Toulouse 2016</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-11-06-devfest-toulouse/</guid>
       <description>&lt;h1 id=&#34;retours-sur-le-devfest-toulouse&#34;&gt;Retours sur le DevFest Toulouse&lt;/h1&gt;
 &lt;p&gt;Jeudi 03 novembre 2016 a eu lieu le premier DevFest Toulouse (techniquement, c’était à l’IUT Blagnac), une journée de conférence à prix très abordable (30 € seulement), le panel de speakers était assez varié: des Toulousaing, des Français, et quelques internationaux. Toutes les personnes avec qui j’ai eu l’occasion de discuter ont trouvé le niveau des conférences très bon. C’est aussi mon point de vue.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Mktd#1 Feign Vs Retrofit : 2 Aller Plus Loin</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</guid>
       <description>&lt;p&gt;Cet article est le deuxième d&#39;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.&lt;/p&gt;
 &lt;p&gt;Article précédent :
-&lt;a href=&#34;https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/&#34;&gt;MKTD#1 : Prise en main&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/&#34;&gt;MKTD#1 : Prise en main&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;défi-2-aller-plus-loin&#34;&gt;Défi 2: Aller plus loin&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;Le deuxième défi permet d’adresser des problèmes plus avancés comme :&lt;/p&gt;
@@ -291,13 +291,13 @@ Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépen
     
     <item>
       <title>Mktd#1 Feign Vs Retrofit : 2 Going Further</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</guid>
       <description>&lt;p&gt;This article is the second of the serie REST clients in Java.&lt;/p&gt;
 &lt;p&gt;Previous article:
-&lt;a href=&#34;https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/&#34;&gt;MKTD#1 : Getting started&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/&#34;&gt;MKTD#1 : Getting started&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;challenge-2-going-further&#34;&gt;Challenge #2: Going further&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;The second challenge aims at solving advanced problems such as:&lt;/p&gt;
@@ -310,10 +310,10 @@ Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépen
     
     <item>
       <title>Mktd#1 Feign Vs Retrofit : 1 Getting Started</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</link>
       <pubDate>Tue, 09 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Early July we organised in Toulouse our first &lt;a href=&#34;http://www.monkeytechdays.com/&#34;&gt;MonkeyTechDays&lt;/a&gt; hosted by &lt;a href=&#34;http://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt; comparing the technologies: &lt;a href=&#34;http://www.monkeytechdays.com/events/mktd-1&#34;&gt;Feign vs Retrofit&lt;/a&gt;. The goal of a MKTD is to compare and learn new technologies running challenges throughout the day.&lt;/p&gt;
 &lt;p&gt;We decided to improve our knowledge of REST clients in Java during this first event. We started with &lt;a href=&#34;https://github.com/OpenFeign/feign&#34;&gt;Feign&lt;/a&gt; which is designed by &lt;a href=&#34;https://netflix.github.io/&#34;&gt;Netflix&lt;/a&gt; and &lt;a href=&#34;http://square.github.io/retrofit/&#34;&gt;Retrofit&lt;/a&gt; written by &lt;a href=&#34;https://github.com/square&#34;&gt;Square&lt;/a&gt;. These two libraries provide an elegant way to speed up the development of REST clients in Java compare to traditional solutions such as JAX-RS clients, Spring Rest Template, etc…&lt;/p&gt;</description>
@@ -321,10 +321,10 @@ Pour ceux qui ne connaissent pas encore Devoxx, c’est une conférence indépen
     
     <item>
       <title>Mktd#1 Feign Vs Retrofit : 1 Prise En Main</title>
-      <link>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</link>
+      <link>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</link>
       <pubDate>Tue, 09 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</guid>
+      <guid>https://monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Nous avons organisé à Toulouse début juillet, le premier &lt;a href=&#34;http://www.monkeytechdays.com/&#34;&gt;MonkeyTechDays&lt;/a&gt; chez &lt;a href=&#34;http://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt; sur la thématique &lt;a href=&#34;http://www.monkeytechdays.com/events/mktd-1&#34;&gt;Feign vs Retrofit&lt;/a&gt;.
 Un MKTD consiste à comparer, apprendre, sous forme de défis, une ou plusieurs technologies sur une journée.&lt;/p&gt;
@@ -333,28 +333,28 @@ Un MKTD consiste à comparer, apprendre, sous forme de défis, une ou plusieurs 
     
     <item>
       <title></title>
-      <link>https://www.monkeypatch.io/team/emmanuel/</link>
+      <link>https://monkeypatch.io/team/emmanuel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/team/emmanuel/</guid>
+      <guid>https://monkeypatch.io/team/emmanuel/</guid>
       <description>Passionné de la technique, des nouvelles technologies, Leader technique, Architecture web et mobile</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.monkeypatch.io/team/matthieu/</link>
+      <link>https://monkeypatch.io/team/matthieu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/team/matthieu/</guid>
+      <guid>https://monkeypatch.io/team/matthieu/</guid>
       <description>Business, Innovation, Stratégie et Gestion d’entreprise, Recrutement, Gestion d’équipe, UI / UX</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://www.monkeypatch.io/terms/</link>
+      <link>https://monkeypatch.io/terms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/terms/</guid>
+      <guid>https://monkeypatch.io/terms/</guid>
       <description>Termes et conditions MENTIONS LÉGALES En visitant ce site, vous acceptez sans réserve les dispositions qui suivent. Ces dispositions pourront êtres modifiées à tout moment et sans préavis par l&#39;équipe de MonkeyPatch, propriétaire de ce site.
 PROPRIÉTAIRE DU SITE MonkeyPatch Adresse : 12 avenue de l&#39;Europe, 31520 Ramonville Saint-Agne
 Téléphone : demander coordonnée par le formulaire de contact
@@ -364,30 +364,30 @@ HÉBERGEUR Github 88 Colin P Kelly Jr St San Francisco, CA 94107 United States</
     
     <item>
       <title>Accompagnement</title>
-      <link>https://www.monkeypatch.io/expert/interventions/accompagnement/</link>
+      <link>https://monkeypatch.io/expert/interventions/accompagnement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/interventions/accompagnement/</guid>
+      <guid>https://monkeypatch.io/expert/interventions/accompagnement/</guid>
       <description>Un accompagnement personnalisé Nous garantissons sur toutes nos missions la mise en commun des techniques et méthodes de développement pour que vous puissiez avoir la maîtrise de vos projets. Vos équipes montent ainsi en compétence et pourront réutiliser les connaissances acquises lors de la réalisation de futurs développements.
  Conseiller lors des mises en place de nouvelles fonctionnalités Résoudre des sujets complexes Accompagner les montées en compétences de l’équipe Former sur les technologies et méthodes  </description>
     </item>
     
     <item>
       <title>Architecture</title>
-      <link>https://www.monkeypatch.io/expert/offers/architecture/</link>
+      <link>https://monkeypatch.io/expert/offers/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/architecture/</guid>
+      <guid>https://monkeypatch.io/expert/offers/architecture/</guid>
       <description>Conception d’architectures Nous participons à l’élaboration d’architectures flexibles capables de s’adapter à l’évolution des composants et répondre aux futurs enjeux projets.
  Définir des architectures évolutives orientées microservices Respecter les standards de sécurité Prendre en compte les exigences de qualité et de performances Refondre l’existant pour offrir flexibilité et scalabilité  </description>
     </item>
     
     <item>
       <title>Audit et conseil</title>
-      <link>https://www.monkeypatch.io/expert/offers/audit/</link>
+      <link>https://monkeypatch.io/expert/offers/audit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/audit/</guid>
+      <guid>https://monkeypatch.io/expert/offers/audit/</guid>
       <description>Audit et conseil Nous vous accompagnons sur l’élaboration de la stratégie informatique aussi bien au niveau projet qu’au niveau entreprise.
 Nous réalisons également des audits de sécurité, de performance ou de revue générale de code afin de préconiser des axes d’amélioration et de vous permettre de prendre les meilleures décisions.
  Évaluer la faisabilité technique Chiffrer et planifier les projets Auditer et améliorer l’existant Proposer des solutions pour renforcer la sécurité Préconiser des axes d’amélioration pour rendre les systèmes plus fiables Aider à transiter vers les nouvelles méthodes de travail  </description>
@@ -395,29 +395,29 @@ Nous réalisons également des audits de sécurité, de performance ou de revue 
     
     <item>
       <title>Back-end</title>
-      <link>https://www.monkeypatch.io/careers/profiles/backend/</link>
+      <link>https://monkeypatch.io/careers/profiles/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/profiles/backend/</guid>
+      <guid>https://monkeypatch.io/careers/profiles/backend/</guid>
       <description>Sans lui, de nombreux projets Web ou Mobile ne seraient qu’une coquille vide. Alors qu’il travaille souvent sur des éléments invisibles pour l’utilisateur, il peut se vanter d’en gérer les données et la sécurité. Il maîtrise les bases de données SQL ou NoSQL et les notions de sécurité.</description>
     </item>
     
     <item>
       <title>Bénéficier d’une rémunération attractive et équitable</title>
-      <link>https://www.monkeypatch.io/careers/assets/handup/</link>
+      <link>https://monkeypatch.io/careers/assets/handup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/handup/</guid>
+      <guid>https://monkeypatch.io/careers/assets/handup/</guid>
       <description>En tant que membre de l’équipe de MonkeyPatch, vous serez reconnu pour votre travail et votre engagement, à la fois en tant qu’individu qu&#39;au niveau collectif.
 Nous souhaitons récompenser à juste titre l&#39;ensemble de nos consultants. Leur rémunération comprend un salaire fixe, des primes individelles liées à leurs activités et une part variable liée à la productivité collective. Chez nous le salaire ce n&#39;est ni un tabou ni un secret, on est transparent sur le salaire de l&#39;équipe dirigeante.</description>
     </item>
     
     <item>
       <title>Construire son avenir en équipe</title>
-      <link>https://www.monkeypatch.io/careers/assets/team/</link>
+      <link>https://monkeypatch.io/careers/assets/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/team/</guid>
+      <guid>https://monkeypatch.io/careers/assets/team/</guid>
       <description>On n&#39;est rien sans l&#39;esprit d&#39;équipe !
 Investis sur le long terme, nous établissons une relation de proximité avec nos collaborateurs par le biais d’échanges réguliers et suivis.
 Nous nouons un lien de confiance et d’engagement qui nous permet de stimuler le partage d&#39;expérience et d&#39;expertise entre les Monkeys lors d&#39;afterwork, d&#39;hackathon, &amp;hellip; ou simplement autour d&#39;un café.
@@ -426,69 +426,69 @@ Repousser ses limites techniques grâce au soutien d&#39;une équipe d&#39;exper
     
     <item>
       <title>Consultant Big Data</title>
-      <link>https://www.monkeypatch.io/expert/profiles/bigdata/</link>
+      <link>https://monkeypatch.io/expert/profiles/bigdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/bigdata/</guid>
+      <guid>https://monkeypatch.io/expert/profiles/bigdata/</guid>
       <description>Consultant Big Data L’exploitation des données est le terrain de jeu de nos consultants BigData qui savent analyser et visualiser les quantités d’information disponible pour en tirer profit.
  Définir les stratégies de collection, stockage, analyse et visualisation des données Produire une analyse précise de jeux de données grâce aux dernières technologies Recommander des techniques de recherche et de modélisation  </description>
     </item>
     
     <item>
       <title>Consultant DevOps</title>
-      <link>https://www.monkeypatch.io/expert/profiles/devops/</link>
+      <link>https://monkeypatch.io/expert/profiles/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/devops/</guid>
+      <guid>https://monkeypatch.io/expert/profiles/devops/</guid>
       <description>Consultant DevOps Nos consultants DevOps sont spécialistes dans l’automatisation des processus de développements comprenant l’optimisation des tests, la mise en place d’intégration continue, les déploiements automatisés.
  Mettre en place les outils pour optimiser le développement Limiter les erreurs manuelles Faire le lien entre le développement et les opérations Gérer la sécurité des environnements  </description>
     </item>
     
     <item>
       <title>Consultant Mobile</title>
-      <link>https://www.monkeypatch.io/expert/profiles/mobie/</link>
+      <link>https://monkeypatch.io/expert/profiles/mobie/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/mobie/</guid>
+      <guid>https://monkeypatch.io/expert/profiles/mobie/</guid>
       <description>Consultant Mobile Nos consultants Mobile réalisent des applications natives tout comme des versions Mobile de site Web sur les principales plateformes Android / iOS.
  Suivre l’évolution rapide des technologies Mobile Respecter les contraintes matérielles S’intégrer avec les systèmes distants  </description>
     </item>
     
     <item>
       <title>Consultant Web</title>
-      <link>https://www.monkeypatch.io/expert/profiles/web/</link>
+      <link>https://monkeypatch.io/expert/profiles/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/profiles/web/</guid>
+      <guid>https://monkeypatch.io/expert/profiles/web/</guid>
       <description>Consultant Web (Front-End / Back-End) Nos consultants Web sont experts en développement Front-End et/ou Back-End. Ils sont capables de réaliser une application Web à fort trafic en respectant les standards imposés.
  Fournir un design en respect avec les chartes graphiques Assurer des performances optimales pour une application réactive S’adapter à vos systèmes d’information  </description>
     </item>
     
     <item>
       <title>Dev-Ops</title>
-      <link>https://www.monkeypatch.io/careers/profiles/devops/</link>
+      <link>https://monkeypatch.io/careers/profiles/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/profiles/devops/</guid>
+      <guid>https://monkeypatch.io/careers/profiles/devops/</guid>
       <description>Le chaînon manquant entre le développeur et l&#39;administrateur système, il améliore la performance et la sécurité des systèmes d&#39;information. Il est capable de configurer n’importe quelle application, indifféremment du langage et du serveur.</description>
     </item>
     
     <item>
       <title>Développement</title>
-      <link>https://www.monkeypatch.io/expert/offers/developpement/</link>
+      <link>https://monkeypatch.io/expert/offers/developpement/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/developpement/</guid>
+      <guid>https://monkeypatch.io/expert/offers/developpement/</guid>
       <description>Développement de projets Nous mettons à disposition de vos équipes notre expertise en développement pour accroître votre capacité à innover et industrialiser des produits compétitifs.
  Développer avec des outils et langages de programmation adaptés Renforcer la qualité par l’application de bonnes pratiques Produire du code performant Réduire le temps dédié à la correction de problèmes  </description>
     </item>
     
     <item>
       <title>Esprit start-up</title>
-      <link>https://www.monkeypatch.io/careers/assets/rocket/</link>
+      <link>https://monkeypatch.io/careers/assets/rocket/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/rocket/</guid>
+      <guid>https://monkeypatch.io/careers/assets/rocket/</guid>
       <description>Un fonctionnement qui stimule l’innovation, renforce l’esprit d’équipe et rend plus réactif.
 Responsabiliser et donner de la liberté aux Monkeys leur permet de s&#39;épanouir et de grandir sereinement.
 Nous rejoindre, c’est intégrer :
@@ -497,10 +497,10 @@ Nous rejoindre, c’est intégrer :
     
     <item>
       <title>Expert Back-End</title>
-      <link>https://www.monkeypatch.io/jobs/backend/</link>
+      <link>https://monkeypatch.io/jobs/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/backend/</guid>
+      <guid>https://monkeypatch.io/jobs/backend/</guid>
       <description>&lt;h1 id=&#34;expert-back-end&#34;&gt;Expert Back-End&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Back-End. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -518,19 +518,19 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert Big Data</title>
-      <link>https://www.monkeypatch.io/careers/profiles/big-data/</link>
+      <link>https://monkeypatch.io/careers/profiles/big-data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/profiles/big-data/</guid>
+      <guid>https://monkeypatch.io/careers/profiles/big-data/</guid>
       <description>Capable de retrouver son chemin dans la jungle des données, il met en place le recueil, l’analyse, la visualisation de celles-ci et définit des algorithmes pour les transformer en information exploitable.</description>
     </item>
     
     <item>
       <title>Expert Big Data</title>
-      <link>https://www.monkeypatch.io/jobs/bigdata/</link>
+      <link>https://monkeypatch.io/jobs/bigdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/bigdata/</guid>
+      <guid>https://monkeypatch.io/jobs/bigdata/</guid>
       <description>&lt;h1 id=&#34;expert-big-data&#34;&gt;Expert Big Data&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Big Data. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -548,10 +548,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert DevOps</title>
-      <link>https://www.monkeypatch.io/jobs/devops/</link>
+      <link>https://monkeypatch.io/jobs/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/devops/</guid>
+      <guid>https://monkeypatch.io/jobs/devops/</guid>
       <description>&lt;h1 id=&#34;expert-devops&#34;&gt;Expert DevOps&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants DevOps. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -567,10 +567,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert Front-End</title>
-      <link>https://www.monkeypatch.io/jobs/frontend/</link>
+      <link>https://monkeypatch.io/jobs/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/frontend/</guid>
+      <guid>https://monkeypatch.io/jobs/frontend/</guid>
       <description>&lt;h1 id=&#34;expert-front-end&#34;&gt;Expert Front End&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Front-End. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -588,10 +588,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert Mobile</title>
-      <link>https://www.monkeypatch.io/jobs/mobile/</link>
+      <link>https://monkeypatch.io/jobs/mobile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/mobile/</guid>
+      <guid>https://monkeypatch.io/jobs/mobile/</guid>
       <description>&lt;h1 id=&#34;expert-mobile&#34;&gt;Expert Mobile&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Mobile. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -609,19 +609,19 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Front-end</title>
-      <link>https://www.monkeypatch.io/careers/profiles/frontend/</link>
+      <link>https://monkeypatch.io/careers/profiles/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/profiles/frontend/</guid>
+      <guid>https://monkeypatch.io/careers/profiles/frontend/</guid>
       <description>Pivot entre le Design (UI/UX) et le Back-End, il est en charge de créer des interfaces claires et simples pour l’utilisateur. Le responsive design n’a plus de secrets pour lui. Jongleur entre les librairies Javascript les plus récentes, il excelle également dans la mise en page HTML5 et CSS.</description>
     </item>
     
     <item>
       <title>Le Pack Monkey</title>
-      <link>https://www.monkeypatch.io/careers/assets/pack/</link>
+      <link>https://monkeypatch.io/careers/assets/pack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/pack/</guid>
+      <guid>https://monkeypatch.io/careers/assets/pack/</guid>
       <description>Chez MonkeyPatch, nous aimons capitaliser et voir nos Experts progresser !
 Nous soutenons toute initiative qui permet à nos consultants d&#39;enrichir leur expertise et la reconnaissance de leurs pairs :
  Rédaction d&#39;articles techniques (blog) Participation et/ou animation de conférences techniques (à Toulouse ou à l&#39;international) Participation et/ou organisation d&#39;hackathons Développement de supports de formation de nouvelles technologique  Nous partons du principe que chacun doit apporter sa pierre à l’édifice.</description>
@@ -629,49 +629,49 @@ Nous soutenons toute initiative qui permet à nos consultants d&#39;enrichir leu
     
     <item>
       <title>Lead technique</title>
-      <link>https://www.monkeypatch.io/expert/offers/lead/</link>
+      <link>https://monkeypatch.io/expert/offers/lead/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/offers/lead/</guid>
+      <guid>https://monkeypatch.io/expert/offers/lead/</guid>
       <description>Lead technique Nous définissons avec vos équipes les bonnes pratiques à respecter. Nous leur permettons de résoudre des problèmes techniques tout en respectant l’architecture définie.
  Maintenir un environnement de travail productif Renforcer la collaboration des équipes Trouver l&#39;équilibre entre standardisation et innovation Fédérer les équipes pour pérenniser les démarches Réaliser le suivi technique du projet Identifier les problèmes et proposer des solutions  </description>
     </item>
     
     <item>
       <title>Mobile</title>
-      <link>https://www.monkeypatch.io/careers/profiles/mobile/</link>
+      <link>https://monkeypatch.io/careers/profiles/mobile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/profiles/mobile/</guid>
+      <guid>https://monkeypatch.io/careers/profiles/mobile/</guid>
       <description>Toujours scotché à son smartphone, il réalise des applications en prenant soin des détails afin que l’expérience utilisateur soit la plus satisfaisante. Il maîtrise parfaitement l’un des environnements Mobile (iOS, Android, Windows Phone).</description>
     </item>
     
     <item>
       <title>Projet</title>
-      <link>https://www.monkeypatch.io/expert/interventions/project/</link>
+      <link>https://monkeypatch.io/expert/interventions/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/interventions/project/</guid>
+      <guid>https://monkeypatch.io/expert/interventions/project/</guid>
       <description>Une réalisation efficace de vos projets Nous assurons une qualité de produit optimale durant toutes les phases projet, en mettant en place les principes d&#39;intégration continue, ce qui facilite les déploiements sur différents environnements et ainsi optimise les cycles de développement.
  Concevoir et développer des produits sur mesure Réaliser un suivi projet efficace par une approche Lean et Agile Accélérer les cycles de développement grâce à l’intégration continue Intégrer la notion d’UI / UX pour une ergonomie optimale  </description>
     </item>
     
     <item>
       <title>Prototype</title>
-      <link>https://www.monkeypatch.io/expert/interventions/prototype/</link>
+      <link>https://monkeypatch.io/expert/interventions/prototype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/expert/interventions/prototype/</guid>
+      <guid>https://monkeypatch.io/expert/interventions/prototype/</guid>
       <description>De l’idée au Prototype Notre équipe dispose des compétences nécessaires pour vous aider durant les phases d&#39;idéation et de conceptualisation de vos projets jusqu&#39;à la mise en place de prototypes pour évaluer les besoins du marché.
  Aider à la définition de vos produits et services Préconiser des solutions techniques Réaliser des Proofs of Concept Développer des maquettes et prototypes  </description>
     </item>
     
     <item>
       <title>Travailler dans une entreprise engagée et respectueuse</title>
-      <link>https://www.monkeypatch.io/careers/assets/hands/</link>
+      <link>https://monkeypatch.io/careers/assets/hands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/hands/</guid>
+      <guid>https://monkeypatch.io/careers/assets/hands/</guid>
       <description>Parce que travailler dans une entreprise respectueuse de ses consultants et honorant ses engagements ça n&#39;a pas de prix !
 L’engagement de nos collaborateurs est crucial pour la satisfaction de nos clients. Pour devenir la société d&#39;expertise n°1, nous devons tenir le même engagement auprès de l&#39;ensemble de nos consultants.
 La garantie de nos engagements et le respect de tous sont la clé de la réussite de notre société.</description>
@@ -679,19 +679,19 @@ La garantie de nos engagements et le respect de tous sont la clé de la réussit
     
     <item>
       <title>UI/UX</title>
-      <link>https://www.monkeypatch.io/careers/profiles/ui-ux/</link>
+      <link>https://monkeypatch.io/careers/profiles/ui-ux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/profiles/ui-ux/</guid>
+      <guid>https://monkeypatch.io/careers/profiles/ui-ux/</guid>
       <description>A l&#39;écoute des dernières tendances Web et Mobile, il a pour mission de concevoir des interfaces agréables et faciles à prendre en main de manière à ce que l’expérience utilisateur soit la meilleure possible.</description>
     </item>
     
     <item>
       <title>Une entreprise pas comme les autres</title>
-      <link>https://www.monkeypatch.io/careers/assets/building/</link>
+      <link>https://monkeypatch.io/careers/assets/building/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/building/</guid>
+      <guid>https://monkeypatch.io/careers/assets/building/</guid>
       <description>Nous bousculons les codes des entreprises traditionnelles.
 Nous souhaitons que chacun de nos Monkeys puisse être force de proposition, être partie prenante dans le recrutement des nouveaux Monkeys, avoir son mot à dire sur les investissements de l&#39;entreprise. Nos collaborateurs peuvent prendre part au board de la société, et ainsi prendre part pleinement aux choix de la stratégie de l&#39;entreprise.
 Une entreprise qui parie sur les hommes de son équipe.</description>
@@ -699,10 +699,10 @@ Une entreprise qui parie sur les hommes de son équipe.</description>
     
     <item>
       <title>Une passion commune partagée</title>
-      <link>https://www.monkeypatch.io/careers/assets/heart/</link>
+      <link>https://monkeypatch.io/careers/assets/heart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/heart/</guid>
+      <guid>https://monkeypatch.io/careers/assets/heart/</guid>
       <description>Nous recrutons uniquement des ingénieurs qui ont le gène de l&#39;info !
 La passion de l&#39;informatique et de l&#39;innovation permet à nos consultants d&#39;être toujours à la pointe des meilleures pratiques des technologies du Web, du Mobile et du Big Data.
 Nous cultivons cet état d&#39;esprit en consacrant du temps pour de la veille technologique et l&#39;échange de nos expertises.
@@ -711,10 +711,10 @@ Nous cultivons cet état d&#39;esprit en consacrant du temps pour de la veille t
     
     <item>
       <title>Évoluer dans un environnement d’expertise et d’innovation</title>
-      <link>https://www.monkeypatch.io/careers/assets/light/</link>
+      <link>https://monkeypatch.io/careers/assets/light/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/careers/assets/light/</guid>
+      <guid>https://monkeypatch.io/careers/assets/light/</guid>
       <description>Des projets innovants : un environnement passionnant et exigeant.
 MonkeyPatch conseille et réalise pour ses clients des projets sur les nouvelles technologies liées au Web, la Mobilité et le BigData.
 Pas d&#39;intercontrat improductif. Nous accompagnons des startups partenaires sur leurs problématiques techniques. Entre deux missions vous interviendrez sur des problématiques ciblées par cycle de 10 jours ouvrables.

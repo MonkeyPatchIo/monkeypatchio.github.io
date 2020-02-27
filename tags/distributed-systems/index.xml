@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Distributed Systems on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/distributed-systems/</link>
+    <link>https://monkeypatch.io/tags/distributed-systems/</link>
     <description>Recent content in Distributed Systems on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Thu, 05 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/tags/distributed-systems/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>J On The Beach 2018 — Review</title>
-      <link>https://www.monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</link>
+      <link>https://monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</guid>
+      <guid>https://monkeypatch.io/blog/2018/2018-07-05-jotb-malaga-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jonthebeach.com&#34;&gt;J On The Beach&lt;/a&gt; (JOTB) is &lt;em&gt;&amp;ldquo;A Big Data
 Conference On The Beach&amp;rdquo;&lt;/em&gt; happening in Malaga (Spain) and this year (2018)
 was its third edition.&lt;/p&gt;</description>
@@ -24,10 +24,10 @@ was its third edition.&lt;/p&gt;</description>
     
     <item>
       <title>J On The Beach 2017 — Jepsen Workshop</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
       <description>&lt;p&gt;The first book I&#39;ve read about distributed systems was
 &lt;a href=&#34;https://www.amazon.fr/Distributed-Systems-Principles-Andrew-Tanenbaum/dp/0132392275&#34;&gt;Distributed Systems: Principles and Paradigms&lt;/a&gt;
 by Andrew S. Tanenbaum and Maarten van Steen.&lt;br&gt;
@@ -37,10 +37,10 @@ confused very often, and to be honest I didn&#39;t even finish it&amp;hellip;&lt
     
     <item>
       <title>J On The Beach 2017 — Review</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-08-03-jotb-malaga-2017/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://jonthebeach.com/&#34;&gt;J On The Beach&lt;/a&gt; (JOTB) is &lt;em&gt;&amp;ldquo;A Big Data
 Conference On The Beach&amp;rdquo;&lt;/em&gt; happening in Malaga (Spain) and this year (2017)
 was its second edition.&lt;/p&gt;</description>

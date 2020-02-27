@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RxJS on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/rxjs/</link>
+    <link>https://monkeypatch.io/tags/rxjs/</link>
     <description>Recent content in RxJS on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Tue, 07 Mar 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/rxjs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/tags/rxjs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ngVikings 2017</title>
-      <link>https://www.monkeypatch.io/blog/2017/2017-03-07-ngvikings/</link>
+      <link>https://monkeypatch.io/blog/2017/2017-03-07-ngvikings/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/blog/2017/2017-03-07-ngvikings/</guid>
+      <guid>https://monkeypatch.io/blog/2017/2017-03-07-ngvikings/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;À peine remis du &lt;a href=&#34;https://www.meetup.com/fr-FR/Monkey-Tech-Days/events/232103376/&#34;&gt;MonkeyTechDay #3: Reactive Streams&lt;/a&gt; coaché par &lt;a href=&#34;https://twitter.com/sdeleuze&#34;&gt;@sdeleuze&lt;/a&gt;, je prends l&#39;avion direction Copenhague pour assister à la première édition de &lt;a href=&#34;https://ngvikings.org/&#34;&gt;ngVikings&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;

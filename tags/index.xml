@@ -2,579 +2,579 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/tags/</link>
+    <link>https://monkeypatch.io/tags/</link>
     <description>Recent content in Tags on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 28 Apr 2019 21:29:39 +0000</lastBuildDate>
     
-	<atom:link href="https://www.monkeypatch.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>entretiens</title>
-      <link>https://www.monkeypatch.io/tags/entretiens/</link>
+      <link>https://monkeypatch.io/tags/entretiens/</link>
       <pubDate>Sun, 28 Apr 2019 21:29:39 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/entretiens/</guid>
+      <guid>https://monkeypatch.io/tags/entretiens/</guid>
       <description></description>
     </item>
     
     <item>
       <title>equipe</title>
-      <link>https://www.monkeypatch.io/tags/equipe/</link>
+      <link>https://monkeypatch.io/tags/equipe/</link>
       <pubDate>Sun, 28 Apr 2019 21:29:39 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/equipe/</guid>
+      <guid>https://monkeypatch.io/tags/equipe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>recrutement</title>
-      <link>https://www.monkeypatch.io/tags/recrutement/</link>
+      <link>https://monkeypatch.io/tags/recrutement/</link>
       <pubDate>Sun, 28 Apr 2019 21:29:39 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/recrutement/</guid>
+      <guid>https://monkeypatch.io/tags/recrutement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sourcing</title>
-      <link>https://www.monkeypatch.io/tags/sourcing/</link>
+      <link>https://monkeypatch.io/tags/sourcing/</link>
       <pubDate>Sun, 28 Apr 2019 21:29:39 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/sourcing/</guid>
+      <guid>https://monkeypatch.io/tags/sourcing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>code</title>
-      <link>https://www.monkeypatch.io/tags/code/</link>
+      <link>https://monkeypatch.io/tags/code/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/code/</guid>
+      <guid>https://monkeypatch.io/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>console</title>
-      <link>https://www.monkeypatch.io/tags/console/</link>
+      <link>https://monkeypatch.io/tags/console/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/console/</guid>
+      <guid>https://monkeypatch.io/tags/console/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dev</title>
-      <link>https://www.monkeypatch.io/tags/dev/</link>
+      <link>https://monkeypatch.io/tags/dev/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/dev/</guid>
+      <guid>https://monkeypatch.io/tags/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DevFest</title>
-      <link>https://www.monkeypatch.io/tags/devfest/</link>
+      <link>https://monkeypatch.io/tags/devfest/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/devfest/</guid>
+      <guid>https://monkeypatch.io/tags/devfest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gaming</title>
-      <link>https://www.monkeypatch.io/tags/gaming/</link>
+      <link>https://monkeypatch.io/tags/gaming/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/gaming/</guid>
+      <guid>https://monkeypatch.io/tags/gaming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>retro</title>
-      <link>https://www.monkeypatch.io/tags/retro/</link>
+      <link>https://monkeypatch.io/tags/retro/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/retro/</guid>
+      <guid>https://monkeypatch.io/tags/retro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tic80</title>
-      <link>https://www.monkeypatch.io/tags/tic80/</link>
+      <link>https://monkeypatch.io/tags/tic80/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/tic80/</guid>
+      <guid>https://monkeypatch.io/tags/tic80/</guid>
       <description></description>
     </item>
     
     <item>
       <title>conf</title>
-      <link>https://www.monkeypatch.io/tags/conf/</link>
+      <link>https://monkeypatch.io/tags/conf/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/conf/</guid>
+      <guid>https://monkeypatch.io/tags/conf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FunctionalProgramming</title>
-      <link>https://www.monkeypatch.io/tags/functionalprogramming/</link>
+      <link>https://monkeypatch.io/tags/functionalprogramming/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/functionalprogramming/</guid>
+      <guid>https://monkeypatch.io/tags/functionalprogramming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LambdaWorld</title>
-      <link>https://www.monkeypatch.io/tags/lambdaworld/</link>
+      <link>https://monkeypatch.io/tags/lambdaworld/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/lambdaworld/</guid>
+      <guid>https://monkeypatch.io/tags/lambdaworld/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nantes</title>
-      <link>https://www.monkeypatch.io/tags/nantes/</link>
+      <link>https://monkeypatch.io/tags/nantes/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/nantes/</guid>
+      <guid>https://monkeypatch.io/tags/nantes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clojure</title>
-      <link>https://www.monkeypatch.io/tags/clojure/</link>
+      <link>https://monkeypatch.io/tags/clojure/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/clojure/</guid>
+      <guid>https://monkeypatch.io/tags/clojure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ClojuTRE</title>
-      <link>https://www.monkeypatch.io/tags/clojutre/</link>
+      <link>https://monkeypatch.io/tags/clojutre/</link>
       <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/clojutre/</guid>
+      <guid>https://monkeypatch.io/tags/clojutre/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DoD</title>
-      <link>https://www.monkeypatch.io/tags/dod/</link>
+      <link>https://monkeypatch.io/tags/dod/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/dod/</guid>
+      <guid>https://monkeypatch.io/tags/dod/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kotlin</title>
-      <link>https://www.monkeypatch.io/tags/kotlin/</link>
+      <link>https://monkeypatch.io/tags/kotlin/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/kotlin/</guid>
+      <guid>https://monkeypatch.io/tags/kotlin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SunnyTech</title>
-      <link>https://www.monkeypatch.io/tags/sunnytech/</link>
+      <link>https://monkeypatch.io/tags/sunnytech/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/sunnytech/</guid>
+      <guid>https://monkeypatch.io/tags/sunnytech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Databases</title>
-      <link>https://www.monkeypatch.io/tags/databases/</link>
+      <link>https://monkeypatch.io/tags/databases/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/databases/</guid>
+      <guid>https://monkeypatch.io/tags/databases/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distributed Systems</title>
-      <link>https://www.monkeypatch.io/tags/distributed-systems/</link>
+      <link>https://monkeypatch.io/tags/distributed-systems/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/distributed-systems/</guid>
+      <guid>https://monkeypatch.io/tags/distributed-systems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JOTB</title>
-      <link>https://www.monkeypatch.io/tags/jotb/</link>
+      <link>https://monkeypatch.io/tags/jotb/</link>
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/jotb/</guid>
+      <guid>https://monkeypatch.io/tags/jotb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flink</title>
-      <link>https://www.monkeypatch.io/tags/flink/</link>
+      <link>https://monkeypatch.io/tags/flink/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/flink/</guid>
+      <guid>https://monkeypatch.io/tags/flink/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kafka</title>
-      <link>https://www.monkeypatch.io/tags/kafka/</link>
+      <link>https://monkeypatch.io/tags/kafka/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/kafka/</guid>
+      <guid>https://monkeypatch.io/tags/kafka/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MKTD</title>
-      <link>https://www.monkeypatch.io/tags/mktd/</link>
+      <link>https://monkeypatch.io/tags/mktd/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/mktd/</guid>
+      <guid>https://monkeypatch.io/tags/mktd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MonkeyTechDay</title>
-      <link>https://www.monkeypatch.io/tags/monkeytechday/</link>
+      <link>https://monkeypatch.io/tags/monkeytechday/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/monkeytechday/</guid>
+      <guid>https://monkeypatch.io/tags/monkeytechday/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech Addicts</title>
-      <link>https://www.monkeypatch.io/tags/tech-addicts/</link>
+      <link>https://monkeypatch.io/tags/tech-addicts/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/tech-addicts/</guid>
+      <guid>https://monkeypatch.io/tags/tech-addicts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech days</title>
-      <link>https://www.monkeypatch.io/tags/tech-days/</link>
+      <link>https://monkeypatch.io/tags/tech-days/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/tech-days/</guid>
+      <guid>https://monkeypatch.io/tags/tech-days/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Techno</title>
-      <link>https://www.monkeypatch.io/tags/techno/</link>
+      <link>https://monkeypatch.io/tags/techno/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/techno/</guid>
+      <guid>https://monkeypatch.io/tags/techno/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BreizhCamp</title>
-      <link>https://www.monkeypatch.io/tags/breizhcamp/</link>
+      <link>https://monkeypatch.io/tags/breizhcamp/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/breizhcamp/</guid>
+      <guid>https://monkeypatch.io/tags/breizhcamp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conference</title>
-      <link>https://www.monkeypatch.io/tags/conference/</link>
+      <link>https://monkeypatch.io/tags/conference/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/conference/</guid>
+      <guid>https://monkeypatch.io/tags/conference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Brainfuck</title>
-      <link>https://www.monkeypatch.io/tags/brainfuck/</link>
+      <link>https://monkeypatch.io/tags/brainfuck/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/brainfuck/</guid>
+      <guid>https://monkeypatch.io/tags/brainfuck/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LOLCODE</title>
-      <link>https://www.monkeypatch.io/tags/lolcode/</link>
+      <link>https://monkeypatch.io/tags/lolcode/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/lolcode/</guid>
+      <guid>https://monkeypatch.io/tags/lolcode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>https://www.monkeypatch.io/tags/go/</link>
+      <link>https://monkeypatch.io/tags/go/</link>
       <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/go/</guid>
+      <guid>https://monkeypatch.io/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rust</title>
-      <link>https://www.monkeypatch.io/tags/rust/</link>
+      <link>https://monkeypatch.io/tags/rust/</link>
       <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/rust/</guid>
+      <guid>https://monkeypatch.io/tags/rust/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Swift</title>
-      <link>https://www.monkeypatch.io/tags/swift/</link>
+      <link>https://monkeypatch.io/tags/swift/</link>
       <pubDate>Mon, 05 Feb 2018 16:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/swift/</guid>
+      <guid>https://monkeypatch.io/tags/swift/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reactive</title>
-      <link>https://www.monkeypatch.io/tags/reactive/</link>
+      <link>https://monkeypatch.io/tags/reactive/</link>
       <pubDate>Mon, 05 Feb 2018 15:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/reactive/</guid>
+      <guid>https://monkeypatch.io/tags/reactive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Angular2</title>
-      <link>https://www.monkeypatch.io/tags/angular2/</link>
+      <link>https://monkeypatch.io/tags/angular2/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/angular2/</guid>
+      <guid>https://monkeypatch.io/tags/angular2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>aureliaJS</title>
-      <link>https://www.monkeypatch.io/tags/aureliajs/</link>
+      <link>https://monkeypatch.io/tags/aureliajs/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/aureliajs/</guid>
+      <guid>https://monkeypatch.io/tags/aureliajs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>react</title>
-      <link>https://www.monkeypatch.io/tags/react/</link>
+      <link>https://monkeypatch.io/tags/react/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/react/</guid>
+      <guid>https://monkeypatch.io/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Feign</title>
-      <link>https://www.monkeypatch.io/tags/feign/</link>
+      <link>https://monkeypatch.io/tags/feign/</link>
       <pubDate>Mon, 05 Feb 2018 13:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/feign/</guid>
+      <guid>https://monkeypatch.io/tags/feign/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Retrofit</title>
-      <link>https://www.monkeypatch.io/tags/retrofit/</link>
+      <link>https://monkeypatch.io/tags/retrofit/</link>
       <pubDate>Mon, 05 Feb 2018 13:47:57 +0100</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/retrofit/</guid>
+      <guid>https://monkeypatch.io/tags/retrofit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jepsen</title>
-      <link>https://www.monkeypatch.io/tags/jepsen/</link>
+      <link>https://monkeypatch.io/tags/jepsen/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/jepsen/</guid>
+      <guid>https://monkeypatch.io/tags/jepsen/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Testing</title>
-      <link>https://www.monkeypatch.io/tags/testing/</link>
+      <link>https://monkeypatch.io/tags/testing/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/testing/</guid>
+      <guid>https://monkeypatch.io/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CSS</title>
-      <link>https://www.monkeypatch.io/tags/css/</link>
+      <link>https://monkeypatch.io/tags/css/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/css/</guid>
+      <guid>https://monkeypatch.io/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Devoxx</title>
-      <link>https://www.monkeypatch.io/tags/devoxx/</link>
+      <link>https://monkeypatch.io/tags/devoxx/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/devoxx/</guid>
+      <guid>https://monkeypatch.io/tags/devoxx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MiXiT</title>
-      <link>https://www.monkeypatch.io/tags/mixit/</link>
+      <link>https://monkeypatch.io/tags/mixit/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/mixit/</guid>
+      <guid>https://monkeypatch.io/tags/mixit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NodeJS</title>
-      <link>https://www.monkeypatch.io/tags/nodejs/</link>
+      <link>https://monkeypatch.io/tags/nodejs/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/nodejs/</guid>
+      <guid>https://monkeypatch.io/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TypeScript</title>
-      <link>https://www.monkeypatch.io/tags/typescript/</link>
+      <link>https://monkeypatch.io/tags/typescript/</link>
       <pubDate>Tue, 02 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/typescript/</guid>
+      <guid>https://monkeypatch.io/tags/typescript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Android</title>
-      <link>https://www.monkeypatch.io/tags/android/</link>
+      <link>https://monkeypatch.io/tags/android/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/android/</guid>
+      <guid>https://monkeypatch.io/tags/android/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AndroidMakers</title>
-      <link>https://www.monkeypatch.io/tags/androidmakers/</link>
+      <link>https://monkeypatch.io/tags/androidmakers/</link>
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/androidmakers/</guid>
+      <guid>https://monkeypatch.io/tags/androidmakers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Angular</title>
-      <link>https://www.monkeypatch.io/tags/angular/</link>
+      <link>https://monkeypatch.io/tags/angular/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/angular/</guid>
+      <guid>https://monkeypatch.io/tags/angular/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ngVikings</title>
-      <link>https://www.monkeypatch.io/tags/ngvikings/</link>
+      <link>https://monkeypatch.io/tags/ngvikings/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/ngvikings/</guid>
+      <guid>https://monkeypatch.io/tags/ngvikings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RxJS</title>
-      <link>https://www.monkeypatch.io/tags/rxjs/</link>
+      <link>https://monkeypatch.io/tags/rxjs/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/rxjs/</guid>
+      <guid>https://monkeypatch.io/tags/rxjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WebSecurity</title>
-      <link>https://www.monkeypatch.io/tags/websecurity/</link>
+      <link>https://monkeypatch.io/tags/websecurity/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/websecurity/</guid>
+      <guid>https://monkeypatch.io/tags/websecurity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>functional</title>
-      <link>https://www.monkeypatch.io/tags/functional/</link>
+      <link>https://monkeypatch.io/tags/functional/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/functional/</guid>
+      <guid>https://monkeypatch.io/tags/functional/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://www.monkeypatch.io/tags/java/</link>
+      <link>https://monkeypatch.io/tags/java/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/java/</guid>
+      <guid>https://monkeypatch.io/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Acteur</title>
-      <link>https://www.monkeypatch.io/tags/acteur/</link>
+      <link>https://monkeypatch.io/tags/acteur/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/acteur/</guid>
+      <guid>https://monkeypatch.io/tags/acteur/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NativeScript</title>
-      <link>https://www.monkeypatch.io/tags/nativescript/</link>
+      <link>https://monkeypatch.io/tags/nativescript/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/nativescript/</guid>
+      <guid>https://monkeypatch.io/tags/nativescript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rx</title>
-      <link>https://www.monkeypatch.io/tags/rx/</link>
+      <link>https://monkeypatch.io/tags/rx/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/rx/</guid>
+      <guid>https://monkeypatch.io/tags/rx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cookie</title>
-      <link>https://www.monkeypatch.io/tags/cookie/</link>
+      <link>https://monkeypatch.io/tags/cookie/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/cookie/</guid>
+      <guid>https://monkeypatch.io/tags/cookie/</guid>
       <description></description>
     </item>
     
     <item>
       <title>REST</title>
-      <link>https://www.monkeypatch.io/tags/rest/</link>
+      <link>https://monkeypatch.io/tags/rest/</link>
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/rest/</guid>
+      <guid>https://monkeypatch.io/tags/rest/</guid>
       <description></description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nos Jobs on MonkeyPatch</title>
-    <link>https://www.monkeypatch.io/jobs/</link>
+    <link>https://monkeypatch.io/jobs/</link>
     <description>Recent content in Nos Jobs on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     
-	<atom:link href="https://www.monkeypatch.io/jobs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://monkeypatch.io/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Expert Back-End</title>
-      <link>https://www.monkeypatch.io/jobs/backend/</link>
+      <link>https://monkeypatch.io/jobs/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/backend/</guid>
+      <guid>https://monkeypatch.io/jobs/backend/</guid>
       <description>&lt;h1 id=&#34;expert-back-end&#34;&gt;Expert Back-End&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Back-End. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -33,10 +33,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert Big Data</title>
-      <link>https://www.monkeypatch.io/jobs/bigdata/</link>
+      <link>https://monkeypatch.io/jobs/bigdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/bigdata/</guid>
+      <guid>https://monkeypatch.io/jobs/bigdata/</guid>
       <description>&lt;h1 id=&#34;expert-big-data&#34;&gt;Expert Big Data&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Big Data. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -54,10 +54,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert DevOps</title>
-      <link>https://www.monkeypatch.io/jobs/devops/</link>
+      <link>https://monkeypatch.io/jobs/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/devops/</guid>
+      <guid>https://monkeypatch.io/jobs/devops/</guid>
       <description>&lt;h1 id=&#34;expert-devops&#34;&gt;Expert DevOps&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants DevOps. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -73,10 +73,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert Front-End</title>
-      <link>https://www.monkeypatch.io/jobs/frontend/</link>
+      <link>https://monkeypatch.io/jobs/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/frontend/</guid>
+      <guid>https://monkeypatch.io/jobs/frontend/</guid>
       <description>&lt;h1 id=&#34;expert-front-end&#34;&gt;Expert Front End&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Front-End. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique et passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
@@ -94,10 +94,10 @@ Vous aurez comme missions :&lt;/p&gt;
     
     <item>
       <title>Expert Mobile</title>
-      <link>https://www.monkeypatch.io/jobs/mobile/</link>
+      <link>https://monkeypatch.io/jobs/mobile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/jobs/mobile/</guid>
+      <guid>https://monkeypatch.io/jobs/mobile/</guid>
       <description>&lt;h1 id=&#34;expert-mobile&#34;&gt;Expert Mobile&lt;/h1&gt;
 &lt;p&gt;MonkeyPatch société d’expertise informatique recherche des consultants Mobile. Vous êtes technophile et aimez les challenges techniques ? Vous souhaitez rejoindre une équipe dynamique passionnée par l’informatique ?&lt;/p&gt;
 &lt;h2 id=&#34;poste-et-missions&#34;&gt;Poste et missions&lt;/h2&gt;
