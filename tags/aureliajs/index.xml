@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aureliaJS on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/tags/aureliajs/</link>
+    <link>https://www.monkeypatch.io/tags/aureliajs/</link>
     <description>Recent content in aureliaJS on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Mon, 05 Feb 2018 14:47:57 +0100</lastBuildDate>
     
-	<atom:link href="http://www.monkeypatch.io/tags/aureliajs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/aureliajs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MKTD#2 On remet le couvert autour d’&amp;#35;Angular2 &amp;#35;React &amp;#35;AureliaJS</title>
-      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</link>
       <pubDate>Mon, 05 Feb 2018 14:47:57 +0100</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-3/</guid>
       <description>&lt;p&gt;On remet le couvert autour d’#Angular2 #React #AureliaJS
 Même si ça a été la course pour organiser le premier événement en moins de 2 mois, cette première expérience nous avait vraiment donné l’eau à la bouche. On a rapidement décidé de remettre ça sur le même format autour d’Angular2.&lt;/p&gt;</description>
     </item>

@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rust on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/tags/rust/</link>
+    <link>https://www.monkeypatch.io/tags/rust/</link>
     <description>Recent content in rust on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Mon, 05 Feb 2018 17:47:57 +0100</lastBuildDate>
     
-	<atom:link href="http://www.monkeypatch.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mktd#5 Seulement 17 mois après la 1ère édition ! &amp;#35;Go &amp;#35;Rust</title>
-      <link>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</link>
       <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</guid>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</guid>
       <description>&lt;p&gt;Déjà (et seulement&amp;hellip;) 17 mois se sont écoulés depuis la première expérimentation des MKTD.
 Pour cette 5ème édition, on se retrouve une fois de plus chez HarryCow pour expérimenter et tester les 2 technologies de plus en plus utilisées Golang et Rustlang.&lt;/p&gt;</description>
     </item>

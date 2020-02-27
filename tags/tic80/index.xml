@@ -1,27 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tic80 on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/tags/tic80/</link>
+    <link>https://www.monkeypatch.io/tags/tic80/</link>
     <description>Recent content in tic80 on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 16 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.monkeypatch.io/tags/tic80/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/tic80/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dev &amp; retro-gaming avec TIC-80</title>
-      <link>http://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</guid>
-      <description>&lt;p&gt;Cette année, MonkeyPatch a souhaité soutenir le &lt;a href=&#34;https://devfesttoulouse.fr/&#34;&gt;DevFest Toulouse&lt;/a&gt;. À cette occasion, nous nous sommes réunis pour savoir ce qu&amp;rsquo;on allait préparer pour notre stand.&lt;/p&gt;
-
-&lt;p&gt;On s&amp;rsquo;est très vite entendu pour faire des kakés de l&amp;rsquo;équipe et mettre en avant notre passion du dév.&lt;/p&gt;
-
-&lt;p&gt;Nous avons également décidé de mettre en place un petit &lt;a href=&#34;http://game.monkeypatch.io/&#34;&gt;quiz&lt;/a&gt; et un jeu rétro (le thème du DevFest de cette année). C&amp;rsquo;était décidé, on allait mettre une borne arcade rétro !&lt;/p&gt;</description>
+      <guid>https://www.monkeypatch.io/blog/2018/2018-12-16-tic80/</guid>
+      <description>&lt;p&gt;Cette année, MonkeyPatch a souhaité soutenir le &lt;a href=&#34;https://devfesttoulouse.fr/&#34;&gt;DevFest Toulouse&lt;/a&gt;. À cette occasion, nous nous sommes réunis pour savoir ce qu&#39;on allait préparer pour notre stand.&lt;/p&gt;
+&lt;p&gt;On s&#39;est très vite entendu pour faire des kakés de l&#39;équipe et mettre en avant notre passion du dév.&lt;/p&gt;
+&lt;p&gt;Nous avons également décidé de mettre en place un petit &lt;a href=&#34;http://game.monkeypatch.io/&#34;&gt;quiz&lt;/a&gt; et un jeu rétro (le thème du DevFest de cette année). C&#39;était décidé, on allait mettre une borne arcade rétro !&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,27 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Brainfuck on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/tags/brainfuck/</link>
+    <link>https://www.monkeypatch.io/tags/brainfuck/</link>
     <description>Recent content in Brainfuck on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.monkeypatch.io/tags/brainfuck/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/tags/brainfuck/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>On a validé le sujet du prochain MonkeyTechDay ! &amp;#35;Brainfuck &amp;#35;LOLCODE</title>
-      <link>http://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
+      <link>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
-      <description>&lt;h1 id=&#34;mktd-7-on-a-validé-le-sujet-du-prochain-monkeytechday-brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
-
+      <guid>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
+      <description>&lt;h1 id=&#34;mktd7--on-a-validé-le-sujet-du-prochain-monkeytechday--brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
 &lt;p&gt;A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
 venir), nous prenons connaissance des retours faits par les participants
-sur l&amp;rsquo;organisation de l&amp;rsquo;événement, les technos, les exercices proposés et les
+sur l&#39;organisation de l&#39;événement, les technos, les exercices proposés et les
 niveaux des coachs.&lt;/p&gt;</description>
     </item>
     

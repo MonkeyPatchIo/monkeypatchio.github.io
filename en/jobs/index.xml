@@ -1,30 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Our Jobs on MonkeyPatch</title>
-    <link>http://www.monkeypatch.io/en/jobs/</link>
+    <link>https://www.monkeypatch.io/en/jobs/</link>
     <description>Recent content in Our Jobs on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     
-	<atom:link href="http://www.monkeypatch.io/en/jobs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.monkeypatch.io/en/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Back-End Expert</title>
-      <link>http://www.monkeypatch.io/en/jobs/backend/</link>
+      <link>https://www.monkeypatch.io/en/jobs/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/jobs/backend/</guid>
+      <guid>https://www.monkeypatch.io/en/jobs/backend/</guid>
       <description>&lt;h1 id=&#34;back-end-expert&#34;&gt;Back-End Expert&lt;/h1&gt;
-
 &lt;p&gt;MonkeyPatch IT expertise company is looking for Back-End consultants. Are you a technophile and like technical challenges? Would you like to join a dynamic team passionate about IT?&lt;/p&gt;
-
 &lt;h2 id=&#34;position-and-missions&#34;&gt;Position and missions&lt;/h2&gt;
-
 &lt;p&gt;As a Back-End expert, you are not afraid to immerse yourself in Back End programming languages and databases.
 You will have as missions:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Contribute to back-end development&lt;/li&gt;
 &lt;li&gt;Propose new features and improvements&lt;/li&gt;
@@ -37,20 +33,15 @@ You will have as missions:&lt;/p&gt;
     
     <item>
       <title>Big Data Expert</title>
-      <link>http://www.monkeypatch.io/en/jobs/bigdata/</link>
+      <link>https://www.monkeypatch.io/en/jobs/bigdata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/jobs/bigdata/</guid>
+      <guid>https://www.monkeypatch.io/en/jobs/bigdata/</guid>
       <description>&lt;h1 id=&#34;big-data-expert&#34;&gt;Big Data Expert&lt;/h1&gt;
-
 &lt;p&gt;MonkeyPatch IT expertise company is looking for Back-End consultants. Are you a technophile and like technical challenges? Would you like to join a dynamic team passionate about IT?&lt;/p&gt;
-
 &lt;h2 id=&#34;position-and-missions&#34;&gt;Position and missions&lt;/h2&gt;
-
 &lt;p&gt;In love with technology, you have taken the challenge of investing in Data processing projects. Now is the time to capitalize on your experience by working on complex and large-scale projects.&lt;/p&gt;
-
 &lt;p&gt;You will perform the following tasks:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Support our project teams and customers as an Expert in Big Data technologies&lt;/li&gt;
 &lt;li&gt;Intervene on projects to set up data platforms with high constraints (volumes, processing, etc.)&lt;/li&gt;
@@ -63,18 +54,14 @@ You will have as missions:&lt;/p&gt;
     
     <item>
       <title>DevOps Expert</title>
-      <link>http://www.monkeypatch.io/en/jobs/devops/</link>
+      <link>https://www.monkeypatch.io/en/jobs/devops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/jobs/devops/</guid>
+      <guid>https://www.monkeypatch.io/en/jobs/devops/</guid>
       <description>&lt;h1 id=&#34;devops-expert&#34;&gt;DevOps Expert&lt;/h1&gt;
-
 &lt;p&gt;MonkeyPatch IT expertise company is looking for Back-End consultants. Are you a technophile and like technical challenges? Would you like to join a dynamic team passionate about IT?&lt;/p&gt;
-
 &lt;h2 id=&#34;position-and-missions&#34;&gt;Position and missions&lt;/h2&gt;
-
 &lt;p&gt;As a DevOps Expert, you are called upon to carry out development and operational missions. Your dual expertise allows you to create applications that are perfectly adapted to the infrastructure.&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Set up tools to automate recurring tasks&lt;/li&gt;
 &lt;li&gt;Manage the continuous deployment platform&lt;/li&gt;
@@ -86,19 +73,15 @@ You will have as missions:&lt;/p&gt;
     
     <item>
       <title>Front-End Expert</title>
-      <link>http://www.monkeypatch.io/en/jobs/frontend/</link>
+      <link>https://www.monkeypatch.io/en/jobs/frontend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/jobs/frontend/</guid>
+      <guid>https://www.monkeypatch.io/en/jobs/frontend/</guid>
       <description>&lt;h1 id=&#34;front-end-expert&#34;&gt;Front End Expert&lt;/h1&gt;
-
 &lt;p&gt;MonkeyPatch IT expertise company is looking for Front-End consultants. Are you a technophile and like technical challenges? Would you like to join a dynamic team passionate about IT?&lt;/p&gt;
-
 &lt;h2 id=&#34;position-and-missions&#34;&gt;Position and missions&lt;/h2&gt;
-
 &lt;p&gt;As a Front-End Expert, you will play a real pivotal role between Design (UX/UI) and Back-End Development.
 You will have as missions:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Contribute to front-end development&lt;/li&gt;
 &lt;li&gt;Propose new features and improvements&lt;/li&gt;
@@ -111,19 +94,15 @@ You will have as missions:&lt;/p&gt;
     
     <item>
       <title>Mobile Expert</title>
-      <link>http://www.monkeypatch.io/en/jobs/mobile/</link>
+      <link>https://www.monkeypatch.io/en/jobs/mobile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.monkeypatch.io/en/jobs/mobile/</guid>
+      <guid>https://www.monkeypatch.io/en/jobs/mobile/</guid>
       <description>&lt;h1 id=&#34;mobile-expert&#34;&gt;Mobile Expert&lt;/h1&gt;
-
 &lt;p&gt;MonkeyPatch IT expertise company is looking for Mobile consultants. Are you a technophile and like technical challenges? Would you like to join a dynamic team passionate about IT?&lt;/p&gt;
-
 &lt;h2 id=&#34;position-and-missions&#34;&gt;Position and missions&lt;/h2&gt;
-
 &lt;p&gt;As a Mobile Expert, you create and deploy native or cross-platform mobile applications.
 You will have as missions:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Contribute to mobile development in Android, iOS or cross platform&lt;/li&gt;
 &lt;li&gt;Propose new features and improvements&lt;/li&gt;
