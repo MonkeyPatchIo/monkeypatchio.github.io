@@ -6,7 +6,7 @@
     <description>Recent content in rust on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:01 +0000</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Rust: Open Service Broker API (Part 1)</title>
       <link>https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/</link>
-      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Jul 2020 00:00:01 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/&#34;&gt;In this blog series&lt;/a&gt;, we will discover how to extend service catalog of your cloud solution using Rust. This first blog post is about setting up library project.&lt;/p&gt;</description>
