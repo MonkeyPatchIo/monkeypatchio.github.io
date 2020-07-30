@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>entretiens on MonkeyPatch</title>
@@ -18,10 +18,10 @@
       
       <guid>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</guid>
       <description>&lt;p&gt;Dans le précédent article de cette série
-&amp;ldquo;&lt;a href=&#34;https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/&#34;&gt;Devenir Monkey — Partie 1 : Notre processus de recrutement&lt;/a&gt;&amp;rdquo;
-j&#39;ai effleuré la surface des choses en exposant les raisons qui nous ont poussé à élaborer notre propre processus de
-recrutement. J&#39;ai aussi présenté la phase préliminaire de recherche de candidats et dressé un court bilan de notre
-expérience jusqu&#39;ici.&lt;/p&gt;</description>
+&amp;ldquo;&lt;a href=&#34;https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/&#34;&gt;Devenir Monkey — Partie 1 : Notre processus de recrutement&lt;/a&gt;&amp;ldquo;
+j&amp;rsquo;ai effleuré la surface des choses en exposant les raisons qui nous ont poussé à élaborer notre propre processus de
+recrutement. J&amp;rsquo;ai aussi présenté la phase préliminaire de recherche de candidats et dressé un court bilan de notre
+expérience jusqu&amp;rsquo;ici.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,6 +32,7 @@ expérience jusqu&#39;ici.&lt;/p&gt;</description>
       <guid>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</guid>
       <description>&lt;p&gt;2018 a été une année chargée pour MonkeyPatch, et sans avoir formellement dressé le bilan de nos réussites et échecs,
 le recrutement reste un sujet majeur pour 2019 et un axe important de notre croissance.&lt;/p&gt;
+
 &lt;p&gt;Alors parlons recrutement :&lt;/p&gt;</description>
     </item>
     

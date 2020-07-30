@@ -8,57 +8,79 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320"><meta property="og:title" content="Mktd#1 Feign Vs Retrofit : 2 Aller Plus Loin">
-<meta property="og:description" content="Cet article est le deuxième d&#39;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.
+<meta property="og:description" content="Cet article est le deuxième d&rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.
+
 Article précédent :
 MKTD#1 : Prise en main
 
+
+
 Défi 2: Aller plus loin&hellip;
+
 Le deuxième défi permet d’adresser des problèmes plus avancés comme :
 
-L&#39;authentification
+
+L&rsquo;authentification
 La gestion des erreurs via des Exception Java
 L’upload et le download de fichiers
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/">
+
 <meta property="og:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logo-monochrome.svg">
 <meta property="article:published_time" content="2016-08-10T00:00:00+00:00">
 <meta property="article:modified_time" content="2016-08-10T00:00:00+00:00"><meta property="og:site_name" content="MonkeyPatch">
 <meta itemprop="name" content="Mktd#1 Feign Vs Retrofit : 2 Aller Plus Loin">
-<meta itemprop="description" content="Cet article est le deuxième d&#39;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.
+<meta itemprop="description" content="Cet article est le deuxième d&rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.
+
 Article précédent :
 MKTD#1 : Prise en main
 
+
+
 Défi 2: Aller plus loin&hellip;
+
 Le deuxième défi permet d’adresser des problèmes plus avancés comme :
 
-L&#39;authentification
+
+L&rsquo;authentification
 La gestion des erreurs via des Exception Java
 L’upload et le download de fichiers
 ">
+
+
 <meta itemprop="datePublished" content="2016-08-10T00:00:00&#43;00:00">
 <meta itemprop="dateModified" content="2016-08-10T00:00:00&#43;00:00">
 <meta itemprop="wordCount" content="2013">
-<meta itemprop="image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
 
 
 
-<meta itemprop="keywords" content="MKTD,Java,REST,Feign,Retrofit,Cookie,"><meta name="twitter:card" content="summary_large_image">
+<meta itemprop="keywords" content="MKTD,Java,REST,Feign,Retrofit,Cookie,">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
 
 <meta name="twitter:title" content="Mktd#1 Feign Vs Retrofit : 2 Aller Plus Loin">
-<meta name="twitter:description" content="Cet article est le deuxième d&#39;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.
+<meta name="twitter:description" content="Cet article est le deuxième d&rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.
+
 Article précédent :
 MKTD#1 : Prise en main
 
+
+
 Défi 2: Aller plus loin&hellip;
+
 Le deuxième défi permet d’adresser des problèmes plus avancés comme :
 
-L&#39;authentification
+
+L&rsquo;authentification
 La gestion des erreurs via des Exception Java
 L’upload et le download de fichiers
 ">
-<meta name="generator" content="Hugo 0.62.2">
+<meta name="generator" content="Hugo 0.56.3">
 
 <meta name="ROBOTS" content="INDEX, FOLLOW">
 
@@ -72,7 +94,7 @@ L’upload et le download de fichiers
 
 
 
-<link rel="stylesheet" href="https://www.monkeypatch.io/styles/main.a68dfcbd8dbd108ff1ac179c3b5bf75cb5e14ea51ecd4dc44439034e6c03eeef.css">
+<link rel="stylesheet" href="https://www.monkeypatch.io/styles/main.5f9b582b4a8fe3bf4dfb3775f1ba0264252716595f2fb15b8ae66c88972fe98c.css">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
 
@@ -86,7 +108,7 @@ L’upload et le download de fichiers
 
 </head>
 
-<body class="page blog blog20162016-08-12-mktd1-feign-vs-retrofit-2">
+<body class="page blog blog-2016-2016-08-12-mktd1-feign-vs-retrofit-2">
 
     
     <header>
@@ -198,34 +220,38 @@ L’upload et le download de fichiers
         
 
 <nav id="TableOfContents">
-  <ul>
-    <li><a href="#défi-2-aller-plus-loin">Défi 2: Aller plus loin&hellip;</a>
-      <ul>
-        <li><a href="#authentification-avec-cookie">Authentification avec Cookie</a></li>
-        <li><a href="#gestion-des-erreurs">Gestion des erreurs</a></li>
-      </ul>
-    </li>
-    <li><a href="#feign">Feign</a>
-      <ul>
-        <li><a href="#astuce-log-des-requêtes-http">Astuce: log des requêtes HTTP</a></li>
-        <li><a href="#authentification-avec-cookie-1">Authentification avec Cookie</a></li>
-        <li><a href="#gestion-des-erreurs-1">Gestion des erreurs</a></li>
-        <li><a href="#upload">Upload</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#bilan">Bilan</a></li>
-      </ul>
-    </li>
-    <li><a href="#retrofit">Retrofit</a>
-      <ul>
-        <li><a href="#authentification-avec-cookie-2">Authentification avec Cookie</a></li>
-        <li><a href="#gestion-des-erreurs-2">Gestion des erreurs</a></li>
-        <li><a href="#upload-1">Upload</a></li>
-        <li><a href="#download-1">Download</a></li>
-        <li><a href="#bilan-1">Bilan</a></li>
-      </ul>
-    </li>
-    <li><a href="#bilan-global">Bilan Global</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#défi-2-aller-plus-loin">Défi 2: Aller plus loin&hellip;</a>
+<ul>
+<li><a href="#authentification-avec-cookie">Authentification avec Cookie</a></li>
+<li><a href="#gestion-des-erreurs">Gestion des erreurs</a></li>
+</ul></li>
+<li><a href="#feign">Feign</a>
+<ul>
+<li><a href="#astuce-log-des-requêtes-http">Astuce: log des requêtes HTTP</a>
+<ul>
+<li><a href="#quick-dirty">Quick &amp; Dirty</a></li>
+<li><a href="#solution-avec-un-logger-feign">Solution avec un logger Feign</a></li>
+</ul></li>
+<li><a href="#authentification-avec-cookie-1">Authentification avec Cookie</a></li>
+<li><a href="#gestion-des-erreurs-1">Gestion des erreurs</a></li>
+<li><a href="#upload">Upload</a></li>
+<li><a href="#download">Download</a></li>
+<li><a href="#bilan">Bilan</a></li>
+</ul></li>
+<li><a href="#retrofit">Retrofit</a>
+<ul>
+<li><a href="#authentification-avec-cookie-2">Authentification avec Cookie</a></li>
+<li><a href="#gestion-des-erreurs-2">Gestion des erreurs</a></li>
+<li><a href="#upload-1">Upload</a></li>
+<li><a href="#download-1">Download</a></li>
+<li><a href="#bilan-1">Bilan</a></li>
+</ul></li>
+<li><a href="#bilan-global">Bilan Global</a></li>
+</ul></li>
+</ul>
 </nav>
 
 <section class="post">
@@ -260,311 +286,420 @@ L’upload et le download de fichiers
         
     </div>
 
-    <article><p>Cet article est le deuxième d'une série de trois articles sur les clients REST en java que sont Feign et Retrofit.</p>
+    <article><p>Cet article est le deuxième d&rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.</p>
+
 <p>Article précédent :
 <a href="/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/">MKTD#1 : Prise en main</a></p>
+
 <hr>
+
 <h2 id="défi-2-aller-plus-loin">Défi 2: Aller plus loin&hellip;</h2>
+
 <p>Le deuxième défi permet d’adresser des problèmes plus avancés comme :</p>
+
 <ul>
-<li>L'authentification</li>
+<li>L&rsquo;authentification</li>
 <li>La gestion des erreurs via des <code>Exception</code> Java</li>
 <li>L’<em>upload</em> et le <em>download</em> de fichiers</li>
 </ul>
+
 <h3 id="authentification-avec-cookie">Authentification avec Cookie</h3>
-<p>Afin de gérer le besoin d'authentification, le serveur fournit un mécanisme à base de <a href="https://jwt.io/">JWT</a> et de <a href="https://tools.ietf.org/html/rfc6265">Cookies</a>.
-Voici l'interface Java décrivant cette nouvelle opération:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">AuthenticationApi</span> <span style="color:#f92672">{</span>
-    String <span style="color:#a6e22e">login</span><span style="color:#f92672">(</span>LoginPassword loginPassword<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> SecurityException<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Dans l'en-tête de la réponse HTTP se trouve un <code>Set-Cookie</code> qu’il faut décoder. Ce <em>cookie</em> doit ensuite être envoyé dans les requêtes faites aux autres services.</p>
+
+<p>Afin de gérer le besoin d&rsquo;authentification, le serveur fournit un mécanisme à base de <a href="https://jwt.io/">JWT</a> et de <a href="https://tools.ietf.org/html/rfc6265">Cookies</a>.
+Voici l&rsquo;interface Java décrivant cette nouvelle opération:</p>
+
+<pre><code class="language-java">public interface AuthenticationApi {
+    String login(LoginPassword loginPassword) throws SecurityException;
+}
+</code></pre>
+
+<p>Dans l&rsquo;en-tête de la réponse HTTP se trouve un <code>Set-Cookie</code> qu’il faut décoder. Ce <em>cookie</em> doit ensuite être envoyé dans les requêtes faites aux autres services.</p>
+
 <blockquote>
-<p>Les solutions à base de <em>token</em> sont un peu plus simples à mettre en oeuvre avec Feign et Retrofit, mais ici, l'objectif n'est pas de faire les choses de la façon la plus simples. Pour plus d'information sur ce sujet vous pouvez regarder <a href="https://auth0.com/blog/angularjs-authentication-with-cookies-vs-token/">ce blog</a>.</p>
+<p>Les solutions à base de <em>token</em> sont un peu plus simples à mettre en oeuvre avec Feign et Retrofit, mais ici, l&rsquo;objectif n&rsquo;est pas de faire les choses de la façon la plus simples. Pour plus d&rsquo;information sur ce sujet vous pouvez regarder <a href="https://auth0.com/blog/angularjs-authentication-with-cookies-vs-token/">ce blog</a>.</p>
 </blockquote>
+
 <h3 id="gestion-des-erreurs">Gestion des erreurs</h3>
-<p>Pour la gestion des erreurs, le but de l'exercice est de renvoyer une erreur spécifique en fonction du code HTTP retourné par le serveur.
-Le code qui détermine l'exception à retourner est le suivant :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> RuntimeException <span style="color:#a6e22e">decodeError</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> status<span style="color:#f92672">,</span> String message<span style="color:#f92672">,</span> Supplier<span style="color:#f92672">&lt;</span>RuntimeException<span style="color:#f92672">&gt;</span> defaultCase<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">switch</span> <span style="color:#f92672">(</span>status<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">case</span> 404<span style="color:#f92672">:</span> <span style="color:#75715e">// Not Found
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> NoSuchElementException<span style="color:#f92672">(</span>message<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">case</span> 400<span style="color:#f92672">:</span> <span style="color:#75715e">// Bad Request
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> IllegalArgumentException<span style="color:#f92672">(</span>message<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">case</span> 401<span style="color:#f92672">:</span> <span style="color:#75715e">// Unauthorized
-</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">case</span> 403<span style="color:#f92672">:</span> <span style="color:#75715e">// Forbidden
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> SecurityException<span style="color:#f92672">(</span>message<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
-            <span style="color:#66d9ef">return</span> defaultCase<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><h2 id="feign">Feign</h2>
+
+<p>Pour la gestion des erreurs, le but de l&rsquo;exercice est de renvoyer une erreur spécifique en fonction du code HTTP retourné par le serveur.
+Le code qui détermine l&rsquo;exception à retourner est le suivant :</p>
+
+<pre><code class="language-java">public static RuntimeException decodeError(int status, String message, Supplier&lt;RuntimeException&gt; defaultCase) {
+    switch (status) {
+        case 404: // Not Found
+            return new NoSuchElementException(message);
+        case 400: // Bad Request
+            return new IllegalArgumentException(message);
+        case 401: // Unauthorized
+        case 403: // Forbidden
+            return new SecurityException(message);
+        default:
+            return defaultCase.get();
+    }
+}
+</code></pre>
+
+<h2 id="feign">Feign</h2>
+
 <h3 id="astuce-log-des-requêtes-http">Astuce: log des requêtes HTTP</h3>
+
 <p>Pour faciliter le développement de ce défi, il est très pratique de pouvoir afficher des <em>logs</em> sur les requêtes ou les réponses HTTP.</p>
-<h4 id="quick--dirty">Quick &amp; Dirty</h4>
+
+<h4 id="quick-dirty">Quick &amp; Dirty</h4>
+
 <p>La solution la plus directe consite à utiliser un <code>RequestInterceptor</code> qui est appelé par Feign avant que la requête HTTP ne soit construite, et <em>logger</em> via un <code>System.out</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Feign<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">interceptor</span><span style="color:#f92672">(</span>System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">:</span><span style="color:#f92672">:</span>println<span style="color:#f92672">)</span> <span style="color:#75715e">// Quick &amp; Dirty debug
-</span><span style="color:#75715e"></span>        <span style="color:#f92672">.</span><span style="color:#a6e22e">decoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonDecoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">encoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonEncoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">target</span><span style="color:#f92672">(</span>MonkeyRaceApi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> url<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-</code></pre></div><p>Evidement, ça ne marche que pour la requête HTTP, pour la réponse il faudrait faire quelque chose d'équivalent dans un décodeur.</p>
+
+<pre><code class="language-java">Feign.builder()
+        .interceptor(System.out::println) // Quick &amp; Dirty debug
+        .decoder(new GsonDecoder())
+        .encoder(new GsonEncoder())
+        .target(MonkeyRaceApi.class, url);
+</code></pre>
+
+<p>Evidement, ça ne marche que pour la requête HTTP, pour la réponse il faudrait faire quelque chose d&rsquo;équivalent dans un décodeur.</p>
+
 <h4 id="solution-avec-un-logger-feign">Solution avec un logger Feign</h4>
-<p>Pour éviter d'avoir des dépendances sur bibliothèques tierces, Feign à définit son propre <code>Logger</code>. C'est une classe abstraite avec une seule méthode à implémenter.
+
+<p>Pour éviter d&rsquo;avoir des dépendances sur bibliothèques tierces, Feign à définit son propre <code>Logger</code>. C&rsquo;est une classe abstraite avec une seule méthode à implémenter.
 Il faut ensuite définir le niveau de <em>log</em> souhaité: <code>NONE</code>, <code>BASIC</code>, <code>HEADERS</code>, <code>FULL</code>.
 Voici ce que ça donne:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Feign<span style="color:#f92672">.</span><span style="color:#a6e22e">builder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">logLevel</span><span style="color:#f92672">(</span>Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">Level</span><span style="color:#f92672">.</span><span style="color:#a6e22e">FULL</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">logger</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Logger<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#75715e">// implements Feign abstract Logger
-</span><span style="color:#75715e"></span>            <span style="color:#a6e22e">@Override</span>
-            <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">log</span><span style="color:#f92672">(</span>String configKey<span style="color:#f92672">,</span> String format<span style="color:#f92672">,</span> Object<span style="color:#f92672">.</span><span style="color:#f92672">.</span><span style="color:#f92672">.</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">printf</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;[%s] &#34;</span><span style="color:#f92672">,</span> configKey<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">printf</span><span style="color:#f92672">(</span>format<span style="color:#f92672">,</span> args<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">decoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonDecoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">encoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonEncoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">target</span><span style="color:#f92672">(</span>MonkeyRaceApi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> url<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-</code></pre></div><p>Dans Feign, le <code>feign.Logger.JavaLogger</code> implémente le mécanisme au travers du <em>loggeur</em> du JDK (<code>java.util.logging.Logger</code>), et il existe bien sûr une extension pour utiliser <a href="https://github.com/OpenFeign/feign/tree/master/slf4j">SLF4J</a>.</p>
+
+<pre><code class="language-java">Feign.builder()
+        .logLevel(Logger.Level.FULL)
+        .logger(new Logger() { // implements Feign abstract Logger
+            @Override
+            protected void log(String configKey, String format, Object... args) {
+                System.out.printf(&quot;[%s] &quot;, configKey);
+                System.out.printf(format, args);
+                System.out.println();
+            }
+        })
+        .decoder(new GsonDecoder())
+        .encoder(new GsonEncoder())
+        .target(MonkeyRaceApi.class, url);
+</code></pre>
+
+<p>Dans Feign, le <code>feign.Logger.JavaLogger</code> implémente le mécanisme au travers du <em>loggeur</em> du JDK (<code>java.util.logging.Logger</code>), et il existe bien sûr une extension pour utiliser <a href="https://github.com/OpenFeign/feign/tree/master/slf4j">SLF4J</a>.</p>
+
 <h3 id="authentification-avec-cookie-1">Authentification avec Cookie</h3>
+
 <p>La première étape consiste à récupérer le <em>cookie</em> généré par la requête d’authentification. Pour cela on utilise un décodeur spécifique qui va traiter les en-têtes de la réponse pour stocker les <em>cookies</em>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">getAuthToken</span><span style="color:#f92672">(</span>String url<span style="color:#f92672">,</span> String login<span style="color:#f92672">,</span> String password<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-   AuthenticationApi authenticationApi <span style="color:#f92672">=</span> builder
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">encoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonEncoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">decoder</span><span style="color:#f92672">(</span><span style="color:#f92672">(</span>response<span style="color:#f92672">,</span> type<span style="color:#f92672">)</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> handleCookies<span style="color:#f92672">(</span>response<span style="color:#f92672">.</span><span style="color:#a6e22e">headers</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#75715e">// decode cookies
-</span><span style="color:#75715e"></span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">target</span><span style="color:#f92672">(</span>AuthenticationApi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> url<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   <span style="color:#66d9ef">return</span> authenticationApi<span style="color:#f92672">.</span><span style="color:#a6e22e">login</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> LoginPassword<span style="color:#f92672">(</span>login<span style="color:#f92672">,</span> password<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Le stockage du <em>cookie</em> est assuré par le <a href="https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html">CookieManager</a> disponible depuis Java 6.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> CookieManager COOKIE_MANAGER <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CookieManager<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-</code></pre></div><p>L’utilisation de ce <code>CookieManager</code> est traité dans la méthode <code>handleCookies</code> ci dessous:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">handleCookies</span><span style="color:#f92672">(</span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Collection<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> headers<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-   <span style="color:#75715e">// From Map&lt;String, Collection&lt;String&gt;&gt; to Map&lt;String, List&lt;String&gt;&gt;
-</span><span style="color:#75715e"></span>   Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> h <span style="color:#f92672">=</span> headers<span style="color:#f92672">.</span><span style="color:#a6e22e">entrySet</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>
-             toMap<span style="color:#f92672">(</span>
-               Map<span style="color:#f92672">.</span><span style="color:#a6e22e">Entry</span><span style="color:#f92672">:</span><span style="color:#f92672">:</span>getKey<span style="color:#f92672">,</span>
-               entry <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>toList<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-            <span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-       URI uri <span style="color:#f92672">=</span> URI<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>BASE_URL<span style="color:#f92672">)</span><span style="color:#f92672">;</span>image
-       COOKIE_MANAGER<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>uri<span style="color:#f92672">,</span> h<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-       <span style="color:#66d9ef">return</span> COOKIE_MANAGER<span style="color:#f92672">.</span><span style="color:#a6e22e">getCookieStore</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>uri<span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Stream&lt;HttpCookie&gt;
-</span><span style="color:#75715e"></span>               <span style="color:#f92672">.</span><span style="color:#a6e22e">filter</span><span style="color:#f92672">(</span>cookie <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>cookie<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-               <span style="color:#f92672">.</span><span style="color:#a6e22e">findFirst</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#75715e">// Optional&lt;HttpCookie&gt;
-</span><span style="color:#75715e"></span>               <span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>HttpCookie<span style="color:#f92672">:</span><span style="color:#f92672">:</span>getValue<span style="color:#f92672">)</span>
-               <span style="color:#f92672">.</span><span style="color:#a6e22e">orElseThrow</span><span style="color:#f92672">(</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">new</span> IllegalStateException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Authentication cookie not found&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-       <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> RuntimeException<span style="color:#f92672">(</span>e<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Une fois stocké, ce <em>cookie</em> sera envoyé dans les futures requêtes.
+
+<pre><code class="language-java">private static String getAuthToken(String url, String login, String password) {
+   AuthenticationApi authenticationApi = builder
+           .encoder(new GsonEncoder())
+           .decoder((response, type) -&gt; handleCookies(response.headers())) // decode cookies
+           .target(AuthenticationApi.class, url);
+   return authenticationApi.login(new LoginPassword(login, password));
+}
+</code></pre>
+
+<p>Le stockage du <em>cookie</em> est assuré par le <a href="https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html">CookieManager</a> disponible depuis Java 6.</p>
+
+<pre><code class="language-java">private static final CookieManager COOKIE_MANAGER = new CookieManager();
+</code></pre>
+
+<p>L’utilisation de ce <code>CookieManager</code> est traité dans la méthode <code>handleCookies</code> ci dessous:</p>
+
+<pre><code class="language-java">private static String handleCookies(Map&lt;String, Collection&lt;String&gt;&gt; headers) {
+   // From Map&lt;String, Collection&lt;String&gt;&gt; to Map&lt;String, List&lt;String&gt;&gt;
+   Map&lt;String, List&lt;String&gt;&gt; h = headers.entrySet().stream()
+           .collect(
+             toMap(
+               Map.Entry::getKey,
+               entry -&gt; entry.getValue().stream().collect(toList()))
+            );
+   try {
+       URI uri = URI.create(BASE_URL);image
+       COOKIE_MANAGER.put(uri, h);
+       return COOKIE_MANAGER.getCookieStore().get(uri).stream() // Stream&lt;HttpCookie&gt;
+               .filter(cookie -&gt; &quot;token&quot;.equals(cookie.getName()))
+               .findFirst() // Optional&lt;HttpCookie&gt;
+               .map(HttpCookie::getValue)
+               .orElseThrow(() -&gt; new IllegalStateException(&quot;Authentication cookie not found&quot;));
+   } catch (IOException e) {
+       throw new RuntimeException(e);
+   }
+}
+</code></pre>
+
+<p>Une fois stocké, ce <em>cookie</em> sera envoyé dans les futures requêtes.
 Pour cela on utilise une nouvelle fois le mécanisme de <code>RequestInterceptor</code> qui permet de modifier le <code>RequestTemplate</code>, Feign utilise cet objet pour construire la requête HTTP.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">static</span> MonkeyRaceApi <span style="color:#a6e22e">buildRaceApi</span><span style="color:#f92672">(</span>String url<span style="color:#f92672">,</span> String login<span style="color:#f92672">,</span> String password<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-   getAuthToken<span style="color:#f92672">(</span>url<span style="color:#f92672">,</span> login<span style="color:#f92672">,</span> password<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   <span style="color:#66d9ef">return</span> builder
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">requestInterceptor</span><span style="color:#f92672">(</span>ApiFactory<span style="color:#f92672">:</span><span style="color:#f92672">:</span>addCookies<span style="color:#f92672">)</span> <span style="color:#75715e">// Inject Cookies
-</span><span style="color:#75715e"></span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">decoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonDecoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">encoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonEncoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">target</span><span style="color:#f92672">(</span>MonkeyRaceApi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> url<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>L’intercepteur se comporte comme un consommateur de <code>RequestTemplate</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">addCookies</span><span style="color:#f92672">(</span>RequestTemplate template<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-   URI uri <span style="color:#f92672">=</span> URI<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>BASE_URL<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   COOKIE_MANAGER<span style="color:#f92672">.</span><span style="color:#a6e22e">getCookieStore</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>uri<span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>HttpCookie<span style="color:#f92672">:</span><span style="color:#f92672">:</span>toString<span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>cookie <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> template<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Cookie&#34;</span><span style="color:#f92672">,</span> cookie<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Dans Feign, le mécanisme d'authentification par <em>cookie</em> est proche du mécanisme d’en-tête <code>Authorization</code> souvent associé au JWT. Il se base sur des en-têtes HTTP. Pour implémenter l'authentification à base de <em>token</em>, on utiliserait donc la même technique du <code>RequestInterceptor</code>. On constate quand même que l’utilisation des <em>cookies</em> alourdi fortement le code.</p>
+
+<pre><code class="language-java">static MonkeyRaceApi buildRaceApi(String url, String login, String password) {
+   getAuthToken(url, login, password);
+   return builder
+           .requestInterceptor(ApiFactory::addCookies) // Inject Cookies
+           .decoder(new GsonDecoder())
+           .encoder(new GsonEncoder())
+           .target(MonkeyRaceApi.class, url);
+}
+</code></pre>
+
+<p>L’intercepteur se comporte comme un consommateur de <code>RequestTemplate</code> :</p>
+
+<pre><code class="language-java">private static void addCookies(RequestTemplate template) {
+   URI uri = URI.create(BASE_URL);
+   COOKIE_MANAGER.getCookieStore().get(uri).stream()
+           .map(HttpCookie::toString)
+           .forEach(cookie -&gt; template.header(&quot;Cookie&quot;, cookie));
+}
+</code></pre>
+
+<p>Dans Feign, le mécanisme d&rsquo;authentification par <em>cookie</em> est proche du mécanisme d’en-tête <code>Authorization</code> souvent associé au JWT. Il se base sur des en-têtes HTTP. Pour implémenter l&rsquo;authentification à base de <em>token</em>, on utiliserait donc la même technique du <code>RequestInterceptor</code>. On constate quand même que l’utilisation des <em>cookies</em> alourdi fortement le code.</p>
+
 <blockquote>
-<p>On peut aussi utiliser une <code>feign.Target</code> pour traiter les aspects d'authentification, voir la <a href="https://github.com/OpenFeign/feign#setting-headers-per-target">documentation de Feign</a>.</p>
+<p>On peut aussi utiliser une <code>feign.Target</code> pour traiter les aspects d&rsquo;authentification, voir la <a href="https://github.com/OpenFeign/feign#setting-headers-per-target">documentation de Feign</a>.</p>
 </blockquote>
+
 <h3 id="gestion-des-erreurs-1">Gestion des erreurs</h3>
-<p>Dans Feign, il existe un mécanisme spécifique pour traiter les cas en erreurs, c'est à dire si la réponse HTTP à un code ≥ 400. Ce  mécanisme utilise un <code>ErrorDecoder</code> :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">static</span> MonkeyRaceApi <span style="color:#a6e22e">buildRaceApi</span><span style="color:#f92672">(</span>String url<span style="color:#f92672">,</span> String login<span style="color:#f92672">,</span> String password<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-   getAuthToken<span style="color:#f92672">(</span>url<span style="color:#f92672">,</span> login<span style="color:#f92672">,</span> password<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-   <span style="color:#66d9ef">return</span> builder
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">errorDecoder</span><span style="color:#f92672">(</span>ApiFactory<span style="color:#f92672">:</span><span style="color:#f92672">:</span>decodeError<span style="color:#f92672">)</span> <span style="color:#75715e">// Decode errors
-</span><span style="color:#75715e"></span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">requestInterceptor</span><span style="color:#f92672">(</span>ApiFactory<span style="color:#f92672">:</span><span style="color:#f92672">:</span>addCookies<span style="color:#f92672">)</span> <span style="color:#75715e">// Inject Cookies
-</span><span style="color:#75715e"></span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">decoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonDecoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">encoder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> GsonEncoder<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
-           <span style="color:#f92672">.</span><span style="color:#a6e22e">target</span><span style="color:#f92672">(</span>MonkeyRaceApi<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">,</span> url<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> Exception <span style="color:#a6e22e">decodeError</span><span style="color:#f92672">(</span>String methodKey<span style="color:#f92672">,</span> Response response<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> decodeError<span style="color:#f92672">(</span>response<span style="color:#f92672">.</span><span style="color:#a6e22e">status</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> methodKey<span style="color:#f92672">,</span>
-            <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> FeignException<span style="color:#f92672">.</span><span style="color:#a6e22e">errorStatus</span><span style="color:#f92672">(</span>methodKey<span style="color:#f92672">,</span> response<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><blockquote>
-<p>Parfois on souhaite traiter le cas particulier d'une erreur <code>404</code> dans le <code>Decoder</code> utilisé dans le cas nominal, pour celà il suffit d'utiliser la méthode <code>feign.Feign.Builder#decode404</code> sur le <em>builder</em>.</p>
-</blockquote>
-<h3 id="upload">Upload</h3>
-<p>Concernant l&rsquo;<em>upload</em> de fichier, le serveur REST propose deux solutions:</p>
-<ul>
-<li>un <em>upload</em> via un <a href="https://www.ietf.org/rfc/rfc2388.txt">formulaire multipart</a> avec l'en-tête <code>Content-type</code> à <code>multipart/form-data</code></li>
-<li>un <em>upload</em> direct avec les données du fichier directement dans le corps de la requête, l'en-tête <code>Content-type</code> à <code>application/octet-stream</code>.</li>
-</ul>
-<p>Les deux solutions sont implémetables en utilisant le même principe: un <code>Decoder</code> spécifique.
-La seconde solution est beaucoup plus simple à implémenter car gérer le corps d'une requête <em>multipart</em> nécessite l'utilisation d'une API externe (par exemple <a href="https://commons.apache.org/proper/commons-fileupload/">Commons FileUpload d'Apache</a>).
-On peut regarder du coté de <a href="https://github.com/xxlabaza/feign-form">https://github.com/xxlabaza/feign-form</a> ou <a href="https://github.com/pcan/feign-client-test">https://github.com/pcan/feign-client-test</a> pour voir des solutions ou des idées pour ces aspects <em>multipart</em>.</p>
-<p>La seconde solution est donc beaucoup plus simple, le principe est de traiter le cas particulier des objets du type <code>java.io.InputStream</code> et de déléguer les autres cas à un autre encodeur JSON classique. Pour définir le corps de de la requête HTTP il faut appeler la méthode <code>feign.RequestTemplate#body(byte[], java.nio.charset.Charset)</code>.
-Il est possible d'écrire le code d'un encodeur dans une <em>lambda</em> Java 8, mais ici il est préférable d'extraire le code de ce décodeur dans une nouvelle classe :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UploadEncoder</span> <span style="color:#66d9ef">implements</span> Encoder <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Encoder delegate<span style="color:#f92672">;</span>
 
-    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">UploadEncoder</span><span style="color:#f92672">(</span>Encoder encoder<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        delegate <span style="color:#f92672">=</span> encoder<span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
+<p>Dans Feign, il existe un mécanisme spécifique pour traiter les cas en erreurs, c&rsquo;est à dire si la réponse HTTP à un code ≥ 400. Ce  mécanisme utilise un <code>ErrorDecoder</code> :</p>
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">encode</span><span style="color:#f92672">(</span>Object object<span style="color:#f92672">,</span> Type bodyType<span style="color:#f92672">,</span> RequestTemplate template<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> EncodeException <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>InputStream<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>bodyType<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            template<span style="color:#f92672">.</span><span style="color:#a6e22e">header</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Content-type&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;application/octet-stream&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            InputStream inputStream <span style="color:#f92672">=</span> InputStream<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">cast</span><span style="color:#f92672">(</span>object<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#75715e">// InputStream to byte[]
-</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>BufferedInputStream bin <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedInputStream<span style="color:#f92672">(</span>inputStream<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                 ByteArrayOutputStream bos <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ByteArrayOutputStream<span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                <span style="color:#66d9ef">byte</span><span style="color:#f92672">[</span><span style="color:#f92672">]</span> buffer <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">byte</span><span style="color:#f92672">[</span>1024<span style="color:#f92672">]</span><span style="color:#f92672">;</span>
-                <span style="color:#66d9ef">int</span> bytesRead<span style="color:#f92672">;</span>
-                <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span><span style="color:#f92672">(</span>bytesRead <span style="color:#f92672">=</span> bin<span style="color:#f92672">.</span><span style="color:#a6e22e">read</span><span style="color:#f92672">(</span>buffer<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">&gt;</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                    bos<span style="color:#f92672">.</span><span style="color:#a6e22e">write</span><span style="color:#f92672">(</span>buffer<span style="color:#f92672">,</span> 0<span style="color:#f92672">,</span> bytesRead<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                <span style="color:#f92672">}</span>
-                bos<span style="color:#f92672">.</span><span style="color:#a6e22e">flush</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                template<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span>bos<span style="color:#f92672">.</span><span style="color:#a6e22e">toByteArray</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> StandardCharsets<span style="color:#f92672">.</span><span style="color:#a6e22e">UTF_8</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> EncodeException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Cannot upload file&#34;</span><span style="color:#f92672">,</span> e<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#f92672">}</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-            delegate<span style="color:#f92672">.</span><span style="color:#a6e22e">encode</span><span style="color:#f92672">(</span>object<span style="color:#f92672">,</span> bodyType<span style="color:#f92672">,</span> template<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><blockquote>
-<p>On peut bien sûr simplifier le code en utilisant une bibliothèque qui permet facilement de faire la conversion <code>InputStream</code> vers <code>byte[]</code>, mais ça ne fait pas de mal d'écrire des <code>try with resources</code> de temps en temps.</p>
-</blockquote>
+<pre><code class="language-java">static MonkeyRaceApi buildRaceApi(String url, String login, String password) {
+   getAuthToken(url, login, password);
+   return builder
+           .errorDecoder(ApiFactory::decodeError) // Decode errors
+           .requestInterceptor(ApiFactory::addCookies) // Inject Cookies
+           .decoder(new GsonDecoder())
+           .encoder(new GsonEncoder())
+           .target(MonkeyRaceApi.class, url);
+}
+</code></pre>
+
+<pre><code class="language-java">private static Exception decodeError(String methodKey, Response response) {
+    return decodeError(response.status(), methodKey,
+            () -&gt; FeignException.errorStatus(methodKey, response));
+}
+</code></pre>
+
 <blockquote>
+<p>Parfois on souhaite traiter le cas particulier d&rsquo;une erreur <code>404</code> dans le <code>Decoder</code> utilisé dans le cas nominal, pour celà il suffit d&rsquo;utiliser la méthode <code>feign.Feign.Builder#decode404</code> sur le <em>builder</em>.</p>
+</blockquote>
+
+<h3 id="upload">Upload</h3>
+
+<p>Concernant l&rsquo;<em>upload</em> de fichier, le serveur REST propose deux solutions:</p>
+
+<ul>
+<li>un <em>upload</em> via un <a href="https://www.ietf.org/rfc/rfc2388.txt">formulaire multipart</a> avec l&rsquo;en-tête <code>Content-type</code> à <code>multipart/form-data</code></li>
+<li>un <em>upload</em> direct avec les données du fichier directement dans le corps de la requête, l&rsquo;en-tête <code>Content-type</code> à <code>application/octet-stream</code>.</li>
+</ul>
+
+<p>Les deux solutions sont implémetables en utilisant le même principe: un <code>Decoder</code> spécifique.
+La seconde solution est beaucoup plus simple à implémenter car gérer le corps d&rsquo;une requête <em>multipart</em> nécessite l&rsquo;utilisation d&rsquo;une API externe (par exemple <a href="https://commons.apache.org/proper/commons-fileupload/">Commons FileUpload d&rsquo;Apache</a>).
+On peut regarder du coté de <a href="https://github.com/xxlabaza/feign-form">https://github.com/xxlabaza/feign-form</a> ou <a href="https://github.com/pcan/feign-client-test">https://github.com/pcan/feign-client-test</a> pour voir des solutions ou des idées pour ces aspects <em>multipart</em>.</p>
+
+<p>La seconde solution est donc beaucoup plus simple, le principe est de traiter le cas particulier des objets du type <code>java.io.InputStream</code> et de déléguer les autres cas à un autre encodeur JSON classique. Pour définir le corps de de la requête HTTP il faut appeler la méthode <code>feign.RequestTemplate#body(byte[], java.nio.charset.Charset)</code>.
+Il est possible d&rsquo;écrire le code d&rsquo;un encodeur dans une <em>lambda</em> Java 8, mais ici il est préférable d&rsquo;extraire le code de ce décodeur dans une nouvelle classe :</p>
+
+<pre><code class="language-java">public class UploadEncoder implements Encoder {
+    private final Encoder delegate;
+
+    public UploadEncoder(Encoder encoder) {
+        super();
+        delegate = encoder;
+    }
+
+    @Override
+    public void encode(Object object, Type bodyType, RequestTemplate template) throws EncodeException {
+        if (InputStream.class.equals(bodyType)) {
+            template.header(&quot;Content-type&quot;, &quot;application/octet-stream&quot;);
+            InputStream inputStream = InputStream.class.cast(object);
+            // InputStream to byte[]
+            try (BufferedInputStream bin = new BufferedInputStream(inputStream);
+                 ByteArrayOutputStream bos = new ByteArrayOutputStream()) {
+                byte[] buffer = new byte[1024];
+                int bytesRead;
+                while ((bytesRead = bin.read(buffer)) &gt; 0) {
+                    bos.write(buffer, 0, bytesRead);
+                }
+                bos.flush();
+                template.body(bos.toByteArray(), StandardCharsets.UTF_8);
+            } catch (IOException e) {
+                throw new EncodeException(&quot;Cannot upload file&quot;, e);
+            }
+        } else {
+            delegate.encode(object, bodyType, template);
+        }
+    }
+}
+</code></pre>
+
+<blockquote>
+<p>On peut bien sûr simplifier le code en utilisant une bibliothèque qui permet facilement de faire la conversion <code>InputStream</code> vers <code>byte[]</code>, mais ça ne fait pas de mal d&rsquo;écrire des <code>try with resources</code> de temps en temps.</p>
+
 <p>On peut légitimement argumenter que ce code risque de poser des problèmes si le fichier est particulièrement gros. Mais si on doit gérer ce genre de cas, il faut aussi se poser la question suivante: une API REST est elle la bonne solution pour faire des <em>upload</em> de gros fichier ?</p>
 </blockquote>
+
 <h3 id="download">Download</h3>
+
 <p>On utilise un <code>feign.Decoder</code> pour le <em>download</em>, le principe est similaire à celui utiliser pour l&rsquo;<em>upload</em>. Ce qui va donner:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DownloadDecoder</span> <span style="color:#66d9ef">implements</span> Decoder <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Decoder delegate<span style="color:#f92672">;</span>
 
-    DownloadDecoder<span style="color:#f92672">(</span>Decoder decoder<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">super</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        delegate <span style="color:#f92672">=</span> decoder<span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
+<pre><code class="language-java">public class DownloadDecoder implements Decoder {
+    private final Decoder delegate;
 
-    <span style="color:#a6e22e">@Override</span>
-    <span style="color:#66d9ef">public</span> Object <span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>Response response<span style="color:#f92672">,</span> Type type<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IOException<span style="color:#f92672">,</span> DecodeException<span style="color:#f92672">,</span> FeignException <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>InputStream<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span>type<span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">return</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">asInputStream</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
-        <span style="color:#66d9ef">return</span> delegate<span style="color:#f92672">.</span><span style="color:#a6e22e">decode</span><span style="color:#f92672">(</span>response<span style="color:#f92672">,</span> type<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>Une nouvelle fois, Feign rend l'opération très simple dès qu'on a compris le principe des encodeurs/décodeurs.</p>
+    DownloadDecoder(Decoder decoder) {
+        super();
+        delegate = decoder;
+    }
+
+    @Override
+    public Object decode(Response response, Type type) throws IOException, DecodeException, FeignException {
+        if (InputStream.class.equals(type)) {
+            return response.body().asInputStream();
+        }
+        return delegate.decode(response, type);
+    }
+}
+</code></pre>
+
+<p>Une nouvelle fois, Feign rend l&rsquo;opération très simple dès qu&rsquo;on a compris le principe des encodeurs/décodeurs.</p>
+
 <h3 id="bilan">Bilan</h3>
-<p>Feign rend la manipulation des en-têtes HTTP très simple, cela permet d'utiliser les divers mécanismes d'autentifications par <em>Cookie</em> ou <em>Token</em> facilement.</p>
-<p>La gestion des erreurs dans Feign est aussi triviale, c'est un des points fort de Feign par rapport à Retrofit.</p>
-<p>Le mécanisme d'encodeur permet facilement de traiter le cas d&rsquo;<em>upload</em> du fichier, et de façon plus générale de traiter tous les cas de <em>serialization</em> des requêtes HTTP.
-Le mécanisme de décodeur va permettre de récupérer le contenu d'un fichier que l'on <em>download</em>, ou plus généralement les divers mécanismes de <em>deserialization</em> des réponses HTTP.</p>
+
+<p>Feign rend la manipulation des en-têtes HTTP très simple, cela permet d&rsquo;utiliser les divers mécanismes d&rsquo;autentifications par <em>Cookie</em> ou <em>Token</em> facilement.</p>
+
+<p>La gestion des erreurs dans Feign est aussi triviale, c&rsquo;est un des points fort de Feign par rapport à Retrofit.</p>
+
+<p>Le mécanisme d&rsquo;encodeur permet facilement de traiter le cas d&rsquo;<em>upload</em> du fichier, et de façon plus générale de traiter tous les cas de <em>serialization</em> des requêtes HTTP.
+Le mécanisme de décodeur va permettre de récupérer le contenu d&rsquo;un fichier que l&rsquo;on <em>download</em>, ou plus généralement les divers mécanismes de <em>deserialization</em> des réponses HTTP.</p>
+
 <p>Feign offre une grande souplesse grace aux <code>Encoder</code>, <code>Decoder</code>, <code>RequestInterceptor</code>, &hellip; on arrive assez facilement à résoudre les divers problèmes posés autours des API REST.</p>
+
 <h2 id="retrofit">Retrofit</h2>
+
 <h3 id="authentification-avec-cookie-2">Authentification avec Cookie</h3>
-<p>La façon la plus simple de gérer l'authentification avec Retrofit consiste à utiliser les mécanismes du client HTTP (<code>okHttp3</code>). Comme pour feign, on fait une première requête qui récupère le cookie et ensuite on utilise le même client pour les autres requêtes.
+
+<p>La façon la plus simple de gérer l&rsquo;authentification avec Retrofit consiste à utiliser les mécanismes du client HTTP (<code>okHttp3</code>). Comme pour feign, on fait une première requête qui récupère le cookie et ensuite on utilise le même client pour les autres requêtes.
 Une autre solution consiste a utiliser un client par requête mais une  seule instance de <code>cookieJar</code>.</p>
+
 <p>Voici une première implémentation assez basique qui permet de comprendre le mécanisme du <code>cookieJar</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OkHttpClient<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">cookieJar</span><span style="color:#f92672">(</span>
-                <span style="color:#66d9ef">new</span> CookieJar<span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> HashMap<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>Cookie<span style="color:#f92672">&gt;</span><span style="color:#f92672">&gt;</span> cookieStore <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
 
-                        <span style="color:#a6e22e">@Override</span>
-                        <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">saveFromResponse</span><span style="color:#f92672">(</span>HttpUrl url<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>Cookie<span style="color:#f92672">&gt;</span> cookies<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                            cookieStore<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>url<span style="color:#f92672">.</span><span style="color:#a6e22e">uri</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getAuthority</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> cookies<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                        <span style="color:#f92672">}</span>
+<pre><code class="language-java">client = new OkHttpClient.Builder()
+        .cookieJar(
+                new CookieJar() {
+                    private final HashMap&lt;String, List&lt;Cookie&gt;&gt; cookieStore = new HashMap&lt;&gt;();
 
-                        <span style="color:#a6e22e">@Override</span>
-                        <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>Cookie<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">loadForRequest</span><span style="color:#f92672">(</span>HttpUrl url<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-                            List<span style="color:#f92672">&lt;</span>Cookie<span style="color:#f92672">&gt;</span> cookies <span style="color:#f92672">=</span> cookieStore<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>url<span style="color:#f92672">.</span><span style="color:#a6e22e">uri</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getAuthority</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                            <span style="color:#66d9ef">return</span> cookies <span style="color:#f92672">!</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">?</span> cookies <span style="color:#f92672">:</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>Cookie<span style="color:#f92672">&gt;</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-                    <span style="color:#f92672">}</span>
-                <span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-</code></pre></div><p>Une implémentation plus élégante et plus simple consiste à ajouter la dépendance <code>okhttp-urlconnection</code> de <code>OkHttp</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">CookieHandler cookieHandler <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CookieManager<span style="color:#f92672">(</span>
-            <span style="color:#66d9ef">new</span> PersistentCookieStore<span style="color:#f92672">(</span>ctx<span style="color:#f92672">)</span><span style="color:#f92672">,</span> CookiePolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">ACCEPT_ALL</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+                        @Override
+                        public void saveFromResponse(HttpUrl url, List&lt;Cookie&gt; cookies) {
+                            cookieStore.put(url.uri().getAuthority(), cookies);
+                        }
 
-OkHttpClient httpClient <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OkHttpClient<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-            <span style="color:#f92672">.</span><span style="color:#a6e22e">cookieJar</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> JavaNetCookieJar<span style="color:#f92672">(</span>cookieHandler<span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-</code></pre></div><h3 id="gestion-des-erreurs-2">Gestion des erreurs</h3>
-<p>Il n'existe pas, de mon point de vue de solution idéale dans Retrofit pour gérer les erreurs comment il en existe dans Feign.
+                        @Override
+                        public List&lt;Cookie&gt; loadForRequest(HttpUrl url) {
+                            List&lt;Cookie&gt; cookies = cookieStore.get(url.uri().getAuthority());
+                            return cookies != null ? cookies : new ArrayList&lt;Cookie&gt;();
+                    }
+                });
+</code></pre>
+
+<p>Une implémentation plus élégante et plus simple consiste à ajouter la dépendance <code>okhttp-urlconnection</code> de <code>OkHttp</code>.</p>
+
+<pre><code class="language-java">CookieHandler cookieHandler = new CookieManager(
+            new PersistentCookieStore(ctx), CookiePolicy.ACCEPT_ALL);
+
+OkHttpClient httpClient = new OkHttpClient.Builder()
+            .cookieJar(new JavaNetCookieJar(cookieHandler));
+</code></pre>
+
+<h3 id="gestion-des-erreurs-2">Gestion des erreurs</h3>
+
+<p>Il n&rsquo;existe pas, de mon point de vue de solution idéale dans Retrofit pour gérer les erreurs comment il en existe dans Feign.
 Pour cet exercice, nous utilisons donc la fonctionnalité d’interceptor de <code>OkHttp</code>. Une limitation existe cependant; il faut que les exceptions à retourner soient de type <code>RuntimeException</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">OkHttpClient client <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> OkHttpClient<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span>
-        <span style="color:#f92672">.</span><span style="color:#a6e22e">addInterceptor</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">:</span><span style="color:#f92672">:</span>authInterceptor<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> Response <span style="color:#a6e22e">authInterceptor</span><span style="color:#f92672">(</span>Interceptor<span style="color:#f92672">.</span><span style="color:#a6e22e">Chain</span> chain<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> IOException <span style="color:#f92672">{</span>
-    Request request <span style="color:#f92672">=</span> chain<span style="color:#f92672">.</span><span style="color:#a6e22e">request</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    Response response <span style="color:#f92672">=</span> chain<span style="color:#f92672">.</span><span style="color:#a6e22e">proceed</span><span style="color:#f92672">(</span>request<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
 
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#f92672">!</span>response<span style="color:#f92672">.</span><span style="color:#a6e22e">isSuccessful</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        RuntimeException ex <span style="color:#f92672">=</span> ApiFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">decodeError</span><span style="color:#f92672">(</span>response<span style="color:#f92672">.</span><span style="color:#a6e22e">code</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">message</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> <span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ex <span style="color:#f92672">!</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            <span style="color:#66d9ef">throw</span> ex<span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span>
-    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><h3 id="upload-1">Upload</h3>
-<p>Pour l&rsquo;<em>upload</em> , nous avons choisi d'utiliser la méthode du <a href="https://www.ietf.org/rfc/rfc2388.txt">formulaire multipart</a> avec l'en-tête <code>Content-type</code> à <code>multipart/form-data</code></p>
+<pre><code class="language-java">OkHttpClient client = new OkHttpClient.Builder()
+        .addInterceptor(this::authInterceptor);
+</code></pre>
+
+<pre><code class="language-java">private Response authInterceptor(Interceptor.Chain chain) throws IOException {
+    Request request = chain.request();
+    Response response = chain.proceed(request);
+
+    if (!response.isSuccessful()) {
+        RuntimeException ex = ApiFactory.decodeError(response.code(), response.message(), () -&gt; null);
+        if (ex != null) {
+            throw ex;
+        }
+    }
+    return response;
+}
+</code></pre>
+
+<h3 id="upload-1">Upload</h3>
+
+<p>Pour l&rsquo;<em>upload</em> , nous avons choisi d&rsquo;utiliser la méthode du <a href="https://www.ietf.org/rfc/rfc2388.txt">formulaire multipart</a> avec l&rsquo;en-tête <code>Content-type</code> à <code>multipart/form-data</code></p>
+
 <p>Et voici comment faire :</p>
+
 <p>On ajoute la méthode au service.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">MonkeyService</span> <span style="color:#f92672">{</span>
 
-    <span style="color:#a6e22e">@Multipart</span>
-    <span style="color:#a6e22e">@POST</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;monkeys/{id}/photo&#34;</span><span style="color:#f92672">)</span>
-    Call<span style="color:#f92672">&lt;</span>Photo<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">sendPhoto</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@Path</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">)</span> String id<span style="color:#f92672">,</span> <span style="color:#a6e22e">@Part</span> MultipartBody<span style="color:#f92672">.</span><span style="color:#a6e22e">Part</span> file<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>On crée un fichier temporaire contenant la photo, puis on appelle la méthode <code>sendPhoto</code> en lui fournissant un <code>RequestBody</code> spécifique contenant ce fichier temporaire et ensuite nous créons le <code>MultipartBody</code> qui est passé au service.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
-<span style="color:#66d9ef">public</span> Photo <span style="color:#a6e22e">savePhoto</span><span style="color:#f92672">(</span>String id<span style="color:#f92672">,</span> InputStream stream<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> SecurityException<span style="color:#f92672">,</span> IllegalArgumentException <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">return</span> executeCall<span style="color:#f92672">(</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-            Path tmp <span style="color:#f92672">=</span> Files<span style="color:#f92672">.</span><span style="color:#a6e22e">createTempFile</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;exo2&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;upload&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            Files<span style="color:#f92672">.</span><span style="color:#a6e22e">copy</span><span style="color:#f92672">(</span>stream<span style="color:#f92672">,</span> tmp<span style="color:#f92672">,</span> REPLACE_EXISTING<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+<pre><code class="language-java">public interface MonkeyService {
 
-            RequestBody requestFile <span style="color:#f92672">=</span> RequestBody<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>MediaType<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;multipart/form-data&#34;</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">toFile</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            MultipartBody<span style="color:#f92672">.</span><span style="color:#a6e22e">Part</span> body <span style="color:#f92672">=</span> MultipartBody<span style="color:#f92672">.</span><span style="color:#a6e22e">Part</span><span style="color:#f92672">.</span><span style="color:#a6e22e">createFormData</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;photo&#34;</span><span style="color:#f92672">,</span> tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">toFile</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">,</span> requestFile<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">return</span> monkeyService<span style="color:#f92672">.</span><span style="color:#a6e22e">sendPhoto</span><span style="color:#f92672">(</span>id<span style="color:#f92672">,</span> body<span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-            e<span style="color:#f92672">.</span><span style="color:#a6e22e">printStackTrace</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-        <span style="color:#f92672">}</span>
-    <span style="color:#f92672">}</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><h3 id="download-1">Download</h3>
+    @Multipart
+    @POST(&quot;monkeys/{id}/photo&quot;)
+    Call&lt;Photo&gt; sendPhoto(@Path(&quot;id&quot;) String id, @Part MultipartBody.Part file);
+}
+</code></pre>
+
+<p>On crée un fichier temporaire contenant la photo, puis on appelle la méthode <code>sendPhoto</code> en lui fournissant un <code>RequestBody</code> spécifique contenant ce fichier temporaire et ensuite nous créons le <code>MultipartBody</code> qui est passé au service.</p>
+
+<pre><code class="language-java">@Override
+public Photo savePhoto(String id, InputStream stream) throws SecurityException, IllegalArgumentException {
+    return executeCall(() -&gt; {
+        try {
+            Path tmp = Files.createTempFile(&quot;exo2&quot;, &quot;upload&quot;);
+            Files.copy(stream, tmp, REPLACE_EXISTING);
+
+            RequestBody requestFile = RequestBody.create(MediaType.parse(&quot;multipart/form-data&quot;), tmp.toFile());
+            MultipartBody.Part body = MultipartBody.Part.createFormData(&quot;photo&quot;, tmp.toFile().getName(), requestFile);
+            return monkeyService.sendPhoto(id, body);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    });
+}
+</code></pre>
+
+<h3 id="download-1">Download</h3>
+
 <p>Pour le <em>download</em> il nous suffit de faire un appel à notre service en récupérant le corps de la réponse.
-Pour cela Retrofit dispose d'un type <em>générique</em>: <code>ResponseBody</code> qui permet de récupérer la réponse <code>brute</code>.</p>
+Pour cela Retrofit dispose d&rsquo;un type <em>générique</em>: <code>ResponseBody</code> qui permet de récupérer la réponse <code>brute</code>.</p>
+
 <p>On commence par ajouter la méthode à notre service :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">MonkeyService</span> <span style="color:#f92672">{</span>
-    <span style="color:#a6e22e">@GET</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;monkeys/{id}/photo&#34;</span><span style="color:#f92672">)</span>
-    Call<span style="color:#f92672">&lt;</span>ResponseBody<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">downloadPhoto</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@Path</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">)</span> String id<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> SecurityException<span style="color:#f92672">,</span> IllegalArgumentException<span style="color:#f92672">;</span>
-  <span style="color:#f92672">}</span>
-</code></pre></div><p>puis voici le code qui permet de récupérer notre photo :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Override</span>
-<span style="color:#66d9ef">public</span> InputStream <span style="color:#a6e22e">downloadPhoto</span><span style="color:#f92672">(</span>String id<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> SecurityException<span style="color:#f92672">,</span> IllegalArgumentException <span style="color:#f92672">{</span>
-    <span style="color:#66d9ef">try</span> <span style="color:#f92672">{</span>
-        Response<span style="color:#f92672">&lt;</span>ResponseBody<span style="color:#f92672">&gt;</span> response <span style="color:#f92672">=</span> monkeyService<span style="color:#f92672">.</span><span style="color:#a6e22e">downloadPhoto</span><span style="color:#f92672">(</span>id<span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-        <span style="color:#66d9ef">return</span> response<span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">byteStream</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span> <span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>IOException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><h3 id="bilan-1">Bilan</h3>
-<p>Il est très simple dans Retrofit de gérer l'authentification via <em>Cookie</em>, <em>Token</em>. L&rsquo;<em>upload</em> et le <em>download</em> sont aussi assez simple à gérer.</p>
-<p>En revanche la gestion des erreurs est un peu moins intuitive. Peut être existe t'il une autre solution auquelle nous n'avons pas pensé.</p>
+
+<pre><code class="language-java">public interface MonkeyService {
+    @GET(&quot;monkeys/{id}/photo&quot;)
+    Call&lt;ResponseBody&gt; downloadPhoto(@Path(&quot;id&quot;) String id) throws SecurityException, IllegalArgumentException;
+  }
+</code></pre>
+
+<p>puis voici le code qui permet de récupérer notre photo :</p>
+
+<pre><code class="language-java">@Override
+public InputStream downloadPhoto(String id) throws SecurityException, IllegalArgumentException {
+    try {
+        Response&lt;ResponseBody&gt; response = monkeyService.downloadPhoto(id).execute();
+        return response.body().byteStream();
+    } catch (IOException e) {
+        return null;
+    }
+}
+</code></pre>
+
+<h3 id="bilan-1">Bilan</h3>
+
+<p>Il est très simple dans Retrofit de gérer l&rsquo;authentification via <em>Cookie</em>, <em>Token</em>. L&rsquo;<em>upload</em> et le <em>download</em> sont aussi assez simple à gérer.</p>
+
+<p>En revanche la gestion des erreurs est un peu moins intuitive. Peut être existe t&rsquo;il une autre solution auquelle nous n&rsquo;avons pas pensé.</p>
+
 <h2 id="bilan-global">Bilan Global</h2>
+
 <p>Que ce soit avec Feign ou Retrofit, il est aisé de gérer les <em>cookies</em>, et les <em>upload</em>/<em>download</em> de fichiers.</p>
+
 <p>Nous avons également trouvé que la gestion des erreurs en mode synchrone était mieux géré avec Feign.</p>
+
 <p>Les solutions utilisant <a href="http://square.github.io/okhttp/">OkHttp</a> sont communes à Retrofit et à Feign quand on utilise le client <a href="https://github.com/OpenFeign/feign/tree/master/okhttp">okhttp-client</a> dans Feign.</p></article>
 
     <div class="authors">
@@ -681,6 +816,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-rust.min.js" integrity="sha512-a+IgkN5sZbEosACcEWe/sM44yttZ31//JRCMMJ/iJvFqyMf5BFDTwClDikRSq9IFNCF5arl3VXl+43PIh+z77A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-toml.min.js" integrity="sha512-nR+DujZm33eiRbZSfMapBdGw+1a8yQCknJxCkdSqxWunDODhOv35GVaU1zUM1vqO0iHL86LRV9EGNi7EkjSFkw==" crossorigin="anonymous"></script>
 
 
 <script>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FunctionalProgramming on MonkeyPatch</title>
@@ -28,6 +28,7 @@
       <guid>https://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://clojutre.com&#34;&gt;ClojuTRE&lt;/a&gt; is a Clojure conference happening in Finland
 since 2012.&lt;/p&gt;
+
 &lt;p&gt;I was super eager to attend a Clojure conference this year, so the addition of
 SmallFP just before ClojuTRE finally amortized the travel cost.&lt;/p&gt;</description>
     </item>

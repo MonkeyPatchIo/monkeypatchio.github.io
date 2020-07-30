@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://www.monkeypatch.io/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,37 +19,18 @@
   
   <url>
     <loc>https://www.monkeypatch.io/blog/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/entretiens/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/equipe/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/recrutement/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/sourcing/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <loc>https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/</loc>
-    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -63,23 +44,61 @@
   </url>
   
   <url>
+    <loc>https://www.monkeypatch.io/tags/cloud/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/rust/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/service-broker/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</loc>
+    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/entretiens/</loc>
+    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/equipe/</loc>
+    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/recrutement/</loc>
+    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/sourcing/</loc>
+    <lastmod>2019-04-28T21:29:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-1/</loc>
     <lastmod>2019-04-28T21:26:40+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/code/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/console/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/dev/</loc>
-    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -90,31 +109,49 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/devfest/</loc>
     <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/code/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/console/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/dev/</loc>
+    <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/gaming/</loc>
     <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/retro/</loc>
     <lastmod>2018-12-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/tic80/</loc>
     <lastmod>2018-12-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/conf/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/functionalprogramming/</loc>
     <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -125,6 +162,13 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/lambdaworld/</loc>
     <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/conf/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -135,16 +179,13 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/nantes/</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/clojure/</loc>
-    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/clojutre/</loc>
     <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -153,13 +194,15 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/dod/</loc>
-    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <loc>https://www.monkeypatch.io/tags/clojure/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/kotlin/</loc>
+    <loc>https://www.monkeypatch.io/tags/dod/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -170,16 +213,25 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/sunnytech/</loc>
     <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/kotlin/</loc>
+    <lastmod>2018-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/databases/</loc>
     <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/distributed-systems/</loc>
     <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -190,21 +242,13 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/jotb/</loc>
     <lastmod>2018-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/flink/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/kafka/</loc>
-    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/mktd/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -215,26 +259,43 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/monkeytechday/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/tech-addicts/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/tech-days/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/techno/</loc>
     <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/flink/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/kafka/</loc>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/breizhcamp/</loc>
     <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -245,16 +306,19 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/conference/</loc>
     <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/brainfuck/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/lolcode/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -263,18 +327,14 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/go/</loc>
-    <lastmod>2018-02-05T17:47:57+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.monkeypatch.io/blog/2018/2018-02-05-mktds-articles-6/</loc>
     <lastmod>2018-02-05T17:47:57+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/rust/</loc>
+    <loc>https://www.monkeypatch.io/tags/go/</loc>
     <lastmod>2018-02-05T17:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -285,6 +345,7 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/swift/</loc>
     <lastmod>2018-02-05T16:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -295,16 +356,13 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/reactive/</loc>
     <lastmod>2018-02-05T15:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/angular2/</loc>
     <lastmod>2018-02-05T14:47:57+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/aureliajs/</loc>
-    <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -313,13 +371,21 @@
   </url>
   
   <url>
+    <loc>https://www.monkeypatch.io/tags/aureliajs/</loc>
+    <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.monkeypatch.io/tags/react/</loc>
     <lastmod>2018-02-05T14:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/feign/</loc>
     <lastmod>2018-02-05T13:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -330,6 +396,7 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/retrofit/</loc>
     <lastmod>2018-02-05T13:47:57+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -350,21 +417,25 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/jepsen/</loc>
     <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/testing/</loc>
     <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/css/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/devoxx/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -375,26 +446,31 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/mixit/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/nodejs/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/typescript/</loc>
     <lastmod>2017-05-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/android/</loc>
     <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/androidmakers/</loc>
     <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -405,25 +481,29 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/angular/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/ngvikings/</loc>
-    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/blog/2017/2017-03-07-ngvikings/</loc>
-    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/rxjs/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/websecurity/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/ngvikings/</loc>
+    <lastmod>2017-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2017/2017-03-07-ngvikings/</loc>
     <lastmod>2017-03-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -433,18 +513,21 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/functional/</loc>
+    <loc>https://www.monkeypatch.io/tags/java/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/java/</loc>
+    <loc>https://www.monkeypatch.io/tags/functional/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/acteur/</loc>
     <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -455,16 +538,19 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/nativescript/</loc>
     <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/rx/</loc>
     <lastmod>2016-11-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/cookie/</loc>
     <lastmod>2016-08-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -480,6 +566,7 @@
   <url>
     <loc>https://www.monkeypatch.io/tags/rest/</loc>
     <lastmod>2016-08-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -606,6 +693,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/categories/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -956,6 +1044,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/team/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

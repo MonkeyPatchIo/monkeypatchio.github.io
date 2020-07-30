@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nantes on MonkeyPatch</title>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
-      <description>&lt;p&gt;En matière de conférence, je n&#39;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&#39;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
+      <description>&lt;p&gt;En matière de conférence, je n&amp;rsquo;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&amp;rsquo;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
     </item>
     
   </channel>

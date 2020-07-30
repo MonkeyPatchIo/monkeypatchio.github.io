@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -101,20 +101,6 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/en/careers/profiles/backend/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.monkeypatch.io/careers/profiles/backend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.monkeypatch.io/en/careers/profiles/backend/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.monkeypatch.io/en/jobs/backend/</loc>
     <xhtml:link
                 rel="alternate"
@@ -125,6 +111,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.monkeypatch.io/en/jobs/backend/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/en/careers/profiles/backend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.monkeypatch.io/careers/profiles/backend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.monkeypatch.io/en/careers/profiles/backend/"
                 />
   </url>
   
@@ -200,6 +200,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/en/categories/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -241,20 +242,6 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/en/expert/offers/developpement/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.monkeypatch.io/expert/offers/developpement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.monkeypatch.io/en/expert/offers/developpement/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.monkeypatch.io/en/expert/profiles/devops/</loc>
     <xhtml:link
                 rel="alternate"
@@ -279,6 +266,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.monkeypatch.io/en/jobs/devops/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/en/expert/offers/developpement/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.monkeypatch.io/expert/offers/developpement/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.monkeypatch.io/en/expert/offers/developpement/"
                 />
   </url>
   
@@ -311,20 +312,6 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/en/careers/profiles/frontend/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://www.monkeypatch.io/careers/profiles/frontend/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.monkeypatch.io/en/careers/profiles/frontend/"
-                />
-  </url>
-  
-  <url>
     <loc>https://www.monkeypatch.io/en/jobs/frontend/</loc>
     <xhtml:link
                 rel="alternate"
@@ -335,6 +322,20 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://www.monkeypatch.io/en/jobs/frontend/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/en/careers/profiles/frontend/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.monkeypatch.io/careers/profiles/frontend/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.monkeypatch.io/en/careers/profiles/frontend/"
                 />
   </url>
   
@@ -508,6 +509,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/en/tags/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -522,6 +524,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/en/team/</loc>
+    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"

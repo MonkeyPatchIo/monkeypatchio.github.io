@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MonkeyPatch</title>
@@ -6,10 +6,46 @@
     <description>Recent content in Tags on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 28 Apr 2019 21:29:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cloud</title>
+      <link>https://www.monkeypatch.io/tags/cloud/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://www.monkeypatch.io/tags/rust/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust-openservicebroker-api-series</title>
+      <link>https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service-broker</title>
+      <link>https://www.monkeypatch.io/tags/service-broker/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/service-broker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>entretiens</title>
@@ -48,6 +84,15 @@
     </item>
     
     <item>
+      <title>DevFest</title>
+      <link>https://www.monkeypatch.io/tags/devfest/</link>
+      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/devfest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>code</title>
       <link>https://www.monkeypatch.io/tags/code/</link>
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
@@ -71,15 +116,6 @@
       <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/dev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DevFest</title>
-      <link>https://www.monkeypatch.io/tags/devfest/</link>
-      <pubDate>Sun, 16 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/devfest/</guid>
       <description></description>
     </item>
     
@@ -111,15 +147,6 @@
     </item>
     
     <item>
-      <title>conf</title>
-      <link>https://www.monkeypatch.io/tags/conf/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/conf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>FunctionalProgramming</title>
       <link>https://www.monkeypatch.io/tags/functionalprogramming/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
@@ -138,20 +165,20 @@
     </item>
     
     <item>
+      <title>conf</title>
+      <link>https://www.monkeypatch.io/tags/conf/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/conf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>nantes</title>
       <link>https://www.monkeypatch.io/tags/nantes/</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/nantes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Clojure</title>
-      <link>https://www.monkeypatch.io/tags/clojure/</link>
-      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/clojure/</guid>
       <description></description>
     </item>
     
@@ -165,6 +192,15 @@
     </item>
     
     <item>
+      <title>Clojure</title>
+      <link>https://www.monkeypatch.io/tags/clojure/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/clojure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>DoD</title>
       <link>https://www.monkeypatch.io/tags/dod/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
@@ -174,20 +210,20 @@
     </item>
     
     <item>
-      <title>kotlin</title>
-      <link>https://www.monkeypatch.io/tags/kotlin/</link>
-      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SunnyTech</title>
       <link>https://www.monkeypatch.io/tags/sunnytech/</link>
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/sunnytech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://www.monkeypatch.io/tags/kotlin/</link>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/kotlin/</guid>
       <description></description>
     </item>
     
@@ -215,24 +251,6 @@
       <pubDate>Thu, 05 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/jotb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flink</title>
-      <link>https://www.monkeypatch.io/tags/flink/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/flink/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kafka</title>
-      <link>https://www.monkeypatch.io/tags/kafka/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/kafka/</guid>
       <description></description>
     </item>
     
@@ -282,6 +300,24 @@
     </item>
     
     <item>
+      <title>flink</title>
+      <link>https://www.monkeypatch.io/tags/flink/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/flink/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kafka</title>
+      <link>https://www.monkeypatch.io/tags/kafka/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>BreizhCamp</title>
       <link>https://www.monkeypatch.io/tags/breizhcamp/</link>
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
@@ -323,15 +359,6 @@
       <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rust</title>
-      <link>https://www.monkeypatch.io/tags/rust/</link>
-      <pubDate>Mon, 05 Feb 2018 17:47:57 +0100</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -489,15 +516,6 @@
     </item>
     
     <item>
-      <title>ngVikings</title>
-      <link>https://www.monkeypatch.io/tags/ngvikings/</link>
-      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/ngvikings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>RxJS</title>
       <link>https://www.monkeypatch.io/tags/rxjs/</link>
       <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
@@ -516,11 +534,11 @@
     </item>
     
     <item>
-      <title>functional</title>
-      <link>https://www.monkeypatch.io/tags/functional/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      <title>ngVikings</title>
+      <link>https://www.monkeypatch.io/tags/ngvikings/</link>
+      <pubDate>Tue, 07 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.monkeypatch.io/tags/functional/</guid>
+      <guid>https://www.monkeypatch.io/tags/ngvikings/</guid>
       <description></description>
     </item>
     
@@ -530,6 +548,15 @@
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional</title>
+      <link>https://www.monkeypatch.io/tags/functional/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/functional/</guid>
       <description></description>
     </item>
     

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on MonkeyPatch</title>
@@ -17,7 +17,7 @@
       <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2018/2018-05-20-breizhcamp-2018/</guid>
-      <description>&lt;p&gt;On a été pas mal occupés ces dernier temps avec les différentes conférences, voici enfin une petite sélection de ce qu&#39;on a vu à &lt;img src=&#34;http://www.breizhcamp.org/img/logo.png&#34; alt=&#34;BreizhCamp 2018&#34;&gt; 2018.&lt;/p&gt;</description>
+      <description>&lt;p&gt;On a été pas mal occupés ces dernier temps avec les différentes conférences, voici enfin une petite sélection de ce qu&amp;rsquo;on a vu à &lt;img src=&#34;http://www.breizhcamp.org/img/logo.png&#34; alt=&#34;BreizhCamp 2018&#34; /&gt; 2018.&lt;/p&gt;</description>
     </item>
     
   </channel>

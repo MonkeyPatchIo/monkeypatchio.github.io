@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AndroidMakers on MonkeyPatch</title>
@@ -17,9 +17,11 @@
       <pubDate>Wed, 12 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2017/2017-04-12-androidmakers/</guid>
-      <description>&lt;h1 id=&#34;retour-sur-landroid-makers-2017&#34;&gt;Retour sur l&#39;Android Makers 2017&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;retour-sur-l-android-makers-2017&#34;&gt;Retour sur l&amp;rsquo;Android Makers 2017&lt;/h1&gt;
+
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Un peu comme après le 1er de l&#39;an, quand je reviens d&#39;une conférence, j&#39;ai généralement plein de bonnes résolutions en tête, j&#39;ai envie d&#39;appliquer toutes les bonnes méthodes, de tester les différentes techniques et libs qui ont été présentées. Mais cette fois, je vais commencer par faire mon retour sur ce blog pour ne rien oublier des deux jours que j&#39;ai passé à l&amp;rsquo;&lt;a href=&#34;http://androidmakers.fr/&#34;&gt;Android Makers&lt;/a&gt;.&lt;/p&gt;</description>
+
+&lt;p&gt;Un peu comme après le 1er de l&amp;rsquo;an, quand je reviens d&amp;rsquo;une conférence, j&amp;rsquo;ai généralement plein de bonnes résolutions en tête, j&amp;rsquo;ai envie d&amp;rsquo;appliquer toutes les bonnes méthodes, de tester les différentes techniques et libs qui ont été présentées. Mais cette fois, je vais commencer par faire mon retour sur ce blog pour ne rien oublier des deux jours que j&amp;rsquo;ai passé à l&amp;rsquo;&lt;a href=&#34;http://androidmakers.fr/&#34;&gt;Android Makers&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

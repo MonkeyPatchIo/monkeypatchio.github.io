@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MKTD on MonkeyPatch</title>
@@ -26,10 +26,11 @@
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2018/2018-04-01-mktd7-brainfuck-vs-lolcode/</guid>
-      <description>&lt;h1 id=&#34;mktd7--on-a-validé-le-sujet-du-prochain-monkeytechday--brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;mktd-7-on-a-validé-le-sujet-du-prochain-monkeytechday-brainfuck-lolcode&#34;&gt;MKTD#7 : On a validé le sujet du prochain MonkeyTechDay ! #Brainfuck #LOLCODE&lt;/h1&gt;
+
 &lt;p&gt;A peine remis du MKTD#6 sur Flink et Kafka Streams (article à
 venir), nous prenons connaissance des retours faits par les participants
-sur l&#39;organisation de l&#39;événement, les technos, les exercices proposés et les
+sur l&amp;rsquo;organisation de l&amp;rsquo;événement, les technos, les exercices proposés et les
 niveaux des coachs.&lt;/p&gt;</description>
     </item>
     
@@ -96,14 +97,19 @@ Même si ça a été la course pour organiser le premier événement en moins de
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</guid>
-      <description>&lt;p&gt;Cet article est le deuxième d&#39;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.&lt;/p&gt;
+      <description>&lt;p&gt;Cet article est le deuxième d&amp;rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.&lt;/p&gt;
+
 &lt;p&gt;Article précédent :
 &lt;a href=&#34;https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/&#34;&gt;MKTD#1 : Prise en main&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;défi-2-aller-plus-loin&#34;&gt;Défi 2: Aller plus loin&amp;hellip;&lt;/h2&gt;
+
 &lt;p&gt;Le deuxième défi permet d’adresser des problèmes plus avancés comme :&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;L&#39;authentification&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;authentification&lt;/li&gt;
 &lt;li&gt;La gestion des erreurs via des &lt;code&gt;Exception&lt;/code&gt; Java&lt;/li&gt;
 &lt;li&gt;L’&lt;em&gt;upload&lt;/em&gt; et le &lt;em&gt;download&lt;/em&gt; de fichiers&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -116,11 +122,16 @@ Même si ça a été la course pour organiser le premier événement en moins de
       
       <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</guid>
       <description>&lt;p&gt;This article is the second of the serie REST clients in Java.&lt;/p&gt;
+
 &lt;p&gt;Previous article:
 &lt;a href=&#34;https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/&#34;&gt;MKTD#1 : Getting started&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;challenge-2-going-further&#34;&gt;Challenge #2: Going further&amp;hellip;&lt;/h2&gt;
+
 &lt;p&gt;The second challenge aims at solving advanced problems such as:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Authentication and session management&lt;/li&gt;
 &lt;li&gt;Errors management via Java &lt;code&gt;Exception&lt;/code&gt;&lt;/li&gt;
@@ -135,7 +146,9 @@ Même si ça a été la course pour organiser le premier événement en moins de
       
       <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
 &lt;p&gt;Early July we organised in Toulouse our first &lt;a href=&#34;http://www.monkeytechdays.com/&#34;&gt;MonkeyTechDays&lt;/a&gt; hosted by &lt;a href=&#34;http://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt; comparing the technologies: &lt;a href=&#34;http://www.monkeytechdays.com/events/mktd-1&#34;&gt;Feign vs Retrofit&lt;/a&gt;. The goal of a MKTD is to compare and learn new technologies running challenges throughout the day.&lt;/p&gt;
+
 &lt;p&gt;We decided to improve our knowledge of REST clients in Java during this first event. We started with &lt;a href=&#34;https://github.com/OpenFeign/feign&#34;&gt;Feign&lt;/a&gt; which is designed by &lt;a href=&#34;https://netflix.github.io/&#34;&gt;Netflix&lt;/a&gt; and &lt;a href=&#34;http://square.github.io/retrofit/&#34;&gt;Retrofit&lt;/a&gt; written by &lt;a href=&#34;https://github.com/square&#34;&gt;Square&lt;/a&gt;. These two libraries provide an elegant way to speed up the development of REST clients in Java compare to traditional solutions such as JAX-RS clients, Spring Rest Template, etc…&lt;/p&gt;</description>
     </item>
     
@@ -146,8 +159,10 @@ Même si ça a été la course pour organiser le premier événement en moins de
       
       <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
 &lt;p&gt;Nous avons organisé à Toulouse début juillet, le premier &lt;a href=&#34;http://www.monkeytechdays.com/&#34;&gt;MonkeyTechDays&lt;/a&gt; chez &lt;a href=&#34;http://www.harrycow.com/&#34;&gt;HarryCow&lt;/a&gt; sur la thématique &lt;a href=&#34;http://www.monkeytechdays.com/events/mktd-1&#34;&gt;Feign vs Retrofit&lt;/a&gt;.
 Un MKTD consiste à comparer, apprendre, sous forme de défis, une ou plusieurs technologies sur une journée.&lt;/p&gt;
+
 &lt;p&gt;Ce premier événement était l’occasion d’approfondir les technologies de clients REST en Java. Nous avons donc étudié &lt;a href=&#34;https://github.com/OpenFeign/feign&#34;&gt;Feign&lt;/a&gt;, une librairie initiée par &lt;a href=&#34;https://netflix.github.io/&#34;&gt;Netflix&lt;/a&gt; et &lt;a href=&#34;http://square.github.io/retrofit/&#34;&gt;Retrofit&lt;/a&gt; qui est écrite par &lt;a href=&#34;https://github.com/square&#34;&gt;Square&lt;/a&gt;. Ces deux API permettent d’écrire des clients REST en Java de façon plus élégante qu’avec les solutions plus classiques comme JAX-RS client, Spring Rest Template, …&lt;/p&gt;</description>
     </item>
     

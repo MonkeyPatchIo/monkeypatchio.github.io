@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Rust: Open Service Broker API (Part 1)">
+<meta property="og:description" content="In this blog series, we will discover how to extend service catalog of your cloud solution using Rust. This first blog post is about setting up library project.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/">
+
+<meta property="og:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2020-07-30T00:00:00+00:00">
+<meta property="article:modified_time" content="2020-07-30T00:00:00+00:00"><meta property="og:site_name" content="MonkeyPatch">
+<meta itemprop="name" content="Rust: Open Service Broker API (Part 1)">
+<meta itemprop="description" content="In this blog series, we will discover how to extend service catalog of your cloud solution using Rust. This first blog post is about setting up library project.">
+
+
+<meta itemprop="datePublished" content="2020-07-30T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2020-07-30T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="1044">
+
+
+
+<meta itemprop="keywords" content="rust,service-broker,cloud,rust-openservicebroker-api-series,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Rust: Open Service Broker API (Part 1)">
+<meta name="twitter:description" content="In this blog series, we will discover how to extend service catalog of your cloud solution using Rust. This first blog post is about setting up library project.">
+<meta name="generator" content="Hugo 0.56.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Rust: Open Service Broker API (Part 1)</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.monkeypatch.io/styles/main.5f9b582b4a8fe3bf4dfb3775f1ba0264252716595f2fb15b8ae66c88972fe98c.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog blog-2020-2020-07-30-openservicebrokerapi-rust-part01">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="https://www.monkeypatch.io/">
+                <img alt="Monkey Patch" src="/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="https://www.monkeypatch.io/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="https://www.monkeypatch.io/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#what-is-open-service-broker-api">What is Open Service Broker API ?</a></li>
+<li><a href="#how-to-proceed">How to proceed ?</a></li>
+<li><a href="#how-to-get-started">How to get started ?</a></li>
+<li><a href="#what-about-the-catalog">What about the catalog ?</a>
+<ul>
+<li><a href="#red-step">RED step</a></li>
+<li><a href="#green-step">GREEN step</a></li>
+<li><a href="#refactor-step">REFACTOR step</a></li>
+</ul></li>
+<li><a href="#how-to-write-integration-tests">How to write integration tests ?</a></li>
+<li><a href="#what-about-manual-external-testing">What about manual/external testing ?</a></li>
+<li><a href="#what-s-next">What&rsquo;s next ?</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Rust: Open Service Broker API (Part 1)</span>
+        <div class="share">
+            <a class="twitter-share-button" href="https://twitter.com/share" data-size="large" data-via="monkeypatch_io" data-text="Rust: Open Service Broker API (Part 1)" data-hashtags="rust,service-broker,cloud,rust-openservicebroker-api-series">Tweet</a>
+
+        </div>
+    </h1>
+
+    <span class="date">
+    July 
+    30th,
+    2020
+</span>
+
+    <div class="tags">
+        
+        <span>rust</span>
+        
+        <span>service-broker</span>
+        
+        <span>cloud</span>
+        
+        <span>rust-openservicebroker-api-series</span>
+        
+    </div>
+
+    <article><p><a href="https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/">In this blog series</a>, we will discover how to extend service catalog of your cloud solution using Rust. This first blog post is about setting up library project.</p>
+
+<h2 id="what-is-open-service-broker-api">What is Open Service Broker API ?</h2>
+
+<p>On Cloud platform such as Cloud Foundry, Heroku, Kubernetes, &hellip; it is very important to deploy applications. And it&rsquo;s also very important to integrate services such as a database, a message-oriented middleware, etc. They are often called managed services and accessible through a service catalog.</p>
+
+<p>The Open Service Broker API aims to provide an easy way to extend this service catalog. Whether you&rsquo;re a service vendor wanting to have a Cloud offering or an engineering team wanting to provide enterprise services to development teams, you can expose your own catalog and make it &ldquo;consumable&rdquo; by development teams.</p>
+
+<p>The Open Service Broker API has been first defined and used by Pivotal in its Cloud Foundry solution. Then the specification has been opened, so service offering provider can integrate with many Cloud solution. For example, <a href="https://svc-cat.io/">the Kubernetes Service Catalog ISG</a> is responsible of integration with Kubernetes.</p>
+
+<p>If you want more information, please visit: <a href="https://www.openservicebrokerapi.org/">https://www.openservicebrokerapi.org/</a></p>
+
+<h2 id="how-to-proceed">How to proceed ?</h2>
+
+<p>It currently exists some framework to help you develop an Open Service Broker without to deal with low level (HTTP-based API) consideration:</p>
+
+<ul>
+<li><a href="https://spring.io/projects/spring-cloud-open-service-broker">Spring Cloud Open Service Broker</a> (JVM)</li>
+<li><a href="https://github.com/pivotal-cf/brokerapi">brokerapi</a> (Go)</li>
+<li><a href="https://github.com/AXOOM/OpenServiceBroker">Open Service Broker API for .NET</a> (.Net)</li>
+</ul>
+
+<p>So, idea is to provide a library crate handling HTTP API and delegating calls to some abstractions (i.e. <code>trait</code>).</p>
+
+<p>Following Test-Driven Development, we will:</p>
+
+<ol>
+<li>right some tests,</li>
+<li>implements them,</li>
+<li>optionally improves written code,</li>
+<li>and going back to (1) until specification coverage is complete</li>
+</ol>
+
+<h2 id="how-to-get-started">How to get started ?</h2>
+
+<p>First, if you don&rsquo;t have Rust toolchains installed, just visit: <a href="https://www.rust-lang.org/tools/install">https://www.rust-lang.org/tools/install</a>. Looking for an editor ? Check <a href="https://areweideyet.com/">Are we (I)DE yet?</a>.</p>
+
+<p>Then:</p>
+
+<pre><code>cargo new --lib openservicebroker
+</code></pre>
+
+<p>In order to implement HTTP handlers, <a href="https://actix.rs/">actix-web</a> will be used. Thus, edit <code>Cargo.toml</code> to add this dependency:</p>
+
+<pre><code class="language-toml">[dependencies]
+actix-web = &quot;2.0&quot;
+actix-rt = &quot;1.0&quot;
+</code></pre>
+
+<h2 id="what-about-the-catalog">What about the catalog ?</h2>
+
+<p>The first step is to expose a service catalog. It lets inform the platform about services you provide. So let&rsquo;s start with <a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/spec.md#route"><code>GET /v2/catalog</code> route</a>.</p>
+
+<h3 id="red-step">RED step</h3>
+
+<p>Let&rsquo;s create a first test, edit <code>lib.rs</code>:</p>
+
+<pre><code class="language-rust">#[cfg(test)]
+mod tests {
+    use actix_web::{http, test, dev::ResponseBody};
+    use actix_rt;
+
+    #[actix_rt::test]
+    async fn test_get_catalog() {
+        let req = test::TestRequest::get()
+                                    .uri(&quot;/v2/catalog&quot;)
+                                    .to_http_request();
+        let res = super::get_catalog(req).await;
+        assert_eq!(res.status(), http::StatusCode::OK);
+        if let ResponseBody::Body(body) = res.body() {
+            assert_eq!(body.services.len(), 0);
+        } else {
+            assert!(false, &quot;Expected body type, but other was found&quot;);
+        }
+    }
+}
+</code></pre>
+
+<p>As usual in TDD, it won&rsquo;t compile as our code is empty. You can run <code>cargo build --tests</code> if you don&rsquo;t trust me !</p>
+
+<h3 id="green-step">GREEN step</h3>
+
+<p>So let&rsquo;s add <code>get_catalog</code> function and <code>Catalog</code> struct:</p>
+
+<pre><code class="language-rust">use actix_web::{HttpRequest, HttpResponse};
+
+struct Catalog {
+    services: Vec&lt;()&gt;,
+}
+
+async fn get_catalog(_req: HttpRequest) -&gt; HttpResponse&lt;Catalog&gt; {
+    HttpResponse::Ok().message_body(Catalog { services: vec![] })
+}
+</code></pre>
+
+<p>Now, it&rsquo;s time to check for THE green status, run <code>cargo test</code>. You should have something like:</p>
+
+<pre><code class="language-text">   Compiling openservicebroker v0.1.0 (/home/logan/projects/openservicebroker)
+warning: struct is never constructed: `Catalog`
+ --&gt; src/lib.rs:4:8
+  |
+4 | struct Catalog {
+  |        ^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: function is never used: `get_catalog`
+ --&gt; src/lib.rs:9:10
+  |
+9 | async fn get_catalog(_req: HttpRequest) -&gt; HttpResponse&lt;Catalog&gt; {
+  |          ^^^^^^^^^^^
+
+    Finished test [unoptimized + debuginfo] target(s) in 3.56s
+     Running target/debug/deps/openservicebroker-c3104580c5641bb9
+
+running 1 test
+test tests::test_get_catalog ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+
+   Doc-tests openservicebroker
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
+</code></pre>
+
+<p>Test has passed ! Finally, go for the final TDD step: refactor.</p>
+
+<h3 id="refactor-step">REFACTOR step</h3>
+
+<p>When refactoring, you are supposed to do one thing at a time and check each time tests are still passing. However, it will take too much time time to explain each action/modification. To resume the following code will fix warnings and use more idiomatic Rust:</p>
+
+<pre><code class="language-rust">use actix_web::{HttpRequest, HttpResponse};
+
+pub struct Catalog {
+    services: Vec&lt;()&gt;,
+}
+
+impl Catalog {
+    fn new() -&gt; Catalog {
+        Catalog { services: vec![] }
+    }
+
+    pub fn services(&amp;self) -&gt; &amp;Vec&lt;()&gt; {
+        &amp;self.services
+    }
+}
+
+pub async fn get_catalog(_req: HttpRequest) -&gt; HttpResponse&lt;Catalog&gt; {
+    HttpResponse::Ok().message_body(Catalog::new())
+}
+
+#[cfg(test)]
+mod tests {
+    use actix_web::{http, test, dev::ResponseBody};
+    use actix_rt;
+
+    #[actix_rt::test]
+    async fn test_get_catalog() {
+        let req = test::TestRequest::get()
+                                    .uri(&quot;/v2/catalog&quot;)
+                                    .to_http_request();
+        let res = super::get_catalog(req).await;
+        assert_eq!(res.status(), http::StatusCode::OK);
+        if let ResponseBody::Body(body) = res.body() {
+            assert_eq!(body.services().len(), 0);
+        } else {
+            assert!(false, &quot;Expected body type, but other was found&quot;);
+        }
+    }
+}
+</code></pre>
+
+<h2 id="how-to-write-integration-tests">How to write integration tests ?</h2>
+
+<p>In normal cases, you are supposed to continue TDD iterations until you complete specification coverage. However, it seems interesting to check validity at higher level. So let&rsquo;s add an integration test with <code>tests/get_catalog.rs</code>:</p>
+
+<pre><code class="language-rust">use openservicebroker as osb;
+
+use actix_web::{test, web, App};
+
+#[actix_rt::test]
+async fn main() {
+    let mut app = test::init_service(
+        App::new()
+            .route(&quot;/v2/catalog&quot;, web::get().to(osb::get_catalog)),
+    ).await;
+    let req = test::TestRequest::get().uri(&quot;/v2/catalog&quot;).to_request();
+    let catalog: osb::Catalog = test::read_response_json(&amp;mut app, req).await;
+    assert_eq!(catalog.services().len(), 0);
+}
+</code></pre>
+
+<p>As in TDD cases, code isn&rsquo;t compiling. In fact, we need to introduce JSON serialization. Let&rsquo;s add Serde dependency into <code>Cargo.toml</code>:</p>
+
+<pre><code class="language-toml">[dependencies]
+serde = &quot;1.0.104&quot;
+serde_json = &quot;1.0.48&quot;
+</code></pre>
+
+<p>And update application code:</p>
+
+<pre><code class="language-rust">use serde::{Serialize, Deserialize};
+
+#[derive(Serialize, Deserialize)]
+pub struct Catalog { /* ... */ }
+
+pub async fn get_catalog(_req: HttpRequest) -&gt; HttpResponse {
+    HttpResponse::Ok().json(Catalog::new())
+}
+</code></pre>
+
+<p>And update unit test code:</p>
+
+<pre><code class="language-rust">use actix_web::{http, test, dev::{ResponseBody, Body}};
+
+async fn test_get_catalog() {
+    // ...
+    let bytes = if let ResponseBody::Body(Body::Bytes(body)) = res.body() {
+        body
+    } else {
+        panic!(&quot;Expected body type, but other was found&quot;);
+    };
+    let catalog: super::Catalog = match serde_json::from_slice(&amp;bytes) {
+        Result::Ok(value) =&gt; value,
+        Result::Err(e) =&gt; panic!(&quot;{:?}&quot;, e),
+    };
+    assert_eq!(catalog.services().len(), 0);
+}
+</code></pre>
+
+<p>Thus, run <code>cargo test</code> to check all tests are passing !</p>
+
+<h2 id="what-about-manual-external-testing">What about manual/external testing ?</h2>
+
+<p>Even with integration test, an HTTP server has never been run. Such setup prevents executing manual test or using external tools to run test suite (e.g. <a href="https://learning.postman.com/docs/postman/scripts/test-scripts/">Postman Test scripts</a>).</p>
+
+<p>Fix it right now by adding an optional binary, edit <code>src/bin/dummy-servicebroker.rs</code>:</p>
+
+<pre><code class="language-rust">use openservicebroker as osb;
+
+use actix_web::{web, App, HttpServer};
+use actix_rt;
+
+#[actix_rt::main]
+async fn main() -&gt; std::io::Result&lt;()&gt; {
+    HttpServer::new(|| {
+        App::new()
+            .route(&quot;/v2/catalog&quot;, web::get().to(osb::get_catalog))
+    })
+    .bind(&quot;127.0.0.1:8080&quot;)?
+    .run()
+    .await
+}
+</code></pre>
+
+<p>As it&rsquo;s our sole binary, just run <code>cargo run</code> and open <a href="http://localhost:8080/v2/catalog">http://localhost:8080/v2/catalog</a> !</p>
+
+<h2 id="what-s-next">What&rsquo;s next ?</h2>
+
+<p>Project is ready for development with bases for unit, integration and end-to-end testing. Complete code is available at <a href="https://github.com/loganmzz/rust-openservicebrokerapi/tree/part-01">https://github.com/loganmzz/rust-openservicebrokerapi/tree/part-01</a>.</p>
+
+<p>Next blog post comig soon &hellip;</p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/loganmzz" rel="author">
+                <img src="https://pbs.twimg.com/profile_images/915218711266684930/6lfxdqLu_400x400.jpg" alt="Logan Mauzaize">
+                <span>Logan Mauzaize</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGGFWH');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGGFWH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script src="/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-rust.min.js" integrity="sha512-a+IgkN5sZbEosACcEWe/sM44yttZ31//JRCMMJ/iJvFqyMf5BFDTwClDikRSq9IFNCF5arl3VXl+43PIh+z77A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-toml.min.js" integrity="sha512-nR+DujZm33eiRbZSfMapBdGw+1a8yQCknJxCkdSqxWunDODhOv35GVaU1zUM1vqO0iHL86LRV9EGNi7EkjSFkw==" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

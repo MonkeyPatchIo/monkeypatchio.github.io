@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cookie on MonkeyPatch</title>
@@ -17,14 +17,19 @@
       <pubDate>Wed, 10 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2/</guid>
-      <description>&lt;p&gt;Cet article est le deuxième d&#39;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.&lt;/p&gt;
+      <description>&lt;p&gt;Cet article est le deuxième d&amp;rsquo;une série de trois articles sur les clients REST en java que sont Feign et Retrofit.&lt;/p&gt;
+
 &lt;p&gt;Article précédent :
 &lt;a href=&#34;https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1/&#34;&gt;MKTD#1 : Prise en main&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;défi-2-aller-plus-loin&#34;&gt;Défi 2: Aller plus loin&amp;hellip;&lt;/h2&gt;
+
 &lt;p&gt;Le deuxième défi permet d’adresser des problèmes plus avancés comme :&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;L&#39;authentification&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;authentification&lt;/li&gt;
 &lt;li&gt;La gestion des erreurs via des &lt;code&gt;Exception&lt;/code&gt; Java&lt;/li&gt;
 &lt;li&gt;L’&lt;em&gt;upload&lt;/em&gt; et le &lt;em&gt;download&lt;/em&gt; de fichiers&lt;/li&gt;
 &lt;/ul&gt;</description>
@@ -37,11 +42,16 @@
       
       <guid>https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-2-en/</guid>
       <description>&lt;p&gt;This article is the second of the serie REST clients in Java.&lt;/p&gt;
+
 &lt;p&gt;Previous article:
 &lt;a href=&#34;https://www.monkeypatch.io/blog/2016/2016-08-12-mktd1-feign-vs-retrofit-1-en/&#34;&gt;MKTD#1 : Getting started&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
+
+&lt;hr /&gt;
+
 &lt;h2 id=&#34;challenge-2-going-further&#34;&gt;Challenge #2: Going further&amp;hellip;&lt;/h2&gt;
+
 &lt;p&gt;The second challenge aims at solving advanced problems such as:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Authentication and session management&lt;/li&gt;
 &lt;li&gt;Errors management via Java &lt;code&gt;Exception&lt;/code&gt;&lt;/li&gt;

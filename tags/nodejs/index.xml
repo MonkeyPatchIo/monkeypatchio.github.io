@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NodeJS on MonkeyPatch</title>
@@ -18,8 +18,9 @@
       
       <guid>https://www.monkeypatch.io/blog/2017/2017-05-02-makingof_css_is_awesome/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Depuis quelque temps, j&#39;avais l&#39;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&#39;ai profité du CFP de DevoxxFR pour me jeter à l&#39;eau.
-En plus de mon appétance pour la transmission, j&#39;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.&lt;/p&gt;</description>
+
+&lt;p&gt;Depuis quelque temps, j&amp;rsquo;avais l&amp;rsquo;idée de faire une présentation sur le CSS, mon objectif était de redorer le blason de cette technologie souvent crainte et sous-estimée par de trop nombreux développeurs. J&amp;rsquo;ai profité du CFP de DevoxxFR pour me jeter à l&amp;rsquo;eau.
+En plus de mon appétance pour la transmission, j&amp;rsquo;aime bien faire des talks car ça me pousse à aller plus loin sur le sujet que je présente. Pour celle-ci, je me suis donné comme défi de faire la présentation en HTML/CSS sans JavaScript dans les slides. Cet article présente donc le résultat de ce défi.&lt;/p&gt;</description>
     </item>
     
   </channel>

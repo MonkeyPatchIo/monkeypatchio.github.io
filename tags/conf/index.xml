@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>conf on MonkeyPatch</title>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2018/2018-11-12-devfest-nantes/</guid>
-      <description>&lt;p&gt;En matière de conférence, je n&#39;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&#39;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
+      <description>&lt;p&gt;En matière de conférence, je n&amp;rsquo;en ai encore que trois conférences au compteur : DevFest Toulouse 2017, Devoxx France 2018, et enfin DevFest Nantes 2018. Trois conférences, trois villes et trois dimensions. Autant dire que j&amp;rsquo;étais tout à la fois excité et stressé de croquer le biscuit nantais !&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,6 +37,7 @@
       <guid>https://www.monkeypatch.io/blog/2018/2018-09-25-clojutre-helsinki-2018/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://clojutre.com&#34;&gt;ClojuTRE&lt;/a&gt; is a Clojure conference happening in Finland
 since 2012.&lt;/p&gt;
+
 &lt;p&gt;I was super eager to attend a Clojure conference this year, so the addition of
 SmallFP just before ClojuTRE finally amortized the travel cost.&lt;/p&gt;</description>
     </item>
@@ -47,9 +48,10 @@ SmallFP just before ClojuTRE finally amortized the travel cost.&lt;/p&gt;</descr
       <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2018/2018-07-13-sunnytech/</guid>
-      <description>&lt;p&gt;Les grosses chaleures, le chant des cigales, la philo du Bac., les grèves de la SNCF, et &lt;a href=&#34;https://sunny-tech.io/&#34;&gt;&lt;strong&gt;SunnyTech&lt;/strong&gt;&lt;/a&gt; : voilà l&#39;été !
-Cette année, les communautés Montpelliéraines organisent la première édition de SunnyTech. Pour les toulousains c&#39;est génial d&#39;avoir une conférence aussi proche.&lt;/p&gt;
-&lt;p&gt;Voici une petite sélection de ce j&#39;ai trouvé super dans la conférence, mais forcément avec quatres salles en parallèles, ce n&#39;est qu&#39;un petit aperçu.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Les grosses chaleures, le chant des cigales, la philo du Bac., les grèves de la SNCF, et &lt;a href=&#34;https://sunny-tech.io/&#34;&gt;&lt;strong&gt;SunnyTech&lt;/strong&gt;&lt;/a&gt; : voilà l&amp;rsquo;été !
+Cette année, les communautés Montpelliéraines organisent la première édition de SunnyTech. Pour les toulousains c&amp;rsquo;est génial d&amp;rsquo;avoir une conférence aussi proche.&lt;/p&gt;
+
+&lt;p&gt;Voici une petite sélection de ce j&amp;rsquo;ai trouvé super dans la conférence, mais forcément avec quatres salles en parallèles, ce n&amp;rsquo;est qu&amp;rsquo;un petit aperçu.&lt;/p&gt;</description>
     </item>
     
   </channel>

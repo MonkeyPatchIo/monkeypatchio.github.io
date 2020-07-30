@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Testing on MonkeyPatch</title>
@@ -17,11 +17,11 @@
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
-      <description>&lt;p&gt;The first book I&#39;ve read about distributed systems was
+      <description>&lt;p&gt;The first book I&amp;rsquo;ve read about distributed systems was
 &lt;a href=&#34;https://www.amazon.fr/Distributed-Systems-Principles-Andrew-Tanenbaum/dp/0132392275&#34;&gt;Distributed Systems: Principles and Paradigms&lt;/a&gt;
-by Andrew S. Tanenbaum and Maarten van Steen.&lt;br&gt;
+by Andrew S. Tanenbaum and Maarten van Steen.&lt;br /&gt;
 I was reading at the library on my last year of study and I remember being
-confused very often, and to be honest I didn&#39;t even finish it&amp;hellip;&lt;/p&gt;</description>
+confused very often, and to be honest I didn&amp;rsquo;t even finish it&amp;hellip;&lt;/p&gt;</description>
     </item>
     
   </channel>
