@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
+    <lastmod>2020-09-23T00:00:01+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,17 +19,17 @@
   
   <url>
     <loc>https://www.monkeypatch.io/blog/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
+    <lastmod>2020-09-23T00:00:01+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
+    <loc>https://www.monkeypatch.io/blog/2020/2020-09-23-relance/</loc>
+    <lastmod>2020-09-23T00:00:01+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
+    <lastmod>2020-09-23T00:00:01+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -41,6 +41,23 @@
                 hreflang="fr"
                 href="https://www.monkeypatch.io/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/covid19/</loc>
+    <lastmod>2020-09-23T00:00:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/relance/</loc>
+    <lastmod>2020-09-23T00:00:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/</loc>
+    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
   </url>
   
   <url>

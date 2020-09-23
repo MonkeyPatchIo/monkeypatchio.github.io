@@ -6,10 +6,28 @@
     <description>Recent content in Tags on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:01 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 00:00:01 +0000</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>covid19</title>
+      <link>https://www.monkeypatch.io/tags/covid19/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:01 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/covid19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relance</title>
+      <link>https://www.monkeypatch.io/tags/relance/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:01 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/relance/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>cloud</title>
