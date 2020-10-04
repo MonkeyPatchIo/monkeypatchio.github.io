@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Loom - Part 1 - It&#39;s all about Scheduling">
+<meta property="og:description" content="The first problem with concurrency (and computer science in general), is that
+we&rsquo;re extremely bad at naming things. We sometimes use the same word to describe several distinct concepts,
+different words to describe one and only thing or even different words to describe different things but swap
+meanings depending on context!">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-1-scheduling/">
+
+<meta property="og:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2019-12-14T15:38:37+01:00">
+<meta property="article:modified_time" content="2019-12-14T15:38:37+01:00"><meta property="og:site_name" content="MonkeyPatch">
+<meta itemprop="name" content="Loom - Part 1 - It&#39;s all about Scheduling">
+<meta itemprop="description" content="The first problem with concurrency (and computer science in general), is that
+we&rsquo;re extremely bad at naming things. We sometimes use the same word to describe several distinct concepts,
+different words to describe one and only thing or even different words to describe different things but swap
+meanings depending on context!">
+
+
+<meta itemprop="datePublished" content="2019-12-14T15:38:37&#43;01:00">
+<meta itemprop="dateModified" content="2019-12-14T15:38:37&#43;01:00">
+<meta itemprop="wordCount" content="2129">
+
+
+
+<meta itemprop="keywords" content="java,concurrency,loom,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Loom - Part 1 - It&#39;s all about Scheduling">
+<meta name="twitter:description" content="The first problem with concurrency (and computer science in general), is that
+we&rsquo;re extremely bad at naming things. We sometimes use the same word to describe several distinct concepts,
+different words to describe one and only thing or even different words to describe different things but swap
+meanings depending on context!">
+<meta name="generator" content="Hugo 0.56.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Loom - Part 1 - It&#39;s all about Scheduling</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.monkeypatch.io/styles/main.62e4def08f0817473ef2abade8bc61175413e8ba5b2b4982c955a6e0a6722ef9.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog blog-2019-2019-12-14-loom-part-1-scheduling">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="https://www.monkeypatch.io/">
+                <img alt="Monkey Patch" src="/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="https://www.monkeypatch.io/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="https://www.monkeypatch.io/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Loom - Part 1 - It's all about Scheduling</span>
+    </h1>
+
+
+    <span class="date">
+    December 
+    14th,
+    2019
+</span>
+
+
+    <div class="tags">
+        
+        
+        <span>java</span>
+        
+        <span>concurrency</span>
+        
+        <span>loom</span>
+        
+    </div>
+
+    <article><p>The first problem with concurrency (and computer science in general), is that
+we&rsquo;re extremely bad at naming things. We sometimes use the same word to describe several distinct concepts,
+different words to describe one and only thing or even different words to describe different things but swap
+meanings depending on context!</p>
+
+<blockquote>
+<p>Part 1 in a series of articles about Project Loom.<br>
+In this part we skim the surface of scheduling history before diving into the JVM.</p>
+
+<p>The companion code repository is at <a href="https://github.com/arnaudbos/untangled">arnaudbos/untangled</a></p>
+
+<p>If you&rsquo;d like you could head over to<br>
+<a href="../2019-12-14-loom-part-0-rationale">Part 0 - Rationale</a><br>
+<a href="../2019-12-14-loom-part-1-scheduling">Part 1 - It&rsquo;s all about Scheduling</a> (this page)<br>
+<a href="../2019-12-18-loom-part-2-blocking">Part 2 - Blocking code</a><br>
+<a href="../2019-12-23-loom-part-3-async">Part 3 - Asynchronous code</a><br>
+<a href="../../2020/2020-05-08-loom-part-4-nio">Part 4 - Non-thread-blocking async I/O</a></p>
+</blockquote>
+
+
+<figure style="text-align: center;">
+    <a target="_blank" href="https://commons.wikimedia.org/wiki/File:A_Jacquard_loom_showing_information_punchcards,_National_Museum_of_Scotland.jpg">
+        <img src="https://i-rant.arnaudbos.com/img/loom/jacquard_loom.jpg" alt="Jacquard Loom">
+    </a>
+    
+    <figcaption>
+        <h6><em>Jacquard Loom</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<hr>
+
+<h2 id="there-s-only-one-hard-problem">There&rsquo;s only one hard problem</h2>
+
+<p>To make sure we&rsquo;re on the same page, let&rsquo;s read what Wikipedia has to say (as of today) about Light-Weight Processes:</p>
+
+<blockquote>
+<p>In some operating systems there is no separate LWP <em>(Ed.: Light-Weight Process)</em> layer between kernel threads and user threads.<br>
+This means that user threads are implemented directly on top of kernel threads.<br>
+In those contexts, the term <strong>&ldquo;light-weight process&rdquo; typically refers to kernel threads and the term &ldquo;threads&rdquo; can
+refer to user threads</strong>.<br>
+On Linux, <strong>user threads are implemented by allowing certain processes to share resources, which sometimes leads
+to these processes to be called &ldquo;light weight processes&rdquo;</strong>.<br>
+Similarly, in SunOS version 4 onwards (prior to Solaris) <strong>&ldquo;light weight process&rdquo; referred to user threads</strong>.
+— from <a href="https://en.wikipedia.org/wiki/Light-weight_process">https://en.wikipedia.org/wiki/Light-weight_process</a> (emphasis mine)</p>
+</blockquote>
+
+<p>I find that confusing to say the least, especially from an application developers&rsquo; point of view: I&rsquo;m not that very
+interested in knowing the implementation differences between operating systems past and present
+(Unix System V, SunOS, really?).</p>
+
+<p>Let me drop a few terms in a conspicuous attempt to show off:</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Process</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Lightweight Process</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Thread</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Lightweight Thread</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Kernel Thread</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> User Thread</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Green Thread</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Fiber</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Knot</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Goroutine/Coroutine</label></li>
+<li><label><input type="checkbox" disabled="disabled" class="task-list-item"> Async/await</label></li>
+</ul>
+
+<p>Quick questions:</p>
+
+<ol>
+<li>Can you spot the mistake?</li>
+<li>Do you know what concept each of those terms refer to?</li>
+</ol>
+
+<p>If you&rsquo;ve answered twice, stop reading and go do something else!</p>
+
+<hr>
+
+<p>Still with me? Alright let&rsquo;s try to untangle this by first taking a look back
+in history.</p>
+
+<h2 id="the-land-before-time">The Land Before Time</h2>
+
+
+<figure style="text-align: center;">
+    <a target="_blank" href="https://www.nasa.gov/centers/langley/news/researchernews/rn_kjohnson.html">
+        <img src="https://i-rant.arnaudbos.com/img/loom/computers.jpg" alt="&#34;When the computer wore a skirt&#34; — Katherine Johnson">
+    </a>
+    
+    <figcaption>
+        <h6><em>&#34;When the computer wore a skirt&#34; — Katherine Johnson</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<h3 id="sequential-execution">Sequential execution</h3>
+
+<p>The first computers were capable of running one set of instructions, a program, sequentially and would sit idle the rest
+of the time. Up until another program was executed. Kind of like a sewing machine (or a loom!).</p>
+
+<p>The diagram below shows the execution of two distinct programs on such a computing machine.</p>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/sequential.png" alt="Sequential execution" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Sequential execution</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<blockquote>
+<p>&ldquo;Operators&rdquo; were the names of the first computers, who used <em>computers</em>.</p>
+</blockquote>
+
+<p>We have two operators. The first starts &ldquo;writing a program&rdquo; (wiring cables, turning switches, etc) to make the
+computer compute the solution to a problem.</p>
+
+<p>Operator 1 must wait the end of the program to get the result. Only then can Operator 2 write her program and make it run.
+There is no possibility for parallelism: the programs are executed sequentially.</p>
+
+<p>Soon, the bottleneck to solve problems faster shifted from computers to humans. Indeed, even with new ways to
+write programs (punch cards, magnetic tapes) the time taken by each programmer to &ldquo;insert&rdquo; its program into the machine
+became unacceptable—i.e., too expensive.</p>
+
+<p>In this situation, a good scheduler has to do something. Right?</p>
+
+<h3 id="batch-processing">Batch processing</h3>
+
+<p>In this case, the schedulers were computer scientists and manufacturers. They came up with this really sensible idea
+that, to amortize the cost of running many jobs sequentially, one could <a href="https://en.wikipedia.org/wiki/Batch_processing">&ldquo;batch&rdquo;</a> them.</p>
+
+<p>Not only let programmers write program instructions on their own, away from the machine, but let them &ldquo;offer&rdquo; their
+programs to a waiting queue of jobs to be performed.</p>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/batch.png" alt="Batch processing" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Batch processing</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>In the diagram above, Program1 and Program2 are submitted one after the other, so Program1 runs first and thenProgram2.</p>
+
+<p>But having to append a program into a &ldquo;giant&rdquo; batch of jobs for the mainframe to compute, and then wait for it
+to return all the results, was a massive pain in the butt!<br>
+Imagine debugging your programs <strong>with a 24 hours feedback loop&hellip;</strong></p>
+
+
+<figure style="text-align: center;">
+    <a target="_blank" href="https://www.computerhistory.org/revolution/punched-cards/2/211/2253">
+        <img src="https://i-rant.arnaudbos.com/img/loom/kropotchev.png" alt="Silent spoof movie relating the adventures of a programmer waiting on batch processing." width="50%">
+    </a>
+    
+    <figcaption>
+        <h6><em>&#34;Batch processing&#34; spoof movie — Stanford</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>It was not only painful for programmers though. It was also painful for <em>users</em> who would have to run the programs!</p>
+
+<p>It&rsquo;s a common problem in scheduling: optimising for a use case (less computer idle time) ends up
+making it worse from another point of view (more human idle time).</p>
+
+<p>Computers kept getting faster and faster for sure, and although programmers tried to make the best of the computing
+power they could get, any single user wouldn&rsquo;t make efficient use of a computer by herself!</p>
+
+<p>Indeed, processes, to do something useful, have to be fed with inputs and produce any kind of output. Otherwise they&rsquo;d
+just be raising the temperature of the room.<br>
+Consuming inputs today can be reading from a keyboard, hard drive or network card. In the sixties, it mostly meant
+reading from magnetic tape or a teletypewriter. Similarly, producing output meant writing to magnetic tape, printing
+to a teletypewriter or a &ldquo;high-speed&rdquo; Xerox printer.</p>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/io.png" alt="Cycles wasted on I/O" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Cycles wasted on I/O</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>In the above diagram, we can see Program1 finishing before Program2 can start, but there are <em>gaps</em> between bursts
+of execution. Same for Program2.<br>
+So all the time during which a processor is waiting for I/O (polling, <a href="https://en.wikipedia.org/wiki/Busy_waiting">busy waiting</a>) rather than &ldquo;crunching numbers&rdquo;,
+is wasted.</p>
+
+<p>Schedulers to the rescue!</p>
+
+<h3 id="time-sharing">Time-sharing</h3>
+
+<p>The video below is a gem.<br>
+In it, you can see Turing Award winner <del>Buddy Holly</del> <a href="https://en.wikipedia.org/wiki/Fernando_J._Corbat%C3%B3">Fernando Corbató</a> explain the promises and premises of
+<a href="https://en.wikipedia.org/wiki/Compatible_Time-Sharing_System">time-sharing</a> as it was being designed.</p>
+
+<p>
+</p><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/Q07PhW5sCEk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br><p></p>
+
+<p>Processes wouldn&rsquo;t spin on I/O anymore but rather be <em>parked</em>, while another process would be allocated
+CPU time. Time-sharing allows <strong>concurrency</strong>: the <strong>illusion of parallelism</strong> and <strong>efficient use of physical
+resources</strong>.</p>
+
+<p>Let&rsquo;s see an example:</p>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/time-sharing.png" alt="Time-sharing" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Time-sharing</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>In this diagram, Program1 starts first and is parked when it starts a <strong>blocking</strong> I/O call.<br>
+Program2 then gets a chance to run but is quickly parked too as it also makes a <strong>blocking</strong> I/O call.<br>
+Some other program, Program3, runs while 1 and 2 are <strong>parked</strong>.<br>
+Program2&rsquo;s I/O returns first, so on the next <em>shift</em>, Program2 is <strong>unparked</strong> and <em>continues</em> to run while
+Program1&rsquo;s I/O returns.<br>
+Program2 ends eventually.<br>
+Program1 then picks up the result from its I/O call and finishes running too.</p>
+
+<h2 id="process-switch">Process switch</h2>
+
+<p>In the previous sections I&rsquo;ve considered all programs equals, but as always, <em>&ldquo;It depends&rdquo;</em>.</p>
+
+<p><code>P1</code>, <code>P2</code>, <code>P3</code> could very well have different subroutines lengths but also very different characteristics with regard
+to the kind of work they do.</p>
+
+<p><em>CPU-bound</em> tasks that don&rsquo;t require much (if any) communication could be tackled by multiple processes (instances
+of a program communicating through IPC).</p>
+
+<p>Some other tasks require communication. Coupled cooperative processes for which IPC may be too expensive are an example.
+Tasks requiring many I/O operations (<em>I/O bound</em>) as well.<br>
+For such applications, the time to <em>switch</em> from e.g. <code>P1</code> to <code>P2</code> and back to <code>P1</code>, may hamper its fast realization
+and/or drain physical resources&hellip;</p>
+
+<p>From a scheduling perspective, it would be nice to have a mechanism so that cooperative processes (of which there were
+more and more) could communicate without being taxed by &ldquo;expensive&rdquo; communication mechanisms. Similarly, it would be
+nice to have a mechanism so that I/O bound processes wouldn&rsquo;t undergo excessively costly <strong><em>process switches</em></strong>.</p>
+
+<blockquote>
+<p>A process switch is a special case of <strong>context switch</strong> applied to processes.<br>
+As the name may suggest, it is a special mechanism for kernels to switch a process by another to achieve concurrency.<br>
+As usual with names, &ldquo;context switch&rdquo; is overloaded, and we&rsquo;ll mention this in the next sections.</p>
+</blockquote>
+
+<p>That&rsquo;s how threads got introduced: nowadays the most widespread fundamental unit of concurrency is not the
+process, it&rsquo;s the <strong>thread</strong>.<br>
+And threads have interesting characteristics with regard to the previous points.</p>
+
+<h2 id="threads">Threads</h2>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/threads.png" alt="Threads in a Process" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Threads in a Process</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>Conceptually, a thread is like a process: it embodies the execution of a set of instructions and, at runtime, gets
+its own <a href="https://en.wikipedia.org/wiki/Call_stack">control stack</a> filled with stack frames. What&rsquo;s really remarkable about threads however, is their ability (for
+better or worse) to share the memory of their parent process.</p>
+
+<p>Each thread having its own call stack makes it possible for multiple threads, while in a single process, to
+execute <strong>different sets of instructions</strong> running <strong>in parallel</strong> on distinct cores.</p>
+
+<p>Therefore, cooperative processes can be implemented as a single process, with multiple threads communicating directly
+by sharing memory places (data).</p>
+
+<p>I/O bound processes also benefit from this new layer of indirection because switching between threads of the same
+process is typically faster than switching between processes.</p>
+
+<blockquote>
+<p>Nowadays, a context switch is almost synonymous with switching between threads rather than between processes.
+But &ldquo;context switch&rdquo; is also used, in many blog posts and articles, to talk about <em>process switches</em>,
+<em>thread switches</em> or <em>mode switches</em>, almost indistinguishably.<br>
+We&rsquo;ll touch on these differences in the <a href="../2019-12-18-loom-part-2-blocking">next part</a>.</p>
+</blockquote>
+
+<p>Let&rsquo;s talk about time-sharing a bit more.</p>
+
+<h2 id="multitasking">Multitasking</h2>
+
+<p>Time-sharing gained traction after the realization that computers had become powerful enough to be under-utilized
+by their users and that connecting more users to one would amortize its cost.</p>
+
+<p>In order to do that, time-sharing employed both</p>
+
+<ul>
+<li>multiprogramming: multiple programs running concurrently; and</li>
+<li>multitasking: programs would run one after the other, in <strong>short</strong> bursts (preventing greedy programs to monopolize the CPU).</li>
+</ul>
+
+<p>There are several techniques that can lead to effective multitasking and fair (or not) sharing of CPU cycles, but they
+can be grouped in two main categories: <code>Preemptive multitasking</code> and <code>Cooperative multitasking</code>; and their properties are
+enforced by scheduler policies.</p>
+
+<h3 id="preemptive-scheduling">Preemptive scheduling</h3>
+
+<p>A preemptive scheduler may suspend a running thread when it blocks on I/O or waits on a condition, so the processor
+can be assigned another thread to work on. It may also prevent spin-locking or CPU intensive tasks to
+<em>hog the CPU</em> by allowing threads for a finite amount of time, before parking them in order to let
+other tasks a &ldquo;fair&rdquo; chance to run.</p>
+
+<blockquote>
+<p>To be <em>fair</em> (pun intended), &ldquo;fair&rdquo; scheduling isn&rsquo;t a solved problem, and I didn&rsquo;t dive into the details of the
+algorithms. These two resources may be good entry-points for more research <a href="https://en.wikipedia.org/wiki/Completely_Fair_Scheduler">Completely Fair Scheduler</a> and
+<a href="https://en.wikipedia.org/wiki/Brain_Fuck_Scheduler">Brain Fuck Scheduler</a>.</p>
+</blockquote>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/preempt-io.png" alt="Preemptive scheduling io" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Preemptive scheduling io</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/preempt-quantum.png" alt="Preemptive scheduling quantum" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Preemptive scheduling quantum</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>The first figure (left) illustrates a thread/task being preempted by the kernel, using a <em>context-switch</em>
+when a blocking call occurs, in order to satisfy the scheduling policy: the first thread is parked while the
+next thread is executed. Eventually (hopefully), the first thread is going to be unparked and its execution resumed.</p>
+
+<p>The second figure (right) illustrates a thread being preempted because its execution duration is longer than the
+time it is authorized to run on the CPU (also named its <em>quantum</em>).</p>
+
+<p>Preemptive multitasking is what we get from our modern operating systems, or kernels. The preemption is specified
+inside the kernel scheduler&rsquo;s algorithm.</p>
+
+<h3 id="cooperative-scheduling">Cooperative scheduling</h3>
+
+<blockquote>
+<p>Cooperative multitasking, also known as non-preemptive multitasking, is a style of computer multitasking in which
+<strong>the operating system never initiates a context switch</strong> from a running process to another process. Instead,
+<strong>processes voluntarily yield control periodically or when idle or logically blocked</strong> in order to enable multiple
+applications to be run concurrently. This type of multitasking is called &ldquo;cooperative&rdquo; because <strong>all programs must
+cooperate for the entire scheduling scheme to work</strong>.<br>
+— From <a href="https://en.wikipedia.org/wiki/Cooperative_multitasking">https://en.wikipedia.org/wiki/Cooperative_multitasking</a> (emphasis mine)</p>
+</blockquote>
+
+
+<figure style="text-align: center;">
+    
+        <img src="https://i-rant.arnaudbos.com/img/loom/cooperative.png" alt="Cooperative scheduling" width="70%">
+    
+    
+    <figcaption>
+        <h6><em>Cooperative scheduling</em></h6>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>In the diagram above we can see two threads. Both containing interleaved &ldquo;random&rdquo; instructions
+(any code that this thread is supposed to run) and <code>yield</code> statements.</p>
+
+<p>With cooperative scheduling, there is no intervention from the kernel to pause a thread and schedule the next one. This
+is all done by each task, deliberately relinquishing CPU time when it is not using computing resources (e.g. waiting on
+I/O after an asynchronous call).</p>
+
+<p>Cooperative multitasking requires <strong>ALL</strong> programs to cooperate. Consequently, fairness is not ensured, which
+explains why most modern operating systems implement preemptive scheduling.</p>
+
+<h2 id="to-be-continued">To be continued</h2>
+
+<p>I think we&rsquo;ve covered most of the groundwork necessary to understand where we&rsquo;re at, from a scheduling
+point of view, regarding modern computers.</p>
+
+<p>I obviously took a great detour to explain some fundamentals. There&rsquo;s been so much innovation in computer systems in
+the last 60 years that I had to cut corners and didn&rsquo;t do it any justice.</p>
+
+<p>If it picked your curiosity, start with the links I&rsquo;ve provided and follow those threads (pun intended).</p>
+
+<p>Alternatively, this Twitter thread covers about the same period but with more details (dates, pre-historic computer
+names, etc):</p>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">OK SO let&#39;s say it&#39;s 1962 and you&#39;re lucky enough to be a programmer working somewhere that has an IBM 7090.<br>This is a top of the line transistorized revision of the IBM 709, capable of 100,000 floating point operations per second. <br><br>But how do you code for it? <a href="https://t.co/hcJ1FHiO1W">pic.twitter.com/hcJ1FHiO1W</a></p>&mdash; foone (@Foone) <a href="https://twitter.com/Foone/status/1201956309941116928?ref_src=twsrc%5Etfw">December 3, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>In the <a href="../2019-12-18-loom-part-2-blocking">next part</a>, we will experiment!</p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/arnaud_bos" rel="author">
+                <img src="https://ca.slack-edge.com/T1H5KD6N6-U30C1P23G-a63601ba6c7d-512" alt="Arnaud bos">
+                <span>Arnaud bos</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGGFWH');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGGFWH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script src="/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-rust.min.js" integrity="sha512-a+IgkN5sZbEosACcEWe/sM44yttZ31//JRCMMJ/iJvFqyMf5BFDTwClDikRSq9IFNCF5arl3VXl+43PIh+z77A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-toml.min.js" integrity="sha512-nR+DujZm33eiRbZSfMapBdGw+1a8yQCknJxCkdSqxWunDODhOv35GVaU1zUM1vqO0iHL86LRV9EGNi7EkjSFkw==" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

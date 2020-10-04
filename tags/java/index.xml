@@ -6,10 +6,66 @@
     <description>Recent content in Java on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 01:44:26 +0200</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Loom - Part 4 - Non-thread-blocking async I/O</title>
+      <link>https://www.monkeypatch.io/blog/2020/2020-05-08-loom-part-4-nio/</link>
+      <pubDate>Fri, 08 May 2020 01:44:26 +0200</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2020/2020-05-08-loom-part-4-nio/</guid>
+      <description>&lt;p&gt;Starting from where we left in the &lt;a href=&#34;../../2019/2019-12-23-loom-part-3-async&#34;&gt;previous entry&lt;/a&gt;, we can say that  &lt;code&gt;Asynchronous&lt;/code&gt; API are nice
+because they don&amp;rsquo;t block the calling thread. But an asynchronous API is not a guarantee that it will not block
+other underlying threads. Thus, the problem of memory footprint, context switches and cache misses of kernel
+threads remains.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Loom - Part 3 - Asynchronous code</title>
+      <link>https://www.monkeypatch.io/blog/2019/2019-12-23-loom-part-3-async/</link>
+      <pubDate>Mon, 23 Dec 2019 18:56:06 +0100</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2019/2019-12-23-loom-part-3-async/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve covered a lot of ground in the previous entries, and we concluded that blocking code &lt;em&gt;&amp;ldquo;is bad&amp;rdquo; ©&lt;/em&gt;.&lt;br /&gt;
+But what can we do about it?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Loom - Part 2 - Blocking code</title>
+      <link>https://www.monkeypatch.io/blog/2019/2019-12-18-loom-part-2-blocking/</link>
+      <pubDate>Wed, 18 Dec 2019 12:11:16 +0100</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2019/2019-12-18-loom-part-2-blocking/</guid>
+      <description>&lt;p&gt;One of the biggest pain points I had learning about concurrent programming was the emphasis put on
+&lt;code&gt;Blocking&lt;/code&gt;, &lt;code&gt;Non-blocking&lt;/code&gt;, &lt;code&gt;Synchronous&lt;/code&gt; and &lt;code&gt;Asynchronous&lt;/code&gt; code.&lt;br /&gt;
+We&amp;rsquo;ll touch on all four in the next parts of this series.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Loom - Part 1 - It&#39;s all about Scheduling</title>
+      <link>https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-1-scheduling/</link>
+      <pubDate>Sat, 14 Dec 2019 15:38:37 +0100</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-1-scheduling/</guid>
+      <description>&lt;p&gt;The first problem with concurrency (and computer science in general), is that
+we&amp;rsquo;re extremely bad at naming things. We sometimes use the same word to describe several distinct concepts,
+different words to describe one and only thing or even different words to describe different things but swap
+meanings depending on context!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Loom - Part 0 - Rationale</title>
+      <link>https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-0-rationale/</link>
+      <pubDate>Sat, 14 Dec 2019 15:38:21 +0100</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-0-rationale/</guid>
+      <description>&lt;p&gt;Finding good introduction level articles on concurrent programming is difficult, because every post assumes
+some prior knowledge. You quickly find yourself into dark corners of the Web, where people talk about lock-free
+concurrency: you&amp;rsquo;re &lt;em&gt;probably&lt;/em&gt; not ready for this if you&amp;rsquo;re reading this blog!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Devoxx Belgium 2016</title>

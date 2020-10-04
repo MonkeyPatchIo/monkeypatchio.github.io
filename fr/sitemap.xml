@@ -109,6 +109,49 @@
   </url>
   
   <url>
+    <loc>https://www.monkeypatch.io/tags/java/</loc>
+    <lastmod>2020-05-08T01:44:26+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2020/2020-05-08-loom-part-4-nio/</loc>
+    <lastmod>2020-05-08T01:44:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/concurrency/</loc>
+    <lastmod>2020-05-08T01:44:26+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/loom/</loc>
+    <lastmod>2020-05-08T01:44:26+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2019/2019-12-23-loom-part-3-async/</loc>
+    <lastmod>2019-12-23T18:56:06+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2019/2019-12-18-loom-part-2-blocking/</loc>
+    <lastmod>2019-12-18T12:11:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-1-scheduling/</loc>
+    <lastmod>2019-12-14T15:38:37+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2019/2019-12-14-loom-part-0-rationale/</loc>
+    <lastmod>2019-12-14T15:38:21+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.monkeypatch.io/blog/2019/2019-04-28_devenir-monkey-2/</loc>
     <lastmod>2019-04-28T21:29:39+00:00</lastmod>
   </url>
@@ -551,12 +594,6 @@
   <url>
     <loc>https://www.monkeypatch.io/blog/2016/2016-11-27-devoxx-belgium/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/java/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
