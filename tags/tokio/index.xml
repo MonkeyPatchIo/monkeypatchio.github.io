@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tokio on MonkeyPatch</title>
+    <link>https://www.monkeypatch.io/tags/tokio/</link>
+    <description>Recent content in tokio on MonkeyPatch</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-FR</language>
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.monkeypatch.io/tags/tokio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rust: Playing with tui-rs</title>
+      <link>https://www.monkeypatch.io/blog/2021/2021-05-31-rust-tui/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2021/2021-05-31-rust-tui/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.rust-lang.org/&#34;&gt;Rust&lt;/a&gt; is a perfect language for command-line applications.
+Among these applications, some have a very rich interface, for example,
+&lt;a href=&#34;https://github.com/bvaisvil/zenith&#34;&gt;Zenith&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/ClementTsang/bottom&#34;&gt;Bottom&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/extrawurst/gitui&#34;&gt;GitUI&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/imsnif/diskonaut&#34;&gt;Diskonaut&lt;/a&gt;.
+These applications are built with &lt;a href=&#34;https://github.com/fdehau/tui-rs&#34;&gt;tui-rs&lt;/a&gt;,
+a library that abstracts the terminal drawing mechanism.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

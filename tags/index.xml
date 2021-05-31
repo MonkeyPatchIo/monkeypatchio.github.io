@@ -6,10 +6,46 @@
     <description>Recent content in Tags on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 23 Sep 2020 00:00:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>async</title>
+      <link>https://www.monkeypatch.io/tags/async/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/async/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://www.monkeypatch.io/tags/rust/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tokio</title>
+      <link>https://www.monkeypatch.io/tags/tokio/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/tokio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tui</title>
+      <link>https://www.monkeypatch.io/tags/tui/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/tags/tui/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>audit</title>
@@ -71,15 +107,6 @@
       <pubDate>Thu, 30 Jul 2020 00:00:01 +0000</pubDate>
       
       <guid>https://www.monkeypatch.io/tags/cloud/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rust</title>
-      <link>https://www.monkeypatch.io/tags/rust/</link>
-      <pubDate>Thu, 30 Jul 2020 00:00:01 +0000</pubDate>
-      
-      <guid>https://www.monkeypatch.io/tags/rust/</guid>
       <description></description>
     </item>
     

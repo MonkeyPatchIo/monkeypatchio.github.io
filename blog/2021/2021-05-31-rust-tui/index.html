@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Rust: Playing with tui-rs">
+<meta property="og:description" content="Rust is a perfect language for command-line applications.
+Among these applications, some have a very rich interface, for example,
+Zenith,
+Bottom,
+GitUI,
+Diskonaut.
+These applications are built with tui-rs,
+a library that abstracts the terminal drawing mechanism.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.monkeypatch.io/blog/2021/2021-05-31-rust-tui/">
+
+<meta property="og:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2021-05-31T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-05-31T00:00:00+00:00"><meta property="og:site_name" content="MonkeyPatch">
+<meta itemprop="name" content="Rust: Playing with tui-rs">
+<meta itemprop="description" content="Rust is a perfect language for command-line applications.
+Among these applications, some have a very rich interface, for example,
+Zenith,
+Bottom,
+GitUI,
+Diskonaut.
+These applications are built with tui-rs,
+a library that abstracts the terminal drawing mechanism.">
+
+
+<meta itemprop="datePublished" content="2021-05-31T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2021-05-31T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="3018">
+
+
+
+<meta itemprop="keywords" content="rust,tui,async,tokio,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Rust: Playing with tui-rs">
+<meta name="twitter:description" content="Rust is a perfect language for command-line applications.
+Among these applications, some have a very rich interface, for example,
+Zenith,
+Bottom,
+GitUI,
+Diskonaut.
+These applications are built with tui-rs,
+a library that abstracts the terminal drawing mechanism.">
+<meta name="generator" content="Hugo 0.56.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Rust: Playing with tui-rs</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.monkeypatch.io/styles/main.cea8f8aa0f1b8bfcfb93f12b6bc4405c64a6997deac8f660bbf57ba87008199f.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog blog-2021-2021-05-31-rust-tui">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="https://www.monkeypatch.io/">
+                <img alt="Monkey Patch" src="/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="https://www.monkeypatch.io/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="https://www.monkeypatch.io/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Rust: Playing with tui-rs</span>
+    </h1>
+
+
+    <span class="date">
+    May 
+    31st,
+    2021
+</span>
+
+
+    <div class="tags">
+        
+        
+        <span>rust</span>
+        
+        <span>tui</span>
+        
+        <span>async</span>
+        
+        <span>tokio</span>
+        
+    </div>
+
+    <article><p><a href="https://www.rust-lang.org/">Rust</a> is a perfect language for command-line applications.
+Among these applications, some have a very rich interface, for example,
+<a href="https://github.com/bvaisvil/zenith">Zenith</a>,
+<a href="https://github.com/ClementTsang/bottom">Bottom</a>,
+<a href="https://github.com/extrawurst/gitui">GitUI</a>,
+<a href="https://github.com/imsnif/diskonaut">Diskonaut</a>.
+These applications are built with <a href="https://github.com/fdehau/tui-rs">tui-rs</a>,
+a library that abstracts the terminal drawing mechanism.</p>
+
+<p>Although they are limited, a rich terminal application has some advantages:</p>
+
+<p>First, it is important to understand that a rich terminal application is intended for a human. He had to interact with the keyboard. shortcuts. This clear shortcoming turns to be an advantage, it&rsquo;s much more efficient to interact with the keyboard rather than a mouse or a finger.
+Yet, to have a decent UX, we display a contextualized list of keyboard shortcuts.</p>
+
+<p>Also, by nature, the application is much lighter than what we could do with native or browser-based interfaces (like Electron). And with the right backend, it&rsquo;s multi-platform.</p>
+
+<p>Finally, the last point (and, of course, the most important 😉) is that it gives you the feeling of power.</p>
+
+<p><img src="/blog/2021-tui/terminal-power.png" alt="⚡️"></p>
+
+<h2 id="what">What?</h2>
+
+<p>We are going to create a simple application whose main feature is to sleep a certain number of seconds.
+Although sleep is an important part of health, for an application it is quite useless.
+But this needs solving a very important problem: we don&rsquo;t want to block the display of the application while it&rsquo;s sleeping.</p>
+
+<p>We also focus on the structure of this application, rather than on the details related to the UI. This makes it an interesting base to build a real rich terminal application.</p>
+
+<p>For that, we take inspiration from what is done in <a href="https://github.com/Rigellute/spotify-tui">spotify-tui</a>, some parts are copied and pasted.</p>
+
+<p>Disclaimer: there is no single right way to structure applications,
+you may find here the influence of my Java &amp; Web background.
+You are, of course, welcome to suggest improvements.</p>
+
+<p><img src="/blog/2021-tui/plop-tui.png" alt="plop tui"></p>
+
+<h2 id="step-by-step-solution">Step-by-step solution</h2>
+
+<h3 id="step-0-hello-world">Step 0 - Hello World</h3>
+
+<p>We need few libraries.</p>
+
+<pre><code class="language-toml">[dependencies]
+tui = { version = &quot;0.15&quot;, features = [&quot;crossterm&quot;], default-features = false }
+crossterm = &quot;0.19&quot;
+
+tokio = { version = &quot;1&quot;, features = [&quot;full&quot;] }
+eyre = &quot;0.6&quot;
+
+log = &quot;0.4&quot; 
+tui-logger = { git = &quot;https://github.com/gin66/tui-logger&quot;, rev = &quot;3a3568e2464dddc2205e071234135998342d7f1d&quot; }
+</code></pre>
+
+<p>To start we use <a href="https://github.com/fdehau/tui-rs">tui-rs</a>, and we use the backend
+<a href="https://github.com/crossterm-rs/crossterm">crossterm</a> to draw on the terminal.</p>
+
+<p>Then we use <a href="https://tokio.rs/">tokio</a> as our I/O <code>async/await</code> runtime.
+We won&rsquo;t go into detail about error handling, to simplify we use <a href="https://github.com/yaahc/eyre">eyre</a>.</p>
+
+<p>Finally, we add logs and display them in our application with <a href="https://github.com/rust-lang/log">log</a> and <a href="https://github.com/gin66/tui-logger">tui-logger</a>.</p>
+
+<blockquote>
+<p>At the time of writing this article, <a href="https://github.com/gin66/tui-logger">tui-logger</a> is not yet compatible with the latest <a href="https://github.com/fdehau/tui-rs">tui-rs</a> version.</p>
+</blockquote>
+
+<p>At this stage, here is the source tree.</p>
+
+<pre><code>📂 app
+   🦀 mod.rs
+   🦀 state.rs
+   🦀 ui.rs
+🦀 lib.rs
+🦀 main.rs
+</code></pre>
+
+<p>For now, this structure is far too complex for a simple hello world. , The organization will become more relevant as we add more elements.</p>
+
+<p>As usual, we don&rsquo;t do much code in the <code>main.rs</code> to delegate it.</p>
+
+<pre><code class="language-rust">// main.rs
+fn main() -&gt; Result&lt;()&gt; {
+    let app = Rc::new(RefCell::new(App::new())); // TODO app is useless for now
+    start_ui(app)?;
+    Ok(())
+}
+</code></pre>
+
+<p>And in the <code>lib.rs</code>, we configure our terminal to use the <em>raw mode</em> and restore the terminal at the end.</p>
+
+<pre><code class="language-rust">// lib.rs
+pub fn start_ui(app: Rc&lt;RefCell&lt;App&gt;&gt;) -&gt; Result&lt;()&gt; {
+    // Configure Crossterm backend for tui
+    let stdout = stdout();
+    crossterm::terminal::enable_raw_mode()?;
+    let backend = CrosstermBackend::new(stdout);
+    let mut terminal = Terminal::new(backend)?;
+    terminal.clear()?;
+    terminal.hide_cursor()?;
+
+    loop {
+        let app = app.borrow();
+        // Render
+        terminal.draw(|rect| ui::draw(rect, &amp;app))?;
+        // TODO handle inputs here
+    }
+
+    // Restore the terminal and close application
+    terminal.clear()?;
+    terminal.show_cursor()?;
+    crossterm::terminal::disable_raw_mode()?;
+
+    Ok(())
+}
+</code></pre>
+
+<blockquote>
+<p>It is important to note that this code runs in the main thread. <strong>Thou shall not block the UI thread with I/O</strong>.</p>
+</blockquote>
+
+<p>⚠️ For now, we don&rsquo;t process the inputs in the loop, so we can&rsquo;t exit the application without <strong>killing</strong> it.</p>
+
+<p>For a <em>hello world</em>, we don&rsquo;t need our <code>App</code>, but for now, we say that it contains an <code>AppState</code>. We use this state later.</p>
+
+<p>For the code about the display, we start by putting it in the <code>app::ui</code> separate module.</p>
+
+<pre><code class="language-rust">// app/ui.rs
+pub fn draw&lt;B&gt;(rect: &amp;mut Frame&lt;B&gt;, _app: &amp;App)
+where
+    B: Backend,
+{
+    let size = rect.size();
+    // TODO check size
+
+    // Vertical layout
+    let chunks = Layout::default()
+        .direction(Direction::Vertical)
+        .constraints([Constraint::Length(3)].as_ref())
+        .split(size);
+
+    // Title block
+    let title = draw_title();
+    rect.render_widget(title, chunks[0]);
+}
+
+fn draw_title&lt;'a&gt;() -&gt; Paragraph&lt;'a&gt; {
+    Paragraph::new(&quot;Plop with TUI&quot;)
+        .style(Style::default().fg(Color::LightCyan))
+        .alignment(Alignment::Center)
+        .block(
+            Block::default()
+                .borders(Borders::ALL)
+                .style(Style::default().fg(Color::White))
+                .border_type(BorderType::Plain),
+        )
+}
+</code></pre>
+
+<p>We won&rsquo;t dwell on the specific UI code.</p>
+
+<p>One of the problems we may have to solve is that depending on the size of our window, we may have to adapt the layout.
+Here we reject window sizes that are too small for what we want to do by using a <code>panic!</code>, it&rsquo;s a bit rough, but it does the job.</p>
+
+<pre><code class="language-rust">fn check_size(rect: &amp;Rect) {
+    if rect.width &lt; 52 {
+        panic!(&quot;Require width &gt;= 52, (got {})&quot;, rect.width);
+    }
+    if rect.height &lt; 28 {
+        panic!(&quot;Require height &gt;= 28, (got {})&quot;, rect.height);
+    }
+}
+</code></pre>
+
+<p><img src="/blog/2021-tui/step-0.png" alt="step 0"></p>
+
+<p>You can find the code at this step <a href="https://github.com/ilaborie/plop-tui/tree/blog/step-0">here</a>.</p>
+
+<p>Here, not only the application is useless, but we are forced to kill it to get out. We can&rsquo;t leave things as they are, we add to continue.</p>
+
+<p><em>This isn&rsquo;t a bug, it&rsquo;s a Vi feature!</em></p>
+
+<h3 id="step-1-event-loop-inputs-and-actions">Step 1 - Event loop, inputs, and actions</h3>
+
+<p>In this step, we are going to handle user actions, for example, to exit the application we can use the keyboard shortcuts <kbd>q</kbd> or <kbd class="key"><kbd>Ctrl</kbd>+<kbd>c</kbd></kbd>.</p>
+
+<p>To begin with, we represent the possible entries with an <code>enum</code>.</p>
+
+<pre><code class="language-rust">// inputs/mod.rs
+pub enum InputEvent {
+    /// An input event occurred.
+    Input(Key),
+    /// An tick event occurred.
+    Tick,
+}
+</code></pre>
+
+<p>The main idea is that we leave a certain amount of time (for example 200ms) for the user to interact with the keyboard. If this is the case, we generate an <code>InputEvent::Input(key)</code>, otherwise, we generate an <code>InputEvent::Tick</code>.</p>
+
+<p>For convenience, we do not use a <a href="https://docs.rs/crossterm/0.19.0/crossterm/event/struct.KeyEvent.html"><code>crossterm::event::KeyEvent</code></a> in the <code>InputEvent::Input</code>, but an <code>enum</code> from <a href="https://github.com/Rigellute/spotify-tui/blob/master/src/event/key.rs">spotify-tui::event::key</a>.</p>
+
+<p>Still taking inspiration from <a href="https://github.com/Rigellute/spotify-tui">spotify-tui</a>, we isolate the user input in the <code>inputs::events</code> module.
+We use a <a href="https://doc.rust-lang.org/book/ch16-02-message-passing.html#using-message-passing-to-transfer-data-between-threads"><code>mpsc::channel</code></a> to transfer the events to the main thread.</p>
+
+<pre><code class="language-rust">// inputs/events.rs
+pub struct Events {
+    rx: Receiver&lt;InputEvent&gt;,
+    // Need to be kept around to prevent disposing the sender side.
+    _tx: Sender&lt;InputEvent&gt;,
+}
+
+impl Events {
+    pub fn new(tick_rate: Duration) -&gt; Events {
+        let (tx, rx) = channel();
+
+        let event_tx = tx.clone(); // the thread::spawn own event_tx 
+        thread::spawn(move || {
+            loop {
+                // poll for tick rate duration, if no event, sent tick event.
+                if crossterm::event::poll(tick_rate).unwrap() {
+                    if let event::Event::Key(key) = event::read().unwrap() {
+                        let key = Key::from(key);
+                        event_tx.send(InputEvent::Input(key)).unwrap();
+                    }
+                }
+                event_tx.send(InputEvent::Tick).unwrap();
+            }
+        });
+
+        Events { rx, _tx: tx }
+    }
+
+    /// Attempts to read an event.
+    /// This function block the current thread.
+    pub fn next(&amp;self) -&gt; Result&lt;InputEvent, RecvError&gt; {
+        self.rx.recv()
+    }
+}
+</code></pre>
+
+<p>Next, in our <code>lib.rs</code>, we can handle inputs.</p>
+
+<pre><code class="language-rust">// lib.rs
+pub fn start_ui(app: Rc&lt;RefCell&lt;App&gt;&gt;) -&gt; Result&lt;()&gt; {
+    // Configure Crossterm backend for tui
+    // ... code omitted here
+
+    // ① User event handler
+    let tick_rate = Duration::from_millis(200);
+    let events = Events::new(tick_rate);
+
+    loop {
+        let mut app = app.borrow_mut();
+
+        // Render
+        terminal.draw(|rect| ui::draw(rect, &amp;app))?;
+
+        // ② Handle inputs
+        let result = match events.next()? {
+            // ③ let's process that event
+            InputEvent::Input(key) =&gt; app.do_action(key),
+            // ④ handle no user input
+            InputEvent::Tick =&gt; app.update_on_tick(),
+        };
+        // ⑤ Check if we should exit
+        if result == AppReturn::Exit {
+            break;
+        }
+    }
+
+    // Restore the terminal and close application
+    // ... code omitted here
+
+    Ok(())
+}
+</code></pre>
+
+<p>①: we use our <code>Events</code> to capture the inputs.</p>
+
+<p>②: we block the thread for at most <code>tick_rate</code> to receive an input.
+For this kind of application, it is not necessary to reach 60fps, it is enough to refresh every 200ms.</p>
+
+<p>③: we process the user input, that part could mutate the application.</p>
+
+<p>④: we can imagine that we have to do processing in the application, it also could mutate the application.</p>
+
+<p>⑤: we exit the loop to quit the application if the user press <kbd>q</kbd> or <kbd class="key"><kbd>Ctrl</kbd>+<kbd>c</kbd></kbd>.</p>
+
+<p>One of the <code>do_action</code> or <code>update_on_tick</code> methods have to return <code>AppReturn::Exit</code> instead of <code>AppReturn::Continue</code> to quit the application.</p>
+
+<pre><code class="language-rust">// app/mod.rs
+#[derive(Debug, PartialEq, Eq)]
+pub enum AppReturn {
+    Exit,
+    Continue,
+}
+
+pub struct App {
+    /// Contextual actions
+    actions: Actions,
+    /// State
+    state: AppState,
+}
+
+impl App {
+    pub fn new() -&gt; Self { // for now it could be replaced with impl Default 
+        let actions = vec![Action::Quit].into();
+        let state = AppState::initialized();
+        Self { actions, state }
+    }
+
+    /// Handle a user action
+    pub fn do_action(&amp;mut self, key: Key) -&gt; AppReturn {
+        if let Some(action) = self.actions.find(key) {
+            debug!(&quot;Run action [{:?}]&quot;, action);
+            match action {
+                Action::Quit =&gt; AppReturn::Exit,
+            }
+        } else {
+            warn!(&quot;No action accociated to {}&quot;, key);
+            AppReturn::Continue
+        }
+    }
+
+    /// We could update the app or dispatch event on tick
+    pub fn update_on_tick(&amp;mut self) -&gt; AppReturn {
+        // here we just increment a counter
+        self.state.incr_tick();
+        AppReturn::Continue
+    }
+
+   // ...
+}
+</code></pre>
+
+<p>Next, we define our actions in the <code>app::actions</code> module,
+we use an <code>enum</code> for all the actions. In the current state, we use the <code>Action::Quit</code>.
+Every action could have some associated <code>inputs::Key</code>.</p>
+
+<p>Given the current state, the <code>Actions</code> structure wraps the set of available actions.</p>
+
+<pre><code class="language-rust">// app/actions.rs
+#[derive(Debug, Clone, Copy, Eq, PartialEq)]
+pub enum Action {
+    Quit,
+}
+
+impl Action {
+    /// All available actions
+    pub fn iterator() -&gt; Iter&lt;'static, Action&gt; {
+        static ACTIONS: [Action; 1] = [Action::Quit];
+        ACTIONS.iter()
+    }
+
+    /// List of key associated to action
+    pub fn keys(&amp;self) -&gt; &amp;[Key] {
+        match self {
+            Action::Quit =&gt; &amp;[Key::Ctrl('c'), Key::Char('q')],
+        }
+    }
+}
+
+/// Could display a user-friendly short description of action
+impl Display for Action {
+    fn fmt(&amp;self, f: &amp;mut fmt::Formatter&lt;'_&gt;) -&gt; fmt::Result {
+        // ... implementation omitted
+    }
+}
+
+/// The application should have some contextual actions.
+#[derive(Default, Debug, Clone)]
+pub struct Actions(Vec&lt;Action&gt;);
+
+impl Actions {
+    /// Given a key, find the corresponding action
+    pub fn find(&amp;self, key: Key) -&gt; Option&lt;&amp;Action&gt; {
+        // ... implementation omitted
+    }
+
+    /// Get contextual actions.
+    /// (just for building a help view)
+    pub fn actions(&amp;self) -&gt; &amp;[Action] {
+        self.0.as_slice()
+    }
+}
+
+impl From&lt;Vec&lt;Action&gt;&gt; for Actions {
+    fn from(actions: Vec&lt;Action&gt;) -&gt; Self {
+        // ... implementation omitted
+    }
+}
+</code></pre>
+
+<p>Finally, we have everything to display the state information, and the contextual help.</p>
+
+<p><img src="/blog/2021-tui/step-1.png" alt="step 1"></p>
+
+<p>You can find the code at this step <a href="https://github.com/ilaborie/plop-tui/tree/blog/step-1">here</a>.</p>
+
+<p>We have reached an interesting point here. By making an application whose aim is to stop, we can pay tribute to Claude Shannon <a href="https://centenaire-shannon.cnrs.fr/">🇫🇷 Centenaire Shannon</a>.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/G5rJJgt_5mg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<h3 id="step-2-async-i-o">Step 2 - Async I/O</h3>
+
+<p>Now to take care of our sleep, we will use <code>async</code> functions.
+It&rsquo;s also an opportunity to simulate an application startup that uses I/O.
+It is frequent to read a file or make a network call during an initialization.</p>
+
+<p>In the idea, it&rsquo;s quite close to what we see before processing user inputs.
+But, to use syntactic sugar offered by the <code>async/await</code> we choose the tokio the <a href="https://tokio.rs/">tokio</a> runtime.</p>
+
+<p>To start, we add the <code>Action::Sleep</code> variant, with its <code>Key::Char('s')</code> keyboard shortcut and its documentation in <code>app/actions.rs</code>.</p>
+
+<p>To represent the events that will be processed in the I/O thread we create an <code>enum</code> in a new <code>io</code> module:</p>
+
+<pre><code class="language-rust">// io/mod.rs
+#[derive(Debug, Clone)]
+pub enum IoEvent {
+    Initialize,      // Launch to initialize the application
+    Sleep(Duration), // Just take a little break
+}
+</code></pre>
+
+<p>We process these events in an <code>IoAsyncHandler</code>.
+This processing can change the application or its state, so we need to replace the <code>Rc&lt;RefCell&lt;T&gt;&gt;</code> with an <code>Arc&lt;Mutex&lt;T&gt;&gt;</code>.
+If you are not (yet) quite familiar with these concepts see <a href="https://doc.rust-lang.org/book/ch15-05-interior-mutability.html">Interior Mutability Pattern</a> and <a href="https://doc.rust-lang.org/book/ch16-03-shared-state.html">Shared-State Concurrency</a>.
+Here we use a <a href="https://tokio-rs.github.io/tokio/doc/tokio/sync/struct.Mutex.html"><code>tokio::sync::Mutex</code></a> which requires a <code>.await</code> to get the lock.</p>
+
+<pre><code class="language-rust">// io/handler.rs
+pub struct IoAsyncHandler {
+    app: Arc&lt;tokio::sync::Mutex&lt;App&gt;&gt;,
+}
+
+impl IoAsyncHandler {
+    pub fn new(app: Arc&lt;tokio::sync::Mutex&lt;App&gt;&gt;) -&gt; Self {
+        Self { app }
+    }
+
+    pub async fn handle_io_event(&amp;mut self, io_event: IoEvent) {
+        let result = match io_event {
+            IoEvent::Initialize =&gt; self.do_initialize().await,
+            IoEvent::Sleep(duration) =&gt; self.do_sleep(duration).await,
+        };
+
+        if let Err(err) = result {
+            error!(&quot;Oops, something wrong happen: {:?}&quot;, err);
+        }
+
+        let mut app = self.app.lock().await;
+        app.loaded(); // update app loading state
+    }
+
+    async fn do_initialize(&amp;mut self) -&gt; Result&lt;()&gt; {
+        // ... implementation omitted
+    }
+
+    async fn do_sleep(&amp;mut self, duration: Duration) -&gt; Result&lt;()&gt; {
+        info!(&quot;😴 Go to sleep for {:?}...&quot;, duration);
+        tokio::time::sleep(duration).await; // Sleeping
+        info!(&quot;⏰ Wake up !&quot;);
+        // Notify the app for having slept
+        let mut app = self.app.lock().await;
+        app.slept();
+        Ok(())
+    }
+}
+</code></pre>
+
+<p>Now let&rsquo;s use this <code>IoAsyncHandler</code> in the <code>main</code>.</p>
+
+<pre><code class="language-rust">// main.rs
+#[tokio::main]
+async fn main() -&gt; Result&lt;()&gt; {
+    // ① Create a channel for IoEvent 
+    let (sync_io_tx, mut sync_io_rx) = tokio::sync::mpsc::channel::&lt;IoEvent&gt;(100);
+
+    // ② Create app
+    let app = Arc::new(tokio::sync::Mutex::new(App::new(sync_io_tx.clone())));
+    let app_ui = Arc::clone(&amp;app);
+
+    // ④ Handle I/O
+    tokio::spawn(async move {
+        let mut handler = IoAsyncHandler::new(app);
+        while let Some(io_event) = sync_io_rx.recv().await {
+            handler.handle_io_event(io_event).await;
+        }
+    });
+
+    // ③ Start UI
+    start_ui(&amp;app_ui).await?;
+    Ok(())
+}
+</code></pre>
+
+<p>① We need to share the <code>IoEvent</code> between threads, we use the <a href="https://docs.rs/tokio/1.6.0/tokio/sync/mpsc/fn.channel.html">tokio <code>channel</code></a>.
+You can of course use the standard lib <code>channel</code> as in <code>Events</code>, but here using Tokio simplifies the code in part ④.</p>
+
+<p>② The application is shared and can be modified by more than one thread, so we go through an <code>Arc&lt;Mutex&lt;T&gt;&gt;</code>. Now we pass the <code>IoEvent</code> sender into the application so that a user action can trigger an <code>IoEvent</code>. (see below)</p>
+
+<p>③ We create a thread in charge of processing the <code>IoEvent</code>. The <code>IoEvent</code> processing loop delegates to the <code>IoAsyncHandler</code>.</p>
+
+<p>④ We need to make some changes in our <code>start_ui</code> because of our <code>Arc&lt;Mutex&lt;T&gt;&gt;</code>.</p>
+
+<pre><code class="language-rust">// lib.rs
+pub async fn start_ui(app: &amp;Arc&lt;tokio::sync::Mutex&lt;App&gt;&gt;) -&gt; Result&lt;()&gt; {
+    // ... code omitted
+    loop {
+        // Get a mutable reference on app
+        let mut app = app.lock().await;
+        // ...
+    }
+    // ...
+}
+</code></pre>
+
+<p>Next, in our application, we add an attribute <code>io_tx: tokio::sync::mpsc::Sender&lt;IoEvent&gt;</code>, so the application can dispatch <code>IoEvent</code>.
+Now we can complete the processing of <code>app::actions::Action</code>.</p>
+
+<pre><code class="language-rust">// app/mod.rs
+impl App {
+
+    /// Send a network event to the IO thread
+    pub async fn dispatch(&amp;mut self, action: IoEvent) {
+        // `is_loading` will be set to false again after the async action has finished in io/handler.rs
+        self.is_loading = true;
+        if let Err(e) = self.io_tx.send(action).await {
+            self.is_loading = false;
+            error!(&quot;Error from dispatch {}&quot;, e);
+        };
+    }
+
+    /// Handle a user action
+    pub async fn do_action(&amp;mut self, key: Key) -&gt; AppReturn {
+        if let Some(action) = self.actions.find(key) {
+            debug!(&quot;Run action [{:?}]&quot;, action);
+            match action {
+                Action::Quit =&gt; AppReturn::Exit,
+                Action::Sleep =&gt; {
+                    if let Some(duration) = self.state.duration().cloned() {
+                        // Sleep is an I/O action, we dispatch on the IO channel that's run on another thread
+                        self.dispatch(IoEvent::Sleep(duration)).await
+                    }
+                    AppReturn::Continue
+                }
+            }
+        } else {
+            warn!(&quot;No action accociated to {}&quot;, key);
+            AppReturn::Continue
+        }
+    }
+
+    // ... code omitted
+}
+</code></pre>
+
+<p>To continue this step, we will manage an utterly simple state machine.</p>
+
+<p><img src="/blog/2021-tui/plop-ui-state.svg" alt="step 2 - state"></p>
+
+<p>To do this in the <code>start_ui</code> function, we will trigger an <code>IoEvent::Initialize</code>.</p>
+
+<pre><code class="language-rust">// lib.rs
+pub async fn start_ui(app: &amp;Arc&lt;tokio::sync::Mutex&lt;App&gt;&gt;) -&gt; Result&lt;()&gt; {
+    // ...
+
+    // Trigger state change from Init to Initialized
+    {
+        let mut app = app.lock().await;
+        // Here we assume the the first load is doing I/O
+        app.dispatch(IoEvent::Initialize);
+    } // lock goes out of scope here
+
+    loop {
+        //  ...
+    }
+    // ...
+}
+</code></pre>
+
+<p>The application exposes a method for this state transition.</p>
+
+<pre><code class="language-rust">// app/mod.rs
+impl App {
+    pub fn initialized(&amp;mut self) {
+        // Update contextual actions
+        self.actions = vec![Action::Quit, Action::Sleep].into();
+        self.state = AppState::initialized()
+    }
+    // ...
+}
+</code></pre>
+
+<p><img src="/blog/2021-tui/step-2.png" alt="step 2"></p>
+
+<p>To finish this step, we can update the <code>Events</code> to replace the standard lib <code>channel</code> with the one from Tokio. It produces a more consistent code, but it needs to break the loop when we want to stop the application. We use an <code>Arc&lt;AtomicBool&gt;</code> share the boolean that say when we need to break the input loop. To see these changes, you can look at this <a href="https://github.com/ilaborie/plop-tui/commit/5e01de9d5e4584a75ed0c7086fb52637ef84d01a">commit</a>.</p>
+
+<p>You can find the code at this step <a href="https://github.com/ilaborie/plop-tui/tree/blog/step-2">here</a>.</p>
+
+<p><em>Et voilà</em>, we have a base to create a tui application.</p>
+
+<h3 id="step-3-extra">Step 3 - Extra</h3>
+
+<p>Now we can add features, like the possibility to change the sleep duration.
+But first, we&rsquo;ll start by displaying the logs.</p>
+
+<p>Currently, in the project, we use the <a href="https://github.com/rust-lang/log">log</a> facade, but we don&rsquo;t use any implementation.
+I like to use <a href="https://github.com/seanmonstar/pretty-env-logger">pretty_env_logger</a> on simple projects. Here, the context is different, we want to see the logs in my UI.
+For that, there is an implementation that comes with a widget for tui: <a href="https://github.com/gin66/tui-logger">tui-logger</a>.</p>
+
+<p>First, we configure the log in the <code>main.rs</code> before starting the I/O thread.
+This implementation captures the logs to display them in a widget.</p>
+
+<pre><code class="language-rust">// Configure log
+tui_logger::init_logger(LevelFilter::Debug).unwrap();
+tui_logger::set_default_level(log::LevelFilter::Debug);
+</code></pre>
+
+<p>Then we have to add the widget in our layout:</p>
+
+<pre><code class="language-rust">// app/ui.rs
+fn draw_logs&lt;'a&gt;() -&gt; TuiLoggerWidget&lt;'a&gt; {
+    TuiLoggerWidget::default()
+        .style_error(Style::default().fg(Color::Red))
+        .style_debug(Style::default().fg(Color::Green))
+        .style_warn(Style::default().fg(Color::Yellow))
+        .style_trace(Style::default().fg(Color::Gray))
+        .style_info(Style::default().fg(Color::Blue))
+        .block(
+            Block::default()
+                .title(&quot;Logs&quot;)
+                .border_style(Style::default().fg(Color::White).bg(Color::Black))
+                .borders(Borders::ALL),
+        )
+        .style(Style::default().fg(Color::White).bg(Color::Black))
+}
+</code></pre>
+
+<p>You can also use the smart widget that allows you to filter the messages you want to see.</p>
+
+<p><img src="/blog/2021-tui/step-3-logger.png" alt="step 3 - Logger"></p>
+
+<p>To change the sleep duration, we&rsquo;ll use a <a href="https://docs.rs/tui/0.15.0/tui/widgets/struct.LineGauge.html"><code>tui::widgets::LineGauge</code></a>. The actions <code>Action::IncrementDelay</code> and <code>Action::DecrementDelay</code> can update the sleeping duration.</p>
+
+<pre><code class="language-rust">// app/ui.rs
+fn draw_duration(duration: &amp;Duration) -&gt; LineGauge {
+    let sec = duration.as_secs();
+    let label = format!(&quot;{}s&quot;, sec);
+    let ratio = sec as f64 / 10.0;
+    LineGauge::default()
+        .block(
+            Block::default()
+                .borders(Borders::ALL)
+                .title(&quot;Sleep duration&quot;),
+        )
+        .gauge_style(
+            Style::default()
+                .fg(Color::Cyan)
+                .bg(Color::Black)
+                .add_modifier(Modifier::BOLD),
+        )
+        .line_set(line::THICK)
+        .label(label)
+        .ratio(ratio)
+}
+</code></pre>
+
+<p>To keep the value within an appropriate range, we used a <code>clamp</code> in our state.
+Or we could have enhanced our <code>Actions</code> to make our actions disable/enable depending on our state.</p>
+
+<p><img src="/blog/2021-tui/step-3-duration.png" alt="step 3 - Sleeping time"></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Getting past the little pitfalls, it&rsquo;s pretty easy to make a rich end-user application. You can do some nice things once this structure is in place. It&rsquo;s a pity to deprive yourself of this possibility when your application lends itself well to it.</p>
+
+<p>But, compared to what you can do on the Web, it&rsquo;s quite heavy to make a layout. I indeed love CSS and the new Flex and Grid layouts, and it&rsquo;s hard to do without them once you&rsquo;re used to them.
+We can do something interesting with declarative macros to reduce the boilerplate. To investigate if you are motivated.</p>
+
+<p>For my part, I prefer to leave it there, all this made me want to sleep.
+🦥</p>
+
+<p>You can find the source code <a href="https://github.com/ilaborie/plop-tui">here</a>, and I leave you some useful links to finish:</p>
+
+<ul>
+<li>To start with Rust: <a href="https://doc.rust-lang.org/book/">Rust Book</a></li>
+<li>Rust book for command-line applications <a href="https://rust-cli.github.io/book/index.html">Rust CLI Book</a></li>
+<li><a href="https://tokio.rs/">Tokio</a></li>
+<li><a href="https://github.com/fdehau/tui-rs">tui-rs</a></li>
+<li><a href="https://github.com/gin66/tui-logger">Logger Widget for TUI</a></li>
+<li>A blog post <a href="https://blog.logrocket.com/rust-and-tui-building-a-command-line-interface-in-rust/">Rust and TUI: Building a command-line interface in Rust</a></li>
+<li>Another article <a href="https://keliris.dev/improving-spotify-tui/">Improving spotify-tui: going async</a></li>
+<li>An alternative that uses ncurses: <a href="https://github.com/gyscos/cursive">Cursive</a></li>
+</ul></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/ilaborie" rel="author">
+                <img src="http://www.gravatar.com/avatar/5870075cc4934bb7c32f2a6c56cc4f8d?s=48" alt="Igor Laborie">
+                <span>Igor Laborie</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGGFWH');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGGFWH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script src="/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-rust.min.js" integrity="sha512-a+IgkN5sZbEosACcEWe/sM44yttZ31//JRCMMJ/iJvFqyMf5BFDTwClDikRSq9IFNCF5arl3VXl+43PIh+z77A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-toml.min.js" integrity="sha512-nR+DujZm33eiRbZSfMapBdGw+1a8yQCknJxCkdSqxWunDODhOv35GVaU1zUM1vqO0iHL86LRV9EGNi7EkjSFkw==" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>
