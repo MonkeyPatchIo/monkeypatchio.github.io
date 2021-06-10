@@ -6,10 +6,19 @@
     <description>Recent content in Accueil on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust: Open Service Broker API (Part 2)</title>
+      <link>https://www.monkeypatch.io/blog/2021/2021-06-10-openservicebrokerapi-rust-part02/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2021/2021-06-10-openservicebrokerapi-rust-part02/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/&#34;&gt;In this blog series&lt;/a&gt;, we will discover how to extend service catalog of your cloud solution using Rust. This second blog post is about implementing our provider for the first entity: catalog.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rust: Playing with tui-rs</title>
@@ -290,7 +299,7 @@ Même si ça a été la course pour organiser le premier événement en moins de
       <guid>https://www.monkeypatch.io/blog/2017/2017-08-03-jotb-jepsen-workshop/</guid>
       <description>&lt;p&gt;The first book I&amp;rsquo;ve read about distributed systems was
 &lt;a href=&#34;https://www.amazon.fr/Distributed-Systems-Principles-Andrew-Tanenbaum/dp/0132392275&#34;&gt;Distributed Systems: Principles and Paradigms&lt;/a&gt;
-by Andrew S. Tanenbaum and Maarten van Steen.&lt;br /&gt;
+by Andrew S. Tanenbaum and Maarten van Steen.
 I was reading at the library on my last year of study and I remember being
 confused very often, and to be honest I didn&amp;rsquo;t even finish it&amp;hellip;&lt;/p&gt;</description>
     </item>

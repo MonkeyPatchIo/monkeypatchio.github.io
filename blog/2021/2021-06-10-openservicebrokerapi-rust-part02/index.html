@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"><meta property="og:title" content="Rust: Open Service Broker API (Part 2)">
+<meta property="og:description" content="In this blog series, we will discover how to extend service catalog of your cloud solution using Rust. This second blog post is about implementing our provider for the first entity: catalog.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.monkeypatch.io/blog/2021/2021-06-10-openservicebrokerapi-rust-part02/">
+
+<meta property="og:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logos/logo-mkp-head-blue-x126.png">
+
+<meta property="og:image" content="https://www.monkeypatch.io/images/logo-monochrome.svg">
+<meta property="article:published_time" content="2021-06-10T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-06-10T00:00:00+00:00"><meta property="og:site_name" content="MonkeyPatch">
+<meta itemprop="name" content="Rust: Open Service Broker API (Part 2)">
+<meta itemprop="description" content="In this blog series, we will discover how to extend service catalog of your cloud solution using Rust. This second blog post is about implementing our provider for the first entity: catalog.">
+
+
+<meta itemprop="datePublished" content="2021-06-10T00:00:00&#43;00:00">
+<meta itemprop="dateModified" content="2021-06-10T00:00:00&#43;00:00">
+<meta itemprop="wordCount" content="2682">
+
+
+
+<meta itemprop="keywords" content="rust,service-broker,cloud,rust-openservicebroker-api-series,">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.monkeypatch.io/public/images/logos/logo-mkp-blue-x256.png">
+
+<meta name="twitter:title" content="Rust: Open Service Broker API (Part 2)">
+<meta name="twitter:description" content="In this blog series, we will discover how to extend service catalog of your cloud solution using Rust. This second blog post is about implementing our provider for the first entity: catalog.">
+<meta name="generator" content="Hugo 0.56.3">
+
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+
+<title>MonkeyPatch  | Rust: Open Service Broker API (Part 2)</title>
+
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.monkeypatch.io/styles/main.cea8f8aa0f1b8bfcfb93f12b6bc4405c64a6997deac8f660bbf57ba87008199f.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    
+    
+    
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-tomorrow.min.css" integrity="sha256-4S9ufRr1EqaUFFeM9/52GH68Hs1Sbvx8eFXBWpl8zPI=" crossorigin="anonymous">
+
+</head>
+
+<body class="page blog blog-2021-2021-06-10-openservicebrokerapi-rust-part02">
+
+    
+    <header>
+    
+    <div class="menu">
+        <div class="logo">
+            <a href="https://www.monkeypatch.io/">
+                <img alt="Monkey Patch" src="/images/logos/logo-monkey.svg">
+            </a>
+        </div>
+
+        <nav class="lang">
+            <ul>
+                
+                <li class="active">
+                    <a href="https://www.monkeypatch.io/">FR</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/en/">FR</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="menu">
+            <ul>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/contact/">Contact</a>
+                </li>
+                
+                <li class="">
+                    <a href="https://www.monkeypatch.io/blog/">Blog</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <nav class="hamburger">
+            <label for="menu-hamburger">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+        </nav>
+
+    </div>
+    <input type="checkbox" id="menu-hamburger">
+    <nav class="menu-hamburger">
+        <ul>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/expert/">Notre Expertise</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/about/">Notre Philo</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/careers/">Être Monkeys</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/jobs/">Nos Jobs</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/contact/">Contact</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/blog/">Blog</a>
+            </li>
+            
+        </ul>
+        <ul class="lang">
+            
+            <li class="active">
+                <a href="https://www.monkeypatch.io/">FR</a>
+            </li>
+            
+            <li class="">
+                <a href="https://www.monkeypatch.io/en/">FR</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+    
+
+    <main>
+        <a id="top"></a>
+        
+
+<section class="post">
+    <a id="top" name="top"></a>
+    <h1>
+        <span>Rust: Open Service Broker API (Part 2)</span>
+    </h1>
+
+
+    <span class="date">
+    June 
+    10th,
+    2021
+</span>
+
+
+    <div class="tags">
+        
+        
+        <span>rust</span>
+        
+        <span>service-broker</span>
+        
+        <span>cloud</span>
+        
+        <span>rust-openservicebroker-api-series</span>
+        
+    </div>
+
+    <article><p><a href="https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/">In this blog series</a>, we will discover how to extend service catalog of your cloud solution using Rust. This second blog post is about implementing our provider for the first entity: catalog.</p>
+
+<h2 id="let-s-design-catalog">Let&rsquo;s design catalog</h2>
+
+<p>The Open Service Broker API is based around three major concepts: service, instance and binding. Listing provided services is made through <code>/v2/catalog</code> endpoint. Let&rsquo;s first design <del>entities</del> structs (<a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/spec.md#service-offering-object">spec</a>):</p>
+
+<pre><code class="language-rust">struct Catalog {
+    services: Vec&lt;Service&gt;,
+}
+
+struct Service {
+    name: String,
+    id: String,
+    description: String,
+    tags: Vec&lt;String&gt;,
+    requires: Vec&lt;String&gt;,
+    bindable: bool,
+    instances_retrievable: Option&lt;bool&gt;,
+    bindings_retrievable: Option&lt;bool&gt;,
+    allow_context_updates: Option&lt;bool&gt;,
+    metadata: HashMap&lt;String, String&gt;,
+    // dashboard_client: Option&lt;DashboardClient&gt;,
+    plan_updateable: Option&lt;bool&gt;,
+    plans: Vec&lt;ServicePlan&gt;,
+}
+
+struct ServicePlan {
+    id: String,
+    name: String,
+    description: String,
+    metadata: HashMap&lt;String, String&gt;,
+    free: Option&lt;bool&gt;,
+    bindable: Option&lt;bool&gt;,
+    plan_updateable: Option&lt;bool&gt;,
+    // schemas: Option&lt;Schemas&gt;,
+    maximum_polling_duration: Option&lt;u64&gt;,
+    // maintenance_info: Option&lt;MaintenanceInfo&gt;,
+}
+</code></pre>
+
+<p><em>Notes:</em></p>
+
+<ul>
+<li>Accessor and mutator aren&rsquo;t shown there. They can be added as structs are coded, but can also be added during refactoring steps.</li>
+<li><em><a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/profile.md#service-metadata">Service metadata</a> is supposed to be free-form object but to keep it simple, it&rsquo;s implemented as simple key-value string pairs.</em></li>
+<li><em><a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/profile.md#dashboard-client-object"><code>DashboardClient</code></a> is not implemented.</em></li>
+<li><em><a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/spec.md#schemas-object"><code>Schemas</code></a> is not implemented.</em></li>
+<li><em><a href="https://github.com/openservicebrokerapi/servicebroker/blob/v2.15/spec.md#maintenance-info-object"><code>MaintenanceInfo</code></a> is not implemented.</em></li>
+<li><em>DON&rsquo;T FORGET TO RE-RUN TEST !</em></li>
+</ul>
+
+<p>OK, that&rsquo;s a nice struct design but don&rsquo;t forget JSON support ! As previously, just add <code>#[derive(Serialize, Deserialize)]</code> from <a href="https://serde.rs/">Serde</a> to each struct.</p>
+
+<p>In order to make things cleaner, let&rsquo;s move all those structs into a <code>model</code> sub-module.</p>
+
+<h2 id="let-s-define-catalog">Let&rsquo;s define Catalog</h2>
+
+<p>Many sources/ways to define Catalog should be supported. Let&rsquo;s begin providing an implementation based on a &ldquo;static&rdquo; configuration. As usual, a test must be added first:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+mod tests {
+    use super::{model, CatalogProvider};
+
+    fn build_catalog() -&gt; model::Catalog {
+        let mut catalog = model::Catalog::new();
+
+
+        let mut mysql = model::Service::new();
+        *mysql.id_mut() = &quot;mysql&quot;.to_owned();
+        *mysql.name_mut() = &quot;MySQL&quot;.to_owned();
+
+        let mut mysql_free = model::ServicePlan::new();
+        *mysql_free.id_mut() = &quot;mysql_free&quot;.to_owned();
+        *mysql_free.name_mut() = &quot;MySQL (Free)&quot;.to_owned();
+        mysql.plans_mut().push(mysql_free);
+
+        let mut mysql_small = model::ServicePlan::new();
+        *mysql_small.id_mut() = &quot;mysql_small&quot;.to_owned();
+        *mysql_small.name_mut() = &quot;MySQL (Small)&quot;.to_owned();
+        mysql.plans_mut().push(mysql_small);
+
+        catalog.services_mut().push(mysql);
+
+
+        let mut pgsql = model::Service::new();
+        *pgsql.id_mut() = &quot;pgsql&quot;.to_owned();
+        *pgsql.name_mut() = &quot;PostgreSQL&quot;.to_owned();
+
+        let mut pgsql_free = model::ServicePlan::new();
+        *pgsql_free.id_mut() = &quot;pgsql_free&quot;.to_owned();
+        *pgsql_free.name_mut() = &quot;PostgreSQL (Free)&quot;.to_owned();
+        pgsql.plans_mut().push(pgsql_free);
+
+        let mut pgsql_small = model::ServicePlan::new();
+        *pgsql_small.id_mut() = &quot;pgsql_small&quot;.to_owned();
+        *pgsql_small.name_mut() = &quot;PostgreSQL (Small)&quot;.to_owned();
+        pgsql.plans_mut().push(pgsql_small);
+
+        catalog.services_mut().push(pgsql);
+
+
+        catalog
+    }
+
+    #[test]
+    fn catalog_provider_static() {
+        let provider = CatalogProvider::from_static(build_catalog());
+
+        let catalog  = provider.get_catalog();
+        let mut services = catalog.services().iter();
+
+
+        if let Some(mysql) = services.next() {
+            assert_eq!(&quot;mysql&quot;, mysql.id(), &quot;mysql.id&quot;);
+            assert_eq!(&quot;MySQL&quot;, mysql.name(), &quot;mysql.name&quot;);
+
+            let mut plans = mysql.plans().iter();
+
+            if let Some(mysql_free) = plans.next() {
+                assert_eq!(&quot;mysql_free&quot;, mysql_free.id(), &quot;mysql.plans.free.id&quot;);
+                assert_eq!(&quot;MySQL (Free)&quot;, mysql_free.name(), &quot;mysql.plans.free.name&quot;);
+            } else {
+                panic!(&quot;Missing MySQL Free plan&quot;);
+            }
+
+            if let Some(mysql_small) = plans.next() {
+                assert_eq!(&quot;mysql_small&quot;, mysql_small.id(), &quot;mysql.plans.small.id&quot;);
+                assert_eq!(&quot;MySQL (Small)&quot;, mysql_small.name(), &quot;mysql.plans.small.name&quot;);
+            }
+
+            assert!(plans.next().is_none(), &quot;mysql.plans.end&quot;);
+        } else {
+            panic!(&quot;Missing MySQL service&quot;);
+        }
+
+
+        if let Some(pgsql) = services.next() {
+            assert_eq!(&quot;pgsql&quot;, pgsql.id(), &quot;pgsql.id&quot;);
+            assert_eq!(&quot;PostgreSQL&quot;, pgsql.name(), &quot;pgsql.name&quot;);
+
+            let mut plans = pgsql.plans().iter();
+
+            if let Some(pgsql_free) = plans.next() {
+                assert_eq!(&quot;pgsql_free&quot;, pgsql_free.id(), &quot;pgsql.plans.free.id&quot;);
+                assert_eq!(&quot;PostgreSQL (Free)&quot;, pgsql_free.name(), &quot;pgsql.plans.free.name&quot;);
+            } else {
+                panic!(&quot;Missing PostgreSQL Free plan&quot;);
+            }
+
+            if let Some(pgsql_small) = plans.next() {
+                assert_eq!(&quot;pgsql_small&quot;, pgsql_small.id(), &quot;pgsql.plans.small.id&quot;);
+                assert_eq!(&quot;PostgreSQL (Small)&quot;, pgsql_small.name(), &quot;pgsql.plans.small.name&quot;);
+            }
+
+            assert!(plans.next().is_none(), &quot;pgsql.plans.end&quot;);
+        } else {
+            panic!(&quot;Missing PostgreSQL service&quot;);
+        }
+
+
+        assert!(services.next().is_none(), &quot;services.end&quot;);
+    }
+
+}
+</code></pre>
+
+<p>What may <code>fn CatalogProvider::get_catalog()</code> look like ? In fact, test usage works with both owned or borrowed instances. So, how to choose between both ? There is no universal response. Providing borrowed instances doesn&rsquo;t prevent user to get their owned instance if they <a href="https://doc.rust-lang.org/std/clone/trait.Clone.html"><code>Clone</code></a>. However, it means borrow lifetime is bound to provider one and must be owned by it. Such, if a new catalog instance is created at each call, provider must still keep ownership of the instance.</p>
+
+<p>So, no flexible solutions ? Yes, there are. To be honest ownership or borrowing are not strictly required, that&rsquo;s <a href="https://doc.rust-lang.org/std/ops/trait.Deref.html"><code>Deref</code></a> ! Such structs like <a href="https://doc.rust-lang.org/std/rc/struct.Rc.html"><code>Rc</code></a> or <a href="https://doc.rust-lang.org/std/borrow/enum.Cow.html"><code>Cow</code></a> implement it. This is this last one that will be used for its flexibility:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+struct CatalogProvider {
+    catalog: model::Catalog,
+}
+
+impl CatalogProvider {
+    fn from_static(catalog: model::Catalog) -&gt; CatalogProvider {
+        CatalogProvider {
+            catalog,
+        }
+    }
+
+    fn get_catalog(&amp;self) -&gt; Cow&lt;model::Catalog&gt; {
+        Cow::Borrowed(&amp;self.catalog)
+    }
+}
+</code></pre>
+
+<p>But now, <code>Catalog</code> must support <a href="https://doc.rust-lang.org/std/clone/trait.Clone.html"><code>Clone</code></a>:</p>
+
+<pre><code class="language-rust">// src/model.rs
+#[derive(Clone)]
+struct Catalog;
+
+#[derive(Clone)]
+struct Service;
+
+#[derive(Clone)]
+struct ServicePlan;
+</code></pre>
+
+<h2 id="let-s-load-catalog">Let&rsquo;s load Catalog</h2>
+
+<p>For developer that can hardcode Catalog, it&rsquo;s fine but if they want to load catalog from their environment ? using a file for example ? Let&rsquo;s support that !</p>
+
+<p>First, previous test will be reused:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+mod tests {
+
+    fn check_catalog_provider(provider: CatalogProvider) {
+        let catalog  = provider.get_catalog();
+        // ...
+    }
+
+    #[test]
+    fn catalog_provider_static() {
+        let provider = CatalogProvider::from_static(build_catalog());
+        check_catalog_provider(provider);
+    }
+
+    #[test]
+    fn catalog_provider_file_json() {
+        let provider = CatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;);
+        check_catalog_provider(provider);
+    }
+
+}
+</code></pre>
+
+<p>And the test file:</p>
+
+<pre><code class="language-json">{
+    &quot;services&quot;: [
+        {
+            &quot;id&quot;: &quot;mysql&quot;,
+            &quot;name&quot;: &quot;MySQL&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;tags&quot;: [],
+            &quot;requires&quot;: [],
+            &quot;bindable&quot;: true,
+            &quot;metadata&quot;: {},
+            &quot;plans&quot;: [
+                {
+                    &quot;id&quot;: &quot;mysql_free&quot;,
+                    &quot;name&quot;: &quot;MySQL (Free)&quot;,
+                    &quot;description&quot;: &quot;&quot;,
+                    &quot;metadata&quot;: {}
+                },
+                {
+                    &quot;id&quot;: &quot;mysql_small&quot;,
+                    &quot;name&quot;: &quot;MySQL (Small)&quot;,
+                    &quot;description&quot;: &quot;&quot;,
+                    &quot;metadata&quot;: {}
+                }
+            ]
+        },
+        {
+            &quot;id&quot;: &quot;pgsql&quot;,
+            &quot;name&quot;: &quot;PostgreSQL&quot;,
+            &quot;description&quot;: &quot;&quot;,
+            &quot;tags&quot;: [],
+            &quot;requires&quot;: [],
+            &quot;bindable&quot;: true,
+            &quot;metadata&quot;: {},
+            &quot;plans&quot;: [
+                {
+                    &quot;id&quot;: &quot;pgsql_free&quot;,
+                    &quot;name&quot;: &quot;PostgreSQL (Free)&quot;,
+                    &quot;description&quot;: &quot;&quot;,
+                    &quot;metadata&quot;: {}
+                },
+                {
+                    &quot;id&quot;: &quot;pgsql_small&quot;,
+                    &quot;name&quot;: &quot;PostgreSQL (Small)&quot;,
+                    &quot;description&quot;: &quot;&quot;,
+                    &quot;metadata&quot;: {}
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<p>And the implementation:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+impl CatalogProvider {
+    // ...
+    fn from_file_json(path: &amp;str) -&gt; CatalogProvider {
+        let file = std::fs::File::open(path).expect(&amp;format!(&quot;File '{}' not found&quot;, path));
+        let catalog: model::Catalog = serde_json::from_reader(file).expect(&amp;format!(&quot;Invalid JSON file '{}'&quot;, path));
+        Self::from_static(catalog)
+    }
+}
+</code></pre>
+
+<p><em>Note: Error management in this implementation doesn&rsquo;t reflect good practices. Better solution coming soon !</em></p>
+
+<p>Then just refactor and move <code>CatalogProvider</code> to a <code>service</code> module.</p>
+
+<h2 id="let-s-integrate-provider">Let&rsquo;s integrate provider</h2>
+
+<p><code>fn get_catalog()</code> handler is still always returning a fresh empty catalog on each call. First, adapt tests:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+mod tests {
+    use actix_web::web;
+
+    async fn test_get_catalog() {
+        // ...
+        let provider = service::CatalogProvider::from_static(model::Catalog::new());
+        let res = get_catalog(req, web::Data::new(provider)).await;
+        // ...
+    }
+}
+
+
+// tests/get_catalog.rs
+async fn main() {
+    // ...
+        App::new()
+            .data(osb::service::CatalogProvider::from_static(osb::model::Catalog::new()))
+    // ...
+}
+
+// src/bin/dummy-servicebroker.rs
+async fn main() -&gt; std::io::Result&lt;()&gt; {
+    // ...
+        App::new()
+            .data(osb::service::CatalogProvider::from_static(osb::model::Catalog::new()))
+    // ...
+}
+</code></pre>
+
+<p>Then, adapt implementation:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+pub async fn get_catalog(_req: HttpRequest, data: web::Data&lt;service::CatalogProvider&gt;) -&gt; HttpResponse {
+    HttpResponse::Ok().json(data.get_catalog())
+}
+</code></pre>
+
+<p>Re-run test to check everything works fine, then adapt <code>dummy-servicebroker</code> binary to load default catalog !</p>
+
+<p>Let&rsquo;s refactor a little bit more by defining a <a href="https://docs.rs/actix-web/2.0.0/actix_web/struct.Scope.html"><code>Scope</code></a>:</p>
+
+<pre><code class="language-rust">// src/lib.rs
+pub fn new_scope(path: &amp;str, catalog: service::CatalogProvider) -&gt; actix_web::Scope {
+    actix_web::Scope::new(path)
+                     .data(catalog)
+                     .route(&quot;/v2/catalog&quot;, web::get().to(get_catalog))
+}
+
+// tests/get_catalog.rs
+        App::new()
+            .service(
+                osb::new_scope(
+                    &quot;&quot;,
+                    osb::service::CatalogProvider::from_static(osb::model::Catalog::new())
+                )
+            )
+
+
+// src/bin/dummy-servicebroker.rs
+        App::new()
+            .service(
+                osb::new_scope(
+                    &quot;&quot;,
+                    osb::service::CatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;)
+                )
+            )
+</code></pre>
+
+<h2 id="let-s-handle-the-errors">Let&rsquo;s handle the errors</h2>
+
+<p>Before going further with <code>CatalogProvider</code>, error handling must be improved. For the moment <a href="https://doc.rust-lang.org/std/result/enum.Result.html#method.expect"><code>expect(..)</code></a> is used but it panics on failure, causing a fatal error (aka a &ldquo;crash&rdquo;) of the application with no chance to:</p>
+
+<ul>
+<li>provide a detailed message to final user (not developer using library),</li>
+<li>let developers catch errors and handling them as they wish.</li>
+</ul>
+
+<p>In Rust, <a href="https://doc.rust-lang.org/std/result/enum.Result.html"><code>Result</code> struct</a> and <a href="https://doc.rust-lang.org/std/error/trait.Error.html"><code>Error</code> trait</a> are used for catchable failures. A very simple improvement can be:</p>
+
+<pre><code class="language-rust">// src/service.rs
+    pub fn from_file_json(path: &amp;str) -&gt; Result&lt;CatalogProvider, Box&lt;dyn Error + 'static&gt;&gt; {
+        let file = std::fs::File::open(path)?;
+        let catalog: model::Catalog = serde_json::from_reader(file)?;
+        Ok(Self::from_static(catalog))
+    }
+
+    #[test]
+    fn catalog_provider_file_json() {
+        let provider = CatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;).expect(&quot;catalog load failed&quot;);
+        check_catalog_provider(provider);
+    }
+
+    // new !
+    #[test]
+    fn catalog_provider_file_json_missing() {
+        let error = CatalogProvider::from_file_json(&quot;tests/missing_catalog.json&quot;).err().expect(&quot;catalog load MUST fail&quot;);
+        let ioerror = error.downcast_ref::&lt;std::io::Error&gt;().expect(&quot;catalog load error must be an I/O one&quot;);
+        assert_eq!(std::io::ErrorKind::NotFound, ioerror.kind());
+    }
+
+// src/bin/dummy-servicebroker.rs
+                osb::new_scope(
+                    &quot;&quot;,
+                    osb::service::CatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;)
+                                                  .expect(&quot;Error on loading default catalog&quot;)
+                )
+</code></pre>
+
+<p>Due to some limitations of Actix (closure factory can&rsquo;t fail and may be called many times), changes to our dummy Service Broker is more important:</p>
+
+<pre><code class="language-rust">// src/service.rs
+#[derive(Clone)]
+pub struct CatalogProvider
+
+// src/bin/dummy-servicebroker.rs
+#[actix_rt::main]
+async fn main() -&gt; Result&lt;(), Box&lt;dyn std::error::Error + 'static&gt;&gt; {
+    let catalog = osb::service::CatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;)?;
+    HttpServer::new(move || {
+        App::new()
+            .service(osb::new_scope(&quot;&quot;, catalog.clone()))
+    })
+    .bind(&quot;127.0.0.1:8080&quot;)?
+    .run()
+    .await?;
+    Ok(())
+}
+</code></pre>
+
+<p>Using <code>Box&lt;dyn Error + 'static&gt;</code> can be enough but to display context, you still need to encapsulate errors with your own types. Otherwise, consumers (i.e. developers) will have to dig into error stack recursively using <a href="https://doc.rust-lang.org/std/error/trait.Error.html#method.source"><code>source</code></a>.</p>
+
+<p><a href="https://crates.io/crates/anyhow"><code>anyhow</code> crate</a> provides facilities to help on the topic. First add it to <code>Cargo.toml</code>:</p>
+
+<pre><code class="language-toml">[dependencies]
+anyhow = &quot;1.0.32&quot;
+</code></pre>
+
+<p>Then, replace <code>Result&lt;T, Box&lt;dyn Error + 'static&gt;&gt;</code> by <code>anyhow::Result&lt;T&gt;</code>:</p>
+
+<pre><code class="language-rust">// src/service.rs
+use anyhow::Result;
+
+    pub fn from_file_json(path: &amp;str) -&gt; Result&lt;CatalogProvider&gt; {
+        let file = std::fs::File::open(path)?;
+        let catalog: model::Catalog = serde_json::from_reader(file)?;
+        Ok(Self::from_static(catalog))
+    }
+
+// src/bin/dummy-servicebroker.ts
+use anyhow::Result;
+
+async fn main() -&gt; Result&lt;()&gt; {
+    // ...
+}
+</code></pre>
+
+<p><em>Note: You may notice that except type, no other changes are required !</em></p>
+
+<p>Finally, adds <a href="https://docs.rs/anyhow/1.0.32/anyhow/trait.Context.html"><code>Context</code></a> to fallible code:</p>
+
+<pre><code class="language-rust">// src/service.rs
+use anyhow::Context;
+
+    pub fn from_file_json(path: &amp;str) -&gt; Result&lt;CatalogProvider&gt; {
+        let file = std::fs::File::open(path)
+                                 .with_context(|| format!(&quot;Access to catalog file '{}' has failed&quot;, path))?;
+        let catalog: model::Catalog = serde_json::from_reader(file)
+                                                 .with_context(|| format!(&quot;Can't read catalog file '{}' as JSON&quot;, path))?;
+        Ok(Self::from_static(catalog))
+    }
+
+// src/bin/dummy-servicebroker.ts
+use anyhow::Context;
+
+async fn main() -&gt; Result&lt;()&gt; {
+    let catalog = osb::service::CatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;)
+                                                .with_context(|| &quot;Error on loading default catalog&quot;)?;
+    // ...
+}
+</code></pre>
+
+<h2 id="let-s-open-catalog-provider-api">Let&rsquo;s open catalog provider API</h2>
+
+<p>Java language has popularized the <a href="https://en.wikipedia.org/wiki/Service_provider_interface">SPI (Service Provider Interface) pattern</a>. In this concept, some parts of your library is abstracted through interfaces (or <code>trait</code>). And everyone can provide implementations to extend your library capabilities (i.e. integrating with new librairies or providers). It also may be combined with service discovery for easier integration.</p>
+
+<p>So transform <code>CatalogProvider</code> from a <code>struct</code> to a <code>trait</code>:</p>
+
+<pre><code class="language-rust">// src/service.rs
+pub trait CatalogProvider {
+    fn get_catalog(&amp;self) -&gt; Cow&lt;model::Catalog&gt;;
+}
+
+#[derive(Clone)]
+pub struct SingleCatalogProvider {
+    catalog: model::Catalog,
+}
+
+impl SingleCatalogProvider {
+
+    pub fn from_static(catalog: model::Catalog) -&gt; SingleCatalogProvider {
+        SingleCatalogProvider {
+            catalog,
+        }
+    }
+
+    pub fn from_file_json(path: &amp;str) -&gt; Result&lt;SingleCatalogProvider&gt; {
+        // ...
+    }
+}
+
+impl CatalogProvider for SingleCatalogProvider {
+    fn get_catalog(&amp;self) -&gt; Cow&lt;model::Catalog&gt; {
+        Cow::Borrowed(&amp;self.catalog)
+    }
+}
+
+mod tests {
+    use super::SingleCatalogProvider;
+
+    // ...
+
+    fn check_catalog_provider(provider: SingleCatalogProvider) {
+        // ...
+    }
+
+    fn catalog_provider_static() {
+        let provider = SingleCatalogProvider::from_static(build_catalog());
+        // ...
+    }
+
+    fn catalog_provider_file_json() {
+        let provider = SingleCatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;).expect(&quot;catalog load fail&quot;);
+        // ...
+    }
+
+    fn catalog_provider_file_json_missing() {
+        let error = SingleCatalogProvider::from_file_json(&quot;tests/missing_catalog.json&quot;).err().expect(&quot;catalog load MUST fail&quot;);
+        // ...
+    }
+}
+
+
+// src/lib.rs
+pub fn new_scope(path: &amp;str, catalog: Box&lt;dyn service::CatalogProvider&gt;) -&gt; actix_web::Scope {}
+pub async fn get_catalog(_req: HttpRequest, data: web::Data&lt;Box&lt;dyn service::CatalogProvider&gt;&gt;) -&gt; HttpResponse {}
+
+mod tests {
+    // ...
+
+    async fn test_get_catalog() {
+        // ...
+        let provider = service::SingleCatalogProvider::from_static(model::Catalog::new());
+        let res = get_catalog(req, web::Data::new(Box::new(provider))).await;
+        // ...
+    }
+}
+
+
+// tests/get_catalog.rs
+async fn main() {
+    let catalog = osb::service::SingleCatalogProvider::from_static(osb::model::Catalog::new());
+    let mut app = test::init_service(
+        App::new()
+            .service(osb::new_scope(&quot;&quot;, Box::new(catalog)))
+    ).await;
+    // ...
+}
+
+
+// src/bin/dummy-servicebroker.rs
+async fn main() -&gt; Result&lt;()&gt; {
+    let catalog = osb::service::SingleCatalogProvider::from_file_json(&quot;tests/default_catalog.json&quot;)
+                                                      .with_context(|| &quot;Error on loading default catalog&quot;)?;
+    HttpServer::new(move || {
+        App::new()
+            .service(osb::new_scope(&quot;&quot;, Box::new(catalog.clone())))
+    })
+    .bind(&quot;127.0.0.1:8080&quot;)?
+    .run()
+    .await?;
+    Ok(())
+}
+</code></pre>
+
+<p>Now that <code>CatalogProvider</code> is abstracted, it&rsquo;s possible to transform file-based from a static (loaded on creation) to a dynamic version (loaded on each call):</p>
+
+<pre><code class="language-rust">// src/service.rs
+#[derive(Clone)]
+pub struct JsonFileCatalogProvider {
+    path: String,
+}
+
+impl JsonFileCatalogProvider {
+    pub fn new(path: &amp;str) -&gt; Self {
+        JsonFileCatalogProvider {
+            path: path.to_owned()
+        }
+    }
+
+    pub fn path(&amp;self) -&gt; &amp;str {
+        &amp;self.path
+    }
+}
+
+impl CatalogProvider for JsonFileCatalogProvider {
+    fn get_catalog(&amp;self) -&gt; Cow&lt;model::Catalog&gt; {
+        let path = self.path();
+        let file = std::fs::File::open(path)
+                                 .with_context(|| format!(&quot;Access to catalog file '{}' has failed&quot;, path))
+                                 .expect(&quot;&quot;);
+        let catalog: model::Catalog = serde_json::from_reader(file)
+                                                 .with_context(|| format!(&quot;Can't read catalog file '{}' as JSON&quot;, path))
+                                                 .expect(&quot;&quot;);
+        Cow::Owned(catalog)
+    }
+}
+
+mod tests {
+    use super::JsonFileCatalogProvider;
+
+    fn check_catalog_provider(provider: &amp;dyn CatalogProvider) {}
+
+    fn catalog_provider_static() {
+        // ...
+        check_catalog_provider(&amp;provider);
+    }
+
+    fn catalog_provider_file_json() {
+        // ...
+        check_catalog_provider(&amp;provider);
+    }
+
+    #[test]
+    fn catalog_provider_dynamic_file_json() {
+        let provider = JsonFileCatalogProvider::new(&quot;tests/default_catalog.json&quot;);
+        check_catalog_provider(&amp;provider);
+    }
+
+    #[test]
+    fn catalog_provider_dynamic_file_json_missing() {
+        let provider = JsonFileCatalogProvider::new(&quot;tests/default_catalog2.json&quot;);
+        let result = std::panic::catch_unwind(|| provider.get_catalog());
+        assert!(result.is_err());
+    }
+}
+</code></pre>
+
+<p>However, there&rsquo;s one major issue: error handling. Let&rsquo;s reapply the previously-shown fallible pattern with <code>anyhow::Result</code>:</p>
+
+<pre><code class="language-rust">// src/service.rs
+pub trait CatalogProvider {
+    fn get_catalog(&amp;self) -&gt; Result&lt;Cow&lt;model::Catalog&gt;&gt;;
+}
+
+impl CatalogProvider for SingleCatalogProvider {
+    fn get_catalog(&amp;self) -&gt; Result&lt;Cow&lt;model::Catalog&gt;&gt; {
+        Ok(Cow::Borrowed(&amp;self.catalog))
+    }
+}
+
+impl CatalogProvider for JsonFileCatalogProvider {
+    fn get_catalog(&amp;self) -&gt; Result&lt;Cow&lt;model::Catalog&gt;&gt; {
+        let path = self.path();
+        let file = std::fs::File::open(path)
+                                 .with_context(|| format!(&quot;Access to catalog file '{}' has failed&quot;, path))?;
+        let catalog: model::Catalog = serde_json::from_reader(file)
+                                                 .with_context(|| format!(&quot;Can't read catalog file '{}' as JSON&quot;, path))?;
+        Ok(Cow::Owned(catalog))
+    }
+}
+
+mod tests {
+    fn check_catalog_provider(provider: &amp;dyn CatalogProvider) {
+        let catalog  = provider.get_catalog().expect(&quot;Error on retrieving catalog&quot;);
+        // ...
+    }
+
+    #[test]
+    fn catalog_provider_dynamic_file_json_missing() {
+        let provider = JsonFileCatalogProvider::new(&quot;tests/missing_catalog.json&quot;);
+        let error = provider.get_catalog().err().expect(&quot;catalog load must fail&quot;);
+        let ioerror = error.downcast_ref::&lt;std::io::Error&gt;().expect(&quot;catalog load error must be an I/O one&quot;);
+        assert_eq!(std::io::ErrorKind::NotFound, ioerror.kind());
+    }
+}
+
+
+// src/lib.rs
+pub async fn get_catalog(_req: HttpRequest, data: web::Data&lt;Box&lt;dyn service::CatalogProvider&gt;&gt;) -&gt; HttpResponse {
+    match data.get_catalog() {
+        Ok(catalog) =&gt; HttpResponse::Ok().json(catalog),
+        Err(error)  =&gt; {
+            eprintln!(&quot;ERROR: {:?}&quot;, error);
+            HttpResponse::InternalServerError().finish()
+        },
+    }
+
+}
+
+mod tests {
+    #[actix_rt::test]
+    async fn test_get_catalog_missing() {
+
+        let req = test::TestRequest::get()
+                                    .uri(&quot;/v2/catalog&quot;)
+                                    .to_http_request();
+        let provider = service::JsonFileCatalogProvider::new(&quot;tests/missing_catalog.json&quot;);
+        let res = get_catalog(req, web::Data::new(Box::new(provider))).await;
+        assert_eq!(res.status(), http::StatusCode::INTERNAL_SERVER_ERROR);
+        match res.body() {
+            ResponseBody::Body(body)  =&gt; match body {
+                Body::Empty =&gt; (),
+                _           =&gt; panic!(&quot;Unexpected body type ({:?})&quot;, body),
+            },
+            ResponseBody::Other(body) =&gt; panic!(&quot;Found response body of type other ({:?})&quot;, body),
+        };
+    }
+}
+
+
+// tests/get_catalog.rs
+use actix_web::{test, App, http::StatusCode, body::{Body, ResponseBody}};
+
+#[actix_rt::test]
+async fn missing() {
+    let catalog = osb::service::JsonFileCatalogProvider::new(&quot;tests/missing_catalog.json&quot;);
+    let mut app = test::init_service(
+        App::new()
+            .service(osb::new_scope(&quot;&quot;, Box::new(catalog)))
+    ).await;
+    let req = test::TestRequest::get().uri(&quot;/v2/catalog&quot;).to_request();
+    let mut res = test::call_service(&amp;mut app, req).await;
+    assert_eq!(res.status(), StatusCode::INTERNAL_SERVER_ERROR);
+    match res.take_body() {
+        ResponseBody::Body(body)  =&gt; match body {
+            Body::Empty =&gt; (),
+            _           =&gt; panic!(&quot;Unexpected body type ({:?})&quot;, body),
+        },
+        ResponseBody::Other(body) =&gt; panic!(&quot;Found response body of type other ({:?})&quot;, body),
+    };
+}
+</code></pre>
+
+<p>Finally, let&rsquo;s reorganize things:</p>
+
+<pre><code class="language-rust">// src/service.rs
+pub trait CatalogProvider {
+    fn to_single(&amp;self) -&gt; Result&lt;SingleCatalogProvider&gt; {
+        self.get_catalog()
+            .map(|cow| match cow {
+                Cow::Owned(catalog)        =&gt; catalog,
+                Cow::Borrowed(catalog)     =&gt; catalog.clone(),
+            })
+            .map(|catalog| SingleCatalogProvider::new(catalog))
+    }
+}
+
+impl SingleCatalogProvider {
+    // Rename: from_static-&gt; new
+    pub fn new(catalog: model::Catalog) -&gt; SingleCatalogProvider { /* ... */ }
+
+    // Delete
+    //pub fn from_file_json(path: &amp;str) -&gt; Result&lt;SingleCatalogProvider&gt; { ... }
+}
+
+pub mod providers {
+    pub mod catalog {
+        use super::super::{model, SingleCatalogProvider, JsonFileCatalogProvider};
+
+        pub fn single(catalog: model::Catalog) -&gt; SingleCatalogProvider {
+            SingleCatalogProvider::new(catalog)
+        }
+
+        pub fn file_json(path: &amp;str) -&gt; JsonFileCatalogProvider {
+            JsonFileCatalogProvider::new(path)
+        }
+    }
+}
+
+mod tests {
+    // Delete
+    // fn catalog_provider_file_json()
+    // fn catalog_provider_file_json_missing()
+}
+
+
+// src/bin/dummy-servicebroker.rs
+use osb::service::CatalogProvider; // Enable `to_single` function
+
+async fn main() -&gt; Result&lt;()&gt; {
+    let catalog = osb::service::providers::catalog::file_json(&quot;tests/default_catalog.json&quot;)
+                                                   .to_single()
+                                                   .with_context(|| &quot;Error on loading default catalog&quot;)?;
+    // ...
+}
+</code></pre>
+
+<h2 id="let-s-cache-catalog-provider-result">Let&rsquo;s cache Catalog Provider result</h2>
+
+<p>As Catalog Provider API has now been opened, it&rsquo;s easy to extend. In last examples, JSON file Catalog Provider has been used and result has been directly put in cache at initialization through <code>to_single()</code> method. However, why not do it lazily (i.e. on first call) ?</p>
+
+<p>As fetching catalog isn&rsquo;t supposed to mutate provider, then <a href="https://doc.rust-lang.org/reference/interior-mutability.html">interior mutability</a> must be used:</p>
+
+<pre><code class="language-rust">// src/service.rs
+pub struct CachingCatalogProvider&lt;T: CatalogProvider&gt; {
+    provider: T,
+    cache: std::cell::RefCell&lt;Option&lt;SingleCatalogProvider&gt;&gt;,
+}
+
+impl&lt;T: CatalogProvider&gt; CachingCatalogProvider&lt;T&gt; {
+    pub fn new(provider: T) -&gt; Self {
+        CachingCatalogProvider {
+            provider,
+            cache: std::cell::RefCell::default(),
+        }
+    }
+}
+
+impl&lt;T: CatalogProvider&gt; CatalogProvider for CachingCatalogProvider&lt;T&gt; {
+    fn get_catalog(&amp;self) -&gt; Result&lt;Cow&lt;model::Catalog&gt;&gt; {
+        if let Some(provider) = self.cache.borrow().as_ref() {
+            let catalog = provider.get_catalog()?;
+            return Ok(Cow::Owned(catalog.into_owned()))
+        }
+        let caching = self.provider.to_single()?;
+        *self.cache.borrow_mut() = Some(caching);
+        self.get_catalog()
+    }
+}
+
+pub mod providers {
+    pub mod catalog {
+        use super::super::{CatalogProvider, CachingCatalogProvider};
+
+        pub fn cache&lt;T: CatalogProvider&gt;(provider: T) -&gt; CachingCatalogProvider&lt;T&gt; {
+            CachingCatalogProvider::new(provider)
+        }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::CachingCatalogProvider;
+    use anyhow::Result;
+
+    #[test]
+    fn catalog_provider_caching() {
+        struct Counting&lt;'a&gt; {
+            count: &amp;'a std::cell::Cell&lt;u32&gt;,
+        }
+        impl&lt;'a&gt; Counting&lt;'a&gt; {
+            fn new(count: &amp;'a std::cell::Cell&lt;u32&gt;) -&gt; Self {
+                Counting {
+                    count
+                }
+            }
+        }
+        impl&lt;'a&gt; CatalogProvider for Counting&lt;'a&gt; {
+            fn get_catalog(&amp;self) -&gt; Result&lt;std::borrow::Cow&lt;model::Catalog&gt;&gt; {
+                self.count.set(self.count.get() + 1);
+                Ok(std::borrow::Cow::Owned(model::Catalog::new()))
+            }
+        }
+        let counter = std::cell::Cell::default();
+
+        let cache   = CachingCatalogProvider::new(Counting::new(&amp;counter));
+        assert_eq!(0, counter.get());
+
+        assert!(cache.get_catalog().is_ok());
+        assert_eq!(1, counter.get());
+
+        assert!(cache.get_catalog().is_ok());
+        assert_eq!(1, counter.get());
+    }
+}
+</code></pre>
+
+<p>Maybe some explanations is needed. <a href="https://doc.rust-lang.org/std/cell/struct.RefCell.html"><code>RefCell</code></a> let us store  a value which references can be manipulated in controlled scope (i.e. blocks). Borrow rules are dynamically (i.e. at runtime) checked. Thus, we first check if there&rsquo;s some cached catalog holder (i.e. <code>SingleCatalogProvider</code>) and returns its catalog. Otherwise, read borrow is dropped and a write/mutable one is temporary obtain to update with cached catalog holder. Finally, recursively call the function to avoid repeating read code.</p>
+
+<p>For testing, a counting caller is implemented, still using interior mutability pattern. Then, just check there&rsquo;s no call during caching creation (i.e. lazy behavior) and call only once even if asked twice (i.e. cache behavior).</p>
+
+<p>Note that this implementation doesn&rsquo;t support <a href="https://doc.rust-lang.org/book/ch16-04-extensible-concurrency-sync-and-send.html">multithreading</a>, which is not a a problem as <a href="https://docs.rs/actix-web/2.0.0/actix_web/web/struct.Data.html">Actix manages it on its own</a>. But in similar way you can implement synchronous wrapper as an exercise.</p>
+
+<h2 id="let-s-go-further">Let&rsquo;s go further</h2>
+
+<p>Catalog provider is now ready and provide some good patterns for other providers but let&rsquo;s complete the API part before proceeding with other concepts. Complete code is available at <a href="https://github.com/loganmzz/rust-openservicebrokerapi/tree/part-02">https://github.com/loganmzz/rust-openservicebrokerapi/tree/part-02</a>.</p>
+
+<p>Next blog post coming soon&hellip;</p></article>
+
+    <div class="authors">
+        
+        <div class="author">
+            <a href="https://twitter.com/loganmzz" rel="author">
+                <img src="https://pbs.twimg.com/profile_images/915218711266684930/6lfxdqLu_400x400.jpg" alt="Logan Mauzaize">
+                <span>Logan Mauzaize</span>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "monkeypatchblog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+        
+        <footer class="top">
+    <div>
+      <h3>Rester en contact</h3>
+      <p>
+        <a class="contact icon-map" href="/contact">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <img src="/images/icons/Toulouse.png" alt="Toulouse">
+        </a>
+      </p>
+      <p>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <a class="mail" href="mailto:contact@monkeypatch.io">contact@monkeypatch.io</a>
+      </p>
+    </div>
+    <div class="social-network">
+      <h3>Réseaux sociaux</h3>
+      <ul class="social">
+        <li>
+          <a href="https://twitter.com/monkeypatch_io">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/monkeypatch-io">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
+</footer>
+
+<footer class="bottom">
+  <div>
+    Copyright @ 2019 MonkeyPatch -<a href="/terms">Termes et conditions</a>
+  </div>
+  <div>
+    Made with <i class="fa fa-heart" aria-hidden="true"></i> In Toulouse
+  </div>
+  <a class="goToTop" href="#top">
+    <i class="fa fa-caret-up" aria-hidden="true"></i>
+  </a>
+</footer>
+
+        
+    </main>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KGGFWH');</script>
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGGFWH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script src="/scripts/modernizr-custom.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-haskell.min.js" integrity="sha256-MxfNlM5EW2pm9DZPWGvreAHxKNF8NK8DaLSVVtG+MjE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-clojure.min.js" integrity="sha256-eGVrzVqJ/GigoW8fpafNd5j00+zIESDj7FeJcrBUlrA=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-kotlin.min.js" integrity="sha256-BLmzS+mVDv8mg8ciLO7Lxoz1vAYhFtyboFOT0EMY+lg=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-c.min.js" integrity="sha256-POQgKdZt7XGlcjT5opjx6fXs/Pt4eao8x7Q8JRaa/1A=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-brainfuck.min.js" integrity="sha256-VMnAWpm0qsoKYhwjGWpbpIFoEqmKFqgRMvrsPe4SLA8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-lolcode.js" integrity="sha256-GfPLGNDlIwgQKINyzfQdNvX/cI3Pm9/4nQRGez7eMtc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-typescript.min.js" integrity="sha256-m2ghaPy1JKNwDlCG/ObigLWw9/7qGHvUhoXp6odkcTI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-json.min.js" integrity="sha256-oA5rMHeAX+cg/CdcQ0VHmIqqw/IW4o2KAUEjo4QvShs=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-yaml.min.js" integrity="sha256-pxsoS7PqPuy6D5T0Dq2PEXKJ5SRlIkdG8hpoMxQ0YlM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.min.js" integrity="sha256-4jBV//QjNNXvyK55J0R2NwTbl2SAzk/4DHBynIhrxWQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-rust.min.js" integrity="sha512-a+IgkN5sZbEosACcEWe/sM44yttZ31//JRCMMJ/iJvFqyMf5BFDTwClDikRSq9IFNCF5arl3VXl+43PIh+z77A==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-toml.min.js" integrity="sha512-nR+DujZm33eiRbZSfMapBdGw+1a8yQCknJxCkdSqxWunDODhOv35GVaU1zUM1vqO0iHL86LRV9EGNi7EkjSFkw==" crossorigin="anonymous"></script>
+
+
+<script>
+Array.from(document.querySelectorAll(".post article [id]"))
+    .forEach(function (elt) {
+        var id = elt.getAttribute("id");
+        var content = elt.textContent;
+        elt.innerHTML = '<a class="anchor" href="#' + id + '">' + content + '</a>';
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://www.monkeypatch.io/</loc>
-    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -19,17 +19,17 @@
   
   <url>
     <loc>https://www.monkeypatch.io/blog/</loc>
-    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/blog/2021/2021-05-31-rust-tui/</loc>
-    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+    <loc>https://www.monkeypatch.io/blog/2021/2021-06-10-openservicebrokerapi-rust-part02/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/</loc>
-    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -44,13 +44,36 @@
   </url>
   
   <url>
-    <loc>https://www.monkeypatch.io/tags/async/</loc>
-    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+    <loc>https://www.monkeypatch.io/tags/cloud/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.monkeypatch.io/tags/rust/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/service-broker/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/blog/2021/2021-05-31-rust-tui/</loc>
+    <lastmod>2021-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.monkeypatch.io/tags/async/</loc>
     <lastmod>2021-05-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -111,24 +134,6 @@
   <url>
     <loc>https://www.monkeypatch.io/blog/2020/2020-07-30-openservicebrokerapi-rust-part01/</loc>
     <lastmod>2020-07-30T00:00:01+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/cloud/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.monkeypatch.io/tags/service-broker/</loc>
-    <lastmod>2020-07-30T00:00:01+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

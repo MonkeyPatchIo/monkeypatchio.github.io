@@ -6,10 +6,19 @@
     <description>Recent content in rust on MonkeyPatch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 31 May 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.monkeypatch.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust: Open Service Broker API (Part 2)</title>
+      <link>https://www.monkeypatch.io/blog/2021/2021-06-10-openservicebrokerapi-rust-part02/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.monkeypatch.io/blog/2021/2021-06-10-openservicebrokerapi-rust-part02/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.monkeypatch.io/tags/rust-openservicebroker-api-series/&#34;&gt;In this blog series&lt;/a&gt;, we will discover how to extend service catalog of your cloud solution using Rust. This second blog post is about implementing our provider for the first entity: catalog.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rust: Playing with tui-rs</title>

@@ -214,16 +214,16 @@ different words to describe one and only thing or even different words to descri
 meanings depending on context!</p>
 
 <blockquote>
-<p>Part 1 in a series of articles about Project Loom.<br>
+<p>Part 1 in a series of articles about Project Loom.
 In this part we skim the surface of scheduling history before diving into the JVM.</p>
 
 <p>The companion code repository is at <a href="https://github.com/arnaudbos/untangled">arnaudbos/untangled</a></p>
 
-<p>If you&rsquo;d like you could head over to<br>
-<a href="../2019-12-14-loom-part-0-rationale">Part 0 - Rationale</a><br>
-<a href="../2019-12-14-loom-part-1-scheduling">Part 1 - It&rsquo;s all about Scheduling</a> (this page)<br>
-<a href="../2019-12-18-loom-part-2-blocking">Part 2 - Blocking code</a><br>
-<a href="../2019-12-23-loom-part-3-async">Part 3 - Asynchronous code</a><br>
+<p>If you&rsquo;d like you could head over to
+<a href="../2019-12-14-loom-part-0-rationale">Part 0 - Rationale</a>
+<a href="../2019-12-14-loom-part-1-scheduling">Part 1 - It&rsquo;s all about Scheduling</a> (this page)
+<a href="../2019-12-18-loom-part-2-blocking">Part 2 - Blocking code</a>
+<a href="../2019-12-23-loom-part-3-async">Part 3 - Asynchronous code</a>
 <a href="../../2020/2020-05-08-loom-part-4-nio">Part 4 - Non-thread-blocking async I/O</a></p>
 </blockquote>
 
@@ -249,12 +249,12 @@ In this part we skim the surface of scheduling history before diving into the JV
 <p>To make sure we&rsquo;re on the same page, let&rsquo;s read what Wikipedia has to say (as of today) about Light-Weight Processes:</p>
 
 <blockquote>
-<p>In some operating systems there is no separate LWP <em>(Ed.: Light-Weight Process)</em> layer between kernel threads and user threads.<br>
-This means that user threads are implemented directly on top of kernel threads.<br>
+<p>In some operating systems there is no separate LWP <em>(Ed.: Light-Weight Process)</em> layer between kernel threads and user threads.
+This means that user threads are implemented directly on top of kernel threads.
 In those contexts, the term <strong>&ldquo;light-weight process&rdquo; typically refers to kernel threads and the term &ldquo;threads&rdquo; can
-refer to user threads</strong>.<br>
+refer to user threads</strong>.
 On Linux, <strong>user threads are implemented by allowing certain processes to share resources, which sometimes leads
-to these processes to be called &ldquo;light weight processes&rdquo;</strong>.<br>
+to these processes to be called &ldquo;light weight processes&rdquo;</strong>.
 Similarly, in SunOS version 4 onwards (prior to Solaris) <strong>&ldquo;light weight process&rdquo; referred to user threads</strong>.
 — from <a href="https://en.wikipedia.org/wiki/Light-weight_process">https://en.wikipedia.org/wiki/Light-weight_process</a> (emphasis mine)</p>
 </blockquote>
@@ -374,7 +374,7 @@ programs to a waiting queue of jobs to be performed.</p>
 <p>In the diagram above, Program1 and Program2 are submitted one after the other, so Program1 runs first and thenProgram2.</p>
 
 <p>But having to append a program into a &ldquo;giant&rdquo; batch of jobs for the mainframe to compute, and then wait for it
-to return all the results, was a massive pain in the butt!<br>
+to return all the results, was a massive pain in the butt!
 Imagine debugging your programs <strong>with a 24 hours feedback loop&hellip;</strong></p>
 
 
@@ -401,7 +401,7 @@ making it worse from another point of view (more human idle time).</p>
 power they could get, any single user wouldn&rsquo;t make efficient use of a computer by herself!</p>
 
 <p>Indeed, processes, to do something useful, have to be fed with inputs and produce any kind of output. Otherwise they&rsquo;d
-just be raising the temperature of the room.<br>
+just be raising the temperature of the room.
 Consuming inputs today can be reading from a keyboard, hard drive or network card. In the sixties, it mostly meant
 reading from magnetic tape or a teletypewriter. Similarly, producing output meant writing to magnetic tape, printing
 to a teletypewriter or a &ldquo;high-speed&rdquo; Xerox printer.</p>
@@ -422,7 +422,7 @@ to a teletypewriter or a &ldquo;high-speed&rdquo; Xerox printer.</p>
 
 
 <p>In the above diagram, we can see Program1 finishing before Program2 can start, but there are <em>gaps</em> between bursts
-of execution. Same for Program2.<br>
+of execution. Same for Program2.
 So all the time during which a processor is waiting for I/O (polling, <a href="https://en.wikipedia.org/wiki/Busy_waiting">busy waiting</a>) rather than &ldquo;crunching numbers&rdquo;,
 is wasted.</p>
 
@@ -430,7 +430,7 @@ is wasted.</p>
 
 <h3 id="time-sharing">Time-sharing</h3>
 
-<p>The video below is a gem.<br>
+<p>The video below is a gem.
 In it, you can see Turing Award winner <del>Buddy Holly</del> <a href="https://en.wikipedia.org/wiki/Fernando_J._Corbat%C3%B3">Fernando Corbató</a> explain the promises and premises of
 <a href="https://en.wikipedia.org/wiki/Compatible_Time-Sharing_System">time-sharing</a> as it was being designed.</p>
 
@@ -462,12 +462,12 @@ resources</strong>.</p>
 
 
 
-<p>In this diagram, Program1 starts first and is parked when it starts a <strong>blocking</strong> I/O call.<br>
-Program2 then gets a chance to run but is quickly parked too as it also makes a <strong>blocking</strong> I/O call.<br>
-Some other program, Program3, runs while 1 and 2 are <strong>parked</strong>.<br>
+<p>In this diagram, Program1 starts first and is parked when it starts a <strong>blocking</strong> I/O call.
+Program2 then gets a chance to run but is quickly parked too as it also makes a <strong>blocking</strong> I/O call.
+Some other program, Program3, runs while 1 and 2 are <strong>parked</strong>.
 Program2&rsquo;s I/O returns first, so on the next <em>shift</em>, Program2 is <strong>unparked</strong> and <em>continues</em> to run while
-Program1&rsquo;s I/O returns.<br>
-Program2 ends eventually.<br>
+Program1&rsquo;s I/O returns.
+Program2 ends eventually.
 Program1 then picks up the result from its I/O call and finishes running too.</p>
 
 <h2 id="process-switch">Process switch</h2>
@@ -481,7 +481,7 @@ to the kind of work they do.</p>
 of a program communicating through IPC).</p>
 
 <p>Some other tasks require communication. Coupled cooperative processes for which IPC may be too expensive are an example.
-Tasks requiring many I/O operations (<em>I/O bound</em>) as well.<br>
+Tasks requiring many I/O operations (<em>I/O bound</em>) as well.
 For such applications, the time to <em>switch</em> from e.g. <code>P1</code> to <code>P2</code> and back to <code>P1</code>, may hamper its fast realization
 and/or drain physical resources&hellip;</p>
 
@@ -490,13 +490,13 @@ more and more) could communicate without being taxed by &ldquo;expensive&rdquo; 
 nice to have a mechanism so that I/O bound processes wouldn&rsquo;t undergo excessively costly <strong><em>process switches</em></strong>.</p>
 
 <blockquote>
-<p>A process switch is a special case of <strong>context switch</strong> applied to processes.<br>
-As the name may suggest, it is a special mechanism for kernels to switch a process by another to achieve concurrency.<br>
+<p>A process switch is a special case of <strong>context switch</strong> applied to processes.
+As the name may suggest, it is a special mechanism for kernels to switch a process by another to achieve concurrency.
 As usual with names, &ldquo;context switch&rdquo; is overloaded, and we&rsquo;ll mention this in the next sections.</p>
 </blockquote>
 
 <p>That&rsquo;s how threads got introduced: nowadays the most widespread fundamental unit of concurrency is not the
-process, it&rsquo;s the <strong>thread</strong>.<br>
+process, it&rsquo;s the <strong>thread</strong>.
 And threads have interesting characteristics with regard to the previous points.</p>
 
 <h2 id="threads">Threads</h2>
@@ -532,7 +532,7 @@ process is typically faster than switching between processes.</p>
 <blockquote>
 <p>Nowadays, a context switch is almost synonymous with switching between threads rather than between processes.
 But &ldquo;context switch&rdquo; is also used, in many blog posts and articles, to talk about <em>process switches</em>,
-<em>thread switches</em> or <em>mode switches</em>, almost indistinguishably.<br>
+<em>thread switches</em> or <em>mode switches</em>, almost indistinguishably.
 We&rsquo;ll touch on these differences in the <a href="../2019-12-18-loom-part-2-blocking">next part</a>.</p>
 </blockquote>
 
@@ -614,7 +614,7 @@ inside the kernel scheduler&rsquo;s algorithm.</p>
 <strong>the operating system never initiates a context switch</strong> from a running process to another process. Instead,
 <strong>processes voluntarily yield control periodically or when idle or logically blocked</strong> in order to enable multiple
 applications to be run concurrently. This type of multitasking is called &ldquo;cooperative&rdquo; because <strong>all programs must
-cooperate for the entire scheduling scheme to work</strong>.<br>
+cooperate for the entire scheduling scheme to work</strong>.
 — From <a href="https://en.wikipedia.org/wiki/Cooperative_multitasking">https://en.wikipedia.org/wiki/Cooperative_multitasking</a> (emphasis mine)</p>
 </blockquote>
 
@@ -657,7 +657,7 @@ the last 60 years that I had to cut corners and didn&rsquo;t do it any justice.<
 names, etc):</p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">OK SO let&#39;s say it&#39;s 1962 and you&#39;re lucky enough to be a programmer working somewhere that has an IBM 7090.<br>This is a top of the line transistorized revision of the IBM 709, capable of 100,000 floating point operations per second. <br><br>But how do you code for it? <a href="https://t.co/hcJ1FHiO1W">pic.twitter.com/hcJ1FHiO1W</a></p>&mdash; foone (@Foone) <a href="https://twitter.com/Foone/status/1201956309941116928?ref_src=twsrc%5Etfw">December 3, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 <p>In the <a href="../2019-12-18-loom-part-2-blocking">next part</a>, we will experiment!</p></article>
