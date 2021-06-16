@@ -1084,11 +1084,11 @@ mod tests {
 }
 </code></pre>
 
-<p>Maybe some explanations is needed. <a href="https://doc.rust-lang.org/std/cell/struct.RefCell.html"><code>RefCell</code></a> let us store  a value which references can be manipulated in controlled scope (i.e. blocks). Borrow rules are dynamically (i.e. at runtime) checked. Thus, we first check if there&rsquo;s some cached catalog holder (i.e. <code>SingleCatalogProvider</code>) and returns its catalog. Otherwise, read borrow is dropped and a write/mutable one is temporary obtain to update with cached catalog holder. Finally, recursively call the function to avoid repeating read code.</p>
+<p>Maybe some explanations is needed. <a href="https://doc.rust-lang.org/std/cell/struct.RefCell.html"><code>RefCell</code></a> let us store  a value which references can be manipulated in controlled scope (i.e. blocks). Borrow rules are dynamically (i.e. at runtime) checked. Thus, we first check if there&rsquo;s some cached catalog holder (i.e. <code>SingleCatalogProvider</code>) and returns its catalog. Otherwise, read borrow is dropped, and a write/mutable one is temporary obtain to update with cached catalog holder. Finally, recursively call the function to avoid repeating read code.</p>
 
 <p>For testing, a counting caller is implemented, still using interior mutability pattern. Then, just check there&rsquo;s no call during caching creation (i.e. lazy behavior) and call only once even if asked twice (i.e. cache behavior).</p>
 
-<p>Note that this implementation doesn&rsquo;t support <a href="https://doc.rust-lang.org/book/ch16-04-extensible-concurrency-sync-and-send.html">multithreading</a>, which is not a a problem as <a href="https://docs.rs/actix-web/2.0.0/actix_web/web/struct.Data.html">Actix manages it on its own</a>. But in similar way you can implement synchronous wrapper as an exercise.</p>
+<p>Note that this implementation doesn&rsquo;t support <a href="https://doc.rust-lang.org/book/ch16-04-extensible-concurrency-sync-and-send.html">multithreading</a>, which is not a problem as Actix will instantiate a new scope for each worker thread (add a <code>println!(&quot;...&quot;)</code> into <code>HttpServer::new()</code> closure to observe it).</p>
 
 <h2 id="let-s-go-further">Let&rsquo;s go further</h2>
 
